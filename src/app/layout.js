@@ -1,5 +1,10 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/navber";
+import Footer from "./components/footer";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Section2 from "./components/home/section2";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,11 +23,19 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en-US" data-arp>
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
