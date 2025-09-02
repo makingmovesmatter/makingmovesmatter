@@ -40,7 +40,7 @@ export default function Popup({
       >
         <button
           onClick={onClose}
-          className="absolute top-3 right-3 text-gray-500 hover:text-red-500 text-xl"
+          className="absolute top-3 right-3 text-gray-500 hover:iconColor text-xl"
         >
           &times;
         </button>

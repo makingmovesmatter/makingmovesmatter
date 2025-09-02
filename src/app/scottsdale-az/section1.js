@@ -19,17 +19,18 @@ const Section1 = () => {
           animate={isInView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <p className="text-gray-700 text-base leading-relaxed">
-            Making Moves Matter, we take pride in offering a comprehensive range of moving services to residents and businesses in Mesa, AZ. Whether you’re relocating within the city or moving across the country, our team has the expertise to handle every aspect of your move with care, precision, and reliability. Here’s how we can assist you:
-           </p> <br /> <br /> 
 
           <h2 className="text-3xl font-bold text-[var(--black-color)] mb-4">
-           Making Moves Matter: Your Trusted Movers in Mesa, AZ for Local & Long-Distance Moves
+           Welcome to Making Moves Matter: Your Premier Scottsdale Moving Company
           </h2>
 
 
            <p>
-              We alleviate your relocation stress by managing everything from loading and packing to transporting and unpacking. Our goal is to make your move as hassle-free as possible. With our commitment to on-time delivery and transparent pricing, free of hidden fees, your move will be both efficient and affordable.
+              Are you planning a move to or from Scottsdale, AZ? At Making Moves Matter, we specialize in delivering top-notch, stress-free moving services in Scottsdale and surrounding areas. Our experienced Scottsdale movers are here to make your residential or commercial relocation seamless, efficient, and worry-free. <br /> <br />
+
+              As one of the most trusted moving companies in Scottsdale, we take pride in offering personalized services that meet the needs of every customer. <br /><br />
+
+              We are fully licensed, insured, and dedicated to providing exceptional customer service with every move.
            </p><br /> <br /> 
         </motion.div>
 
@@ -42,7 +43,7 @@ const Section1 = () => {
         >
           <div className="relative w-full h-full min-h-[400px] rounded-lg overflow-hidden shadow-md">
               <Image
-                src={'/images/image copy 6.png'}
+                src={'/images/scottedeal2.png'}
                 alt={'Banner Image'}
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"

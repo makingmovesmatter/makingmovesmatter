@@ -20,7 +20,7 @@ const Section3 = () => {
         >
           <div className="relative w-full h-full min-h-[400px] rounded-lg overflow-hidden shadow-md">
               <Image
-                src={'/images/image copy 6.png'}
+                src={'/images/temp3.png'}
                 alt={'Banner Image'}
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -38,25 +38,18 @@ const Section3 = () => {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-3xl font-bold text-[var(--black-color)] mb-4">
-           Local Moving Services in Mesa, AZ
+           A Rich History of Tempe, AZ
           </h2>
 
 
            <p>
-             Relocating within Mesa can be a breeze with the help of our local movers in Mesa, AZ. From bustling areas like Downtown Mesa to peaceful neighborhoods such as Superstition Springs or Eastmark, we know Mesa inside and out. Our team specializes in apartment moves, house relocations, and any same-city transitions, ensuring your belongings arrive safely and promptly to your new home or office.
-              Whether you’re moving down the street or to another part of the city, we make it a stress-free experience, offering efficient solutions tailored to your needs.
-           </p><br /> <br /> 
+             Tempe, Arizona, has a fascinating history that dates back thousands of years. The area was originally inhabited by the Hohokam people, who built an extensive canal system to support agriculture in the arid desert landscape. These ancient canals laid the groundwork for modern irrigation systems still used today. <br /> <br /> 
 
+The city’s modern roots began in the 1860s when Charles Trumbull Hayden, a key figure in the region’s development, established a ferry service across the Salt River and founded a flour mill. This area, known as Hayden’s Ferry, would later be renamed Tempe, inspired by the Vale of Tempe in Greece. <br /> <br /> 
 
-          <h2 className="text-3xl font-bold text-[var(--black-color)] mb-4">
-           Long-Distance & Nationwide Moving
-          </h2>
+Tempe quickly became a center of commerce and education. In 1885, the Arizona Territorial Normal School was established, which eventually evolved into Arizona State University (ASU), one of the largest and most prestigious universities in the country. <br /> <br /> 
 
-
-         <p> 
-            For those planning a move outside Arizona, we offer expert long-distance moving and nationwide movers services. From Mesa, AZ, we provide door-to-door service, handling the logistics of interstate moves with ease. Your belongings are safely transported across state lines or even across the country, giving you peace of mind throughout the journey. <br /> <br /> 
-
-              Our experienced team makes moving to places like California, Texas, or beyond as smooth as possible, with timely deliveries and safe handling.
+Today, Tempe is a bustling city known for its vibrant culture, thriving arts scene, and strong ties to education and innovation. With its central location in the Phoenix metro area, Tempe continues to attract families, students, and businesses alike.
            </p><br /> <br /> 
 
        </motion.div>

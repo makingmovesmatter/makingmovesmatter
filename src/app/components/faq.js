@@ -51,7 +51,7 @@ const Faq = () => {
         {/* Left Section */}
         <div className="md:w-1/2">
           <motion.h2
-            className="text-4xl font-bold text-[var(--black-color)] capitalize leading-14"
+            className="text-5xl font-bold text-[var(--heading-text-color)] capitalize leading-14"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -72,7 +72,7 @@ const Faq = () => {
 
           <motion.a
             href="/contact"
-            className="text-2xl inline-block mt-6 bg-[#E17100] text-white px-8 py-3 rounded-md shadow hover:bg-[#E17100] transition"
+            className="text-xl font-medium inline-block mt-6 bg-[var(--accent-color)] text-white px-8 py-3 rounded-md shadow hover:bg-[#E17100] transition"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}

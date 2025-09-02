@@ -20,27 +20,27 @@ const Section5 = () => {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-3xl font-bold text-[var(--black-color)] mb-4">
-           Residential & Apartment Moves
+           Fun Things to Do in Tempe, AZ
           </h2>
 
 
            <p>
-             Whether you’re moving from a cozy apartment or a spacious home, we have the tools and expertise to manage moves of all sizes. From fragile items like glassware and electronics to large appliances and furniture, we ensure everything is packed securely for the journey. Our team handles your residential moving services with care, making sure that your items are carefully unloaded and placed in their new home. <br/>
+             Explore the Outdoors <br />
+Enjoy Tempe Town Lake with kayaking and lakeside strolls, hike Papago Park’s red rock trails, or visit Kiwanis Park for family-friendly bike paths and playgrounds. Don’t miss Hayden Butte Preserve for city views and the Desert Botanical Garden for beautiful desert flora. <br /> <br /> 
 
-             No matter the scale of your move, we ensure that every detail is taken care of, offering a seamless experience.
+
+Arts, Culture & History<br />
+Discover contemporary art at the ASU Art Museum, learn Tempe’s story at the Tempe History Museum, and experience world-class performances at Gammage Auditorium, a Frank Lloyd Wright masterpiece.<br /> <br /> 
+
+
+Family-Friendly Fun<br />
+Engage with marine life at the SEA LIFE Arizona Aquarium, build and explore at Legoland Discovery Center, or enjoy splash pads and riverside fun at Tempe Beach Park.<br /> <br /> 
+
+
+Unique Experiences<br />
+Stroll Downtown Tempe for shops and restaurants, visit the Tempe Marketplace, or relax at the peaceful Desert Arboretum Park.
            </p><br /> <br /> 
 
-
-          <h2 className="text-3xl font-bold text-[var(--black-color)] mb-4">
-           Commercial & Office Moves
-          </h2>
-
-
-         <p> 
-            Moving a business requires a different level of expertise, and at Making Moves Matter, we’re well-equipped to handle office moves for businesses in Mesa. Whether you’re moving office furniture, electronics, or specialized equipment, we transport everything safely and efficiently. We understand that business downtime is costly, so we offer after-hours moving to ensure minimal disruption to your workday. <br /> <br />
-
-              Our commercial moving services are designed to meet the unique needs of small and medium-sized businesses in Mesa, ensuring a fast and smooth transition to your new workspace.
-           </p><br /> <br /> 
 
        </motion.div>
 
@@ -53,7 +53,7 @@ const Section5 = () => {
         >
           <div className="relative w-full h-full min-h-[400px] rounded-lg overflow-hidden shadow-md">
               <Image
-                src={'/images/image copy 6.png'}
+                src={'/images/temp4.png'}
                 alt={'Banner Image'}
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"

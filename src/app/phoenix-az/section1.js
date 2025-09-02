@@ -19,17 +19,18 @@ const Section1 = () => {
           animate={isInView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <p className="text-gray-700 text-base leading-relaxed">
-            Making Moves Matter, we take pride in offering a comprehensive range of moving services to residents and businesses in Mesa, AZ. Whether you’re relocating within the city or moving across the country, our team has the expertise to handle every aspect of your move with care, precision, and reliability. Here’s how we can assist you:
-           </p> <br /> <br /> 
-
           <h2 className="text-3xl font-bold text-[var(--black-color)] mb-4">
-           Making Moves Matter: Your Trusted Movers in Mesa, AZ for Local & Long-Distance Moves
+           Welcome to Making Moves Matter: Your Trusted Moving Company in Phoenix
           </h2>
 
 
            <p>
-              We alleviate your relocation stress by managing everything from loading and packing to transporting and unpacking. Our goal is to make your move as hassle-free as possible. With our commitment to on-time delivery and transparent pricing, free of hidden fees, your move will be both efficient and affordable.
+              Local Phoenix movers 15 years of experience, licensed n insured, with a Trained crew<br /> 
+              Are you looking for dependable and professional movers in Phoenix to handle your relocation? At Making Moves Matter, we pride ourselves on delivering top-quality, stress-free moving services in Phoenix and nearby areas. Our skilled team of local movers in Phoenix is ready to assist with everything from residential moves to complex commercial relocations.<br /> <br /> 
+
+              Whether you’re moving across the street or across the country, our mission is to make your transition smooth and efficient. With expert packing, secure storage, and timely delivery, we’re the Phoenix moving company you can rely on for a seamless moving experience.<br /> <br /> 
+
+              We are fully licensed, insured, and committed to delivering exceptional service for every move.
            </p><br /> <br /> 
         </motion.div>
 
@@ -42,7 +43,7 @@ const Section1 = () => {
         >
           <div className="relative w-full h-full min-h-[400px] rounded-lg overflow-hidden shadow-md">
               <Image
-                src={'/images/image copy 6.png'}
+                src={'/images/phoenix2.png'}
                 alt={'Banner Image'}
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"

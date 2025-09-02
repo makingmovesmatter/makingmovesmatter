@@ -69,14 +69,18 @@ const Navbar = () => {
       });
     });
 
-    const openMenuBtn = document.querySelector('.three-bar');
+    // Fix: Select all three-bar elements
+    const openMenuBtns = document.querySelectorAll('.three-bar');
     const mobileNav = document.querySelector('.mobile-nav');
     const mainMobileNav = document.querySelector('.main-mobile-nav');
     const closeMenuBtn = document.querySelector('.cencle-icon');
 
-    openMenuBtn?.addEventListener('click', () => {
-      mobileNav?.classList.add('show');
-      document.body.style.overflow = 'hidden';
+    // Add event listeners to all three-bar buttons
+    openMenuBtns?.forEach(btn => {
+      btn.addEventListener('click', () => {
+        mobileNav?.classList.add('show');
+        document.body.style.overflow = 'hidden';
+      });
     });
 
     closeMenuBtn?.addEventListener('click', () => {
@@ -109,27 +113,29 @@ const Navbar = () => {
         </div>
         <div class="middle-nav-items container">
             <div class="logo">
-                <a href="/"><img src="https://mesamovingexperts.com/wp-content/uploads/2021/11/Logo-1.png.webp" alt="" loading="eager" width={150} /></a>
+                <a href="/"><img src="/images/logo.png" alt="" loading="eager" width={150} /></a>
             </div>
 
             <div class="call-now-text">
-                <Link href="tel:480-999-9999">
+                <Link href="tel:4809348218">
                   <h1>Call Now</h1>
-                  <p>(480) 378-8888</p>
+                  <p>(480) 934-8218</p>
                 </Link>
             </div>
 
         <div className='call-now-btn'>
             <div class="call-now-text1">
-                <Link href="tel:480-999-9999">
+                <Link href="tel:4809348218">
                   <h1>Call Now</h1>
-                  <p>(480) 378-8888</p>
+                  <p>(480) 934-8218</p>
                 </Link>
             </div>
             <div class="right-items">
+               <Link href={"/contact-us"}>
                 <button class='btn'>
                    Get A Free Quote
                 </button>
+                </Link>
             </div>
         </div>
 
@@ -147,9 +153,11 @@ const Navbar = () => {
 
 
             <div class="right-items n">
+                <Link href={"/contact-us"}>
                 <button class='btn'>
                    Get A Free Quote
                 </button>
+                </Link>
             </div>
 
             <div class="three-bar">
@@ -157,11 +165,63 @@ const Navbar = () => {
             </div>
         </div>
 
- 
+
+
+        <div className="mobile-top-nav py-3 md:px-1 px-3">
+            <div className="item-top flex justify-between items-center">
+                <div className="logo">
+                    <Link href="/">
+                        <img src="/images/logo.png" alt="" loading="eager" width={100} />
+                    </Link>
+                </div>
+
+                <div className="coll-text-btn text-center">
+                <Link href="tel:4809348218">
+                    <div className="call-now-texts font-semibold text-[var(--accent-color)]">
+                        Call Now-24/7
+                    </div>
+                    <div className="call-now-btn">
+                            <button className='num-text font-bold text-[var(--accent-color)]'>
+                                (480) 934-8218
+                            </button>
+                    </div>
+                </Link>
+            </div>
+
+            <div className="call-now-icon">
+                <Link href="tel:4809348218" className="btn">
+                    <i className="fa-regular fa-phone"></i>
+                </Link>
+            </div>
+        </div>
+
+
+        <div className="item-bottom flex justify-between items-center my-4">
+            <div className="book-now-btn w-3/4 btn mx-3">
+                <Link href={"/contact-us"}>
+                    <button className=''>
+                        Get A Free Quote
+                    </button>
+                </Link>
+            </div>
+
+            <div class="three-bar w-1/4 text-right me-3">
+                    <i class="fa-regular fa-bars"></i>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
 
         <div class="bottom-nav-items">
             <ul>
-                <li><a href=''>Moving Services <i class="fa-regular fa-angle-down"></i></a>
+                <li><a href='/'>Moving Services <i class="fa-regular fa-angle-down"></i></a>
                 <div class="hover-backgroud">
                     <div class="hover-items-container">
                          <div class="items-one">
@@ -229,36 +289,8 @@ const Navbar = () => {
                   </div>
                 </li>
 
-                 <li><a href="/mesa-az">About Us <i class="fa-regular fa-angle-down"></i></a>
-                <div class="hover-backgroud">
-                    <div class="hover-items-container">
-                         <div class="items-one">
-                            <ul>
-                                <li><a href="/about-us">About Us</a></li>
-                            </ul>
-
-                            <ul>
-                                <li><a href="/contact-us">Contact Us</a></li>
-                            </ul>
-
-                            <ul>
-                                <li><a href="/blog">Blog</a></li>
-                            </ul>
-
-
-                            <ul>
-                                <li><a href="/tempe-az">Gallery</a></li>
-                            </ul>
-
-                            <ul>
-                                <li><a href="/phoenix-az">Privacy Policy</a></li>
-                            </ul>
-
-                         </div>
-                   </div>
-                  </div>
-                </li>
-
+                <Link href={'/about-us'} className="addtional-link">About Us</Link>
+                <Link href={'/contact-us'} className="addtional-link">Contact Us</Link>
             </ul>
        </div>
 
@@ -267,7 +299,7 @@ const Navbar = () => {
             <div class="main-mobile-nav">
                 <div class="mobile-top-item">
                     <div class="logo">
-                        <img src="https://mesamovingexperts.com/wp-content/uploads/2021/11/Logo-1.png.webp" alt="" loading="eager" width={100} />
+                        <img src="/images/logo.png" alt="" loading="eager" width={100} />
                     </div>
                     <div class="cencle-icon">
                         <i class="fa-regular fa-xmark"></i>
@@ -277,245 +309,86 @@ const Navbar = () => {
                 <div class="mobile-middle-item">
                     <ul>
                                 <li class="mobile-manue-items">
-                                    <a href="#">Shave <i class="fa-regular fa-angle-down"></i></a>
+                                    <a href="#">Moving Services <i class="fa-regular fa-angle-down"></i></a>
 
                                     <ul class="mobile-submanue-items">
                                         <li class="mobile-manue-items">
-                                            <a href="#">Harry's Plus <i class="fa-regular fa-angle-down"></i></a>
-                                            <ul class="mobile-submanue-items">
-                                                <li><a href="#">Plus Handles</a></li>
-                                                <li><a href="#">Plus Sets</a></li>
-                                                <li><a href="#">Plus Blades</a></li>
-                                                <li><a href="#">Shop All</a></li>
+                                            <ul>
+                                                <li><a href="/commercial-services">Commercial Services</a></li>
+                                                <li><a href="/long-distance-moving">Long Distance Moving</a></li>
                                             </ul>
-                                        </li>
-                                        <li class="mobile-manue-items">
-                                            <a href="#">Harry's Original <i class="fa-regular fa-angle-down"></i></a>
-                                            <ul class="mobile-submanue-items">
-                                                <li><a href="#">Original Blades</a></li>
-                                                <li><a href="#">Original Handles</a></li>
-                                                <li><a href="#">Original Chrome Handles</a></li>
-                                                <li><a href="#">Original Shave Sets</a></li>
-                                                <li><a href="#">Original Value Packs</a></li>
-                                                <li><a href="#">Shop All</a></li>
+
+                                            <ul>
+                                                <li><a href="/furniture-assembly">Furniture Assembly</a></li>
+                                                <li><a href="/local-moving">Local Moving</a></li>
                                             </ul>
-                                        </li>
-                                        <li class="mobile-manue-items">
-                                            <a href="#">Pre & Post Shave <i class="fa-regular fa-angle-down"></i></a>
-                                            <ul class="mobile-submanue-items">
-                                                <li><a href="#">Shave Gel</a></li>
-                                                <li><a href="#">Shave Cream</a></li>
-                                                <li><a href="#">Post-Shave Balm</a></li>
-                                                <li><a href="#">Post-Shave Mist</a></li>
-                                                <li><a href="#">Exfoliating Facial Cleanser</a></li>
-                                                <li><a href="#">Daily Facial Lotion</a></li>
-                                                <li><a href="#">Hydrating Night Lotion</a></li>
-                                                <li><a href="#">Shop All</a></li>
+
+
+                                            <ul>
+                                                <li><a href="/furniture-moving">Furniture Moving</a></li>
+                                                <li><a href="/packing-and-unpacking-services">Packing And Unpacking Servicesy</a></li>
                                             </ul>
-                                        </li>
-                                        <li class="mobile-manue-items">
-                                            <a href="#">Accessories <i class="fa-regular fa-angle-down"></i></a>
-                                            <ul class="mobile-submanue-items">
-                                                <li><a href="#">Toiletry Bag</a></li>
-                                                <li><a href="#">Plus Razor Stand</a></li>
-                                                <li><a href="#">Orignal Razor Stand</a></li>
-                                                <li><a href="#">Plus Travel Blade Cover</a></li>
-                                                <li><a href="#">Original Travel Blade Cover</a></li>
-                                                <li><a href="#">Shop All</a></li>
+
+                                            <ul>
+                                                <li><a href="/large-and-heavy-item-moving">Large and Heavy Item Moving</a></li>
+                                                <li><a href="/storage">Storage</a></li>
                                             </ul>
-                                        </li>
-                                        <li class="mobile-manue-items">
-                                            <a href="#">Bundles <i class="fa-regular fa-angle-down"></i></a>
-                                            <ul class="mobile-submanue-items">
-                                                <li><a href="#">Original Blades & Shave Gel</a></li>
-                                                <li><a href="#">Original 24 Blades & Shave Gel</a></li>
-                                                <li><a href="#">Original Shave Travel Kits</a></li>
-                                                <li><a href="#">Plus Blades & Shave Gel</a></li>
-                                                <li><a href="#">Shop All</a></li>
+
+                                            <ul>
+                                                <li><a href="/hot-tub-relocation">Hot Tub Relocation</a></li>
                                             </ul>
                                         </li>
                                     </ul>
                                 </li>
 
                                 <li class="mobile-manue-items">
-                                    <a href="#">Face Care <i class="fa-regular fa-angle-down"></i></a>
+                                    <a href="#">Service Area <i class="fa-regular fa-angle-down"></i></a>
 
                                     <ul class="mobile-submanue-items">
                                         <li class="mobile-manue-items">
-                                            <a href="#">Face Care Essentials <i class="fa-regular fa-angle-down"></i></a>
-                                            <ul class="mobile-submanue-items">
-                                                <li><a href="">Exfoliating Facial Cleanser</a></li>
-                                                <li><a href="">Daily Facial Lotion</a></li>
-                                                <li><a href="">Brightening Eye Cream</a></li>
-                                                <li><a href="">Spot Correcting Gel</a></li>
-                                                <li><a href="">Balancing Facial Toner</a></li>
-                                                <li><a href="">Hydrating Night Lotion</a></li>
-                                                <li><a href="">Anti-Shine Stick</a></li>
-                                                <li><a href="">Black Lip Balm</a></li>
-                                                <li><a href="">Cooling Eye Kit</a></li>
+                                           <ul>
+                                                <li><a href="/mesa-az">Mesa, AZ</a></li>
                                             </ul>
-                                        </li>
-                                        <li class="mobile-manue-items">
-                                            <a href="#">Pre & Post Shave <i class="fa-regular fa-angle-down"></i></a>
-                                            <ul class="mobile-submanue-items">
-                                                <li><a href="">Shave Gel</a></li>
-                                                <li><a href="">Shave Cream</a></li>
-                                                <li><a href="">Post-Shave Balm</a></li>
-                                                <li><a href="">Post-Shave Mist</a></li>
+
+                                            <ul>
+                                                <li><a href="/chandler-az">Chandler, AZ</a></li>
                                             </ul>
-                                        </li>
-                                        <li class="mobile-manue-items">
-                                            <a href="#">Beard Care <i class="fa-regular fa-angle-down"></i></a>
-                                            <ul class="mobile-submanue-items">
-                                                <li><a href="#">Beard & Face Wash</a></li>
-                                                <li><a href="#">Beard Conditioning Spray</a></li>
-                                                <li><a href="#">Beard Care Bundle</a></li>
-                                                <li><a href="#">Shop All</a></li>
+
+                                            <ul>
+                                                <li><a href="/scottsdale-az">Scottsdale, AZ</a></li>
                                             </ul>
-                                        </li>
-                                        <li class="mobile-manue-items">
-                                            <a href="#">Face Care Bundles <i class="fa-regular fa-angle-down"></i></a>
-                                            <ul class="mobile-submanue-items">
-                                                <li><a href="#">Clear Skin Essentials</a></li>
-                                                <li><a href="#">AM/PM Lotion Bundle</a></li>
-                                                <li><a href="#">6-Step Skin Care Set</a></li>
-                                                <li><a href="#">Eye Refresh Bundle</a></li>
-                                                <li><a href="#">Shop All</a></li>
+
+
+                                            <ul>
+                                                <li><a href="/tempe-az">Tempe, AZ</a></li>
                                             </ul>
+
+
+                                            <ul>
+                                                <li><a href="/gendale-az">Gilbert, AZ</a></li>
+                                            </ul>
+
+                                            <ul>
+                                                <li><a href="/phoenix-az">Phoenix, AZ</a></li>
+                                            </ul>
+
                                         </li>
                                     </ul>
                                 </li>
 
 
-                                <li class="mobile-manue-items">
-                                    <a href="#">Shave <i class="fa-regular fa-angle-down"></i></a>
+                                <div className="mobile-additional">
+                                    <Link href={'about-us'} className="m-add" onClick={() => isMobileOpen(false)}>About Us</Link>
+                                    <Link href={'contact-us'} className="m-add" onClick={() => isMobileOpen(false)}>Contact Us</Link>
+                                </div>
 
-                                    <ul class="mobile-submanue-items">
-                                        <li class="mobile-manue-items">
-                                            <a href="#">Body Wash <i class="fa-regular fa-angle-down"></i></a>
-                                            <ul class="mobile-submanue-items">
-                                                <li><a href="#">Body Wash</a></li>
-                                                <li><a href="#">Travel Body Wash</a></li>
-                                                <li><a href="#">Body Wash Pumps</a></li>
-                                                <li><a href="#">Shop All</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="mobile-manue-items">
-                                            <a href="#">Body Care <i class="fa-regular fa-angle-down"></i></a>
-                                            <ul class="mobile-submanue-items">
-                                                <li><a href="#">Extra-Strength Antiperspirant</a></li>
-                                                <li><a href="#">Deodorant</a></li>
-                                                <li><a href="#">Shop All</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="mobile-manue-items">
-                                            <a href="#">Bar Soap <i class="fa-regular fa-angle-down"></i></a>
-                                            <ul class="mobile-submanue-items">
-                                                <li><a href="#">Bar Soap</a></li>
-                                                <li><a href="#">Shop All</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="mobile-manue-items">
-                                            <a href="#">Body Bundles <i class="fa-regular fa-angle-down"></i></a>
-                                            <ul class="mobile-submanue-items">
-                                                <li><a href="#">Hair & Body Cleansers</a></li>
-                                                <li><a href="#">Head to Toe Cleansers</a></li>
-                                                <li><a href="#">Shop All</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-
-
-
-                                <li class="mobile-manue-items">
-                                    <a href="#">Hair Care <i class="fa-regular fa-angle-down"></i></a>
-
-                                    <ul class="mobile-submanue-items">
-                                        <li class="mobile-manue-items">
-                                            <a href="#">Hair Care <i class="fa-regular fa-angle-down"></i></a>
-                                            <ul class="mobile-submanue-items">
-                                                <li><a href="#">2-in-1 Shampoo & Conditioner</a></li>
-                                                <li><a href="#">Extra Strength 2-in-1 Shampoo & Conditioner</a></li>
-                                                <li><a href="#">Shop All</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="mobile-manue-items">
-                                            <a href="#">Hair Styling <i class="fa-regular fa-angle-down"></i></a>
-                                            <ul class="mobile-submanue-items">
-                                                <li><a href="#">Sculpting Gel</a></li>
-                                                <li><a href="#">Taming Cream</a></li>
-                                                <li><a href="#">Texturizing Putty</a></li>
-                                                <li><a href="#">Shop All</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="mobile-manue-items">
-                                            <a href="#">Hair Bundles <i class="fa-regular fa-angle-down"></i></a>
-                                            <ul class="mobile-submanue-items">
-                                                <li><a href="#">Cleanse & Style</a></li>
-                                                <li><a href="#">Hair & Body Cleansers</a></li>
-                                                <li><a href="#">Head to Toe Cleansers</a></li>
-                                                <li><a href="#">Shop All</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-
-
-                                <li class="mobile-manue-items">
-                                    <a href="#">Other <i class="fa-regular fa-angle-down"></i></a>
-
-                                    <ul class="mobile-submanue-items">
-                                        <li class="mobile-manue-items">
-                                            <a href="#">Other <i class="fa-regular fa-angle-down"></i></a>
-                                            <ul class="mobile-submanue-items">
-                                                <li><a href="#">Toiletry Bag</a></li>
-                                                <li><a href="#">Plus Razor Stand</a></li>
-                                                <li><a href="#">Orignal Razor Stand</a></li>
-                                                <li><a href="#">Plus Travel Blade Cover</a></li>
-                                                <li><a href="#">Original Travel Blade Cover</a></li>
-                                                <li><a href="#">Nail Clipper</a></li>
-                                                <li><a href="#">Inverness</a></li>
-                                                <li><a href="#">Cooling Eye Stick Refill</a></li>
-                                                <li><a href="#">Shop All</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="mobile-manue-items">
-                                            <a href="#">Bundles <i class="fa-regular fa-angle-down"></i></a>
-                                            <ul class="mobile-submanue-items">
-                                                <li><a href="#">Original Shave Travel Kits</a></li>
-                                                <li><a href="#">Cleanse & Style</a></li>
-                                                <li><a href="#">Hair & Body Cleansers</a></li>
-                                                <li><a href="#">Head to Toe Cleansers</a></li>
-                                                <li><a href="#">Full Body Fresh</a></li>
-                                                <li><a href="#">Clear Skin Essentials</a></li>
-                                                <li><a href="#">AM/PM Lotion Bundle</a></li>
-                                                <li><a href="#">6-Step Skin Care Set</a></li>
-                                                <li><a href="#">Eye Refresh Bundle</a></li>
-                                                <li><a href="#">Shop All</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="mobile-manue-items">
-                                            <a href="#">Subscribe & Save <i class="fa-regular fa-angle-down"></i></a>
-                                            <ul class="mobile-submanue-items">
-                                                <li><a href="#">Subscribe & Save</a></li>
-                                                <li><a href="#">Shop All</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="mobile-manue-items">
-                                            <a href="#">Surplus Store <i class="fa-regular fa-angle-down"></i></a>
-                                            <ul class="mobile-submanue-items">
-                                                <li><a href="#">Surplus Store</a></li>
-                                                <li><a href="#">Shop All</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-
-
-                                <li><a href="#">New</a></li>
-                                <li><a href="#">Shop all</a></li>
-                                <button type="submit" class="sign-button btn">Get A Quote</button>
+                                <div class="right-items mt-7">
+                                <Link href={"/contact-us"}>
+                                    <button class='btn !text-xl'>
+                                    Get A Free Quote
+                                    </button>
+                                    </Link>
+                                </div>
                             </ul>
                 </div>  
             </div>

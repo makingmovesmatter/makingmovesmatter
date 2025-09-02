@@ -2,51 +2,75 @@
 
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { 
-  FaHiking, 
-  FaWater, 
-  FaTree, 
-  FaChild, 
-  FaSwimmer, 
-  FaStore, 
-  FaMountain 
-} from "react-icons/fa";
+import { FaTree, FaSwimmer, FaLandmark, FaTheaterMasks, FaCity, FaGolfBall, FaFutbol, FaGamepad, FaSeedling, FaShoppingBasket, FaPaintBrush } from "react-icons/fa";
 
 const cards = [
+  // Explore the Outdoors
   {
-    icon: <FaHiking className="text-red-500 text-4xl" />,
-    title: "Usery Mountain Regional Park",
-    description: "Enjoy hiking, camping, and stunning desert views."
+    icon: <FaTree className="text-green-600 text-4xl" />,
+    title: "Riparian Preserve at Water Ranch",
+    description: "Peaceful trails, bird watching, and natural beauty"
   },
   {
-    icon: <FaWater className="text-red-500 text-4xl" />,
-    title: "Salt River Tubing",
-    description: "Float down the scenic Salt River for a fun and refreshing experience."
+    icon: <FaTree className="text-green-600 text-4xl" />,
+    title: "Freestone Park",
+    description: "Perfect for picnics, skateboarding, and community events"
   },
   {
-    icon: <FaTree className="text-red-500 text-4xl" />,
-    title: "Riverview Park",
-    description: "A family-friendly park with playgrounds, fishing ponds, and walking trails."
+    icon: <FaSwimmer className="text-green-600 text-4xl" />,
+    title: "Gilbert Regional Park",
+    description: "Playgrounds, splash pads, and walking trails for all ages"
+  },
+
+  // Arts, Culture & History
+  {
+    icon: <FaLandmark className="text-blue-600 text-4xl" />,
+    title: "Gilbert Historical Museum",
+    description: "Discover local history and agricultural roots"
   },
   {
-    icon: <FaChild className="text-red-500 text-4xl" />,
-    title: "i.d.e.a. Museum",
-    description: "Interactive exhibits for children to explore art, science, and technology."
+    icon: <FaTheaterMasks className="text-blue-600 text-4xl" />,
+    title: "Hale Centre Theatre",
+    description: "Top-notch live performances in a cozy venue"
   },
   {
-    icon: <FaSwimmer className="text-red-500 text-4xl" />,
-    title: "Golfland Sunsplash",
-    description: "A popular water park and family entertainment center."
+    icon: <FaCity className="text-blue-600 text-4xl" />,
+    title: "Downtown Gilbert (Heritage District)",
+    description: "Dining, events, and local culture in one lively hub"
+  },
+
+  // Family-Friendly Fun
+  {
+    icon: <FaGolfBall className="text-orange-600 text-4xl" />,
+    title: "Topgolf Gilbert",
+    description: "Golf, games, and entertainment for all ages"
   },
   {
-    icon: <FaStore className="text-red-500 text-4xl" />,
-    title: "Downtown Mesa",
-    description: "Enjoy charming shops, local eateries, and vibrant street art."
+    icon: <FaFutbol className="text-orange-600 text-4xl" />,
+    title: "Discovery Park",
+    description: "Sports fields, playgrounds, and family fun"
   },
   {
-    icon: <FaMountain className="text-red-500 text-4xl" />,
-    title: "Superstition Mountains",
-    description: "Explore the legendary Lost Dutchman’s Gold Mine and scenic hiking trails."
+    icon: <FaGamepad className="text-orange-600 text-4xl" />,
+    title: "Main Event",
+    description: "Bowling, arcade games, and laser tag excitement"
+  },
+
+  // Unique Local Experiences
+  {
+    icon: <FaSeedling className="text-purple-600 text-4xl" />,
+    title: "Agritopia",
+    description: "Farm-to-table community with artisan shops and local charm"
+  },
+  {
+    icon: <FaShoppingBasket className="text-purple-600 text-4xl" />,
+    title: "Gilbert Farmers Market",
+    description: "Fresh produce and local goods every weekend"
+  },
+  {
+    icon: <FaPaintBrush className="text-purple-600 text-4xl" />,
+    title: "Gilbert Art Walk",
+    description: "Seasonal showcases of art, creativity, and culture"
   }
 ];
 

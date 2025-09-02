@@ -13,37 +13,37 @@ import {
 
 const cards = [
   {
-    icon: <FaHome className="text-red-500 text-4xl" />,
+    icon: <FaHome className="iconColor text-4xl" />,
     title: "Residential Movers in Mesa",
     description:
       "Moving into a new home? Our residential movers in Mesa ensure your household items are transported safely and efficiently, whether you’re moving across town or to a nearby neighborhood."
   },
   {
-    icon: <FaBuilding className="text-red-500 text-4xl" />,
+    icon: <FaBuilding className="iconColor text-4xl" />,
     title: "Apartment Movers in Mesa",
     description:
       "Our skilled apartment movers in Mesa handle stairs, elevators, and tight spaces with ease, making your move quick and hassle-free."
   },
   {
-    icon: <FaStore className="text-red-500 text-4xl" />,
+    icon: <FaStore className="iconColor text-4xl" />,
     title: "Office and Commercial Moving",
     description:
       "Need to relocate your business? Our Mesa office movers provide organized and efficient local moving services to minimize downtime and keep your business running smoothly."
   },
   {
-    icon: <FaChair className="text-red-500 text-4xl" />,
+    icon: <FaChair className="iconColor text-4xl" />,
     title: "Furniture Movers in Mesa, AZ",
     description:
       "Heavy or delicate furniture? No problem! Our furniture movers in Mesa, AZ carefully wrap, transport, and reassemble your items with precision and care."
   },
   {
-    icon: <FaBoxOpen className="text-red-500 text-4xl" />,
+    icon: <FaBoxOpen className="iconColor text-4xl" />,
     title: "Packing and Unpacking Services",
     description:
       "Save time with our packing and unpacking services in Mesa. We use high-quality packing materials to protect your belongings during the move."
   },
   {
-    icon: <FaClock className="text-red-500 text-4xl" />,
+    icon: <FaClock className="iconColor text-4xl" />,
     title: "Same-Day and Last-Minute Moving",
     description:
       "Need to move quickly? Our same-day movers in Mesa provide fast, reliable service to accommodate urgent relocation needs."

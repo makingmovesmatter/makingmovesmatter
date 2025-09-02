@@ -9,7 +9,7 @@ const Section1 = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <section className="w-full bg-white py-14 mt-16" ref={ref}>
+    <section className="w-full bg-white py-14 mt-16 paddingTopBottom" ref={ref}>
       <div className="container mx-auto px-5 flex flex-col lg:flex-row items-stretch gap-10">
         
         {/* Left: Image */}
@@ -21,7 +21,7 @@ const Section1 = () => {
         >
           <div className="relative w-full h-full min-h-[400px] rounded-lg overflow-hidden shadow-md">
             <Image
-              src="/images/aboutimg.png" // ✅ Make sure this path is correct and the file exists
+              src="/images/home1.png" // ✅ Make sure this path is correct and the file exists
               alt="Our Service"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -38,7 +38,7 @@ const Section1 = () => {
           animate={isInView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-3xl font-bold text-[var(--black-color)] mb-4">
+          <h2 className="text-5xl font-bold text-[var(--heading-text-color)] mb-4">
            Making Moves Matter
           </h2>
           <p className="text-gray-700 text-base leading-relaxed">

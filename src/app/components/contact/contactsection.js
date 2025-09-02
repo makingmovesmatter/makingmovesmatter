@@ -15,7 +15,7 @@ const ContactSection = () => {
           <div className="space-y-4 text-gray-700">
             <p className="flex items-center gap-2">
               <strong>Phone:</strong>{" "}
-              <a href="tel:+14809348218" className="text-red-600 hover:underline">
+              <a href="tel:+14809348218" className="text-[var(--accent-color)] hover:underline">
                 (480) 934-8218
               </a>
             </p>
@@ -23,7 +23,7 @@ const ContactSection = () => {
               <strong>Email:</strong>{" "}
               <a
                 href="mailto:makingmovesmatter07@gmail.com"
-                className="text-red-600 hover:underline"
+                className="text-[var(--accent-color)] hover:underline"
               >
                 makingmovesmatter07@gmail.com
               </a>

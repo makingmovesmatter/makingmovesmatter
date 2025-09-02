@@ -2,51 +2,70 @@
 
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { 
-  FaHiking, 
-  FaWater, 
-  FaTree, 
-  FaChild, 
-  FaSwimmer, 
-  FaStore, 
-  FaMountain 
-} from "react-icons/fa";
+import { FaMountain, FaSeedling, FaBiking, FaLandmark, FaPalette, FaPaintBrush, FaHome, FaPaw, FaChild, FaHotjar, FaCity } from "react-icons/fa";
 
 const cards = [
+  // Explore the Outdoors
   {
-    icon: <FaHiking className="text-red-500 text-4xl" />,
-    title: "Usery Mountain Regional Park",
-    description: "Enjoy hiking, camping, and stunning desert views."
+    icon: <FaMountain className="text-green-600 text-4xl" />,
+    title: "Camelback Mountain",
+    description: "A challenging hike with rewarding panoramic views of Phoenix"
   },
   {
-    icon: <FaWater className="text-red-500 text-4xl" />,
-    title: "Salt River Tubing",
-    description: "Float down the scenic Salt River for a fun and refreshing experience."
+    icon: <FaSeedling className="text-green-600 text-4xl" />,
+    title: "Desert Botanical Garden",
+    description: "Unique desert flora collections and scenic walking trails"
   },
   {
-    icon: <FaTree className="text-red-500 text-4xl" />,
-    title: "Riverview Park",
-    description: "A family-friendly park with playgrounds, fishing ponds, and walking trails."
+    icon: <FaBiking className="text-green-600 text-4xl" />,
+    title: "Papago Park",
+    description: "Great for hiking, biking, and enjoying the desert landscape"
+  },
+
+  // Arts, Culture & History
+  {
+    icon: <FaLandmark className="text-blue-600 text-4xl" />,
+    title: "Heard Museum",
+    description: "Discover Native American history, culture, and art exhibits"
   },
   {
-    icon: <FaChild className="text-red-500 text-4xl" />,
-    title: "i.d.e.a. Museum",
-    description: "Interactive exhibits for children to explore art, science, and technology."
+    icon: <FaPalette className="text-blue-600 text-4xl" />,
+    title: "Phoenix Art Museum",
+    description: "Explore classical and contemporary art from around the globe"
   },
   {
-    icon: <FaSwimmer className="text-red-500 text-4xl" />,
-    title: "Golfland Sunsplash",
-    description: "A popular water park and family entertainment center."
+    icon: <FaPaintBrush className="text-blue-600 text-4xl" />,
+    title: "Roosevelt Row Arts District",
+    description: "Immerse yourself in Phoenix’s vibrant street art and culture"
   },
   {
-    icon: <FaStore className="text-red-500 text-4xl" />,
-    title: "Downtown Mesa",
-    description: "Enjoy charming shops, local eateries, and vibrant street art."
+    icon: <FaHome className="text-blue-600 text-4xl" />,
+    title: "Heritage Square",
+    description: "Historic homes, museums, and charming local eateries"
+  },
+
+  // Family-Friendly Fun
+  {
+    icon: <FaPaw className="text-orange-600 text-4xl" />,
+    title: "Phoenix Zoo",
+    description: "Home to hundreds of animal species and family activities"
   },
   {
-    icon: <FaMountain className="text-red-500 text-4xl" />,
-    title: "Superstition Mountains",
-    description: "Explore the legendary Lost Dutchman’s Gold Mine and scenic hiking trails."
+    icon: <FaChild className="text-orange-600 text-4xl" />,
+    title: "Children’s Museum of Phoenix",
+    description: "Interactive exhibits and hands-on fun for kids of all ages"
+  },
+
+  // Unique Experiences
+  {
+    icon: <FaHotjar className="text-purple-600 text-4xl" />,
+    title: "Hot Air Balloon Rides",
+    description: "Breathtaking views of the Sonoran Desert at sunrise"
+  },
+  {
+    icon: <FaCity className="text-purple-600 text-4xl" />,
+    title: "Old Town Scottsdale",
+    description: "Dining, nightlife, shopping, and culture just minutes away"
   }
 ];
 

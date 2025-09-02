@@ -18,17 +18,22 @@ import HowItWorksSection from "./components/home/HowItWorksSection";
 
 export default function Home() {
   const headerImg =
-    "/images/20250813_0152_image.png";
+    "/images/homebanne.png";
+  const headerText1 = "Moving";
+  const headerText2 = "and Storage" ;
+  const headerDesc = "We are a one stop solution and customized service provider for all moving need for our all customers" ;
+
+
   return (
     <div>
-      <Header headerImg={headerImg} />
+      <Header headerImg={headerImg} headerText1={headerText1} headerText2={headerText2} headerDesc ={headerDesc} />
       <Section2 />
       <ServiceGrid />
       <ServiceSection />
       <Section3 />
       <Section1 />
-      <Section7 />
       <HowItWorksSection />
+      <Section7 />
       <Section5 />
       <Faq />
     </div>

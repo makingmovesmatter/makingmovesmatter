@@ -6,37 +6,37 @@ import { FaTruck, FaStore, FaBuilding, FaWarehouse, FaChair, FaBoxOpen, FaClock 
 
 const cards = [
     {
-    icon: <FaTruck className="text-red-500 text-4xl" />,
+    icon: <FaTruck className="iconColor text-4xl" />,
     title: "Office Movers in Mesa",
     description: "Our skilled Mesa office movers handle everything from cubicles and desks to computers and conference tables, ensuring a smooth office transition."
   },
   {
-    icon: <FaStore className="text-red-500 text-4xl" />,
+    icon: <FaStore className="iconColor text-4xl" />,
     title: "Retail & Storefront Moving",
     description: "Relocating a retail space? We move store fixtures, inventory, and displays with precision to get your business running quickly."
   },
   {
-    icon: <FaBuilding className="text-red-500 text-4xl" />,
+    icon: <FaBuilding className="iconColor text-4xl" />,
     title: "Corporate Relocation Services",
     description: "Full-service corporate office moves, including packing, moving, and office setup for smooth expansion or relocation."
   },
   {
-    icon: <FaWarehouse className="text-red-500 text-4xl" />,
+    icon: <FaWarehouse className="iconColor text-4xl" />,
     title: "Warehouse & Industrial Moving",
     description: "We have the equipment and expertise to relocate warehouses and industrial facilities with minimal disruption."
   },
   {
-    icon: <FaChair className="text-red-500 text-4xl" />,
+    icon: <FaChair className="iconColor text-4xl" />,
     title: "Furniture & Equipment Moving",
     description: "We expertly transport desks, workstations, filing cabinets, and office electronics to your new location."
   },
   {
-    icon: <FaBoxOpen className="text-red-500 text-4xl" />,
+    icon: <FaBoxOpen className="iconColor text-4xl" />,
     title: "Packing & Unpacking Services for Businesses",
     description: "Protect valuable business assets with our professional packing and unpacking services, ensuring safe delivery."
   },
   {
-    icon: <FaClock className="text-red-500 text-4xl" />,
+    icon: <FaClock className="iconColor text-4xl" />,
     title: "After-Hours & Weekend Moves",
     description: "To minimize downtime, we offer flexible moving times, including after-hours and weekend relocations."
   }
@@ -50,7 +50,7 @@ const Section2 = () => {
     <div className="paddingTopBottom w-full py-10 bg-white" ref={ref}>
       <div className="container mx-auto px-5">
         <h2 className="text-4xl font-bold text-[var(--black-color)] capitalize py-2 text-center">
-          Our Mesa Hot Tub Relocation Services Include:
+          Our Hot Tub Moving Services Include:
         </h2>
 
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

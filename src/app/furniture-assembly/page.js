@@ -10,10 +10,14 @@ import Section3 from '../components/home/section3';
 import Faq from '../components/faq';
 
 const page = () => {
-       const headerImg =  "https://thesmartmover.com/wp-content/uploads/2025/04/You-Focus-On-Moving-In-1920-x-720-px.png";
+  const headerImg =
+    "/images/furniture-banner.webp";
+  const headerText1 = "Furniture";
+  const headerText2 = "Assembly" ;
+  const headerDesc = "Our professional furniture assembly service provides fast, reliable, and hassle-free setup for beds, tables, wardrobes, and more, ensuring every piece is sturdy, safe, and ready to use." ;
   return (
     <div>
-      <Header headerImg={headerImg} />
+      <Header headerImg={headerImg} headerText1={headerText1} headerText2={headerText2} headerDesc ={headerDesc} />
       <Section1 />
       <Section2 />
       <HowItWorksSection />

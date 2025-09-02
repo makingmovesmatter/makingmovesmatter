@@ -20,7 +20,7 @@ const Section3 = () => {
         >
           <div className="relative w-full h-full min-h-[400px] rounded-lg overflow-hidden shadow-md">
               <Image
-                src={'/images/image copy 6.png'}
+                src={'/images/phoenix3.png'}
                 alt={'Banner Image'}
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -38,26 +38,20 @@ const Section3 = () => {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-3xl font-bold text-[var(--black-color)] mb-4">
-           Local Moving Services in Mesa, AZ
+           A Rich History of Phoenix, AZ
           </h2>
 
 
            <p>
-             Relocating within Mesa can be a breeze with the help of our local movers in Mesa, AZ. From bustling areas like Downtown Mesa to peaceful neighborhoods such as Superstition Springs or Eastmark, we know Mesa inside and out. Our team specializes in apartment moves, house relocations, and any same-city transitions, ensuring your belongings arrive safely and promptly to your new home or office.
-              Whether you’re moving down the street or to another part of the city, we make it a stress-free experience, offering efficient solutions tailored to your needs.
+            Phoenix, the capital of Arizona, boasts a deep and fascinating history. The region was initially home to the Hohokam people, an innovative civilization that thrived between 300 and 1450 AD. They built an extensive canal system to irrigate the dry desert landscape, a system so advanced that modern engineers have incorporated parts of it into Phoenix’s current irrigation network.<br /> <br /> 
+
+            After the Hohokam mysteriously abandoned the area, the land remained largely uninhabited until the mid-19th century. In 1867, Jack Swilling, a former Confederate soldier, saw the potential for agriculture in the Salt River Valley. Inspired by the ancient canal system, he worked to bring water back to the region, creating a foundation for modern farming.<br /> <br /> 
+
+            The settlement, initially called Swilling’s Mill, was later renamed Phoenix. The name, suggested by pioneer Darrell Duppa, symbolized the city’s rise from the ashes of the ancient Hohokam civilization, much like the mythical phoenix bird.<br /> <br /> 
+
+            Phoenix officially became a city in 1881, and its growth accelerated with the arrival of the Southern Pacific Railroad in 1887, connecting the city to national markets. Agriculture, including cotton, citrus, and cattle, drove the local economy during the early years.
            </p><br /> <br /> 
 
-
-          <h2 className="text-3xl font-bold text-[var(--black-color)] mb-4">
-           Long-Distance & Nationwide Moving
-          </h2>
-
-
-         <p> 
-            For those planning a move outside Arizona, we offer expert long-distance moving and nationwide movers services. From Mesa, AZ, we provide door-to-door service, handling the logistics of interstate moves with ease. Your belongings are safely transported across state lines or even across the country, giving you peace of mind throughout the journey. <br /> <br /> 
-
-              Our experienced team makes moving to places like California, Texas, or beyond as smooth as possible, with timely deliveries and safe handling.
-           </p><br /> <br /> 
 
        </motion.div>
 

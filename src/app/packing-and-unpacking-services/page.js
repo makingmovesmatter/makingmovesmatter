@@ -10,10 +10,14 @@ import Section3 from '../components/home/section3';
 import Faq from '../components/faq';
 
 const page = () => {
-       const headerImg =  "https://thesmartmover.com/wp-content/uploads/2025/04/You-Focus-On-Moving-In-1920-x-720-px.png";
+  const headerImg =
+    "/images/pakingunpaking1.png";
+  const headerText1 = "Moving";
+  const headerText2 = "and Storage" ;
+  const headerDesc = "We are a one stop solution and customized service provider for all moving need for our all customers" ;
   return (
     <div>
-      <Header headerImg={headerImg} />
+      <Header headerImg={headerImg} headerText1={headerText1} headerText2={headerText2} headerDesc ={headerDesc} />
       <Section1 />
       <Section2 />
       <HowItWorksSection />

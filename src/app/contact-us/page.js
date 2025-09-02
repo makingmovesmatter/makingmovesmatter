@@ -6,14 +6,17 @@ import ContactSection from "../components/contact/contactsection";
 
 export default function ContactUsPage() {
   const headerImg =
-    "https://images.ctfassets.net/hrltx12pl8hq/2RwJp3f9UiCnfWBEunwxOQ/f11257994853124d7b1a6a935e678c13/0_hero.webp?fit=fill&w=600&h=400";
+    "/images/contact.png";
+  const headerText1 = "Moving";
+  const headerText2 = "and Storage" ;
+  const headerDesc = "We are a one stop solution and customized service provider for all moving need for our all customers" ;
   return (
-    <div className="min-h-screen bg-white px-6 py-12">
-      <Header headerImg={headerImg} />
+    <div>
+      <Header headerImg={headerImg} headerText1={headerText1} headerText2={headerText2} headerDesc ={headerDesc} />
       <div className="mt-4  text-md bg-white">
         <div className="flex justify-center items-center space-x-2 ">
           <Link href="/" className="hover:underline">
-            <FaHome className="text-red-500" />
+            <FaHome className="text-[var(--accent-color)]" />
           </Link>
           <span>
             <MdOutlineKeyboardArrowRight />

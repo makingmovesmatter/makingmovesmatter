@@ -20,7 +20,7 @@ const Section3 = () => {
         >
           <div className="relative w-full h-full min-h-[400px] rounded-lg overflow-hidden shadow-md">
               <Image
-                src={'/images/image copy 6.png'}
+                src={'/images/chendler3.png'}
                 alt={'Banner Image'}
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -38,26 +38,56 @@ const Section3 = () => {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-3xl font-bold text-[var(--black-color)] mb-4">
-           Local Moving Services in Mesa, AZ
+           Why Choose Us as Your Chandler Movers?
           </h2>
 
 
            <p>
-             Relocating within Mesa can be a breeze with the help of our local movers in Mesa, AZ. From bustling areas like Downtown Mesa to peaceful neighborhoods such as Superstition Springs or Eastmark, we know Mesa inside and out. Our team specializes in apartment moves, house relocations, and any same-city transitions, ensuring your belongings arrive safely and promptly to your new home or office.
-              Whether you’re moving down the street or to another part of the city, we make it a stress-free experience, offering efficient solutions tailored to your needs.
+             When choosing a Chandler Moving Company, AZ, it’s essential to partner with a team that understands the unique needs of the community and offers tailored solutions. Here’s why Making Moves Matter stands out from other movers in Chandler, AZ:
            </p><br /> <br /> 
 
 
-          <h2 className="text-3xl font-bold text-[var(--black-color)] mb-4">
-           Long-Distance & Nationwide Moving
+          <h2 className="text-xl font-bold text-[var(--black-color)] mb-4">
+         1.  Full-Service Residential Moving
           </h2>
+          <p>
+            We are Making Moves Matter- Chandler Moving Company, AZ, focusing on residential relocations.
+          </p>
+
+          <h2 className="text-xl font-bold text-[var(--black-color)] mb-4 mt-4">
+         2.  Efficient Commercial Moving Services
+          </h2>
+          <p>
+            In addition to residential moves, we specialize in commercial moving services in Chandler. We help businesses relocate quickly and with minimal downtime, which is crucial to maintaining daily operations.
+          </p>
+
+          <h2 className="text-xl font-bold text-[var(--black-color)] mb-4 mt-4">
+          3. Specialty Moving Services for Fragile Items
+          </h2>
+          <p>
+            Not all belongings are created equal, and some require extra care during the moving process.
+          </p>
 
 
-         <p> 
-            For those planning a move outside Arizona, we offer expert long-distance moving and nationwide movers services. From Mesa, AZ, we provide door-to-door service, handling the logistics of interstate moves with ease. Your belongings are safely transported across state lines or even across the country, giving you peace of mind throughout the journey. <br /> <br /> 
+          <h2 className="text-xl font-bold text-[var(--black-color)] mb-4 mt-4">
+          4. Secure Storage Solutions
+          </h2>
+          <p>
+            When moving, sometimes there’s a need for temporary storage. Our Chandler moving company offers secure, climate-controlled storage units.
+          </p>
 
-              Our experienced team makes moving to places like California, Texas, or beyond as smooth as possible, with timely deliveries and safe handling.
-           </p><br /> <br /> 
+
+
+          <h2 className="text-xl font-bold text-[var(--black-color)] mb-4 mt-4">
+          5. Long-Distance Moves with Confidence
+          </h2>
+          <p>
+            Relocating across state lines can be stressful, but with Making Moves Matter, you can rest assured that your long-distance move will be handled professionally.
+          </p>
+
+
+
+
 
        </motion.div>
 

@@ -74,7 +74,7 @@ const ServiceSection = () => {
           initial={{ opacity: 0, y: -50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration:1 }}
-          className="text-4xl font-bold text-[var(--black-color)] mb-2"
+          className="text-5xl font-bold text-[var(--heading-text-color)] mb-2"
         >
           Our Moving Services
         </motion.h2>

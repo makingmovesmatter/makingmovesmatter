@@ -6,31 +6,32 @@ import { FaHome, FaStore, FaBoxOpen, FaWarehouse, FaTruck } from "react-icons/fa
 
 const cards = [
   {
-    icon: <FaHome className="text-red-500 text-4xl" />,
+    icon: <FaHome className="iconColor text-4xl" />,
     title: "Residential Moving",
     description: "Local and long-distance moves for houses, apartments, and condos"
   },
   {
-    icon: <FaStore className="text-red-500 text-4xl" />,
+    icon: <FaStore className="iconColor text-4xl" />,
     title: "Commercial and Office Relocations",
     description: "Efficient moves for businesses of all sizes"
   },
   {
-    icon: <FaBoxOpen className="text-red-500 text-4xl" />,
+    icon: <FaBoxOpen className="iconColor text-4xl" />,
     title: "Packing and Unpacking",
-    description: "Full-service packing and unpacking using top-grade materials"
+    description: "Full-service packing solutions using high-quality materials"
   },
   {
-    icon: <FaWarehouse className="text-red-500 text-4xl" />,
+    icon: <FaWarehouse className="iconColor text-4xl" />,
     title: "Secure Storage Options",
-    description: "Short- and long-term climate-controlled storage solutions"
+    description: "Climate-controlled storage for both short-term and long-term needs"
   },
   {
-    icon: <FaTruck className="text-red-500 text-4xl" />,
+    icon: <FaTruck className="iconColor text-4xl" />,
     title: "Specialty Item Moving",
-    description: "Careful handling of large, fragile, and valuable items"
+    description: "Careful transport of large, fragile, and valuable items"
   }
 ];
+
 
 const Section2 = () => {
   const ref = useRef(null);

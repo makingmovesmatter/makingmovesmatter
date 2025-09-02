@@ -20,7 +20,7 @@ const Section3 = () => {
         >
           <div className="relative w-full h-full min-h-[400px] rounded-lg overflow-hidden shadow-md">
               <Image
-                src={'/images/image copy 6.png'}
+                src={'/images/gendeal3.png'}
                 alt={'Banner Image'}
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -38,27 +38,19 @@ const Section3 = () => {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-3xl font-bold text-[var(--black-color)] mb-4">
-           Local Moving Services in Mesa, AZ
+           A Rich History of Gilbert, AZ
           </h2>
 
 
            <p>
-             Relocating within Mesa can be a breeze with the help of our local movers in Mesa, AZ. From bustling areas like Downtown Mesa to peaceful neighborhoods such as Superstition Springs or Eastmark, we know Mesa inside and out. Our team specializes in apartment moves, house relocations, and any same-city transitions, ensuring your belongings arrive safely and promptly to your new home or office.
-              Whether you’re moving down the street or to another part of the city, we make it a stress-free experience, offering efficient solutions tailored to your needs.
+             Gilbert, Arizona, has grown from a humble agricultural community into one of the fastest-growing and most desirable towns in the state. Known as the “Hay Shipping Capital of the World” during its early years, Gilbert played a vital role in supporting the state’s farming industry.<br /> <br />
+
+The town’s roots trace back to 1902 when a man named William “Bobby” Gilbert provided land for a railway line connecting Phoenix to Florence. This railway spurred growth and development, transforming the area into a bustling agricultural hub.<br /> <br />
+
+Incorporated in 1920, Gilbert remained a small farming town for much of the 20th century. However, with the expansion of the Phoenix metropolitan area, Gilbert experienced rapid growth starting in the 1980s. It evolved into a thriving suburban community with a strong economy, excellent schools, and a high quality of life.<br /> <br />
+
+Today, Gilbert is recognized for its family-friendly atmosphere, beautiful parks, and vibrant downtown area. Despite its modern developments, the town proudly preserves its agricultural heritage through events and historic landmarks.<br /> <br />
            </p><br /> <br /> 
-
-
-          <h2 className="text-3xl font-bold text-[var(--black-color)] mb-4">
-           Long-Distance & Nationwide Moving
-          </h2>
-
-
-         <p> 
-            For those planning a move outside Arizona, we offer expert long-distance moving and nationwide movers services. From Mesa, AZ, we provide door-to-door service, handling the logistics of interstate moves with ease. Your belongings are safely transported across state lines or even across the country, giving you peace of mind throughout the journey. <br /> <br /> 
-
-              Our experienced team makes moving to places like California, Texas, or beyond as smooth as possible, with timely deliveries and safe handling.
-           </p><br /> <br /> 
-
        </motion.div>
 
 

@@ -3,50 +3,56 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { 
-  FaHiking, 
-  FaWater, 
-  FaTree, 
-  FaChild, 
-  FaSwimmer, 
-  FaStore, 
-  FaMountain 
+  FaTheaterMasks, 
+  FaLandmark, 
+  FaPalette, 
+  FaTrain, 
+  FaSnowflake, 
+  FaPaintBrush, 
+  FaCity, 
+  FaShoppingBag 
 } from "react-icons/fa";
 
 const cards = [
   {
-    icon: <FaHiking className="text-red-500 text-4xl" />,
-    title: "Usery Mountain Regional Park",
-    description: "Enjoy hiking, camping, and stunning desert views."
+    icon: <FaTheaterMasks className="iconColor text-4xl" />,
+    title: "Chandler Center for the Arts",
+    description: "A venue for theater performances, concerts, and art exhibitions."
   },
   {
-    icon: <FaWater className="text-red-500 text-4xl" />,
-    title: "Salt River Tubing",
-    description: "Float down the scenic Salt River for a fun and refreshing experience."
+    icon: <FaLandmark className="iconColor text-4xl" />,
+    title: "Chandler Museum",
+    description: "Discover the city’s rich history through engaging exhibits."
   },
   {
-    icon: <FaTree className="text-red-500 text-4xl" />,
-    title: "Riverview Park",
-    description: "A family-friendly park with playgrounds, fishing ponds, and walking trails."
+    icon: <FaPalette className="iconColor text-4xl" />,
+    title: "Vision Gallery",
+    description: "Explore works from local and regional artists."
   },
   {
-    icon: <FaChild className="text-red-500 text-4xl" />,
-    title: "i.d.e.a. Museum",
-    description: "Interactive exhibits for children to explore art, science, and technology."
+    icon: <FaTrain className="iconColor text-4xl" />,
+    title: "Arizona Railway Museum",
+    description: "Learn about the history of railroads in Arizona with interactive displays."
   },
   {
-    icon: <FaSwimmer className="text-red-500 text-4xl" />,
-    title: "Golfland Sunsplash",
-    description: "A popular water park and family entertainment center."
+    icon: <FaSnowflake className="iconColor text-4xl" />,
+    title: "Ice Den Chandler",
+    description: "Enjoy ice skating and family-friendly fun year-round."
   },
   {
-    icon: <FaStore className="text-red-500 text-4xl" />,
-    title: "Downtown Mesa",
-    description: "Enjoy charming shops, local eateries, and vibrant street art."
+    icon: <FaPaintBrush className="iconColor text-4xl" />,
+    title: "Crayola Experience",
+    description: "A colorful, hands-on destination for kids and families."
   },
   {
-    icon: <FaMountain className="text-red-500 text-4xl" />,
-    title: "Superstition Mountains",
-    description: "Explore the legendary Lost Dutchman’s Gold Mine and scenic hiking trails."
+    icon: <FaCity className="iconColor text-4xl" />,
+    title: "Downtown Chandler",
+    description: "A vibrant area filled with restaurants, shops, and live music events."
+  },
+  {
+    icon: <FaShoppingBag className="iconColor text-4xl" />,
+    title: "Chandler Fashion Center",
+    description: "One of the premier shopping destinations in Arizona."
   }
 ];
 

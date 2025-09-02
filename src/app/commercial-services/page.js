@@ -11,10 +11,14 @@ import Section3 from "../components/home/section3";
 
 const Commercial = () => {
 
-  const headerImg =  "/images/AZ-Slider.webp";
+  const headerImg =
+    "/images/commarcial1.png";
+  const headerText1 = "Commercial";
+  const headerText2 = "Moving Services" ;
+  const headerDesc = "Efficient, reliable commercial moving, safely relocating offices, equipment, and furniture with minimal downtime." ;
   return (
     <div>
-      <Header headerImg={headerImg} />
+      <Header headerImg={headerImg} headerText1={headerText1} headerText2={headerText2} headerDesc ={headerDesc} />
       <Section1 />
       <Section2 />
       <HowItWorksSection />

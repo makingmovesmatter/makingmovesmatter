@@ -20,7 +20,7 @@ const Section6 = () => {
         >
           <div className="relative w-full h-full min-h-[400px] rounded-lg overflow-hidden shadow-md">
               <Image
-                src={'/images/image copy 6.png'}
+                src={'/images/temp5.png'}
                 alt={'Banner Image'}
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -38,22 +38,20 @@ const Section6 = () => {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-3xl font-bold text-[var(--black-color)] mb-4">
-           Professional Packing Services
+           Why Choose Our Tempe Moving Company?
           </h2>
 
 
            <p>
-             We designed our professional packing services to save you time and reduce stress. And we offer packing services in Mesa for everything from basic boxes to delicate items. Our team uses high-quality packing materials like bubble wrap, padding, and boxes to keep your belongings safe during transport. We also label everything to ensure an easy and organized unpacking process.
-           </p><br /> <br /> 
+             When it comes to moving companies in Tempe, Making Moves Matter stands out for our commitment to excellence, competitive pricing, and personalized service. We understand the unique challenges of moving in Tempe and are here to make your relocation experience stress-free. <br /> <br /> 
 
+Get a Free Quote from the Top Movers in Tempe
 
-          <h2 className="text-3xl font-bold text-[var(--black-color)] mb-4">
-           Secure Storage Solutions
-          </h2>
+If you’re planning a move, contact Making Moves Matter today. Our experienced local movers in Tempe and long-distance movers are ready to help you with a seamless and stress-free relocation. <br /> <br /> 
 
+Call us now or request a free quote online — because every move matters, and we’re here to make yours a success. <br /> <br /> 
 
-         <p> 
-            If you need somewhere to store your belongings during the moving process, we offer secure storage solutions to give you peace of mind. Whether you need temporary storage during a transition or long-term storage for extra items, We monitor our climate-controlled units 24/7 for your peace of mind. keep your belongings safe and in top condition. Our facilities are monitored 24/7, providing you with added security and confidence in your storage choices.
+Let the top-rated Tempe moving company handle the heavy lifting while you settle into your new home with ease.
            </p><br /> <br /> 
 
        </motion.div>

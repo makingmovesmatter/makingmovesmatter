@@ -14,21 +14,20 @@ import Section9 from './section9';
 import Section10 from './section10';
 
 const page = () => {
-       const headerImg =  "https://thesmartmover.com/wp-content/uploads/2025/04/You-Focus-On-Moving-In-1920-x-720-px.png";
+  const headerImg =
+    "/images/scottedeal1.png";
+  const headerText1 = "Moving";
+  const headerText2 = "and Storage" ;
+  const headerDesc = "We are a one stop solution and customized service provider for all moving need for our all customers" ;
   return (
     <div>
-      <Header headerImg={headerImg} />
+      <Header headerImg={headerImg} headerText1={headerText1} headerText2={headerText2} headerDesc ={headerDesc} />
       <Section1 />
       <HowItWorksSection />
       <Section2 />
       <Section3 />
       <Section4 />
       <Section5 />
-      <Section6 />
-      <Section7 />
-      <Section8 />
-      <Section9 />
-      <Section10 />
       <Faq />
     </div>
   )

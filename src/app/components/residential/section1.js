@@ -8,7 +8,7 @@ const Section1 = () => {
       <div className="py-2 text-md bg-white">
         <div className="flex justify-center items-center space-x-2 ">
           <Link href="/" className="hover:underline">
-            <FaHome className="text-red-500" />
+            <FaHome className="iconColor" />
           </Link>
           <span>
             <MdOutlineKeyboardArrowRight />

@@ -20,26 +20,26 @@ const Section5 = () => {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-3xl font-bold text-[var(--black-color)] mb-4">
-           Residential & Apartment Moves
+            Why Choose Our Gilbert Moving Company?
           </h2>
 
 
            <p>
-             Whether you’re moving from a cozy apartment or a spacious home, we have the tools and expertise to manage moves of all sizes. From fragile items like glassware and electronics to large appliances and furniture, we ensure everything is packed securely for the journey. Our team handles your residential moving services with care, making sure that your items are carefully unloaded and placed in their new home. <br/>
+             Making Moves Matter, we’re more than just movers—we’re your neighbors. Our team of expert Gilbert movers understands the local landscape, neighborhoods, and the logistics that make for a successful relocation.<br /> <br />
 
-             No matter the scale of your move, we ensure that every detail is taken care of, offering a seamless experience.
-           </p><br /> <br /> 
+              We offer:<br />
 
+              Transparent pricing with no hidden fees<br />
 
-          <h2 className="text-3xl font-bold text-[var(--black-color)] mb-4">
-           Commercial & Office Moves
-          </h2>
+              Personalized care for each customer<br />
 
+              Timely, efficient, and courteous moving crews<br />
 
-         <p> 
-            Moving a business requires a different level of expertise, and at Making Moves Matter, we’re well-equipped to handle office moves for businesses in Mesa. Whether you’re moving office furniture, electronics, or specialized equipment, we transport everything safely and efficiently. We understand that business downtime is costly, so we offer after-hours moving to ensure minimal disruption to your workday. <br /> <br />
+              Free moving quotes and professional consultations<br />
 
-              Our commercial moving services are designed to meet the unique needs of small and medium-sized businesses in Mesa, ensuring a fast and smooth transition to your new workspace.
+              Ready to make your move? Call us now or request a free quote online—because every move matters.<br /><br />
+
+              Let the top-rated moving company in Gilbert, AZ handle your relocation so you can settle into your new home or office with ease.
            </p><br /> <br /> 
 
        </motion.div>
@@ -53,7 +53,7 @@ const Section5 = () => {
         >
           <div className="relative w-full h-full min-h-[400px] rounded-lg overflow-hidden shadow-md">
               <Image
-                src={'/images/image copy 6.png'}
+                src={'/images/gendeal4.png'}
                 alt={'Banner Image'}
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"

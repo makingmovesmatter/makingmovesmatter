@@ -19,17 +19,17 @@ const Section1 = () => {
           animate={isInView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <p className="text-gray-700 text-base leading-relaxed">
-            Making Moves Matter, we take pride in offering a comprehensive range of moving services to residents and businesses in Mesa, AZ. Whether you’re relocating within the city or moving across the country, our team has the expertise to handle every aspect of your move with care, precision, and reliability. Here’s how we can assist you:
-           </p> <br /> <br /> 
-
           <h2 className="text-3xl font-bold text-[var(--black-color)] mb-4">
-           Making Moves Matter: Your Trusted Movers in Mesa, AZ for Local & Long-Distance Moves
+           Welcome to Making Moves Matter: Your Trusted Gilbert Moving Company
           </h2>
 
 
            <p>
-              We alleviate your relocation stress by managing everything from loading and packing to transporting and unpacking. Our goal is to make your move as hassle-free as possible. With our commitment to on-time delivery and transparent pricing, free of hidden fees, your move will be both efficient and affordable.
+             Planning a move in or to Gilbert, AZ? Making Moves Matter is the go-to moving company in Gilbert, AZ, offering professional, full-service relocation solutions for homeowners and businesses alike. Our licensed and insured movers in Gilbert, AZ handle everything—from packing and loading to secure storage and long-distance transport—ensuring a smooth, worry-free experience.<br /> <br /> 
+
+Whether you’re relocating a household across town or moving your office across the state, our team is dedicated to making your transition simple, efficient, and affordable. We pride ourselves on exceptional customer service, transparent pricing, and a no-hassle move from start to finish.<br /> <br /> 
+
+We are fully licensed, insured, and dedicated to delivering top-tier service with every move.
            </p><br /> <br /> 
         </motion.div>
 
@@ -42,7 +42,7 @@ const Section1 = () => {
         >
           <div className="relative w-full h-full min-h-[400px] rounded-lg overflow-hidden shadow-md">
               <Image
-                src={'/images/image copy 6.png'}
+                src={'/images/gendeal2.png'}
                 alt={'Banner Image'}
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"

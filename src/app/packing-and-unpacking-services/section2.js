@@ -14,37 +14,37 @@ import {
 
 const cards = [
   {
-    icon: <FaBoxOpen className="text-red-500 text-4xl" />,
+    icon: <FaBoxOpen className="iconColor text-4xl" />,
     title: "Full-Service Packing",
     description:
       "We carefully pack household items, furniture, and fragile belongings using top-quality materials."
   },
   {
-    icon: <FaBoxes className="text-red-500 text-4xl" />,
+    icon: <FaBoxes className="iconColor text-4xl" />,
     title: "Partial Packing Services",
     description:
       "Only need help with certain items? Our Mesa packing specialists can assist with specific rooms or delicate items."
   },
   {
-    icon: <FaTruckLoading className="text-red-500 text-4xl" />,
+    icon: <FaTruckLoading className="iconColor text-4xl" />,
     title: "Unpacking Services",
     description:
       "Once you arrive at your new home, our unpacking services in Mesa make settling in easy by carefully unpacking and organizing your belongings."
   },
   {
-    icon: <FaChair className="text-red-500 text-4xl" />,
+    icon: <FaChair className="iconColor text-4xl" />,
     title: "Furniture Wrapping and Protection",
     description:
       "Our furniture movers in Mesa use premium padding, shrink wrap, and moving blankets to protect your furniture from scratches and damage."
   },
   {
-    icon: <FaGem className="text-red-500 text-4xl" />,
+    icon: <FaGem className="iconColor text-4xl" />,
     title: "Specialty Item Packing",
     description:
       "From antiques to artwork and electronics, our expert Mesa packing team ensures your most valuable and fragile items are packed with care."
   },
   {
-    icon: <FaCheckCircle className="text-red-500 text-4xl" />,
+    icon: <FaCheckCircle className="iconColor text-4xl" />,
     title: "Why Choose Our Packing Services?",
     description:
       "Experienced & trained packers, high-quality materials, customizable solutions, time-saving convenience, and safe, efficient unpacking."

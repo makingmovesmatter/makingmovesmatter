@@ -8,7 +8,7 @@ const Section2 = () => {
     if (!widgetRef.current) return;
 
     const script = document.createElement("script");
-    script.src = "https://cdn.trustindex.io/loader.js?b539768520d3023ab18679430be";
+    script.src = "https://cdn.trustindex.io/loader.js?ChIJxY70JK37aQsRGIJZCVQuoJQ";
     script.async = true;
     widgetRef.current.appendChild(script);
   }, []);
@@ -18,7 +18,7 @@ const Section2 = () => {
       <div
         ref={widgetRef}
         className="ti-widget"
-        data-widget-id="b539768520d3023ab18679430be"
+        data-widget-id="ChIJxY70JK37aQsRGIJZCVQuoJQ"
       ></div>
     </div>
   );

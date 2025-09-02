@@ -14,37 +14,37 @@ import {
 
 const cards = [
   {
-    icon: <FaHiking className="text-red-500 text-4xl" />,
+    icon: <FaHiking className="iconColor text-4xl" />,
     title: "Usery Mountain Regional Park",
     description: "Enjoy hiking, camping, and stunning desert views."
   },
   {
-    icon: <FaWater className="text-red-500 text-4xl" />,
+    icon: <FaWater className="iconColor text-4xl" />,
     title: "Salt River Tubing",
     description: "Float down the scenic Salt River for a fun and refreshing experience."
   },
   {
-    icon: <FaTree className="text-red-500 text-4xl" />,
+    icon: <FaTree className="iconColor text-4xl" />,
     title: "Riverview Park",
     description: "A family-friendly park with playgrounds, fishing ponds, and walking trails."
   },
   {
-    icon: <FaChild className="text-red-500 text-4xl" />,
+    icon: <FaChild className="iconColor text-4xl" />,
     title: "i.d.e.a. Museum",
     description: "Interactive exhibits for children to explore art, science, and technology."
   },
   {
-    icon: <FaSwimmer className="text-red-500 text-4xl" />,
+    icon: <FaSwimmer className="iconColor text-4xl" />,
     title: "Golfland Sunsplash",
     description: "A popular water park and family entertainment center."
   },
   {
-    icon: <FaStore className="text-red-500 text-4xl" />,
+    icon: <FaStore className="iconColor text-4xl" />,
     title: "Downtown Mesa",
     description: "Enjoy charming shops, local eateries, and vibrant street art."
   },
   {
-    icon: <FaMountain className="text-red-500 text-4xl" />,
+    icon: <FaMountain className="iconColor text-4xl" />,
     title: "Superstition Mountains",
     description: "Explore the legendary Lost Dutchman’s Gold Mine and scenic hiking trails."
   }

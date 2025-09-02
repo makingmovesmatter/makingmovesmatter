@@ -1,11 +1,23 @@
+import { Montserrat } from "next/font/google";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/navber";
-import Footer from "./components/footer";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Section2 from "./components/home/section2";
+import Navbar from "./components/navber";
+import Footer from "./components/footer";
+import CallNowButton from "./components/CallNowButton";
+import QuoteButton from "./components/QuoteButton";
+import Purchase from "./components/Purchase";
+import BackToTop from "./components/BackToTop";
 
+// Montserrat font
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-montserrat",
+  weight: ["400", "500", "600", "700"], // add weights you need
+});
+
+// Geist fonts (your existing ones)
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -31,11 +43,15 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${montserrat.variable}antialiased`}
       >
         <Navbar />
         {children}
         <Footer />
+        <CallNowButton />
+        <QuoteButton />
+        <Purchase />
+        <BackToTop />
       </body>
     </html>
   );

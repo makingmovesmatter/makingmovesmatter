@@ -9,17 +9,17 @@ import { FaTruck, FaBoxOpen, FaShieldAlt } from 'react-icons/fa';
 
 const cardsData = [
   {
-    icon: <FaTruck size={60} className="text-white" />,
+    icon: <FaTruck size={60} className="text-black" />,
     title: 'Reliable Transport',
     description: 'Safe and timely delivery of your belongings, no matter the distance.',
   },
   {
-    icon: <FaBoxOpen size={60} className="text-white" />,
+    icon: <FaBoxOpen size={60} className="text-black" />,
     title: 'Expert Packing',
     description: 'Professional packing to protect your items from start to finish.',
   },
   {
-    icon: <FaShieldAlt size={60} className="text-white" />,
+    icon: <FaShieldAlt size={60} className="text-black" />,
     title: 'Trusted Service',
     description: 'Transparent pricing and friendly communication every step of the way.',
   },
@@ -46,7 +46,7 @@ export default function HowItWorksSection() {
   };
 
   return (
-    <section className="w-full min-h-[200px] bg-cover bg-center flex justify-center items-center" style={{ backgroundImage: "url('https://mesamovingexperts.com/wp-content/uploads/2021/11/slide2-3.jpg')" }}>
+    <section className="w-full min-h-[200px] bg-cover bg-center flex justify-center items-center" style={{ backgroundImage: "url('/images/howitworks.png')" }}>
 
       <div
         ref={ref}
@@ -62,11 +62,11 @@ export default function HowItWorksSection() {
             variants={cardVariants}
             className="flex items-center gap-6 flex-1 blurcard"
           >
-            <div className="flex-shrink-0">{icon}</div>
+            <div className="flex-shrink-0 ">{icon}</div>
 
             <div>
-              <h3 className="text-xl font-semibold text-white">{title}</h3>
-              <p className="mt-2 text-white">{description}</p>
+              <h3 className="text-xl font-semibold text-black">{title}</h3>
+              <p className="mt-2 text-black">{description}</p>
             </div>
           </motion.div>
         ))}

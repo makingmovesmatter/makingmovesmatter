@@ -6,27 +6,27 @@ import { FaShieldAlt, FaTasks, FaBusinessTime, FaClipboardList, FaDollarSign } f
 
 const cards = [
   {
-    icon: <FaShieldAlt className="text-red-500 text-4xl" />,
+    icon: <FaShieldAlt className="iconColor text-4xl" />,
     title: "Licensed & Insured",
     description: "We are a fully licensed and insured commercial moving company in Mesa, AZ, giving you peace of mind."
   },
   {
-    icon: <FaTasks className="text-red-500 text-4xl" />,
+    icon: <FaTasks className="iconColor text-4xl" />,
     title: "Efficient & Organized",
     description: "Our team works quickly and methodically to keep your move on schedule and within budget."
   },
   {
-    icon: <FaBusinessTime className="text-red-500 text-4xl" />,
+    icon: <FaBusinessTime className="iconColor text-4xl" />,
     title: "Minimized Business Downtime",
     description: "We focus on efficiency to ensure a smooth transition, so your business operations are not disrupted."
   },
   {
-    icon: <FaClipboardList className="text-red-500 text-4xl" />,
+    icon: <FaClipboardList className="iconColor text-4xl" />,
     title: "Custom Moving Plans",
     description: "Every business is unique, and we provide tailored moving solutions to meet your specific needs."
   },
   {
-    icon: <FaDollarSign className="text-red-500 text-4xl" />,
+    icon: <FaDollarSign className="iconColor text-4xl" />,
     title: "Affordable & Transparent Pricing",
     description: "No hidden fees—just honest, upfront quotes from trusted Mesa commercial movers."
   }

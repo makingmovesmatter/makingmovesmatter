@@ -19,7 +19,7 @@ const ServiceGrid = () => {
           animate={isInView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-3xl font-bold text-[var(--black-color)] mb-4">
+          <h2 className="text-5xl font-bold text-[var(--heading-text-color)] mb-4">
            How Making Moves Matter Works
           </h2>
           <p className="text-gray-700 text-base leading-relaxed">
@@ -46,7 +46,7 @@ const ServiceGrid = () => {
               loop
               muted
               playsInline
-              src="/videos/video.mp4"
+              src="/videos/home-video.mp4"
               />
           </div>
         </motion.div>

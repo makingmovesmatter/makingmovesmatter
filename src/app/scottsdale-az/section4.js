@@ -3,53 +3,88 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { 
-  FaHiking, 
-  FaWater, 
-  FaTree, 
-  FaChild, 
-  FaSwimmer, 
+  FaMountain, 
+  FaLeaf, 
+  FaLandmark, 
+  FaPaintBrush, 
   FaStore, 
-  FaMountain 
+  FaChild, 
+  FaFish, 
+  FaTrain, 
+  FaUniversity, 
+  FaShoppingBag
 } from "react-icons/fa";
+import { GiBalloons} from "react-icons/gi"; 
 
 const cards = [
+  // Explore the Outdoors
   {
-    icon: <FaHiking className="text-red-500 text-4xl" />,
-    title: "Usery Mountain Regional Park",
-    description: "Enjoy hiking, camping, and stunning desert views."
+    icon: <FaLeaf className="iconColor text-4xl" />,
+    title: "McDowell Sonoran Preserve",
+    description: "Hike or bike through over 30,000 acres of stunning desert landscapes."
   },
   {
-    icon: <FaWater className="text-red-500 text-4xl" />,
-    title: "Salt River Tubing",
-    description: "Float down the scenic Salt River for a fun and refreshing experience."
+    icon: <FaMountain className="iconColor text-4xl" />,
+    title: "Camelback Mountain",
+    description: "A challenging hike with breathtaking views of the Valley."
   },
   {
-    icon: <FaTree className="text-red-500 text-4xl" />,
-    title: "Riverview Park",
-    description: "A family-friendly park with playgrounds, fishing ponds, and walking trails."
+    icon: <FaLeaf className="iconColor text-4xl" />,
+    title: "Butterfly Wonderland",
+    description: "Experience North America’s largest indoor butterfly pavilion."
+  },
+
+  // Arts, Culture & History
+  {
+    icon: <FaPaintBrush className="iconColor text-4xl" />,
+    title: "Scottsdale Museum of Contemporary Art (SMoCA)",
+    description: "Enjoy cutting-edge art and architecture exhibits."
   },
   {
-    icon: <FaChild className="text-red-500 text-4xl" />,
-    title: "i.d.e.a. Museum",
-    description: "Interactive exhibits for children to explore art, science, and technology."
+    icon: <FaLandmark className="iconColor text-4xl" />,
+    title: "Western Spirit: Scottsdale’s Museum of the West",
+    description: "Explore the rich history and culture of the American West."
   },
   {
-    icon: <FaSwimmer className="text-red-500 text-4xl" />,
-    title: "Golfland Sunsplash",
-    description: "A popular water park and family entertainment center."
+    icon: <FaStore className="iconColor text-4xl" />,
+    title: "Old Town Scottsdale",
+    description: "Discover art galleries, boutique shops, and local eateries in this charming historic district."
+  },
+
+  // Family-Friendly Fun
+  {
+    icon: <FaFish className="iconColor text-4xl" />,
+    title: "OdySea Aquarium",
+    description: "A state-of-the-art aquarium featuring interactive marine life exhibits."
   },
   {
-    icon: <FaStore className="text-red-500 text-4xl" />,
-    title: "Downtown Mesa",
-    description: "Enjoy charming shops, local eateries, and vibrant street art."
+    icon: <FaTrain className="iconColor text-4xl" />,
+    title: "McCormick-Stillman Railroad Park",
+    description: "A fun destination for train rides, playgrounds, and family activities."
   },
   {
-    icon: <FaMountain className="text-red-500 text-4xl" />,
-    title: "Superstition Mountains",
-    description: "Explore the legendary Lost Dutchman’s Gold Mine and scenic hiking trails."
+    icon: <FaChild className="iconColor text-4xl" />,
+    title: "Arizona Boardwalk",
+    description: "Home to attractions like Pangaea: Land of the Dinosaurs and more."
+  },
+
+  // Unique Experiences
+  {
+    icon: <FaUniversity className="iconColor text-4xl" />,
+    title: "Taliesin West",
+    description: "Visit Frank Lloyd Wright’s desert masterpiece and former home."
+  },
+  {
+    icon: <FaShoppingBag className="iconColor text-4xl" />,
+    title: "Scottsdale Fashion Square",
+    description: "Shop luxury brands and dine at upscale restaurants."
+  },
+  {
+    icon: <GiBalloons  className="iconColor text-4xl" />, // ✅ Fixed icon
+    title: "Hot Air Balloon Rides",
+    description: "Enjoy breathtaking views of the desert landscape at sunrise."
   }
 ];
-
 
 const Section4 = () => {
   const ref = useRef(null);
@@ -59,7 +94,7 @@ const Section4 = () => {
     <div className="paddingTopBottom w-full py-10 bg-white" ref={ref}>
       <div className="container mx-auto px-5">
         <h2 className="text-4xl font-bold text-[var(--black-color)] capitalize py-2 text-center">
-          Our Mesa Hot Tub Relocation Services Include:
+          Top Things to Do in Scottsdale
         </h2>
 
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

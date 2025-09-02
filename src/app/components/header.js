@@ -1,10 +1,10 @@
 "use client";
 
-import { useState, useEffect } from 'react';
-import { LoadScript, Autocomplete } from '@react-google-maps/api';
-import axios from 'axios';
 import Quote from './quote';
 import { motion } from 'framer-motion';
+import { PiPhoneCallLight } from "react-icons/pi";
+import {IoMailOutline } from "react-icons/io5";
+
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 50 },
@@ -20,7 +20,7 @@ const staggerContainer = {
   }
 };
 
-const Header = ({ headerImg }) => {
+const Header = ({ headerImg, headerText1, headerText2, headerDesc }) => {
   return (
     <>
       <header 
@@ -37,27 +37,51 @@ const Header = ({ headerImg }) => {
               viewport={{ once: true, amount: 0.3 }}
             >
               <motion.div className="mb-8 lg:mb-0 lg:w-1/2" variants={fadeInUp}>
-                <h1 className="text-4xl sm:text-6xl md:text-8xl leading-24 font-black">
-                  <span className="block text-main-color">Professional</span>
-                  <span className="block">Moving & Storage</span>
+                <h1 className="text-5xl sm:text-6xl md:text-8xl lg:leading-24 font-black">
+                  <span className="block text-maain-color">{headerText1}</span>
+                  <span className="block">{headerText2}</span>
                 </h1>
                 <div className="text-xl sm:text-2xl md:text-2xl font-normal mt-5 capitalize">
-                   We are a one stop solution and customized service provider for all moving need for our all customers
+                   {headerDesc}
                 </div>
+
 
                 <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 text-black">
-                  <div className="bg-amber-500 text-white bg-opacity-20 p-4 rounded-lg border-2 border-amber-500">
-                    <h3 className="font-bold text-2xl">Local Moves</h3>
-                    <p className="text-sm">Smooth transitions within your city</p>
-                  </div>
-                  <div className="bg-opacity-20 text-white p-4 rounded-lg border-2 border-amber-500">
-                    <h3 className="font-bold text-2xl">Long Distance</h3>
-                    <p className="text-sm">Reliable cross-country relocation</p>
-                  </div>
+                   <motion.div className="call-us-ctr-design">
+                    <div className="call-us-ctr-container">
+                      <a href="tel:4809348218" className="flex items-center gap-3">
+                        <div className="call-us-icon">
+                          <PiPhoneCallLight />
+                        </div>
+      
+                        <div className="call-us-text">
+                          <h1>Call Now</h1>
+                        </div>
+                      </a>
+                    </div>
+                  </motion.div>
+      
+                  <motion.div className="email-us-ctr-design">
+                    <div className="email-us-ctr-container">
+                      <a href="mailto:makingmovesmatter07@gmail.com" className="flex items-center gap-3">
+                        <div className="email-us-icon">
+                          <IoMailOutline />
+                        </div>
+      
+                        <div className="email-us-text">
+                          <h1>Email Now</h1>
+                        </div>
+                      </a>
+                    </div>
+                  </motion.div>
                 </div>
+
+
+
+
               </motion.div>
 
-              <motion.div variants={fadeInUp}>
+              <motion.div variants={fadeInUp} className='w-full lg:w-1/2'>
                 <Quote />
               </motion.div>
             </motion.div>
