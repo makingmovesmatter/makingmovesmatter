@@ -1,15 +1,30 @@
 // components/QuoteButton.jsx
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Quote from "./quote";
+import { PiQuotes } from "react-icons/pi";
 
 const QuoteButton = () => {
   const [open, setOpen] = useState(false);
-  const [isMounted, setIsMounted] = useState(false);
+  const [mounted, setMounted] = useState(false);
+  const [animClass, setAnimClass] = useState("");
 
   useEffect(() => {
-    setIsMounted(true);
+    setMounted(true);
+
+    const interval = setInterval(() => {
+      if (window.innerWidth < 1024) {
+        // Mobile & Tablet → slide in/out
+        setAnimClass("slide-in");
+        setTimeout(() => setAnimClass("slide-out"), 15000);
+      } else {
+        setAnimClass("shake");
+        setTimeout(() => setAnimClass(""), 1000);
+      }
+    }, 10000);
+
+    return () => clearInterval(interval);
   }, []);
 
   const handleOpen = () => {
@@ -22,70 +37,41 @@ const QuoteButton = () => {
     document.body.style.overflow = "auto";
   };
 
-  // Handle escape key press
-  useEffect(() => {
-    const handleEscape = (e) => {
-      if (e.keyCode === 27) handleClose();
-    };
-    
-    if (open) {
-      document.addEventListener("keydown", handleEscape);
-      return () => document.removeEventListener("keydown", handleEscape);
-    }
-  }, [open]);
-
-  // Prevent background scrolling when modal is open
-  useEffect(() => {
-    if (open) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
-
-    return () => {
-      document.body.style.overflow = "auto";
-    };
-  }, [open]);
-
   return (
     <>
-      {/* Floating Quote Button */}
-      {isMounted && (
+      {mounted && (
         <button
           onClick={handleOpen}
-          className="fixed top-1/2 -mt-30 right-0 z-40 w-28 hover:w-52 p-5 rounded-l-2xl bg-[var(--accent-color)] cursor-pointer shadow-2xl flex items-center justify-center text-white text-sm transition-all duration-500 hover:shadow-xl hover:brightness-110 group"
-          title="Get a Quote"
           aria-label="Get a Quote"
+          className={`
+            quote-btn fixed top-1/3 cursor-pointer -translate-y-1/2 z-[60] 
+            bg-[var(--accent-color)] text-white rounded-l-sm shadow-2xl 
+            flex flex-col items-center justify-center text-sm font-medium 
+            ${animClass}
+          `}
         >
-          <div className="flex flex-col items-center">
-            <i className="fas fa-file-invoice-dollar mb-1 group-hover:scale-110 transition-transform text-3xl"></i>
-            <span className="font-medium transition-opacity">
-              Get Free Quote
-            </span>
-          </div>
+          <PiQuotes />
+          Get Free Quote
         </button>
       )}
 
-      {/* Backdrop */}
+      {/* Modal */}
       {open && (
-        <div 
-          className="fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-4 backdrop-blur-sm quote-world"
+        <div
+          className="fixed inset-0 z-[70] bg-black/70 backdrop-blur-[2px] flex items-center justify-center p-3 quote-world"
           onClick={handleClose}
         >
-          <div 
-            className="rounded-2xl shadow-2xl w-full max-w-md relative animate-scaleIn"
+          <div
+            className="w-full max-w-md bg-white rounded-2xl shadow-2xl relative"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Close Button */}
             <button
               onClick={handleClose}
-              className="absolute -top-12 right-5 text-white hover:text-blue-300 text-3xl font-light transition-colors duration-300"
-              aria-label="Close quote form"
+              className="absolute -top-12 right-4 text-[var(--accent-color)] bg-white px-2 rounded-4xl text-3xl cursor-pointer"
+              aria-label="Close"
             >
-              <i className="fas fa-times-circle"></i>
+              ×
             </button>
-
-            {/* Quote Form */}
             <Quote onSuccess={handleClose} />
           </div>
         </div>

@@ -221,6 +221,8 @@ const Navbar = () => {
 
         <div class="bottom-nav-items">
             <ul>
+                <Link href={'/'} className="addtional-link">Home</Link>
+
                 <li><a href='/'>Moving Services <i class="fa-regular fa-angle-down"></i></a>
                 <div class="hover-backgroud">
                     <div class="hover-items-container">

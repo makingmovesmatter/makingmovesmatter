@@ -30,7 +30,7 @@ const BackToTop = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 50 }}
           transition={{ duration: 0.4 }}
-          className="fixed bottom-42 right-15 z-50"
+          className="fixed bottom-42 right-15 z-50 hidden sm:block"
         >
          <motion.span
             className="absolute inset-0 rounded-full border-[var(--accent-color)] w-14 h-14  border-2 opacity-30 animate-ping"
