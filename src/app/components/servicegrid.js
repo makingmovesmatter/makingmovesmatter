@@ -46,7 +46,7 @@ const ServiceGrid = () => {
               loop
               muted
               playsInline
-              src="/videos/home-video.mp4"
+              src="/videos/MovingVideo.mp4"
               />
           </div>
         </motion.div>

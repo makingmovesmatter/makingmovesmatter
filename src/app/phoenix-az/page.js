@@ -16,9 +16,9 @@ import Section10 from './section10';
 const page = () => {
   const headerImg =
     "/images/phoenix1.png";
-  const headerText1 = "Moving";
-  const headerText2 = "and Storage" ;
-  const headerDesc = "We are a one stop solution and customized service provider for all moving need for our all customers" ;
+  const headerText1 = "Expert moving";
+  const headerText2 = "in phoenix, AZ" ;
+  const headerDesc = "Expert movers in Phoenix for homes, offices & long-distance moves" ;
   return (
     <div>
       <Header headerImg={headerImg} headerText1={headerText1} headerText2={headerText2} headerDesc ={headerDesc} />
@@ -34,3 +34,91 @@ const page = () => {
 }
 
 export default page
+
+
+
+
+
+export const metadata = {
+  title: "Phoenix AZ | Making Moves Matter | Mesamovingexperts.com",
+  description: "Are you looking for dependable and professional movers in Phoenix to handle your relocation? At Making Moves Matter we pride ourselves",
+  
+  metadataBase: new URL("https://mesamovingexperts.com"),
+  
+  alternates: {
+    canonical: "/phoenix-az/",
+  },
+  
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
+  
+  openGraph: {
+    title: "Phoenix AZ | Making Moves Matter | Mesamovingexperts.com",
+    description: "Are you looking for dependable and professional movers in Phoenix to handle your relocation? At Making Moves Matter we pride ourselves",
+    url: "https://mesamovingexperts.com/phoenix-az/",
+    siteName: "Making Moves Matter",
+    images: [
+      {
+        url: "/images/logo.png",
+        width: 300,
+        height: 201,
+        alt: "Phoenix AZ - Mesa Moving Experts",
+      },
+    ],
+    locale: "en_US",
+    type: "article",
+    publishedTime: "2022-06-06T19:54:27+00:00",
+    modifiedTime: "2025-08-16T15:56:38+00:00",
+  },
+  
+  twitter: {
+    card: "summary_large_image",
+    title: "Phoenix AZ | Making Moves Matter | Mesamovingexperts.com",
+    description: "Are you looking for dependable and professional movers in Phoenix to handle your relocation? At Making Moves Matter we pride ourselves",
+    images: ["/images/logo.png"],
+    creator: "@MesaMoving",
+  },
+  
+  icons: {
+    icon: [
+      { url: "/images/logo.png", sizes: "32x32", type: "image/png" },
+      { url: "/images/logo.png", sizes: "192x192", type: "image/png" },
+    ],
+    apple: [
+      { url: "/images/logo.png", sizes: "180x180", type: "image/png" },
+    ],
+    other: [
+      {
+        rel: "icon",
+        url: "/images/logo.png",
+        sizes: "270x270",
+        type: "image/png",
+      },
+    ],
+  },
+  
+  keywords: [
+    "Phoenix AZ moving company",
+    "Phoenix movers",
+    "local movers Phoenix",
+    "long distance movers Arizona",
+    "professional movers Phoenix",
+    "affordable moving services",
+    "Phoenix relocation services",
+    "residential movers Phoenix",
+    "commercial movers Phoenix",
+    "dependable movers",
+  ],
+  
+  authors: [{ name: "Mesa Moving Experts", url: "https://mesamovingexperts.com" }],
+  category: "Moving Services",
+};

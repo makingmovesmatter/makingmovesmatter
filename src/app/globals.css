@@ -89,9 +89,24 @@ li {
 }
 
 
+.submission-lead{
+  max-width:450px !important;
+}
 
 
 
+
+.bottom-nav-items ul li .hover-backgroud {
+  display: none;
+  position: absolute;
+  background: #fff;
+  z-index: 100;
+  transition: all ease-in-out 0.5s;
+}
+
+.bottom-nav-items ul li.active .hover-backgroud {
+  display: block;
+}
 
 
 
@@ -335,14 +350,12 @@ nav {
   left: 0;
   z-index: 1000;
   background-color: var(--white-background);
-  background-image: url("data:image/svg+xml;base64,PHN2ZyAgZmlsbD0icmdiYSgyMDQsMCwwLDAuMDMpIiB2aWV3Qm94PSIwIDAgMTkyMCAxNDQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik04NTYuMDgsNzIwLDU2NS43LDE0NDBIMFYwSDU2NS43Wk0xMDA2LjE0LDBIODE2LjJsMjkwLjM4LDcyMC0xLjUxLDMuNzRMODE2LjIsMTQ0MGgxODkuOTRsMjkwLjM5LTcyMFpNMTE5MC43LDBIMTA4MS42MkwxMzcyLDcyMGwtMjkwLjM5LDcyMEgxMTkwLjdsMjkwLjM4LTcyMFpNNzk0LjYzLDBINTY4LjJMODU4LjU4LDcyMGwtLjE3LjQzTDU2OC4yLDE0NDBINzk0LjYzTDEwODUsNzIwWm02MTAuNzksMEgxMzc0bDI5MC4zOSw3MjBMMTM3NCwxNDQwaDMxLjQybDI5MC4zOS03MjBaIi8+PC9zdmc+");
   padding: 5px 0;
 }
 
 .section-area-serve {
   width: 100%;
   /* position: sticky; */
-
   z-index: 10;
   background-color: var(--white-background);
   background-image: url("data:image/svg+xml;base64,PHN2ZyAgZmlsbD0icmdiYSgyMDQsMCwwLDAuMDMpIiB2aWV3Qm94PSIwIDAgMTkyMCAxNDQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik04NTYuMDgsNzIwLDU2NS43LDE0NDBIMFYwSDU2NS43Wk0xMDA2LjE0LDBIODE2LjJsMjkwLjM4LDcyMC0xLjUxLDMuNzRMODE2LjIsMTQ0MGgxODkuOTRsMjkwLjM5LTcyMFpNMTE5MC43LDBIMTA4MS42MkwxMzcyLDcyMGwtMjkwLjM5LDcyMEgxMTkwLjdsMjkwLjM4LTcyMFpNNzk0LjYzLDBINTY4LjJMODU4LjU4LDcyMGwtLjE3LjQzTDU2OC4yLDE0NDBINzk0LjYzTDEwODUsNzIwWm02MTAuNzksMEgxMzc0bDI5MC4zOSw3MjBMMTM3NCwxNDQwaDMxLjQybDI5MC4zOS03MjBaIi8+PC9zdmc+");
@@ -552,7 +565,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 80px;
+  padding:5px 80px;
   position: relative;
 }
 
@@ -1164,6 +1177,9 @@ section {
 }
 
 @media (max-width: 600px) {
+  nav {
+  position: sticky;
+}
 }
 
 @media (min-width: 640px) {

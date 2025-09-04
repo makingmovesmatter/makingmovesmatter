@@ -44,7 +44,7 @@ const QuoteButton = () => {
           onClick={handleOpen}
           aria-label="Get a Quote"
           className={`
-            quote-btn fixed top-1/3 cursor-pointer -translate-y-1/2 z-[60] 
+            quote-btn fixed top-1/2 cursor-pointer -translate-y-1/2 z-[60] 
             bg-[var(--accent-color)] text-white rounded-l-sm shadow-2xl 
             flex flex-col items-center justify-center text-sm font-medium 
             ${animClass}

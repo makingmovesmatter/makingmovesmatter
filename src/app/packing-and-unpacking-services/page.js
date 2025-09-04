@@ -12,9 +12,9 @@ import Faq from '../components/faq';
 const page = () => {
   const headerImg =
     "/images/pakingunpaking1.png";
-  const headerText1 = "Moving";
-  const headerText2 = "and Storage" ;
-  const headerDesc = "We are a one stop solution and customized service provider for all moving need for our all customers" ;
+  const headerText1 = "Packing";
+  const headerText2 = "And Unpacking" ;
+  const headerDesc = "Efficient packing and unpacking services for safe, organized moves." ;
   return (
     <div>
       <Header headerImg={headerImg} headerText1={headerText1} headerText2={headerText2} headerDesc ={headerDesc} />
@@ -31,3 +31,87 @@ const page = () => {
 }
 
 export default page
+
+
+
+
+export const metadata = {
+  title: "Professional Packing and Unpacking Services in Mesa AZ",
+  description: "If you find it hard to pack your things or you don't have time to do it, hire our professional packing and unpacking services in Mesa AZ.",
+  
+  metadataBase: new URL("https://mesamovingexperts.com"),
+  
+  alternates: {
+    canonical: "/packing-and-unpacking-services/",
+  },
+  
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
+  
+  openGraph: {
+    title: "Professional Packing and Unpacking Services in Mesa AZ",
+    description: "If you find it hard to pack your things or you don't have time to do it, hire our professional packing and unpacking services in Mesa AZ.",
+    url: "https://mesamovingexperts.com/packing-and-unpacking-services/",
+    siteName: "Making Moves Matter",
+    images: [
+      {
+        url: "/images/logo.png",
+        width: 300,
+        height: 198,
+        alt: "Mesa Moving Experts - Professional Packing Services",
+      },
+    ],
+    locale: "en_US",
+    type: "article",
+    publishedTime: "2022-05-23T19:17:54+00:00",
+    modifiedTime: "2025-08-16T15:48:19+00:00",
+  },
+  
+  twitter: {
+    card: "summary_large_image",
+    title: "Professional Packing and Unpacking Services in Mesa AZ",
+    description: "If you find it hard to pack your things or you don't have time to do it, hire our professional packing and unpacking services in Mesa AZ.",
+    images: ["/images/logo.png"],
+    creator: "@MesaMoving",
+  },
+  
+  icons: {
+    icon: [
+      { url: "/images/logo.png", sizes: "32x32", type: "image/png" },
+      { url: "/images/logo.png", sizes: "192x192", type: "image/png" },
+    ],
+    apple: [
+      { url: "/images/logo.png", sizes: "180x180", type: "image/png" },
+    ],
+    other: [
+      {
+        rel: "icon",
+        url: "/images/logo.png",
+        sizes: "270x270",
+        type: "image/png",
+      },
+    ],
+  },
+  
+  keywords: [
+    "packing services Mesa AZ",
+    "unpacking services",
+    "professional packing",
+    "moving packing services",
+    "residential packing",
+    "office packing services",
+    "Mesa packing company",
+  ],
+  
+  authors: [{ name: "Mesa Moving Experts", url: "https://mesamovingexperts.com" }],
+  category: "Packing and Unpacking Services",
+};

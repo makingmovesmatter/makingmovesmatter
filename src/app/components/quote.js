@@ -284,7 +284,7 @@ const Quote = () => {
                   type="text"
                   id="zeepcode"
                   name="zeepcode"
-                  placeholder="Zeep code"
+                  placeholder="Zip code"
                   value={formData.zeepcode}
                   onChange={handleInputChange}
                   required

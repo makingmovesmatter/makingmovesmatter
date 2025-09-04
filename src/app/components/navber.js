@@ -44,7 +44,22 @@ const Navbar = () => {
           }
         }
       });
+
+       item.addEventListener('mouseenter', () => {
+      item.classList.add('active');
+      if (arrowIcon) arrowIcon.classList.replace('fa-angle-down', 'fa-angle-up');
     });
+
+    item.addEventListener('mouseleave', () => {
+      item.classList.remove('active');
+      if (arrowIcon) arrowIcon.classList.replace('fa-angle-up', 'fa-angle-down');
+    });
+
+    
+    });
+
+
+    
 
     const menuItems = document.querySelectorAll('.mobile-manue-items > a');
 
@@ -101,7 +116,7 @@ const Navbar = () => {
     if (!widgetRef.current) return;
 
     const script = document.createElement("script");
-    script.src = "https://cdn.trustindex.io/loader.js?7c52c0a5112594899b265ba3b08";
+    script.src = "https://cdn.trustindex.io/loader.js?53db27253696356919765542f95";
     script.async = true;
     widgetRef.current.appendChild(script);
   }, []);
@@ -145,7 +160,7 @@ const Navbar = () => {
                <div
                     ref={widgetRef}
                     className="ti-widget"
-                    data-widget-id="e9f2a3251009946031864fb8cdb"
+                    data-widget-id="53db27253696356919765542f95"
                 ></div>
             </div>
             

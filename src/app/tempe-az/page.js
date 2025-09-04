@@ -16,9 +16,9 @@ import Section10 from './section10';
 const page = () => {
   const headerImg =
     "/images/temp1.png";
-  const headerText1 = "Moving";
-  const headerText2 = "and Storage" ;
-  const headerDesc = "We are a one stop solution and customized service provider for all moving need for our all customers" ;
+  const headerText1 = "Movers in";
+  const headerText2 = "tempe, az" ;
+  const headerDesc = "Click to Schedule Your Move" ;
   return (
     <div>
       <Header headerImg={headerImg} headerText1={headerText1} headerText2={headerText2} headerDesc ={headerDesc} />
@@ -34,3 +34,96 @@ const page = () => {
 }
 
 export default page
+
+
+
+export const metadata = {
+  title: "Tempe AZ Moving Services | Making Moves Matter | Mesa Moving Experts",
+  description:
+    "Planning a move to or from Tempe, AZ? Mesa Moving Experts provides professional, affordable, and stress-free moving services including residential, commercial, and packing solutions.",
+
+  metadataBase: new URL("https://mesamovingexperts.com"),
+
+  alternates: {
+    canonical: "/tempe-az/",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
+
+  openGraph: {
+    title: "Tempe AZ Moving Services | Making Moves Matter",
+    description:
+      "Trusted Tempe AZ movers offering residential, office relocation, packing, and storage services. Get stress-free moving with Mesa Moving Experts.",
+    url: "https://mesamovingexperts.com/tempe-az/",
+    siteName: "Mesa Moving Experts",
+    images: [
+      {
+        url: "/images/logo.png",
+        width: 400,
+        height: 400,
+        alt: "Mesa Moving Experts Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "article",
+    publishedTime: "2022-05-26T20:23:24+00:00",
+    modifiedTime: "2025-08-16T15:55:27+00:00",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Tempe AZ Moving Services | Mesa Moving Experts",
+    description:
+      "Mesa Moving Experts provides top-quality moving services in Tempe, AZ including residential, commercial, packing, and storage solutions.",
+    images: ["/images/logo.png"],
+    creator: "@MesaMoving",
+  },
+
+  icons: {
+    icon: [
+      { url: "/images/logo.png", sizes: "32x32", type: "image/png" },
+      { url: "/images/logo.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: [
+      { url: "/images/logo.png", sizes: "180x180", type: "image/png" },
+    ],
+    other: [
+      {
+        rel: "icon",
+        url: "/images/logo.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+      {
+        rel: "icon",
+        url: "/images/logo.png",
+        sizes: "512x512",
+        type: "image/png",
+      },
+    ],
+  },
+
+  keywords: [
+    "Tempe AZ movers",
+    "moving company Tempe Arizona",
+    "Mesa Moving Experts",
+    "residential moving Tempe",
+    "commercial moving Tempe AZ",
+    "packing services Tempe",
+    "affordable movers Tempe AZ",
+    "long distance moving Tempe",
+  ],
+
+  authors: [{ name: "Mesa Moving Experts", url: "https://mesamovingexperts.com" }],
+  category: "Moving Services",
+};

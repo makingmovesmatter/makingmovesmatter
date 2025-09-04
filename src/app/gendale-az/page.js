@@ -16,9 +16,9 @@ import Section10 from './section10';
 const page = () => {
   const headerImg =
     "/images/gendeal1.png";
-  const headerText1 = "Moving";
-  const headerText2 = "and Storage" ;
-  const headerDesc = "We are a one stop solution and customized service provider for all moving need for our all customers" ;
+  const headerText1 = "movers in";
+  const headerText2 = "gilbert, az" ;
+  const headerDesc = "Contact Gilbert's Moving Experts today!" ;
   return (
     <div>
       <Header headerImg={headerImg} headerText1={headerText1} headerText2={headerText2} headerDesc ={headerDesc} />
@@ -34,3 +34,95 @@ const page = () => {
 }
 
 export default page
+
+
+
+
+
+
+
+
+
+export const metadata = {
+  title: "Gendale AZ | Making Moves Matter | Mesamovingexperts.com",
+  description: "Planning a move to or from Gilbert, AZ? At Making Moves Matter, we specialize in delivering high-quality, stress-moving services in Gilbert",
+  
+  metadataBase: new URL("https://mesamovingexperts.com"),
+  
+  alternates: {
+    canonical: "/gendale-az/",
+  },
+  
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
+  
+  openGraph: {
+    title: "Gendale AZ | Making Moves Matter | Mesamovingexperts.com",
+    description: "Planning a move to or from Gilbert, AZ? At Making Moves Matter, we specialize in delivering high-quality, stress-moving services in Gilbert",
+    url: "https://mesamovingexperts.com/gendale-az/",
+    siteName: "Making Moves Matter",
+    images: [
+      {
+        url: "/images/logo.png",
+        width: 300,
+        height: 201,
+        alt: "Phoenix AZ - Mesa Moving Experts",
+      },
+    ],
+    locale: "en_US",
+    type: "article",
+    publishedTime: "2022-06-06T19:55:23+00:00",
+    modifiedTime: "2025-08-16T18:19:38+00:00",
+  },
+  
+  twitter: {
+    card: "summary_large_image",
+    title: "Gendale AZ | Making Moves Matter | Mesamovingexperts.com",
+    description: "Planning a move to or from Gilbert, AZ? At Making Moves Matter, we specialize in delivering high-quality, stress-moving services in Gilbert",
+    images: ["/images/logo.png"],
+    creator: "@MesaMoving",
+  },
+  
+  icons: {
+    icon: [
+      { url: "/images/logo.png", sizes: "32x32", type: "image/png" },
+      { url: "/images/logo.png", sizes: "192x192", type: "image/png" },
+    ],
+    apple: [
+      { url: "/images/logo.png", sizes: "180x180", type: "image/png" },
+    ],
+    other: [
+      {
+        rel: "icon",
+        url: "/images/logo.png",
+        sizes: "270x270",
+        type: "image/png",
+      },
+    ],
+  },
+  
+  keywords: [
+    "Gendale AZ moving company",
+    "Gendale movers",
+    "Gilbert AZ movers",
+    "local movers Gendale",
+    "long distance movers Arizona",
+    "professional movers Gendale",
+    "affordable moving services",
+    "Gendale relocation services",
+    "residential movers",
+    "commercial movers",
+  ],
+  
+  authors: [{ name: "Mesa Moving Experts", url: "https://mesamovingexperts.com" }],
+  category: "Moving Services",
+};
