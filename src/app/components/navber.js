@@ -294,7 +294,7 @@ const Navbar = () => {
 
 
                             <ul>
-                                <li><a href="/gendale-az">Gilbert, AZ</a></li>
+                                <li><a href="/gilbert-az">Gilbert, AZ</a></li>
                             </ul>
 
                             <ul>
@@ -382,7 +382,7 @@ const Navbar = () => {
 
 
                                             <ul>
-                                                <li><a href="/gendale-az">Gilbert, AZ</a></li>
+                                                <li><a href="/gilbert-az">Gilbert, AZ</a></li>
                                             </ul>
 
                                             <ul>

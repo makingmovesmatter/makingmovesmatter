@@ -6,60 +6,72 @@ import Image from "next/image";
 import Link from "next/link";
 
 const services = [
+    {
+    title: "Local Moves",
+    description: "Fast, affordable, and reliable moving services within your city or nearby neighborhoods.",
+    image: "/images/localmoving1.png",
+    link: "/local-moving",
+  },
+
+    {
+    title: "Long Distance",
+    description: "Trusted long-distance moving solutions with careful planning, safe transport, and on-time delivery across states.",
+    image: "/images/longdistance.png",
+    link: "/long-distance-moving",
+  }, 
+
+
   {
     title: "Commercial Moving",
     description: "Expert relocation for offices, retail stores, and businesses, ensuring minimal downtime and maximum efficiency.",
     image: "/images/commarcial1.png",
     link: "/commercial-services",
   },
-  {
-    title: "Furniture Assembly",
-    description: "Professional assembly and disassembly of furniture to make your move smooth and stress-free.",
-    image: "/images/furniture-assembly1.png",
-    link: "/furniture-assembly",
-  },
-  {
-    title: "Packing & Unpacking Services",
-    description: "Full-service packing with premium materials to safeguard your belongings during every stage of the move.",
-    image: "/images/pakingunpaking1.png",
-    link: "/packing-and-unpacking-services",
-  },
-  {
-    title: "Storage Solutions",
-    description: "Secure, climate-controlled storage for short-term or long-term needs, with easy access when you need it.",
-    image: "/images/storage1.png",
-    link: "/storage",
-  },
-  {
-    title: "Local Moves",
-    description: "Fast, affordable, and reliable moving services within your city or nearby neighborhoods.",
-    image: "/images/localmoving1.png",
-    link: "/local-moving",
-  },
-  {
-    title: "Long Distance",
-    description: "Trusted long-distance moving solutions with careful planning, safe transport, and on-time delivery across states.",
-    image: "/images/longdistance.png",
-    link: "/long-distance-moving",
-  },  
-  {
-    title: "Large and Heavy Item Moving",
-    description: "Specialized handling for oversized or heavy items like pianos, safes, and industrial equipment.",
-    image: "/images/largehavy1.png",
-    link: "/large-and-heavy-item-moving",
-  },  
-  {
-    title: "Hot Tub Relocation",
-    description: "Safe and efficient hot tub moving with the right equipment and techniques to prevent damage.",
-    image: "/images/hottub1.png",
-    link: "/hot-tub-relocation",
-  },
+
   {
     title: "Furniture Moving",
     description: "Careful transportation of all types of furniture, from delicate antiques to large sectional sofas.",
     image: "/images/farniturMovindBanner.png",
     link: "/furniture-moving",
   },
+
+  {
+    title: "Furniture Assembly",
+    description: "Professional assembly and disassembly of furniture to make your move smooth and stress-free.",
+    image: "/images/furniture-assembly1.png",
+    link: "/furniture-assembly",
+  },
+
+  {
+    title: "Packing & Unpacking Services",
+    description: "Full-service packing with premium materials to safeguard your belongings during every stage of the move.",
+    image: "/images/pakingunpaking1.png",
+    link: "/packing-and-unpacking-services",
+  },
+
+
+  {
+    title: "Large and Heavy Item Moving",
+    description: "Specialized handling for oversized or heavy items like pianos, safes, and industrial equipment.",
+    image: "/images/largeavy2.png",
+    link: "/large-and-heavy-item-moving",
+  }, 
+
+  {
+    title: "Storage Solutions",
+    description: "Secure, climate-controlled storage for short-term or long-term needs, with easy access when you need it.",
+    image: "/images/storage1.png",
+    link: "/storage",
+  },
+ 
+  
+  {
+    title: "Hot Tub Relocation",
+    description: "Safe and efficient hot tub moving with the right equipment and techniques to prevent damage.",
+    image: "/images/hottub1.png",
+    link: "/hot-tub-relocation",
+  },
+
 ];
 
 

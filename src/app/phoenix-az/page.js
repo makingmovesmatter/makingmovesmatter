@@ -16,8 +16,8 @@ import Section10 from './section10';
 const page = () => {
   const headerImg =
     "/images/phoenix1.png";
-  const headerText1 = "Expert moving";
-  const headerText2 = "in phoenix, AZ" ;
+  const headerText1 = "Expert movers";
+  const headerText2 = "in phoenix" ;
   const headerDesc = "Expert movers in Phoenix for homes, offices & long-distance moves" ;
   return (
     <div>
