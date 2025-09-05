@@ -39,6 +39,10 @@ const Section1 = () => {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-5xl font-bold text-[var(--heading-text-color)] mb-4">
+              About Us
+          </h2>
+          
+          <h2 className="text-4xl font-bold text-[var(--heading-text-color)] mb-4">
            Making Moves Matter
           </h2>
           <p className="text-gray-700 text-base leading-relaxed">

@@ -16,6 +16,7 @@ const page = () => {
       <Header headerImg={headerImg} headerText1={headerText1} headerText2={headerText2} headerDesc ={headerDesc} />
       <Section1 />
       <HowItWorksSection />
+      
       <Section2 />
       <Faq />
     </div>

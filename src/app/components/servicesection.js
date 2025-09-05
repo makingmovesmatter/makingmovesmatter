@@ -7,14 +7,14 @@ import Link from "next/link";
 
 const services = [
     {
-    title: "Local Moves",
+    title: "Local Moving",
     description: "Fast, affordable, and reliable moving services within your city or nearby neighborhoods.",
     image: "/images/localmoving1.png",
     link: "/local-moving",
   },
 
     {
-    title: "Long Distance",
+    title: "Long Distance Moving",
     description: "Trusted long-distance moving solutions with careful planning, safe transport, and on-time delivery across states.",
     image: "/images/longdistance.png",
     link: "/long-distance-moving",
@@ -22,7 +22,7 @@ const services = [
 
 
   {
-    title: "Commercial Moving",
+    title: "Commercial Services",
     description: "Expert relocation for offices, retail stores, and businesses, ensuring minimal downtime and maximum efficiency.",
     image: "/images/commarcial1.png",
     link: "/commercial-services",
