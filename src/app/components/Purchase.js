@@ -127,17 +127,15 @@ const Purchase = () => {
               <IoMdNotificationsOutline className="text-xl text-white" />
             </div>
 
-
+{/* 
             <img
               src={purchases[index].profile}
               alt={purchases[index].name}
               className="w-12 h-12 rounded-full border shadow"
-            />
+            /> */}
 
             {/* Info */}
             <div className="flex flex-col">
-              <span className="font-semibold text-gray-800 line-clamp-1">{purchases[index].name}</span>
-              <span className="text-xs text-gray-500 line-clamp-1">{purchases[index].ago}</span>
               <span className="flex gap-1">
                  <span className="text-sm text-gray-700 mt-1 line-clamp-2 flex">{purchases[index].message}</span>
               </span>

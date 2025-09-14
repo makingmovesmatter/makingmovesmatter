@@ -8,7 +8,7 @@ const Section2 = () => {
     if (!widgetRef.current) return;
 
     const script = document.createElement("script");
-    script.src = "https://cdn.trustindex.io/loader.js?c27ab5653fb53561a356a9af3ec";
+    script.src = "https://cdn.trustindex.io/loader.js?5c439d6544fa109c0b06f501e27";
     script.async = true;
     widgetRef.current.appendChild(script);
   }, []);

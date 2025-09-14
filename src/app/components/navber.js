@@ -116,7 +116,7 @@ const Navbar = () => {
     if (!widgetRef.current) return;
 
     const script = document.createElement("script");
-    script.src = "https://cdn.trustindex.io/loader.js?53db27253696356919765542f95";
+    script.src = "https://cdn.trustindex.io/loader.js?531ef9e546331099ea260e9fd6d";
     script.async = true;
     widgetRef.current.appendChild(script);
   }, []);
@@ -190,7 +190,10 @@ const Navbar = () => {
                     </Link>
                 </div>
 
-                <div className="coll-text-btn text-center">
+
+
+{/* 
+            <div className="coll-text-btn text-center">
                 <Link href="tel:4809348218">
                     <div className="call-now-texts font-semibold text-[var(--accent-color)]">
                         Call Now-24/7
@@ -201,14 +204,40 @@ const Navbar = () => {
                             </button>
                     </div>
                 </Link>
-            </div>
+            </div> */}
 
-            <div className="call-now-icon">
-                <Link href="tel:4809348218" className="btn">
-                    <i className="fa-regular fa-phone"></i>
+
+          <div className="flex ">
+             <div className="call-now-icon none600">
+                <Link href="mailto:makingmovesmatter07@gmail.com">
+                    <i class="fa-regular fa-envelope"></i>
+                    <div>
+                        <span>Email now</span>
+                        <p>24/7 support</p>
+                    </div>
                 </Link>
             </div>
+
+
+
+
+            <div className="call-now-icon">
+                <Link href="tel:4809348218">
+                    <i className="fa-regular fa-phone"></i>
+                    <div>
+                        <span>call now</span>
+                        <p>24/7 support</p>
+                    </div>
+                </Link>
+            </div>
+
+          </div>
+
+
         </div>
+
+
+
 
 
         <div className="item-bottom flex justify-between items-center my-4">

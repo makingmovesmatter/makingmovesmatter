@@ -1091,6 +1091,14 @@ section {
   .coll-text-btn{
     font-size:1rem !important;
   }
+  .call-now-icon div{
+    display: none;
+  }
+.none600{
+  display: block !important;
+}
+
+
 }
 
 @media (max-width: 600px) {
@@ -1108,7 +1116,15 @@ section {
   .coll-text-btn{
     font-size:1rem;
   }
-}
+
+  .none600{
+    display: none;
+  }
+  .purchase{
+    display: none;
+  }
+  
+  }
 
 @media (max-width: 768px) {
   .middle-nav-items{
@@ -1370,4 +1386,59 @@ select:-webkit-autofill:focus {
   -webkit-text-fill-color: var(--black-color) !important;
   background-color: transparent !important;
   transition: background-color 9999s ease-in-out 0s;
+}
+
+
+
+
+
+
+
+
+
+
+
+.call-now-icon{
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.call-now-icon a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.call-now-icon i{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 50px;
+   width: 50px;
+   border:3px solid var(--accent-color);
+   color: var(--accent-color);
+   padding:5px;
+   font-size: 1.2rem;
+   border-radius: 50%;
+}
+
+.call-now-icon span{
+  color: var(--accent-color) ;
+  font-weight: 600;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.call-now-icon p{
+  color: var(--accent-color) ;
+  text-transform: capitalize;
+}
+
+
+
+.nva .main-index{
+  overflow:none;
+  max-height: 100% !important;
+
 }

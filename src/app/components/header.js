@@ -81,7 +81,7 @@ const Header = ({ headerImg, headerText1, headerText2, headerDesc }) => {
 
               </motion.div>
 
-              <motion.div variants={fadeInUp} className='w-full lg:w-1/2 max-w-[450px]'>
+              <motion.div variants={fadeInUp} className='w-full lg:w-1/2 nva'>
                 <Quote />
               </motion.div>
 
@@ -105,7 +105,7 @@ const Header = ({ headerImg, headerText1, headerText2, headerDesc }) => {
               'PROFESSIONAL EQUIPMENT',
               'UPFRONT PRICING'
             ].map((text, idx) => (
-              <div key={idx} className="flex items-center justify-center sm:justify-start gap-2">
+              <div key={idx} className="flex justify-center sm:justify-start gap-2">
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>

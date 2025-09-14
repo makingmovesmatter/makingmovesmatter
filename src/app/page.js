@@ -19,8 +19,8 @@ import HowItWorksSection from "./components/home/HowItWorksSection";
 export default function Home() {
   const headerImg =
     "/images/homebanne.png";
-  const headerText1 = "Moving";
-  const headerText2 = "and Storage" ;
+  const headerText1 = "Making";
+  const headerText2 = "Moves Matter" ;
   const headerDesc = "We are a one stop solution and customized service provider for all moving need for our all customers" ;
 
 
