@@ -66,7 +66,7 @@ const Section9 = () => {
   return (
     <div className="w-full py-14 px-6 bg-white">
       <div className="container mx-auto px-20">
-        <h2 className="text-3xl font-bold text-[var(--black-color)] mb-4">
+        <h2 className="text-3xl font-bold text-[var(--heading-text-color)] mb-4">
           Helpful Articles and Tips for a Smoother Residential Move
         </h2>
         <p className=" text-gray-600 mb-10 max-w-2xl">

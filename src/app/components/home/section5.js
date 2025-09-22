@@ -84,7 +84,7 @@ const Section5 = () => {
           ))}
         </div>
 
-        <div className="content-center">
+        <div className="content-center nva">
           <Quote />
         </div>
       </div>

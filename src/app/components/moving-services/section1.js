@@ -56,11 +56,11 @@ const Section1 = () => {
             </div>
 
             <div className="md:w-6/12 w-full px-10">
-              <h2 className="text-4xl font-bold text-[var(--black-color)] uppercase pt-6 py-2">
+              <h2 className="text-4xl font-bold text-[var(--heading-text-color)] uppercase pt-6 py-2">
                 Residential Moving
               </h2>
 
-              <p className="text-[var(--black-color)] text-md py-2 pb-3">
+              <p className="text-[var(--heading-text-color)] text-md py-2 pb-3">
                 Relocating to a new home? Our dedicated team offers customized
                 residential moving services designed to fit your needs. We take
                 great care in packing and transporting your belongings safely
@@ -68,7 +68,7 @@ const Section1 = () => {
                 and allowing you to focus on settling into your new home.
               </p>
 
-              <p className="text-[var(--black-color)] text-md py-2 pb-5">
+              <p className="text-[var(--heading-text-color)] text-md py-2 pb-5">
                 Learn more about our{" "}
                 <Link
                   href="#"

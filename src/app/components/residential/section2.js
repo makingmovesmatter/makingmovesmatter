@@ -5,7 +5,7 @@ const Section2 = () => {
     <div className="w-full py-10 bg-white">
       <div className="px-20 mx-auto flex flex-col md:flex-row gap-6">
         <div className="md:w-9/12 md:pr-10 w-full">
-          <h2 className="text-4xl font-bold text-[var(--black-color)] capitalize py-2">
+          <h2 className="text-4xl font-bold text-[var(--heading-text-color)] capitalize py-2">
             Full-Service Residential Moving Built Around Your Needs
           </h2>
           <p className="text-black text-md [word-spacing:3px] pb-2">
@@ -14,7 +14,7 @@ const Section2 = () => {
             and worry-free. Our residential moving services are designed to fit
             your schedule, your budget, and your life.
           </p>
-          <h3 className="text-xl font-bold text-[var(--black-color)] capitalize">
+          <h3 className="text-xl font-bold text-[var(--heading-text-color)] capitalize">
             Homes, Apartments, and Condos — We Handle It All
           </h3>
           <p className="text-black text-md [word-spacing:3px] pb-2">
@@ -22,7 +22,7 @@ const Section2 = () => {
             single-bedroom apartments to five-bedroom houses, our team knows how
             to move your belongings safely and efficiently.
           </p>
-          <h3 className="text-xl font-bold text-[var(--black-color)] capitalize">
+          <h3 className="text-xl font-bold text-[var(--heading-text-color)] capitalize">
             Flexible Scheduling and Transparent Pricing
           </h3>
           <p className="text-black text-md [word-spacing:3px] pb-2">
@@ -30,7 +30,7 @@ const Section2 = () => {
             notice. Our pricing is upfront, with no hidden fees, so you always
             know what to expect.
           </p>
-          <h3 className="text-xl font-bold text-[var(--black-color)] capitalize">
+          <h3 className="text-xl font-bold text-[var(--heading-text-color)] capitalize">
             Packing, Loading, and Setup Included (If You Want It)
           </h3>
           <p className="text-black text-md [word-spacing:3px] pb-2">

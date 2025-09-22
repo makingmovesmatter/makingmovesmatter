@@ -35,7 +35,7 @@ const Section8 = () => {
   return (
     <div className="w-full py-10 bg-[var(--red-light-background)]">
       <div className="container mx-auto">
-        <h2 className="text-4xl font-bold text-[var(--black-color)] capitalize py-2">
+        <h2 className="text-4xl font-bold text-[var(--heading-text-color)] capitalize py-2">
           Frequently Asked Questions
         </h2>
 
@@ -47,7 +47,7 @@ const Section8 = () => {
                 onClick={() => toggleFAQ(index)}
                 className="w-full flex justify-between items-center text-left"
               >
-                <span className="text-xl font-bold text-[var(--black-color)]">
+                <span className="text-xl font-bold text-[var(--heading-text-color)]">
                   {faq.question}
                 </span>
                 {openIndex === index ? (

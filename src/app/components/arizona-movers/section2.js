@@ -100,25 +100,25 @@ const Section2 = () => {
           </div>
         </div>
         <div className="md:w-9/12 md:px-10 w-full px-10">
-          <h2 className="text-4xl  font-bold text-[var(--black-color)] uppercase  py-5">
+          <h2 className="text-4xl  font-bold text-[var(--heading-text-color)] uppercase  py-5">
             PROFESSIONAL ARIZONA MOVERS
           </h2>
 
-          <p className="text-[var(--black-color)] text-md py-2 pb-5">
+          <p className="text-[var(--heading-text-color)] text-md py-2 pb-5">
             Looking for a trusted moving company in Arizona? You’re in the right
             place. At Smart Move Moving & Storage, we proudly serve customers
             all across the state. No matter where you’re moving to or from in
             Arizona, our experienced movers are ready to help.
           </p>
 
-          <p className="text-[var(--black-color)] text-md py-2 pb-5">
+          <p className="text-[var(--heading-text-color)] text-md py-2 pb-5">
             From large cities to small towns, we provide professional moving
             services throughout Arizona — delivering the same high-quality,
             reliable service we’re known for. Whether it’s a local move down the
             street or a relocation across the state, we’ve got you covered.
           </p>
 
-          <h2 className="text-4xl  font-bold text-[var(--black-color)] uppercase  py-5">
+          <h2 className="text-4xl  font-bold text-[var(--heading-text-color)] uppercase  py-5">
             PROFESSIONAL ARIZONA MOVERS
           </h2>
 

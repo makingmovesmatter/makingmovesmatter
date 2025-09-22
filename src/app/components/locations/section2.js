@@ -100,11 +100,11 @@ const Section2 = () => {
           </div>
         </div>
         <div className="md:w-9/12 md:px-10 w-full px-10">
-          <h2 className="text-4xl  font-bold text-[var(--black-color)] uppercase  py-5">
+          <h2 className="text-4xl  font-bold text-[var(--heading-text-color)] uppercase  py-5">
             Arizona
           </h2>
 
-          <h2 className="text-4xl  font-normal text-[var(--black-color)] uppercase  py-5">
+          <h2 className="text-4xl  font-normal text-[var(--heading-text-color)] uppercase  py-5">
             Service Area In Arizona
           </h2>
 

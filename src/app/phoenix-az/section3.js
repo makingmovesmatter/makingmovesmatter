@@ -37,7 +37,7 @@ const Section3 = () => {
           animate={isInView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-3xl font-bold text-[var(--black-color)] mb-4">
+          <h2 className="text-3xl font-bold text-[var(--heading-text-color)] mb-4">
            A Rich History of Phoenix, AZ
           </h2>
 

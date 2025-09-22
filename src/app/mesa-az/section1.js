@@ -23,7 +23,7 @@ const Section1 = () => {
             Making Moves Matter, we take pride in offering a comprehensive range of moving services to residents and businesses in Mesa, AZ. Whether you’re relocating within the city or moving across the country, our team has the expertise to handle every aspect of your move with care, precision, and reliability. Here’s how we can assist you:
            </p> <br /> <br /> 
 
-          <h2 className="text-3xl font-bold text-[var(--black-color)] mb-4">
+          <h2 className="text-3xl font-bold text-[var(--heading-text-color)] mb-4">
            Making Moves Matter: Your Trusted Movers in Mesa, AZ for Local & Long-Distance Moves
           </h2>
 

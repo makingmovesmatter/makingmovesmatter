@@ -29,7 +29,7 @@ const Section2 = () => {
   return (
     <div className="paddingTopBottom w-full py-10 bg-white" ref={ref}>
       <div className="container mx-auto px-5">
-        <h2 className="text-4xl font-bold text-[var(--black-color)] capitalize py-2 text-center">
+        <h2 className="text-4xl font-bold text-[var(--heading-text-color)] capitalize py-2 text-center">
            Arts, Culture & History:
         </h2>
 
@@ -44,7 +44,7 @@ const Section2 = () => {
             >
               <div>{card.icon}</div>
               <div>
-                <h1 className="text-xl font-semibold text-[var(--black-color)] mb-1">
+                <h1 className="text-xl font-semibold text-[var(--heading-text-color)] mb-1">
                   {card.title}
                 </h1>
                 <p className="text-gray-600 text-sm">{card.description}</p>

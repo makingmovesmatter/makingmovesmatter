@@ -7,7 +7,7 @@ const Section3 = () => {
       <div className="container mx-auto flex flex-col md:flex-row py-10 gap-6">
         <div className="w-full flex justify-center items-center">
           <div className="p-5 rounded-2xl shadow-[0_0_15px_2px] shadow-red-600">
-            <h2 className="text-4xl font-normal text-[var(--black-color)] text-center capitalize pt-6 py-2">
+            <h2 className="text-4xl font-normal text-[var(--heading-text-color)] text-center capitalize pt-6 py-2">
               request a <b className="uppercase italic">Moving Quote</b>
             </h2>
             <form className="space-y-6">

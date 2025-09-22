@@ -39,8 +39,8 @@ const Section4 = () => {
   return (
     <div className="paddingTopBottom w-full py-10 bg-white" ref={ref}>
       <div className="container mx-auto px-5">
-        <h2 className="text-4xl font-bold text-[var(--black-color)] capitalize py-2 text-center">
-          Why Choose Making Moves Matter as Your Mesa Commercial Movers?
+        <h2 className="text-4xl font-bold text-[var(--heading-text-color)] capitalize py-2 text-center">
+          Why Choose Making Moves Matter as <br/> Your Mesa Commercial Movers?
         </h2>
 
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -54,7 +54,7 @@ const Section4 = () => {
             >
               <div>{card.icon}</div>
               <div>
-                <h1 className="text-xl font-semibold text-[var(--black-color)] mb-1">
+                <h1 className="text-xl font-semibold text-[var(--heading-text-color)] mb-1">
                   {card.title}
                 </h1>
                 <p className="text-gray-600 text-sm">{card.description}</p>

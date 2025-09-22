@@ -38,7 +38,7 @@ const Section1 = () => {
           animate={isInView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-5xl font-bold text-[var(--heading-text-color)] mb-4">
+          <h2 className="text-5xl font-bold text-[var(--heading-text-color)] mb-4 !text-left">
               About Us
           </h2>
           

@@ -165,6 +165,24 @@ const Quote = () => {
       setSubmissionStatus('success');
       setSubmissionMessage('Thank you! We\'ll be in touch.');
 
+        if (typeof window !== 'undefined' && window.dataLayer) {
+        window.dataLayer.push({
+          event: 'bookingSuccess',
+          bookingDetails: {
+            estimateType,
+            firstname: formData.firstname,
+            lastname: formData.lastname,
+            email: formData.email,
+            phone: formData.phone,
+            service: formData.service,
+            origin: formData.origin,
+            destination: formData.destination,
+            moveDate: formData.moveDate,
+          }
+        });
+      }
+
+
       // Reset form with correct field names
       setFormData({ 
         firstname: '', 

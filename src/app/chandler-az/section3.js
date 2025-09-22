@@ -37,7 +37,7 @@ const Section3 = () => {
           animate={isInView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-3xl font-bold text-[var(--black-color)] mb-4">
+          <h2 className="text-3xl font-bold text-[var(--heading-text-color)] mb-4">
            Why Choose Us as Your Chandler Movers?
           </h2>
 
@@ -47,21 +47,21 @@ const Section3 = () => {
            </p><br /> <br /> 
 
 
-          <h2 className="text-xl font-bold text-[var(--black-color)] mb-4">
+          <h2 className="text-xl font-bold text-[var(--heading-text-color)] mb-4">
          1.  Full-Service Residential Moving
           </h2>
           <p>
             We are Making Moves Matter- Chandler Moving Company, AZ, focusing on residential relocations.
           </p>
 
-          <h2 className="text-xl font-bold text-[var(--black-color)] mb-4 mt-4">
+          <h2 className="text-xl font-bold text-[var(--heading-text-color)] mb-4 mt-4">
          2.  Efficient Commercial Moving Services
           </h2>
           <p>
             In addition to residential moves, we specialize in commercial moving services in Chandler. We help businesses relocate quickly and with minimal downtime, which is crucial to maintaining daily operations.
           </p>
 
-          <h2 className="text-xl font-bold text-[var(--black-color)] mb-4 mt-4">
+          <h2 className="text-xl font-bold text-[var(--heading-text-color)] mb-4 mt-4">
           3. Specialty Moving Services for Fragile Items
           </h2>
           <p>
@@ -69,7 +69,7 @@ const Section3 = () => {
           </p>
 
 
-          <h2 className="text-xl font-bold text-[var(--black-color)] mb-4 mt-4">
+          <h2 className="text-xl font-bold text-[var(--heading-text-color)] mb-4 mt-4">
           4. Secure Storage Solutions
           </h2>
           <p>
@@ -78,7 +78,7 @@ const Section3 = () => {
 
 
 
-          <h2 className="text-xl font-bold text-[var(--black-color)] mb-4 mt-4">
+          <h2 className="text-xl font-bold text-[var(--heading-text-color)] mb-4 mt-4">
           5. Long-Distance Moves with Confidence
           </h2>
           <p>

@@ -5,34 +5,34 @@ const Section4 = () => {
     <div className="w-full py-10 bg-[var(--red-light-background)]">
       <div className="px-20 mx-auto flex flex-col md:flex-row py-10 gap-6">
         <div className="md:w-2/3 md:pr-10 w-full">
-          <h2 className="text-4xl font-bold text-[var(--black-color)] capitalize pt-6 py-2">
+          <h2 className="text-4xl font-bold text-[var(--heading-text-color)] capitalize pt-6 py-2">
             Professional Movers You Can Count On
           </h2>
-          <p className="text-[var(--black-color)] text-md pb-2">
+          <p className="text-[var(--heading-text-color)] text-md pb-2">
             Whether you’d rather talk to a real person or handle everything
             online, getting started is easy. You can call us for a quick quote,
             fill out our simple online form, or schedule a free in-home estimate
             for a more detailed walkthrough. Whatever works best for you—we’re
             here to help.
           </p>
-          <h4 className="text-2xl font-bold text-[var(--black-color)] capitalize py-1">
+          <h4 className="text-2xl font-bold text-[var(--heading-text-color)] capitalize py-1">
             Call Us for a Quick Moving Quote
           </h4>
-          <p className="text-[var(--black-color)] text-md pb-2">
+          <p className="text-[var(--heading-text-color)] text-md pb-2">
             Speak directly with a moving specialist and get an accurate estimate
             right over the phone—fast and hassle-free.
           </p>
-          <h4 className="text-2xl font-bold text-[var(--black-color)] capitalize py-1">
+          <h4 className="text-2xl font-bold text-[var(--heading-text-color)] capitalize py-1">
             Request a Quote Online
           </h4>
-          <p className="text-[var(--black-color)] text-md pb-2">
+          <p className="text-[var(--heading-text-color)] text-md pb-2">
             Prefer to skip the call? Just fill out our short form and we’ll send
             a custom quote straight to your inbox.
           </p>
-          <h4 className="text-2xl font-bold text-[var(--black-color)] capitalize py-1">
+          <h4 className="text-2xl font-bold text-[var(--heading-text-color)] capitalize py-1">
             Schedule a Free In-Home Estimate
           </h4>
-          <p className="text-[var(--black-color)] text-md pb-2">
+          <p className="text-[var(--heading-text-color)] text-md pb-2">
             Want a more hands-on approach? We’ll send a team member to your home
             to review the details and provide an on-the-spot estimate.
           </p>

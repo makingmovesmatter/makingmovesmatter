@@ -68,10 +68,10 @@ const Section10 = () => {
   return (
     <div className="w-full py-10 px-6 bg-white relative">
       <div className="container mx-auto">
-        <h2 className="text-4xl font-bold text-[var(--black-color)] capitalize py-2">
+        <h2 className="text-4xl font-bold text-[var(--heading-text-color)] capitalize py-2">
           Our Moving Blog: Tips, Checklists, and Expert Advice
         </h2>
-        <p className="text-[var(--black-color)] text-md pb-8 max-w-2xl">
+        <p className="text-[var(--heading-text-color)] text-md pb-8 max-w-2xl">
           <b>
             Check out our blog for moving tips, packing advice, and local
             insights from our Scottsdale moving experts.
@@ -116,7 +116,7 @@ const Section10 = () => {
               </div>
               <div className="p-4 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-xl font-bold text-[var(--black-color)] my-2">
+                  <h3 className="text-xl font-bold text-[var(--heading-text-color)] my-2">
                     {blog.title}
                   </h3>
                   <p className="text-sm text-gray-700">{blog.date}</p>

@@ -54,10 +54,10 @@ const Section4 = () => {
             variants={fadeUp}
             className="mb-10"
           >
-            <h2 className={`text-2xl md:text-3xl font-bold text-[var(--black-color)] capitalize py-2`}>
+            <h2 className={`text-2xl md:text-3xl font-bold text-[var(--heading-text-color)] capitalize py-2`}>
               {item.title}
             </h2>
-            <p className="text-[var(--black-color)] text-md whitespace-pre-line">{item.text}</p>
+            <p className="text-[var(--heading-text-color)] text-md whitespace-pre-line">{item.text}</p>
             {i < content.length - 1 && <hr className="mt-6" />}
           </motion.div>
         ))}

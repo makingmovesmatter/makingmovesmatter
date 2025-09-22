@@ -65,10 +65,10 @@ const Section1 = () => {
   return (
     <div className="w-full p-20 flex flex-row bg-[var(--white-background)]">
       <div className="px-10 md:w-9/12 w-full">
-        <h2 className="text-4xl font-bold text-[var(--black-color)] capitalize py-2">
+        <h2 className="text-4xl font-bold text-[var(--heading-text-color)] capitalize py-2">
           Moving Labor Service
         </h2>
-        <p className="text-[var(--black-color)] text-lg pb-4">
+        <p className="text-[var(--heading-text-color)] text-lg pb-4">
           Our moving labor services include specialized options to assist you
           during your move or home staging process. We offer a variety of
           services to meet your needs and budget, aiming to streamline and
@@ -91,7 +91,7 @@ const Section1 = () => {
                 onClick={() => toggleFAQ(index)}
                 className="w-full flex justify-between items-center text-left"
               >
-                <span className="text-2xl font-bold text-[var(--black-color)]">
+                <span className="text-2xl font-bold text-[var(--heading-text-color)]">
                   {faq.question}
                 </span>
                 {openIndex === index ? (
@@ -105,19 +105,19 @@ const Section1 = () => {
                 <div className="mt-3 text-gray-700 text-md space-y-4">
                   <p className="whitespace-pre-line">{faq.answer}</p>
                   <div>
-                    <h4 className="font-bold text-[var(--black-color)] text-xl pt-2">
+                    <h4 className="font-bold text-[var(--heading-text-color)] text-xl pt-2">
                       {faq.question1}
                     </h4>
                     <p>{faq.answer1}</p>
                   </div>
                   <div>
-                    <h4 className="font-bold text-[var(--black-color)] text-lg pt-2">
+                    <h4 className="font-bold text-[var(--heading-text-color)] text-lg pt-2">
                       {faq.question2}
                     </h4>
                     <p>{faq.answer2}</p>
                   </div>
                   <div>
-                    <h4 className="font-bold text-[var(--black-color)] text-lg pt-2">
+                    <h4 className="font-bold text-[var(--heading-text-color)] text-lg pt-2">
                       {faq.question3}
                     </h4>
                     <p>{faq.answer3}</p>
@@ -219,10 +219,10 @@ const Section1 = () => {
             </form>
           </div>
         </div>
-        <h2 className="text-4xl pt-10 font-bold text-[var(--black-color)] capitalize py-2">
+        <h2 className="text-4xl pt-10 font-bold text-[var(--heading-text-color)] capitalize py-2">
           Need Help With Other Moving Services?
         </h2>
-        <p className="text-[var(--black-color)] text-lg pb-4">
+        <p className="text-[var(--heading-text-color)] text-lg pb-4">
           Click the link below to find out more
         </p>
         <p className="text-red-600 underline">MOVING SERVICES</p>

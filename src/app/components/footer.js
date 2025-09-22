@@ -64,7 +64,7 @@ const Footer = () => {
               Making Moves Matter
             </h3>
             <p className="text-sm text-[var(--white-color)]">
-              Trusted moving services in Scottsdale and beyond. Your move made
+              Trusted moving services in Mesa and beyond. Your move made
               easier, faster, and safer with our professional team.
             </p>
           </div>

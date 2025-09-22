@@ -38,10 +38,10 @@ const Section1 = () => {
   return (
     <div className="w-full py-10 bg-white">
       <div className="container mx-auto">
-        <h2 className="text-4xl font-bold text-[var(--black-color)] capitalize py-2">
+        <h2 className="text-4xl font-bold text-[var(--heading-text-color)] capitalize py-2">
           Packing and Unpacking
         </h2>
-        <p className="text-[var(--black-color)] text-md pb-8">
+        <p className="text-[var(--heading-text-color)] text-md pb-8">
           Smart Move Moving & Storage offers full packing and unpacking services
           to make your move easy and stress-free. Our team of trained
           professionals is here to handle all your packing and unpacking needs
@@ -57,10 +57,10 @@ const Section1 = () => {
           <div className="h-[3px] w-full bg-[var(--primary-color)]" />
         </div>
 
-        <h3 className="text-2xl font-bold text-[var(--black-color)] capitalize py-2">
+        <h3 className="text-2xl font-bold text-[var(--heading-text-color)] capitalize py-2">
           Packing and Unpacking
         </h3>
-        <p className="text-[var(--black-color)] text-md pb-2">
+        <p className="text-[var(--heading-text-color)] text-md pb-2">
           Smart Move offers expert packing services to ensure all your
           belongings are securely packed. We use high-quality materials to
           protect your items. We take special care with fragile and valuable
@@ -69,45 +69,45 @@ const Section1 = () => {
           everything with precision and care.
         </p>
 
-        <h3 className="text-2xl font-bold text-[var(--black-color)] capitalize py-2">
+        <h3 className="text-2xl font-bold text-[var(--heading-text-color)] capitalize py-2">
           Custom Packing Solutions
         </h3>
-        <p className="text-[var(--black-color)] text-md pb-2">
+        <p className="text-[var(--heading-text-color)] text-md pb-2">
           At Smart Move, we know that every move is different. That’s why we
           offer custom packing solutions to fit your needs. Whether you need
           help packing your whole home or just a few rooms, our team can handle
           it. You can choose to have us pack as much or as little as you need.
         </p>
 
-        <h3 className="text-2xl font-bold text-[var(--black-color)] capitalize py-2">
+        <h3 className="text-2xl font-bold text-[var(--heading-text-color)] capitalize py-2">
           Efficient Unpacking
         </h3>
-        <p className="text-[var(--black-color)] text-md pb-2">
+        <p className="text-[var(--heading-text-color)] text-md pb-2">
           When you arrive at your new place, Smart Move’s unpacking services
           help you settle in quickly. Our team will carefully unpack your items
           and place them in the rooms you choose, helping you get organized in
           your new space.
         </p>
 
-        <h3 className="text-2xl font-bold text-[var(--black-color)] capitalize py-2">
+        <h3 className="text-2xl font-bold text-[var(--heading-text-color)] capitalize py-2">
           Save Time and Reduce Stress
         </h3>
-        <p className="text-[var(--black-color)] text-md pb-2">
+        <p className="text-[var(--heading-text-color)] text-md pb-2">
           With Smart Move’s packing and unpacking services, you save time and
           reduce the stress of moving. Our professional team takes care of the
           hard work, so you can focus on other important things.
         </p>
 
-        <h3 className="text-2xl font-bold text-[var(--black-color)] capitalize py-2">
+        <h3 className="text-2xl font-bold text-[var(--heading-text-color)] capitalize py-2">
           Comprehensive Service
         </h3>
-        <p className="text-[var(--black-color)] text-md pb-2">
+        <p className="text-[var(--heading-text-color)] text-md pb-2">
           Our packing and unpacking services make your entire move easy. From
           packing your belongings at your old place to unpacking them at your
           new one, Smart Move Moving & Storage makes sure everything goes
           smoothly.
         </p>
-        <p className="text-[var(--black-color)] text-md pb-2">
+        <p className="text-[var(--heading-text-color)] text-md pb-2">
           Trust Smart Move Moving & Storage to handle all your packing and
           unpacking needs with care and professionalism. Contact us today to
           learn more about our services and to get a personalized quote. Let us

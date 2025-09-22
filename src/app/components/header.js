@@ -37,11 +37,11 @@ const Header = ({ headerImg, headerText1, headerText2, headerDesc }) => {
               viewport={{ once: true, amount: 0.3 }}
             >
               <motion.div className="mb-8 lg:mb-0 lg:w-1/2" variants={fadeInUp}>
-                <h1 className="text-5xl sm:text-6xl md:text-8xl lg:leading-24 font-black">
+                <h1 className="text-5xl sm:text-6xl md:text-7xl lg:leading-18 font-black">
                   <span className="block text-maain-color capitalize">{headerText1}</span>
                   <span className="block capitalize">{headerText2}</span>
                 </h1>
-                <div className="text-xl sm:text-2xl md:text-2xl font-normal mt-5 capitalize">
+                <div className="text-xl font-normal mt-5 capitalize">
                    {headerDesc}
                 </div>
 

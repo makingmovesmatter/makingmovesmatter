@@ -98,7 +98,7 @@ const Faq = () => {
                   onClick={() => toggleFAQ(index)}
                   className="w-full flex justify-between items-center text-left"
                 >
-                  <span className="text-lg font-semibold text-[var(--black-color)]">
+                  <span className="text-lg font-semibold text-[var(--heading-text-color)]">
                     {faq.question}
                   </span>
                   {openIndex === index ? (
