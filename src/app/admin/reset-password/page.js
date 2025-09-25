@@ -3,9 +3,9 @@
 import { useState, useEffect } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 
-export default function ResetPassword() {
+export default function ResetPasswordForm() {
   const searchParams = useSearchParams();
-  const token = searchParams.get("token"); // token from email link
+  const token = searchParams.get("token");
   const router = useRouter();
 
   const [newPassword, setNewPassword] = useState("");
@@ -15,7 +15,6 @@ export default function ResetPassword() {
   const [tokenValid, setTokenValid] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
 
-  // Check token presence
   useEffect(() => {
     if (!token) {
       setMessage("Invalid or expired reset link. Please check your email.");
@@ -25,7 +24,6 @@ export default function ResetPassword() {
     }
   }, [token]);
 
-  // Password validation function
   const isPasswordValid = (password) => {
     const regex = /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]).{8,}$/;
     return regex.test(password);
@@ -81,7 +79,6 @@ export default function ResetPassword() {
           <p className="text-red-600 text-center">{message}</p>
         ) : (
           <>
-            {/* New Password Field */}
             <div className="relative mb-4">
               <input
                 type={showPassword ? "text" : "password"}
@@ -100,7 +97,6 @@ export default function ResetPassword() {
               </button>
             </div>
 
-            {/* Confirm Password Field */}
             <div className="relative mb-4">
               <input
                 type={showPassword ? "text" : "password"}
