@@ -75,13 +75,20 @@
   --badge-bestseller: #f44336;
 }
 
+html, body, #__next {
+  overflow-x: hidden !important;
+  width: 100% !important;
+}
+
+
+
 body {
   height: 100%;
   width: 100%;
   background-color: var(--white-background);
-  overflow-x: hidden !important;
   font-family: var(--font);
 }
+
 
 a,
 li {
@@ -858,6 +865,9 @@ section {
   display:none;
 }
 
+header h1{
+  line-height: 3.3rem !important;
+}
 
   h1, h2, h3, h4, h5, h6 {
 
@@ -1207,14 +1217,15 @@ section {
 
   h1, h2, h3, h4, h5, h6, p {
     text-align: left !important;
+    line-height: 2.5rem;
   }
 
   h2 {
-    font-size:2rem !important;
+    font-size:1.8rem !important;
   }
   p{
     line-height: 1.7rem !important;
-    font-size:1rem !important;
+    font-size:0.95rem !important;
   }
 }
 

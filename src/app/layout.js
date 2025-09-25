@@ -11,6 +11,8 @@ import QuoteButton from "./components/QuoteButton";
 import Purchase from "./components/Purchase";
 import BackToTop from "./components/BackToTop";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import CodeInjector from "./components/CodeInjector";
+
 
 // Montserrat font
 const montserrat = Montserrat({
@@ -106,7 +108,10 @@ export const metadata = {
   category: "Moving Services",
 };
 
-export default function RootLayout({ children }) {
+
+export default async function RootLayout({ children }) {
+
+
   return (
     <html lang="en-US" data-arp>
       <head>
@@ -114,6 +119,10 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
           href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css"
         />
+
+        <CodeInjector pageUrl={typeof window !== 'undefined' ? window.location.href : ''} />
+
+
       </head>
       <body className={`${montserrat.variable} antialiased`}>
         {/* Google Tag Manager Script */}
@@ -133,6 +142,7 @@ export default function RootLayout({ children }) {
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
+
 
         <Navbar />
         {children}

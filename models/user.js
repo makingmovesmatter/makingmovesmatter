@@ -6,6 +6,9 @@ const userSchema = new mongoose.Schema({
   failedAttempts: { type: Number, default: 0 },
   lockUntil: { type: Date, default: null },
 
+  resetPasswordToken: { type: String },
+  resetPasswordExpires: { type: Date },
+
   // IP tracking
   ipAttempts: {
     type: Map,        // Map<IP, { attempts: Number, lastAttempt: Date }>

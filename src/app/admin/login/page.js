@@ -12,6 +12,11 @@ export default function AdminLogin() {
   const [attempts, setAttempts] = useState(0);
   const [lockUntil, setLockUntil] = useState(null);
   const [timeRemaining, setTimeRemaining] = useState('');
+  const [showForgot, setShowForgot] = useState(false);
+  const [forgotEmail, setForgotEmail] = useState('');
+  const [forgotMessage, setForgotMessage] = useState('');
+  const [resendCooldown, setResendCooldown] = useState(0);
+
   const router = useRouter();
 
   // Countdown timer for lock
@@ -37,7 +42,7 @@ export default function AdminLogin() {
     return () => clearInterval(timer);
   }, [lockUntil]);
 
-  // Handle form submit
+  // Handle login
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
@@ -47,7 +52,6 @@ export default function AdminLogin() {
       return;
     }
 
-    // Check lock
     if (lockUntil && new Date().getTime() < new Date(lockUntil).getTime()) {
       const minutesLeft = Math.ceil((new Date(lockUntil) - new Date()) / 60000);
       setError(`Too many failed attempts. Try again in ${minutesLeft} minute(s).`);
@@ -68,31 +72,55 @@ export default function AdminLogin() {
       if (res.ok) {
         router.push('/admin/dashboard');
       } else {
-        if (data.lockUntil) {
-          setLockUntil(data.lockUntil);
-          setError(data.message || 'Account locked due to multiple attempts.');
-        } else {
-          setAttempts(data.attempts || attempts + 1);
-          setError(data.message || 'Login failed. Check your credentials.');
-        }
+        if (data.lockUntil) setLockUntil(data.lockUntil);
+        setAttempts(data.attempts || attempts + 1);
+        setError(data.message || 'Login failed. Check your credentials.');
 
-        // Handle new IP verification
         if (data.newIP) {
           setError('New IP detected. Verification email sent to admin.');
         }
-
-        console.log('💻 Debug:', data); // Debug log for failed attempt
       }
     } catch (err) {
-      console.error('Network error:', err);
       setError('Network error. Please try again later.');
     } finally {
       setIsLoading(false);
     }
   };
 
+  // Handle forgot password
+  const handleForgotPassword = async (e) => {
+    e.preventDefault();
+    setForgotMessage('');
+    if (!forgotEmail) return;
+
+    try {
+      const res = await fetch('/api/auth/forgot-password', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: forgotEmail }),
+      });
+
+      const data = await res.json();
+      if (res.ok) {
+        setForgotMessage(data.message);
+        setResendCooldown(60); // 60s cooldown before resend
+      } else {
+        setForgotMessage(data.message || 'Something went wrong');
+      }
+    } catch {
+      setForgotMessage('Network error, try again.');
+    }
+  };
+
+  // Countdown for resend
+  useEffect(() => {
+    if (resendCooldown <= 0) return;
+    const timer = setInterval(() => setResendCooldown(prev => prev - 1), 1000);
+    return () => clearInterval(timer);
+  }, [resendCooldown]);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-200 p-4">
+    <div className="min-h-[60vh] flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-200 p-4">
       <div className="w-full max-w-md">
         <form onSubmit={handleSubmit} className="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
           <h2 className="text-2xl font-bold mb-6 text-center text-gray-800">Admin Login</h2>
@@ -104,9 +132,7 @@ export default function AdminLogin() {
           )}
 
           <div className="mb-5">
-            <label htmlFor="email" className="block text-gray-700 text-sm font-medium mb-2">
-              Email Address
-            </label>
+            <label htmlFor="email" className="block text-gray-700 text-sm font-medium mb-2">Email Address</label>
             <input
               id="email"
               type="email"
@@ -120,9 +146,7 @@ export default function AdminLogin() {
           </div>
 
           <div className="mb-6">
-            <label htmlFor="password" className="block text-gray-700 text-sm font-medium mb-2">
-              Password
-            </label>
+            <label htmlFor="password" className="block text-gray-700 text-sm font-medium mb-2">Password</label>
             <div className="relative">
               <input
                 id="password"
@@ -152,6 +176,43 @@ export default function AdminLogin() {
           >
             {isLoading ? 'Processing...' : 'Login'}
           </button>
+
+          {/* Forgot password */}
+          <p className="text-sm mt-4 text-right">
+            <button
+              type="button"
+              className="text-[#f99c00] hover:underline"
+              onClick={() => setShowForgot(true)}
+            >
+              Forgot Password?
+            </button>
+          </p>
+
+
+          {showForgot && (
+  <div className="mt-4">
+    <input
+      type="email"
+      placeholder="Enter your email"
+      value={forgotEmail}
+      onChange={(e) => setForgotEmail(e.target.value)}
+      required
+      className="w-full px-3 py-2 border rounded-md"
+    />
+    <button
+      type="button"
+      disabled={resendCooldown > 0}
+      onClick={handleForgotPassword} // use button click instead of form submit
+      className="mt-2 w-full bg-[#f99c00] text-white py-2 rounded-md"
+    >
+      {resendCooldown > 0 ? `Wait ${resendCooldown}s` : "Send Reset Link"}
+    </button>
+    {forgotMessage && <p className="text-green-600 mt-2">{forgotMessage}</p>}
+  </div>
+)}
+
+
+          
         </form>
       </div>
     </div>

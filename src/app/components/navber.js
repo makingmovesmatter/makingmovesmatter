@@ -284,7 +284,7 @@ const Navbar = () => {
 
                             <ul>
                                 <li><a href="/furniture-moving">Furniture Moving</a></li>
-                                <li><a href="/packing-and-unpacking-services">Packing And Unpacking Servicesy</a></li>
+                                <li><a href="/packing-and-unpacking-services">Packing And Unpacking Services</a></li>
                             </ul>
 
                              <ul>
@@ -372,7 +372,7 @@ const Navbar = () => {
 
                                             <ul>
                                                 <li><a href="/furniture-moving">Furniture Moving</a></li>
-                                                <li><a href="/packing-and-unpacking-services">Packing And Unpacking Servicesy</a></li>
+                                                <li><a href="/packing-and-unpacking-services">Packing And Unpacking Services</a></li>
                                             </ul>
 
                                             <ul>

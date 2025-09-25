@@ -8,12 +8,12 @@ export default async function Page() {
   const cookieStore = await cookies();
   const token = cookieStore.get("token")?.value;
 
-  if (!token) return <div>Unauthorized</div>;
+  if (!token) return <div className="min-h-[50vh] flex justify-center items-center">Unauthorize</div>;
 
   try {
     authenticateAdmin(token);
   } catch {
-    return <div>Invalid token</div>;
+    return <div className="min-h-[50vh] flex justify-center items-center">Invalid token</div>;
   }
 
   await connectDB();
