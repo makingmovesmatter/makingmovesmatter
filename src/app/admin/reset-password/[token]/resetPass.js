@@ -1,11 +1,8 @@
+'use client';
+
 import { useState, useEffect } from "react";
-import { useSearchParams, useRouter } from "next/navigation";
 
-export default function ResetPasswordForm() {
-  const searchParams = useSearchParams();
-  const token = searchParams.get("token");
-  const router = useRouter();
-
+export default function ResetPasswordForm({ token, router }) {
   const [newPassword, setNewPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [message, setMessage] = useState("");
@@ -19,7 +16,7 @@ export default function ResetPasswordForm() {
       setTokenValid(false);
     } else {
       setTokenValid(true);
-      setMessage(""); // clear message if token exists
+      setMessage("");
     }
   }, [token]);
 
@@ -30,7 +27,6 @@ export default function ResetPasswordForm() {
 
   const handleReset = async (e) => {
     e.preventDefault();
-    console.log("Reset button clicked");
 
     if (!tokenValid) {
       setMessage("Invalid or expired reset link.");
@@ -55,12 +51,10 @@ export default function ResetPasswordForm() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ token, newPassword }),
+        cache: "no-store",
       });
 
-      console.log("API Response status:", res.status);
-
       const data = await res.json();
-      console.log("API Response data:", data);
 
       if (!res.ok) {
         setMessage(data.message || "Invalid or expired token.");
@@ -71,7 +65,7 @@ export default function ResetPasswordForm() {
       setMessage("Password reset successfully! Redirecting to login...");
       setTimeout(() => router.push("/admin/login"), 2000);
     } catch (err) {
-      console.error("Fetch error:", err);
+      console.error(err);
       setMessage("Network error. Please try again.");
     } finally {
       setLoading(false);
