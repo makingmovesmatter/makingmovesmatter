@@ -52,8 +52,8 @@ const Footer = () => {
               <li className="hover:!underline"><a href="/blog">Blog</a></li>
               <li className="hover:!underline"><a href="/about-us">About Us</a></li>
               <li className="hover:!underline"><a href="/contact-us">Contact Us</a></li>
-              <li className="hover:!underline"><a href="tel:4809348218">Call at (480) 934-8218</a></li>
-              <li className="hover:!underline"><a href="mailto:makingmovesmatter07@gmail.com">Email at makingmovesmatter07@gmail.com</a></li>
+              <li className="hover:!underline"><a href="tel:4809348218">Call: (480) 934-8218</a></li>
+              <li className="hover:!underline"><a href="mailto:makingmovesmatter07@gmail.com">Email: makingmovesmatter07@gmail.com</a></li>
               <li className="hover:!underline">445 S Dobson Rd, Mesa 85202</li>
             </ul>
           </div>

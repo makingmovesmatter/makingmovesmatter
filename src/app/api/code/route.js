@@ -101,7 +101,7 @@ export async function PUT(req) {
 function shouldInjectOnPage(pageUrl, targetPages, pagesList) {
   if (targetPages === 'all') return true;
 
-  const url = new URL(pageUrl, 'http://localhost');
+  const url = new URL(pageUrl, 'https://mesamovingexperts.com');
   const path = url.pathname;
 
   if (targetPages === 'specific') {

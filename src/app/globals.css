@@ -80,6 +80,44 @@ html, body, #__next {
   width: 100% !important;
 }
 
+.jodit-wysiwyg{
+  min-height:200px !important;
+}
+
+ul{
+    list-style: disc;
+}
+   
+ol {
+    list-style: decimal;
+}
+
+a, li{
+  text-decoration: unset;
+  list-style: unset;
+}
+
+nav a, nav li{
+  list-style: none;
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+table td, table th {
+  border: 1px solid #525252;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+
+table tr:hover td {
+  background-color: #f3f4f6; 
+}
 
 
 body {
@@ -87,13 +125,6 @@ body {
   width: 100%;
   background-color: var(--white-background);
   font-family: var(--font);
-}
-
-
-a,
-li {
-  text-decoration: none;
-  list-style: none;
 }
 
 
@@ -865,9 +896,6 @@ section {
   display:none;
 }
 
-header h1{
-  line-height: 3.3rem !important;
-}
 
   h1, h2, h3, h4, h5, h6 {
 
@@ -1218,6 +1246,10 @@ header h1{
   h1, h2, h3, h4, h5, h6, p {
     text-align: left !important;
     line-height: 2.5rem;
+  }
+
+  header h1{
+  line-height: 3.3rem !important;
   }
 
   h2 {
