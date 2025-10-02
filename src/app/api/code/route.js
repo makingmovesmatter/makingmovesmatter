@@ -1,5 +1,6 @@
 import { connectDB } from "../../../../lib/db";
 import Settings from "../../../../models/codes";
+import { v4 as uuidv4 } from "uuid";
 
 export async function GET() {
   await connectDB();
@@ -34,6 +35,7 @@ export async function POST(req) {
 
     // Update code injections
     settings.codeInjections = codeInjections.map(ci => ({
+      id: ci.id || uuidv4(),
       name: ci.name,
       code: ci.code,
       type: ci.type || 'header',

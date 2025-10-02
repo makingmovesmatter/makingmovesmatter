@@ -1433,7 +1433,7 @@ select:focus {
   border:var(--light-text) !important;
 }
 
-label{
+.quoteContainer label{
   display: none !important;
 }
 

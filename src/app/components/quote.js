@@ -215,7 +215,7 @@ const Quote = () => {
       variants={quoteVariants}
       className="w-full"
     >
-      <div className="bg-white rounded-2xl  main-index">
+      <div className="bg-white rounded-2xl  main-index quoteContainer">
         <div className="border border-[var(--primary)] rounded-2xl p-8 bg-[#0000003d] dark:bg-transparent backdrop-blur-3xl shadow-2xl">
 
           {/* Form */}

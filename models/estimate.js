@@ -12,7 +12,7 @@ const estimateSchema = new mongoose.Schema({
   destination: { type: String, required: true },
   service: { type: String, required: true },
   message: { type: String },
-  status: { type: String, default: 'pending', enum: ['pending', 'contacted', 'completed'] },
+  status: { type: String, default: 'pending'},
   createdAt: { type: Date, default: Date.now }
 });
 

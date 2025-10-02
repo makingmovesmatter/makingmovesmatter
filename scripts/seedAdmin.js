@@ -3,8 +3,6 @@ import bcrypt from 'bcrypt';
 import User from '../models/user';
 import { connectDB } from '../lib/db.js';
 
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/yourdb';
-
 async function seedAdmin() {
   await connectDB();
 

@@ -52,10 +52,10 @@ export default function BlogsAdmin() {
 
 
 return (
-    <div className="p-6 space-y-6 container !my-10 block justify-between lg:flex">
+    <div className="space-y-6 block justify-between lg:flex">
 
 
-      <div className="mx-auto px-4 py-6 w-full max-w-1/2">
+      <div className="mx-auto px-4 py-6 w-full lg:max-w-1/2">
           <h2 className="text-2xl font-bold text-gray-800 mb-6 border-b pb-2">All Blogs</h2>
           
           <ul className="space-y-4">

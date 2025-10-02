@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 
 const CodeInjectionSchema = new mongoose.Schema({
   codeInjections: [{
+    id:{type:String},
     name: { type: String, required: true },
     code: { type: String, required: true },
     type: { type: String, enum: ['header', 'body'], default: 'header' },
