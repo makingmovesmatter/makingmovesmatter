@@ -1,4 +1,6 @@
 "use client";
+
+import dynamic from 'next/dynamic';
 import { useState, useEffect, useMemo, useRef } from "react";
 import axios from 'axios';
 import { useRouter } from "next/navigation";
@@ -22,7 +24,8 @@ import {
     FaList,
     FaQuestionCircle
 } from "react-icons/fa";
-import JoditEditor from 'jodit-react';
+
+const JoditEditor = dynamic(() => import('jodit-react'), { ssr: false });
 
 const BlogForm = ({ onSubmit, initialData = {} }) => {
     const editor = useRef(null);
