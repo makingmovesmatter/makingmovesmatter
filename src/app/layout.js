@@ -11,6 +11,7 @@ import QuoteButton from "./components/QuoteButton";
 import Purchase from "./components/Purchase";
 import BackToTop from "./components/BackToTop";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next"
 import CodeInjector from "./components/CodeInjector";
 
 
@@ -144,6 +145,7 @@ export default async function RootLayout({ children }) {
         <Navbar />
         {children}
         <SpeedInsights />
+        <Analytics/>
         <Footer />
         <CallNowButton />
         <QuoteButton />
