@@ -1,4 +1,5 @@
 import { cookies } from "next/headers";
+import { redirect } from "next/navigation";
 import { authenticateAdmin } from "../../../../lib/auth";
 import { connectDB } from "../../../../lib/db";
 import Estimate from "../../../../models/estimate";
@@ -8,16 +9,18 @@ export default async function Page() {
   const cookieStore = await cookies();
   const token = cookieStore.get("token")?.value;
 
-  if (!token) return <div className="min-h-[50vh] flex justify-center items-center">Unauthorize</div>;
+  if (!token) {
+    redirect("/admin/login");
+  }
 
   try {
     authenticateAdmin(token);
   } catch {
-    return <div className="min-h-[50vh] flex justify-center items-center">Invalid token</div>;
+    redirect("/admin/login");
   }
 
   await connectDB();
-  const estimates = (await Estimate.find().sort({ createdAt: -1 }).lean()).map(e => ({
+  const estimates = (await Estimate.find().sort({ createdAt: -1 }).lean()).map((e) => ({
     ...e,
     _id: e._id.toString(),
     createdAt: e.createdAt?.toLocaleString(),

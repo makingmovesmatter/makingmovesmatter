@@ -39,7 +39,6 @@ export default function CodeInjector({ pageUrl }) {
               if (scriptTag.async) script.async = scriptTag.async;
               if (scriptTag.defer) script.defer = scriptTag.defer;
               if (!scriptTag.src) {
-                // hash raw inline script to avoid duplicates
                 script.dataset.hash = btoa(scriptTag.innerHTML);
                 script.textContent = scriptTag.innerHTML;
               }
