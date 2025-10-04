@@ -111,7 +111,7 @@ const Quote = () => {
 
   const validateAddress = address => {
     if (!address.trim()) return 'Address is required';
-    return address.length < 5 ? 'Address is too short' : '';
+    return address.length < 3 ? 'Address is too short' : '';
   };
 
   const validateService = service => !service ? 'Service is required' : '';
@@ -174,10 +174,12 @@ const Quote = () => {
             lastname: formData.lastname,
             email: formData.email,
             phone: formData.phone,
+            zipCode: formData.zeepcode,
             service: formData.service,
             origin: formData.origin,
             destination: formData.destination,
             moveDate: formData.moveDate,
+            message: formData.message,
           }
         });
       }

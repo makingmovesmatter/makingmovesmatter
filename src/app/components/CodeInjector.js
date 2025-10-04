@@ -23,10 +23,9 @@ export default function CodeInjector({ pageUrl }) {
           const temp = document.createElement('div');
           temp.innerHTML = code;
 
-          // Handle <script>
           const scriptTag = temp.querySelector('script');
           if (scriptTag) {
-            // Deduplicate by src or innerHTML
+
             const exists = scriptTag.src
               ? parent.querySelector(`script[src="${scriptTag.src}"]`)
               : parent.querySelector(
@@ -49,7 +48,6 @@ export default function CodeInjector({ pageUrl }) {
             return;
           }
 
-          // Handle <link>
           const linkTag = temp.querySelector('link');
           if (linkTag) {
             if (!parent.querySelector(`link[href="${linkTag.href}"]`)) {
@@ -58,7 +56,6 @@ export default function CodeInjector({ pageUrl }) {
             return;
           }
 
-          // Handle <meta>
           const metaTag = temp.querySelector('meta');
           if (metaTag) {
             const name = metaTag.getAttribute('name');
@@ -73,7 +70,7 @@ export default function CodeInjector({ pageUrl }) {
             return;
           }
 
-          // Handle <style>
+
           const styleTag = temp.querySelector('style');
           if (styleTag) {
             const hash = btoa(styleTag.innerHTML);
