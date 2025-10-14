@@ -71,7 +71,7 @@ const Faq = () => {
           </motion.p>
 
           <motion.a
-            href="/contact"
+            href="/contact-us"
             className="text-xl font-medium inline-block mt-6 bg-[var(--accent-color)] text-white px-8 py-3 rounded-md shadow hover:bg-[#E17100] transition"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}

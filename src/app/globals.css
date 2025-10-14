@@ -102,6 +102,11 @@ nav a, nav li{
   text-decoration: none;
 }
 
+footer a, footer li{
+  list-style: none;
+  text-decoration: none;
+}
+
 table {
   border-collapse: collapse;
   width: 100%;

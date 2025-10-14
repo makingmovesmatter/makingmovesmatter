@@ -7,7 +7,7 @@ import { IoLocation } from "react-icons/io5";
 const cards = [
   {
     icon: <IoLocation className="iconColor text-4xl" />,
-    title: "Masa AZ",
+    title: "Mesa, AZ",
     description: "We ensure timely pickup and delivery with real-time updates."
   },
   {
@@ -34,6 +34,16 @@ const cards = [
     icon: <IoLocation className="iconColor text-4xl" />,
     title: "Phoenix, AZ",
     description: "Your belongings are protected every step of the way."
+  },
+  {
+    icon: <IoLocation className="iconColor text-4xl" />,
+    title: "Queen Creek, AZ",
+    description: "Experience reliable moving services with a local touch you can trust."
+  },
+  {
+    icon: <IoLocation className="iconColor text-4xl" />,
+    title: "San Tan Valley, AZ",
+    description: "Serving families and businesses across San Tan Valley with care and efficiency."
   }
 ];
 

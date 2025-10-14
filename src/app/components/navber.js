@@ -330,6 +330,14 @@ const Navbar = () => {
                                 <li><a href="/phoenix-az">Phoenix, AZ</a></li>
                             </ul>
 
+                            <ul>
+                                <li><a href="/queen-creek-az">Queen Creek, AZ</a></li>
+                            </ul>
+
+                            <ul>
+                                <li><a href="/san-tan-valley-az">San Tan Valley, AZ</a></li>
+                            </ul>    
+
                          </div>
                    </div>
                   </div>
@@ -417,6 +425,14 @@ const Navbar = () => {
                                             <ul>
                                                 <li><a href="/phoenix-az">Phoenix, AZ</a></li>
                                             </ul>
+
+                                            <ul>
+                                                <li><a href="/queen-creek-az">Queen Creek, AZ</a></li>
+                                            </ul>
+
+                                            <ul>
+                                                <li><a href="/san-tan-valley-az">San Tan Valley, AZ</a></li>
+                                            </ul>     
 
                                         </li>
                                     </ul>

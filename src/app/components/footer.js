@@ -36,8 +36,10 @@ const Footer = () => {
               <li className="hover:!underline"><a href="/chandler-az">Chandler, AZ</a></li>
               <li className="hover:!underline"><a href="/scottsdale-az">Scottsdale, AZ</a></li>
               <li className="hover:!underline"><a href="/tempe-az">Tempe, AZ</a></li>
-              <li className="hover:!underline"><a href="/gendale-az">Gilbert, AZ</a></li>
+              <li className="hover:!underline"><a href="/gilbert-az">Gilbert, AZ</a></li>
               <li className="hover:!underline"><a href="/phoenix-az">Phoenix, AZ</a></li>
+              <li className="hover:!underline"><a href="/queen-creek-az">Queen Creek, AZ</a></li>
+              <li className="hover:!underline"><a href="/san-tan-valley-az">San Tan Valley, AZ</a></li>
             </ul>
           </div>
 
