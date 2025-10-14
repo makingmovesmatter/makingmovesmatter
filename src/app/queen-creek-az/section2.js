@@ -40,7 +40,7 @@ const Section2 = () => {
     <div className="paddingTopBottom w-full py-10 bg-white" ref={ref}>
       <div className="container mx-auto px-5">
         <h2 className="text-4xl font-bold text-[var(--heading-text-color)] text-center py-2">
-          Our Mesa Packing and Movers Services Include:
+          Our Queen Creek Moving Services
         </h2>
 
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
