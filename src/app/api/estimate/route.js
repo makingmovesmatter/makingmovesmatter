@@ -2,6 +2,7 @@ import { validateEstimateData } from "../../../../lib/validators";
 import { connectDB } from "../../../../lib/db";
 import Estimate from "../../../../models/estimate";
 import { sendAdminNotification } from "../../../../lib/mailer";
+import axios from "axios";
 
 export async function POST(request) {
   try {
@@ -10,7 +11,10 @@ export async function POST(request) {
 
     const validationErrors = validateEstimateData(data);
     if (Object.keys(validationErrors).length > 0) {
-      return new Response(JSON.stringify({ success: false, errors: validationErrors }), { status: 400 });
+      return new Response(
+        JSON.stringify({ success: false, errors: validationErrors }),
+        { status: 400 }
+      );
     }
 
     const newEstimate = new Estimate(data);
@@ -18,20 +22,64 @@ export async function POST(request) {
 
     await sendAdminNotification(newEstimate);
 
-    return new Response(JSON.stringify({
-      success: true,
-      message: "Estimate request received successfully!",
-      estimateId: newEstimate._id
-    }), { status: 201 });
+    const jobPayload = {
+      data: {
+        contact: {
+          first_name: data.firstname,
+          last_name: data.lastname,
+          email: data.email,
+          cell_phone: data.phone,
+        },
+        job: {
+          address_from: data.origin,
+          address_to: data.destination,
+          notes: data.message,
+          start_date: data.moveDate,
+          city_from: "",
+          city_to: "",
+          state_from: data.origin,
+          state_to: data.destination,
+          zip_from: data.zeepcode,
+          zip_to: "",
+        },
+      },
+    };
 
+    try {
+      await axios.post(
+        `https://webform.moverstech.com/${process.env.COMPANY_API_KEY}/jobs`,
+        jobPayload,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+    } catch (apiError) {
+      console.error("MoversTech API error:", apiError.response?.data || apiError.message);
+    }
+
+    return new Response(
+      JSON.stringify({
+        success: true,
+        message: "Estimate request received successfully!",
+        estimateId: newEstimate._id,
+      }),
+      { status: 201 }
+    );
   } catch (error) {
     console.error("Estimate submission error:", error);
-    return new Response(JSON.stringify({
-      success: false,
-      message: error.message || "Internal server error"
-    }), { status: 500 });
+
+    return new Response(
+      JSON.stringify({
+        success: false,
+        message: error.message || "Internal server error",
+      }),
+      { status: 500 }
+    );
   }
 }
+
 
 export async function GET(request) {
   try {
