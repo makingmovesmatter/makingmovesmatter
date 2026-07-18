@@ -128,7 +128,7 @@ const Navbar = () => {
         </div>
         <div class="middle-nav-items container">
             <div class="logo">
-                <a href="/"><img src="/images/logo.png" alt="" loading="eager" width={150} /></a>
+                <a href="/"><img src="/images/image.png" alt="" loading="eager" width={150} /></a>
             </div>
 
             <div class="call-now-text">
