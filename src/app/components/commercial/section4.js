@@ -40,7 +40,7 @@ const Section4 = () => {
     <div className="paddingTopBottom w-full py-10 bg-white" ref={ref}>
       <div className="container mx-auto px-5">
         <h2 className="text-4xl font-bold text-[var(--heading-text-color)] capitalize py-2 text-center">
-          Why Choose Making Moves Matter as <br/> Your Mesa Commercial Movers?
+          Why Choose <br/> Making Moves Matter ?
         </h2>
 
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

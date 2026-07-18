@@ -21,7 +21,7 @@ const Section1 = () => {
         >
           <div className="relative w-full h-full min-h-[400px] rounded-lg overflow-hidden shadow-md">
             <Image
-              src="/images/home1.png" // ✅ Make sure this path is correct and the file exists
+              src="/images/home1.png"
               alt="Our Service"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"

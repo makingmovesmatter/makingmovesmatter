@@ -164,8 +164,8 @@ const Quote = () => {
       
       setSubmissionStatus('success');
       setSubmissionMessage('Thank you! We\'ll be in touch.');
-
-        if (typeof window !== 'undefined' && window.dataLayer) {
+      
+      if (typeof window !== 'undefined' && window.dataLayer) {
         window.dataLayer.push({
           event: 'bookingSuccess',
           bookingDetails: {

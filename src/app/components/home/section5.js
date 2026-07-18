@@ -20,7 +20,6 @@ const Section5 = () => {
   return (
     <div className="w-full py-16 section-quote" style={{backgroundImage: "url('/images/howworks.png')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat:'norepeat'}}>
       <div className="container mx-auto flex flex-col md:flex-row gap-10 px-4 z-10">
-        {/* Animated Text Content */}
         <div className="md:w-2/3 w-full" ref={ref}>
           {[
             {

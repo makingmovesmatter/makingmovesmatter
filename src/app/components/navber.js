@@ -1,7 +1,7 @@
 'use client';
 import React, {useState, useEffect, useRef } from "react";
 import Link from 'next/link';
-import { FiMenu, FiX, FiChevronDown } from 'react-icons/fi';
+
 
 const Navbar = () => {
   const [isMobileOpen, setMobileOpen] = useState(false);
@@ -176,7 +176,7 @@ const Navbar = () => {
             </div>
 
             <div class="three-bar">
-                <i class="fa-regular fa-bars"></i>
+                <i class="fa fa-bars"></i>
             </div>
         </div>
 
@@ -210,7 +210,7 @@ const Navbar = () => {
           <div className="flex ">
              <div className="call-now-icon none600">
                 <Link href="mailto:makingmovesmatter07@gmail.com">
-                    <i class="fa-regular fa-envelope"></i>
+                    <i class="fa fa-envelope"></i>
                     <div>
                         <span>Email now</span>
                         <p>24/7 support</p>
@@ -223,7 +223,7 @@ const Navbar = () => {
 
             <div className="call-now-icon">
                 <Link href="tel:4809348218">
-                    <i className="fa-regular fa-phone"></i>
+                    <i className="fa fa-phone"></i>
                     <div>
                         <span>call now</span>
                         <p>24/7 support</p>
@@ -250,7 +250,7 @@ const Navbar = () => {
             </div>
 
             <div class="three-bar w-1/4 text-right me-3">
-                    <i class="fa-regular fa-bars"></i>
+                    <i class="fa fa-bars"></i>
             </div>
         </div>
 
@@ -267,7 +267,7 @@ const Navbar = () => {
             <ul>
                 <Link href={'/'} className="addtional-link">Home</Link>
 
-                <li><a href='/'>Moving Services <i class="fa-regular fa-angle-down"></i></a>
+                <li><a href='/'>Moving Services <i class="fa fa-angle-down"></i></a>
                 <div class="hover-backgroud">
                     <div class="hover-items-container">
                          <div class="items-one">
@@ -300,7 +300,7 @@ const Navbar = () => {
                       </div>
                    </div>
                 </li>
-                <li><a href="/mesa-az">Service Area <i class="fa-regular fa-angle-down"></i></a>
+                <li><a href="/mesa-az">Service Area <i class="fa fa-angle-down"></i></a>
                 <div class="hover-backgroud">
                     <div class="hover-items-container">
                          <div class="items-one">
@@ -356,14 +356,14 @@ const Navbar = () => {
                         <img src="/images/logo.png" alt="" loading="eager" width={100} />
                     </div>
                     <div class="cencle-icon">
-                        <i class="fa-regular fa-xmark"></i>
+                        <i class="fa fa-xmark"></i>
                     </div>
                 </div>
 
                 <div class="mobile-middle-item">
                     <ul>
                                 <li class="mobile-manue-items">
-                                    <a href="#">Moving Services <i class="fa-regular fa-angle-down"></i></a>
+                                    <a href="#">Moving Services <i class="fa fa-angle-down"></i></a>
 
                                     <ul class="mobile-submanue-items">
                                         <li class="mobile-manue-items">
@@ -396,7 +396,7 @@ const Navbar = () => {
                                 </li>
 
                                 <li class="mobile-manue-items">
-                                    <a href="#">Service Area <i class="fa-regular fa-angle-down"></i></a>
+                                    <a href="#">Service Area <i class="fa fa-angle-down"></i></a>
 
                                     <ul class="mobile-submanue-items">
                                         <li class="mobile-manue-items">

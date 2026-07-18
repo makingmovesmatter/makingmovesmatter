@@ -12,11 +12,10 @@ export default function UTMCapture() {
     utmParams.forEach(param => {
       const value = urlParams.get(param);
       if (value) {
-        // Save in localStorage (persistent across pages)
         localStorage.setItem(param, value);
       }
     });
   }, []);
 
-  return null; // no UI
+  return null;
 }

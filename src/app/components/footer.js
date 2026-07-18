@@ -19,7 +19,7 @@ const Footer = () => {
               <li className="hover:!underline"><a href="/furniture-assembly">Furniture Assembly</a></li>
               <li className="hover:!underline"><a href="/local-moving">Local Moving</a></li>
               <li className="hover:!underline"><a href="/furniture-moving">Furniture Moving</a></li>
-              <li className="hover:!underline"><a href="/packing-and-unpacking-services">Packing And Unpacking Servicesy</a></li>
+              <li className="hover:!underline"><a href="/packing-and-unpacking-services">Packing And Unpacking Services</a></li>
               <li className="hover:!underline"><a href="/large-and-heavy-item-moving">Large and Heavy Item Moving</a></li>
               <li className="hover:!underline"><a href="/storage">Storage</a></li>
               <li className="hover:!underline"><a href="/hot-tub-relocation">Hot Tub Relocation</a></li>

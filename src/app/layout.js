@@ -117,7 +117,7 @@ export default async function RootLayout({ children }) {
       <head>
         <link
           rel="stylesheet"
-          href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         />
         <meta name="google-site-verification" content="5XOhA5UZkD_w9dTWZqEiByZazPb1mQKR3oI1BfjANpc" />
         <CodeInjector pageUrl={typeof window !== 'undefined' ? window.location.href : ''} />
