@@ -43,7 +43,7 @@ const Section1 = () => {
         >
           <div className="relative w-full h-full min-h-[400px] rounded-lg overflow-hidden shadow-md">
               <Image
-                src={'/images/longdistance.png'}
+                src={'/images/longdistances.png'}
                 alt={'Banner Image'}
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
