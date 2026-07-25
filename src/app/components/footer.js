@@ -16,6 +16,7 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li className="hover:!underline"><a href="/commercial-services">Commercial Services</a></li>
               <li className="hover:!underline"><a href="/long-distance-moving">Long Distance Moving</a></li>
+              <li className="hover:!underline"><a href="/long-distance-moving-arizona">Long Distance Arizona</a></li>
               <li className="hover:!underline"><a href="/furniture-assembly">Furniture Assembly</a></li>
               <li className="hover:!underline"><a href="/local-moving">Local Moving</a></li>
               <li className="hover:!underline"><a href="/furniture-moving">Furniture Moving</a></li>
