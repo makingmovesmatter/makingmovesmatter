@@ -274,7 +274,6 @@ const Navbar = () => {
                             <ul>
                                 <li><a href="/commercial-services">Commercial Services</a></li>
                                 <li><a href="/long-distance-moving">Long Distance Moving</a></li>
-                                <li><a href="/long-distance-moving-arizona">Long Distance Arizona</a></li>
                             </ul>
 
                             <ul>
@@ -371,7 +370,6 @@ const Navbar = () => {
                                             <ul>
                                                 <li><a href="/commercial-services">Commercial Services</a></li>
                                                 <li><a href="/long-distance-moving">Long Distance Moving</a></li>
-                                                <li><a href="/long-distance-moving-arizona">Long Distance Arizona</a></li>
                                             </ul>
 
                                             <ul>

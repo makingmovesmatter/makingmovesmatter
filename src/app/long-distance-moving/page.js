@@ -8,18 +8,22 @@ import ServiceSection from '../components/servicesection';
 import Section5 from '../components/home/section5';
 import Section3 from '../components/home/section3';
 import Faq from '../components/faq';
+import SectionThree from './sectionthree';
+import SectionFour from './sectionfour';
 
 const page = () => {
   const headerImg =
     "/images/longdistance.png";
-  const headerText1 = "Long Distance";
-  const headerText2 = "Movers" ;
-  const headerDesc = "Trusted long distance movers ensuring safe, smooth, stress-free relocation." ;
+  const headerText1 = "Long Distance Moving";
+  const headerText2 = "from Arizona" ;
+  const headerDesc = "Arizona's Trusted Long Distance Moving Company" ;
   return (
     <div>
       <Header headerImg={headerImg} headerText1={headerText1} headerText2={headerText2} headerDesc ={headerDesc} />
       <Section1 />
       <Section2 />
+      <SectionThree />
+      <SectionFour />
       <HowItWorksSection />
       <Section4 />
       <ServiceSection />
