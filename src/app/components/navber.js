@@ -186,7 +186,7 @@ const Navbar = () => {
             <div className="item-top flex justify-between items-center">
                 <div className="logo">
                     <Link href="/">
-                        <img src="/images/logo.png" alt="" loading="eager" width={100} />
+                        <img src="/images/image.png" alt="" loading="eager" width={100} />
                     </Link>
                 </div>
 
@@ -353,7 +353,7 @@ const Navbar = () => {
             <div class="main-mobile-nav">
                 <div class="mobile-top-item">
                     <div class="logo">
-                        <img src="/images/logo.png" alt="" loading="eager" width={100} />
+                        <img src="/images/image.png" alt="" loading="eager" width={100} />
                     </div>
                     <div class="cencle-icon">
                         <i class="fa fa-xmark"></i>
