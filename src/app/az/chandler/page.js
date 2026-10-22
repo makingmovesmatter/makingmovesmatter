@@ -25,10 +25,10 @@ const page = () => {
       <Section1 />
       <HowItWorksSection />
       <Section2 />
-      <Section3 />
-      <Section4 />
-      <Section5 />
       <Section8 />
+      <Section4 />
+      <Section3 />
+      <Section5 />
       <Faq />
     </div>
   )

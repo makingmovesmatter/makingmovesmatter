@@ -2,23 +2,33 @@
 
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { FaTheaterMasks, FaLandmark, FaPalette } from "react-icons/fa";
+import { FaHome, FaStore, FaBoxOpen, FaWarehouse, FaTruck } from "react-icons/fa";
 
 const cards = [
   {
-    icon: <FaTheaterMasks className="iconColor text-4xl" />,
-    title: "Chandler Center for the Arts",
-    description: "A venue for theater performances, concerts, and art exhibitions."
+    icon: <FaHome className="iconColor text-4xl" />,
+    title: "Residential Moving",
+    description: "Safe and stress-free relocations for homes, townhouses, and apartments across Chandler, AZ."
   },
   {
-    icon: <FaLandmark className="iconColor text-4xl" />,
-    title: "Chandler Museum",
-    description: "Discover the city’s rich history through engaging exhibits."
+    icon: <FaStore className="iconColor text-4xl" />,
+    title: "Commercial and Office Relocations",
+    description: "Organized office moves tailored to minimize business downtime in Chandler's Price Corridor and beyond."
   },
   {
-    icon: <FaPalette className="iconColor text-4xl" />,
-    title: "Vision Gallery",
-    description: "Explore works from local and regional artists."
+    icon: <FaBoxOpen className="iconColor text-4xl" />,
+    title: "Packing and Unpacking",
+    description: "Full-service packing using premium commercial-grade materials to safeguard your belongings."
+  },
+  {
+    icon: <FaWarehouse className="iconColor text-4xl" />,
+    title: "Secure Storage Options",
+    description: "Clean, temperature-controlled storage solutions for short-term transitions or extended storage."
+  },
+  {
+    icon: <FaTruck className="iconColor text-4xl" />,
+    title: "Specialty Item Moving",
+    description: "Careful transport of large, fragile, and valuable items including pianos, safes, and antiques."
   }
 ];
 
@@ -30,7 +40,7 @@ const Section2 = () => {
     <div className="paddingTopBottom w-full py-10 bg-white" ref={ref}>
       <div className="container mx-auto px-5">
         <h2 className="text-4xl font-bold text-[var(--heading-text-color)] capitalize py-2 text-center">
-           Arts, Culture & History:
+           Our Chandler Moving & Packing Services Include:
         </h2>
 
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

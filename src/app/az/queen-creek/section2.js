@@ -8,7 +8,7 @@ const cards = [
   {
     icon: <FaHome className="iconColor text-4xl" />,
     title: "Residential Moving",
-    description: "Expert movers for homes and apartments in Mesa, Queen Creek & San Tan Valley."
+    description: "Expert movers for homes, townhouses, and apartments in Queen Creek and surrounding areas."
   },
   {
     icon: <FaStore className="iconColor text-4xl" />,

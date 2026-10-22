@@ -3,53 +3,52 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { 
-  FaHiking, 
   FaWater, 
+  FaMountain, 
   FaTree, 
-  FaChild, 
-  FaSwimmer, 
-  FaStore, 
-  FaMountain 
+  FaTheaterMasks, 
+  FaFish, 
+  FaShapes, 
+  FaStore 
 } from "react-icons/fa";
 
 const cards = [
   {
-    icon: <FaHiking className="iconColor text-4xl" />,
-    title: "Usery Mountain Regional Park",
-    description: "Enjoy hiking, camping, and stunning desert views."
-  },
-  {
     icon: <FaWater className="iconColor text-4xl" />,
-    title: "Salt River Tubing",
-    description: "Float down the scenic Salt River for a fun and refreshing experience."
-  },
-  {
-    icon: <FaTree className="iconColor text-4xl" />,
-    title: "Riverview Park",
-    description: "A family-friendly park with playgrounds, fishing ponds, and walking trails."
-  },
-  {
-    icon: <FaChild className="iconColor text-4xl" />,
-    title: "i.d.e.a. Museum",
-    description: "Interactive exhibits for children to explore art, science, and technology."
-  },
-  {
-    icon: <FaSwimmer className="iconColor text-4xl" />,
-    title: "Golfland Sunsplash",
-    description: "A popular water park and family entertainment center."
-  },
-  {
-    icon: <FaStore className="iconColor text-4xl" />,
-    title: "Downtown Mesa",
-    description: "Enjoy charming shops, local eateries, and vibrant street art."
+    title: "Tempe Town Lake",
+    description: "Enjoy kayaking, paddleboarding, and scenic lakeside strolls in the heart of Tempe."
   },
   {
     icon: <FaMountain className="iconColor text-4xl" />,
-    title: "Superstition Mountains",
-    description: "Explore the legendary Lost Dutchman’s Gold Mine and scenic hiking trails."
+    title: "Papago Park & Hole in the Rock",
+    description: "Iconic red sandstone formations with easy hiking trails and panoramic city views."
+  },
+  {
+    icon: <FaTree className="iconColor text-4xl" />,
+    title: "Kiwanis Park",
+    description: "A popular 125-acre community park with a wave pool, batting cages, and lake."
+  },
+  {
+    icon: <FaTheaterMasks className="iconColor text-4xl" />,
+    title: "ASU Gammage Auditorium",
+    description: "Historic Frank Lloyd Wright-designed venue hosting premier Broadway shows and concerts."
+  },
+  {
+    icon: <FaFish className="iconColor text-4xl" />,
+    title: "SEA LIFE Arizona Aquarium",
+    description: "Interactive marine exhibits featuring sharks, stingrays, and sea turtles."
+  },
+  {
+    icon: <FaShapes className="iconColor text-4xl" />,
+    title: "LEGOLAND Discovery Center",
+    description: "Interactive LEGO-themed family attraction with rides, 4D cinema, and play areas."
+  },
+  {
+    icon: <FaStore className="iconColor text-4xl" />,
+    title: "Mill Avenue District",
+    description: "Historic downtown corridor bustling with boutique shops, casual dining, and nightlife."
   }
 ];
-
 
 const Section4 = () => {
   const ref = useRef(null);
@@ -59,7 +58,7 @@ const Section4 = () => {
     <div className="paddingTopBottom w-full py-10 bg-white" ref={ref}>
       <div className="container mx-auto px-5">
         <h2 className="text-4xl font-bold text-[var(--heading-text-color)] capitalize py-2 text-center">
-          Our Mesa Tempe Services Include:
+          Explore Tempe, AZ: Top Attractions & Things to Do
         </h2>
 
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
