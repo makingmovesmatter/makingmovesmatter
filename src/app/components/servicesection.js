@@ -6,47 +6,47 @@ import Image from "next/image";
 import Link from "next/link";
 
 const services = [
-    {
+  {
     title: "Local Moving",
     description: "Fast, affordable, and reliable moving services within your city or nearby neighborhoods.",
     image: "/images/localmoving1.png",
-    link: "/local-moving",
+    link: "/services/local-moving",
   },
 
-    {
+  {
     title: "Long Distance Moving",
     description: "Trusted long-distance moving solutions with careful planning, safe transport, and on-time delivery across states.",
     image: "/images/longdistance.png",
-    link: "/long-distance-moving",
-  }, 
+    link: "/services/long-distance-moving",
+  },
 
 
   {
     title: "Commercial Services",
     description: "Expert relocation for offices, retail stores, and businesses, ensuring minimal downtime and maximum efficiency.",
     image: "/images/commarcial1.png",
-    link: "/commercial-services",
+    link: "/services/commercial-services",
   },
 
   {
     title: "Furniture Moving",
     description: "Careful transportation of all types of furniture, from delicate antiques to large sectional sofas.",
     image: "/images/farniturMovindBanner.png",
-    link: "/furniture-moving",
+    link: "/services/furniture-moving",
   },
 
   {
     title: "Furniture Assembly",
     description: "Professional assembly and disassembly of furniture to make your move smooth and stress-free.",
     image: "/images/furniture-assembly1.png",
-    link: "/furniture-assembly",
+    link: "/services/furniture-assembly",
   },
 
   {
     title: "Packing & Unpacking Services",
     description: "Full-service packing with premium materials to safeguard your belongings during every stage of the move.",
     image: "/images/pakingunpaking1.png",
-    link: "/packing-and-unpacking-services",
+    link: "/services/packing-and-unpacking-services",
   },
 
 
@@ -54,22 +54,22 @@ const services = [
     title: "Large and Heavy Item Moving",
     description: "Specialized handling for oversized or heavy items like pianos, safes, and industrial equipment.",
     image: "/images/largeavy2.png",
-    link: "/large-and-heavy-item-moving",
-  }, 
+    link: "/services/large-and-heavy-item-moving",
+  },
 
   {
     title: "Storage Solutions",
     description: "Secure, climate-controlled storage for short-term or long-term needs, with easy access when you need it.",
     image: "/images/storage1.png",
-    link: "/storage",
+    link: "/services/storage",
   },
- 
-  
+
+
   {
     title: "Hot Tub Relocation",
     description: "Safe and efficient hot tub moving with the right equipment and techniques to prevent damage.",
     image: "/images/hottub1.png",
-    link: "/hot-tub-relocation",
+    link: "/services/hot-tub-relocation",
   },
 
 ];
@@ -85,7 +85,7 @@ const ServiceSection = () => {
         <motion.h2
           initial={{ opacity: 0, y: -50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration:1 }}
+          transition={{ duration: 1 }}
           className="text-5xl font-bold text-[var(--heading-text-color)] mb-2"
         >
           Our Moving Services
@@ -94,7 +94,7 @@ const ServiceSection = () => {
         <motion.p
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration:1, delay: 1 }}
+          transition={{ duration: 1, delay: 1 }}
           className="text-gray-700 text-lg mb-12"
         >
           We help with moves big and small—whether you’re relocating from a studio apartment, a multi-bedroom home, or an entire office. Below are some of the most requested moving services we provide for homes and businesses across the country.
@@ -103,7 +103,7 @@ const ServiceSection = () => {
         {/* Service Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-          
+
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 50 }}
@@ -112,22 +112,22 @@ const ServiceSection = () => {
               className="relative rounded-xl overflow-hidden shadow-lg group"
             >
               <Link href={service.link}>
-              <div className="relative w-full h-64">
-                <Image
-                  src={service.image}
-                  alt={service.title}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw"
-                  priority
-                />
-                
-                {/* Text on image bottom */}
-                <div className="absolute bottom-0 left-0 w-full p-4 z-20 text-left text-white bg-gradient-to-t from-black/100 via-black/80 to-transparent">
-                  <h3 className="text-xl font-semibold">{service.title}</h3>
-                  <p className="text-sm">{service.description}</p>
+                <div className="relative w-full h-64">
+                  <Image
+                    src={service.image}
+                    alt={service.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw"
+                    priority
+                  />
+
+                  {/* Text on image bottom */}
+                  <div className="absolute bottom-0 left-0 w-full p-4 z-20 text-left text-white bg-gradient-to-t from-black/100 via-black/80 to-transparent">
+                    <h3 className="text-xl font-semibold">{service.title}</h3>
+                    <p className="text-sm">{service.description}</p>
+                  </div>
                 </div>
-              </div>
               </Link>
             </motion.div>
           ))}
