@@ -5,13 +5,35 @@ import React, { useEffect, useState } from "react";
 import Quote from "./quote";
 import { PiQuotes } from "react-icons/pi";
 
+export const openQuoteModal = () => {
+  if (typeof window !== "undefined") {
+    window.dispatchEvent(new CustomEvent("open-quote-modal"));
+  }
+};
+
 const QuoteButton = () => {
   const [open, setOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
   const [animClass, setAnimClass] = useState("");
 
+  const handleOpen = () => {
+    setOpen(true);
+    document.body.style.overflow = "hidden";
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+    document.body.style.overflow = "auto";
+  };
+
   useEffect(() => {
     setMounted(true);
+
+    const handleCustomOpen = () => {
+      handleOpen();
+    };
+
+    window.addEventListener("open-quote-modal", handleCustomOpen);
 
     const interval = setInterval(() => {
       if (window.innerWidth < 1024) {
@@ -24,18 +46,11 @@ const QuoteButton = () => {
       }
     }, 10000);
 
-    return () => clearInterval(interval);
+    return () => {
+      clearInterval(interval);
+      window.removeEventListener("open-quote-modal", handleCustomOpen);
+    };
   }, []);
-
-  const handleOpen = () => {
-    setOpen(true);
-    document.body.style.overflow = "hidden";
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-    document.body.style.overflow = "auto";
-  };
 
   return (
     <>

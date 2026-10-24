@@ -134,7 +134,7 @@ const Navbar = () => {
 
                 <div class="call-now-text">
                     <Link href="tel:4809348218">
-                        <h1>Call Now</h1>
+                        <span className="font-bold text-xl block">Call Now</span>
                         <p>(480) 934-8218</p>
                     </Link>
                 </div>
@@ -142,7 +142,7 @@ const Navbar = () => {
                 <div className='call-now-btn'>
                     <div class="call-now-text1">
                         <Link href="tel:4809348218">
-                            <h1>Call Now</h1>
+                            <span className="font-bold text-xl block">Call Now</span>
                             <p>(480) 934-8218</p>
                         </Link>
                     </div>

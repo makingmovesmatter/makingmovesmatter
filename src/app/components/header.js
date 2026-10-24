@@ -2,9 +2,8 @@
 
 import Quote from './quote';
 import { motion } from 'framer-motion';
-import { PiPhoneCallLight } from "react-icons/pi";
-import {IoMailOutline } from "react-icons/io5";
-
+import { PiPhoneCallLight, PiQuotes } from "react-icons/pi";
+import { openQuoteModal } from './QuoteButton';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 50 },
@@ -55,23 +54,27 @@ const Header = ({ headerImg, headerText1, headerText2, headerDesc }) => {
                         </div>
       
                         <div className="call-us-text">
-                          <h1>Call Now</h1>
+                          <span className="text-xl font-bold text-white block">Call Now</span>
                         </div>
                       </a>
                     </div>
                   </motion.div>
       
                   <motion.div className="email-us-ctr-design">
-                    <div className="email-us-ctr-container">
-                      <a href="mailto:makingmovesmatter07@gmail.com" className="flex items-center gap-3">
+                    <div className="email-us-ctr-container hover:bg-orange-500/20 transition-colors duration-200">
+                      <button 
+                        type="button" 
+                        onClick={openQuoteModal}
+                        className="flex items-center gap-3 w-full cursor-pointer text-left bg-transparent border-none p-0 focus:outline-none"
+                      >
                         <div className="email-us-icon">
-                          <IoMailOutline />
+                          <PiQuotes className="text-2xl" />
                         </div>
       
                         <div className="email-us-text">
-                          <h1>Email Now</h1>
+                          <span className="text-xl font-bold text-white block">Get A Quote</span>
                         </div>
-                      </a>
+                      </button>
                     </div>
                   </motion.div>
                 </div>
@@ -81,7 +84,8 @@ const Header = ({ headerImg, headerText1, headerText2, headerDesc }) => {
 
               </motion.div>
 
-              <motion.div variants={fadeInUp} className='w-full lg:w-1/2 nva'>
+              {/* Inline quote section: hidden on mobile and tablet, shown on lg screens */}
+              <motion.div variants={fadeInUp} className='hidden lg:block w-full lg:w-1/2 nva'>
                 <Quote />
               </motion.div>
 
