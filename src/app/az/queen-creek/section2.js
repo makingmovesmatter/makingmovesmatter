@@ -2,68 +2,105 @@
 
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { FaHome, FaStore, FaBoxOpen, FaWarehouse, FaTruck } from "react-icons/fa";
+import { FaHome, FaBuilding, FaBoxOpen, FaWarehouse, FaDollyFlatbed, FaArrowRight } from "react-icons/fa";
+import { openQuoteModal } from "../../components/QuoteButton";
 
-const cards = [
+const services = [
   {
-    icon: <FaHome className="iconColor text-4xl" />,
+    icon: <FaHome className="text-[#f99c00] text-3xl" />,
     title: "Residential Moving",
-    description: "Expert movers for homes, townhouses, and apartments in Queen Creek and surrounding areas."
+    description: "Local and long-distance moves for single-family homes, equestrian acreage, custom ranch estates, and townhomes in Queen Creek.",
+    tag: "Houses, Ranches & Condos"
   },
   {
-    icon: <FaStore className="iconColor text-4xl" />,
-    title: "Commercial Moves",
-    description: "Fast, reliable relocations for offices and businesses of any size."
+    icon: <FaBuilding className="text-[#f99c00] text-3xl" />,
+    title: "Commercial and Office Relocations",
+    description: "Efficient moves for businesses of all sizes, retail stores, healthcare clinics, and corporate suites across Ellsworth Loop and Town Center.",
+    tag: "Offices & Retail Suites"
   },
   {
-    icon: <FaBoxOpen className="iconColor text-4xl" />,
-    title: "Packing Services",
-    description: "Professional packing and unpacking with quality materials and care."
+    icon: <FaBoxOpen className="text-[#f99c00] text-3xl" />,
+    title: "Packing and Unpacking",
+    description: "Full-service packing solutions using heavy-duty double-walled boxes, bubble wrap, and wardrobe boxes to protect all your valuables.",
+    tag: "Full & Partial Packing"
   },
   {
-    icon: <FaWarehouse className="iconColor text-4xl" />,
-    title: "Secure Storage",
-    description: "Clean, climate-controlled storage for short or long-term needs."
+    icon: <FaWarehouse className="text-[#f99c00] text-3xl" />,
+    title: "Secure Storage Options",
+    description: "Clean, climate-controlled storage units for both short-term transitional needs and long-term storage with 24/7 video surveillance.",
+    tag: "Climate-Controlled Units"
   },
   {
-    icon: <FaTruck className="iconColor text-4xl" />,
-    title: "Specialty Moves",
-    description: "Safe handling for pianos, antiques, and large or fragile items."
+    icon: <FaDollyFlatbed className="text-[#f99c00] text-3xl" />,
+    title: "Specialty & Heavy Item Moving",
+    description: "Careful transport of large, heavy, and delicate items including heavy gun safes, hot tubs, upright/grand pianos, and ranch equipment.",
+    tag: "Safes, Spas & Pianos"
   }
 ];
 
 const Section2 = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { once: true, amount: 0.15 });
 
   return (
-    <div className="paddingTopBottom w-full py-10 bg-white" ref={ref}>
+    <section className="w-full py-16 bg-neutral-50 border-y border-neutral-200" ref={ref} id="queen-creek-services">
       <div className="container mx-auto px-5">
-        <h2 className="text-4xl font-bold text-[var(--heading-text-color)] text-center py-2">
-          Our Queen Creek Moving Services
-        </h2>
 
-        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {cards.map((card, index) => (
+        {/* Header */}
+        <div className="text-center mb-12">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-100/70 border border-orange-200 text-[#f99c00] font-semibold text-xs tracking-wider uppercase mb-3">
+            Comprehensive Moving Solutions
+          </div>
+          <h2 className="text-3xl sm:text-4xl font-bold text-[var(--heading-text-color)] capitalize">
+            Our Queen Creek Moving Services Include:
+          </h2>
+          <p className="text-gray-600 text-base mt-3 max-w-none">
+            Tailored, full-service relocation solutions designed to make your move smooth, safe, and stress-free.
+          </p>
+        </div>
+
+        {/* 5-Card Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {services.map((srv, idx) => (
             <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 50 }}
+              key={idx}
+              initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: index * 0.15 }}
-              className="flex items-start gap-4 bg-white rounded-md shadow-md p-6"
+              transition={{ duration: 0.5, delay: idx * 0.1, ease: "easeOut" }}
+              className="p-6 rounded-xl bg-white border border-neutral-200 hover:border-[#f99c00] transition-all duration-300 flex flex-col justify-between group"
             >
-              <div>{card.icon}</div>
               <div>
-                <h3 className="text-xl font-semibold text-[var(--heading-text-color)] mb-1">
-                  {card.title}
+                <div className="flex items-center justify-between mb-4">
+                  <div className="w-14 h-14 rounded-lg bg-orange-50 border border-orange-100 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                    {srv.icon}
+                  </div>
+                  <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-neutral-100 text-gray-700">
+                    {srv.tag}
+                  </span>
+                </div>
+                <h3 className="text-lg font-bold text-[var(--heading-text-color)] mb-2 group-hover:text-[#f99c00] transition-colors">
+                  {srv.title}
                 </h3>
-                <p className="text-gray-600 text-sm">{card.description}</p>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {srv.description}
+                </p>
+              </div>
+
+              <div className="mt-6 pt-4 border-t border-neutral-100 flex items-center justify-between">
+                <button
+                  type="button"
+                  onClick={openQuoteModal}
+                  className="text-xs font-bold text-[#f99c00] group-hover:text-[#e08b00] flex items-center gap-1.5 transition-colors cursor-pointer"
+                >
+                  Request Service Quote <FaArrowRight className="text-[10px]" />
+                </button>
               </div>
             </motion.div>
           ))}
         </div>
+
       </div>
-    </div>
+    </section>
   );
 };
 

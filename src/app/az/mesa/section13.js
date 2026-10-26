@@ -3,14 +3,14 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { FaPhoneAlt, FaCheckCircle, FaCalendarCheck } from "react-icons/fa";
-import { openQuoteModal } from "@/app/components/QuoteButton";
+import { openQuoteModal } from "../../components/QuoteButton";
 
 const Section13 = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.15 });
 
   return (
-    <section className="w-full bg-[#011234] text-white py-16" ref={ref} id="mesa-cta">
+    <section className="w-full text-white py-16" ref={ref} id="mesa-cta">
       <div className="container mx-auto px-5">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -23,7 +23,7 @@ const Section13 = () => {
               Book Your Mesa Relocation Today
             </span>
 
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight mb-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
               Ready for a Smooth, Safe & Stress-Free Move in Mesa, AZ?
             </h2>
 

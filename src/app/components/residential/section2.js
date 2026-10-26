@@ -49,7 +49,7 @@ const Section2 = () => {
             <li>Get a Free Moving Quote—Your Way</li>
             <li>Areas We Serve</li>
             <li>Frequently Asked Questions</li>
-            <li>About Smart Move Moving & Storage</li>
+            <li>About Making Moves Matter</li>
             <li>Our Moving Blog: Tips, Checklists, and Expert Advice</li>
             <li>Locations</li>
             <li>Quick Links</li>

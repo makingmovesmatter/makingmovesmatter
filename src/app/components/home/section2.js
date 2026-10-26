@@ -10,7 +10,7 @@ import "slick-carousel/slick/slick-theme.css";
 const PrevArrow = ({ onClick }) => (
   <button
     onClick={onClick}
-    className="absolute left-[-12px] md:left-[-35px] top-1/2 -translate-y-1/2 bg-white rounded-full w-10 h-10 shadow-[0_2px_10px_rgba(0,0,0,0.1)] z-10 text-gray-500 hover:text-gray-900 hover:scale-105 active:scale-95 transition-all border border-gray-100 flex items-center justify-center cursor-pointer"
+    className="absolute left-[-12px] md:left-[-35px] top-1/2 -translate-y-1/2 bg-white rounded-full w-10 h-10 z-10 text-gray-500 hover:text-gray-900 transition-all border border-gray-200 flex items-center justify-center cursor-pointer"
     aria-label="Previous review"
   >
     <FaChevronLeft className="w-4 h-4" />
@@ -20,7 +20,7 @@ const PrevArrow = ({ onClick }) => (
 const NextArrow = ({ onClick }) => (
   <button
     onClick={onClick}
-    className="absolute right-[-12px] md:right-[-35px] top-1/2 -translate-y-1/2 bg-white rounded-full w-10 h-10 shadow-[0_2px_10px_rgba(0,0,0,0.1)] z-10 text-gray-500 hover:text-gray-900 hover:scale-105 active:scale-95 transition-all border border-gray-100 flex items-center justify-center cursor-pointer"
+    className="absolute right-[-12px] md:right-[-35px] top-1/2 -translate-y-1/2 bg-white rounded-full w-10 h-10 z-10 text-gray-500 hover:text-gray-900 transition-all border border-gray-200 flex items-center justify-center cursor-pointer"
     aria-label="Next review"
   >
     <FaChevronRight className="w-4 h-4" />
@@ -117,7 +117,7 @@ const Section2 = () => {
       <div className="mx-auto container px-5">
         {/* Header Section */}
         <div className="flex justify-center items-center flex-col mb-12 mt-15">
-          <h2 className="text-3xl md:text-[40px] font-bold text-[#1E293B] capitalize pb-3 text-center">
+          <h2 className="text-3xl md:text-[40px] font-semibold text-[#1E293B] capitalize pb-3 text-center">
             What Our Clients Say
           </h2>
           <p className="text-gray-500 text-center max-w-xl text-sm md:text-base mb-6">
@@ -127,7 +127,7 @@ const Section2 = () => {
             href="https://www.google.com/maps/place//data=!4m3!3m2!1s0xb69fbad24f48ec5:0x94a02e5409598218!12e1?source=g.page.m._&laa=merchant-review-solicitation" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="flex text-white gap-2 items-center bg-[#FBBF24] hover:bg-[#f59e0b] text-slate-900 px-6 py-3 rounded-full font-semibold transition-all shadow-sm hover:shadow text-sm cursor-pointer"
+            className="flex text-white gap-2 items-center bg-[var(--accent-color)] hover:opacity-90 px-6 py-3 rounded-full font-semibold transition-all text-sm cursor-pointer"
           >
             <FaMessage className="text-white" /> Leave a Review
           </a>

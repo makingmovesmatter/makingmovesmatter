@@ -22,7 +22,7 @@ const Section4 = () => {
             Tailored Moving Expertise
           </div>
 
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[var(--heading-text-color)] leading-tight mb-6">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[var(--heading-text-color)] leading-tight mb-6">
             Residential Living & Commercial Business Transitions in Mesa
           </h2>
 

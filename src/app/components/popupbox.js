@@ -18,7 +18,7 @@ export default function PopupBox() {
       <Popup
         isOpen={showPopup}
         onClose={() => setShowPopup(false)}
-        title="Welcome to Smart Move"
+        title="Welcome to Making Moves Matter"
         subtitle="Free Moving Estimate"
         description="Get a personalized estimate for your move in just a few clicks. We're here to make your move stress-free!"
       />

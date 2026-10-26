@@ -6,15 +6,15 @@ const Section9 = () => {
     <div className="w-full py-10 bg-white">
       <div className="container mx-auto">
         <h2 className="text-4xl font-bold text-[var(--heading-text-color)] capitalize pt-6 py-2">
-          About Smart Move Moving & Storage
+          About Making Moves Matter
         </h2>
         <p className="text-[var(--heading-text-color)] text-md pb-5">
-          We’re a family-owned moving company with over 30 years of experience
-          helping people relocate with confidence. What started as a small local
-          crew has grown into a trusted brand known for professionalism,
-          transparency, and genuine care. From residential moves to complex
-          commercial relocations, we’ve built our name on doing things the right
-          way.
+          We’re an Arizona-born, family-operated moving company with over 15 years of experience
+          helping Mesa and East Valley residents relocate with complete peace of mind. What started as a dedicated local
+          crew has grown into one of Arizona’s most trusted moving brands known for punctuality,
+          transparency, and genuine care. From single-family homes to large-scale
+          commercial operations, we’ve built our reputation on doing things the right
+          way every time.
         </p>
 
         <p className="text-[var(--heading-text-color)] text-md pb-2">

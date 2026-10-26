@@ -1,123 +1,116 @@
 "use client";
 
+import Image from "next/image";
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import {
-  FaMountain,
-  FaSeedling,
-  FaBiking,
-  FaLandmark,
-  FaPalette,
-  FaTractor,
-  FaHome,
-  FaPaw,
-  FaChild,
-  FaHotjar,
-  FaCity,
-} from "react-icons/fa";
-
-const cards = [
-  // Explore the Outdoors
-  {
-    icon: <FaMountain className="text-green-600 text-4xl" />,
-    title: "San Tan Mountain Regional Park",
-    description:
-      "Enjoy scenic desert trails, mountain views, and wildlife in Queen Creek’s favorite outdoor escape.",
-  },
-  {
-    icon: <FaSeedling className="text-green-600 text-4xl" />,
-    title: "Queen Creek Olive Mill",
-    description:
-      "Tour Arizona’s only working olive farm and mill, and enjoy local dining in a beautiful setting.",
-  },
-  {
-    icon: <FaBiking className="text-green-600 text-4xl" />,
-    title: "Mansel Carter Oasis Park",
-    description:
-      "A family-friendly park featuring splash pads, trails, sports fields, and scenic picnic areas.",
-  },
-
-  // Local Culture & History
-  {
-    icon: <FaLandmark className="text-blue-600 text-4xl" />,
-    title: "Schnepf Farms",
-    description:
-      "A Queen Creek classic — known for its seasonal festivals, farm-to-table food, and u-pick gardens.",
-  },
-  {
-    icon: <FaPalette className="text-blue-600 text-4xl" />,
-    title: "Queen Creek Performing Arts Center",
-    description:
-      "Experience live music, theatre, and community shows right in the heart of town.",
-  },
-  {
-    icon: <FaTractor className="text-blue-600 text-4xl" />,
-    title: "Agritainment & Farm Tours",
-    description:
-      "From corn mazes to petting zoos, Queen Creek’s farms bring fun and learning together.",
-  },
-
-  // Family-Friendly Fun
-  {
-    icon: <FaPaw className="text-orange-600 text-4xl" />,
-    title: "Horseshoe Park & Equestrian Centre",
-    description:
-      "A premier venue for rodeos, horse shows, and family-friendly western events.",
-  },
-  {
-    icon: <FaChild className="text-orange-600 text-4xl" />,
-    title: "Pocket Parks & Neighborhood Trails",
-    description:
-      "Dozens of small parks and walking trails perfect for family time and outdoor fun.",
-  },
-
-  // Unique Experiences
-  {
-    icon: <FaHotjar className="text-purple-600 text-4xl" />,
-    title: "Sunset Hot Air Balloon Rides",
-    description:
-      "Take in breathtaking aerial views of the San Tan Valley and Queen Creek countryside.",
-  },
-  {
-    icon: <FaCity className="text-purple-600 text-4xl" />,
-    title: "Downtown Queen Creek",
-    description:
-      "A growing hub for shopping, dining, and entertainment with a welcoming small-town vibe.",
-  },
-];
+import { FaClock, FaDesktop, FaBoxes, FaPhoneAlt } from "react-icons/fa";
+import { openQuoteModal } from "../../components/QuoteButton";
 
 const Section4 = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { once: true, amount: 0.15 });
+
+  const commercialHighlights = [
+    {
+      icon: <FaClock className="text-[#f99c00] text-xl" />,
+      title: "Flexible Weekend & Evening Relocations",
+      desc: "We minimize commercial downtime by completing moves after business hours or over the weekend so your office is fully functional Monday morning."
+    },
+    {
+      icon: <FaDesktop className="text-[#f99c00] text-xl" />,
+      title: "IT Equipment & Workstation Protection",
+      desc: "Anti-static padding, specialized computer bins, and labeled cable management for office desktop setups, multi-function printers, and servers."
+    },
+    {
+      icon: <FaBoxes className="text-[#f99c00] text-xl" />,
+      title: "Retail & Commercial Furniture Setup",
+      desc: "Complete disassembly, transport, and reassembly of modular cubicles, conference tables, retail shelving, and executive office furniture."
+    }
+  ];
 
   return (
-    <div className="paddingTopBottom w-full py-10 bg-white" ref={ref}>
+    <section className="w-full bg-neutral-50 py-16 border-y border-neutral-200" ref={ref} id="commercial-moving">
       <div className="container mx-auto px-5">
-        <h2 className="text-4xl font-bold text-[var(--heading-text-color)] capitalize py-2 text-center">
-          Explore the Best of Queen Creek, AZ
-        </h2>
 
-        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {cards.map((card, index) => (
+        {/* Header */}
+        <div className="text-center mb-12">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-100/70 border border-orange-200 text-[#f99c00] font-semibold text-xs tracking-wider uppercase mb-3">
+            Corporate & Business Solutions
+          </div>
+          <h2 className="text-3xl sm:text-4xl font-bold text-[var(--heading-text-color)] capitalize">
+            Commercial and Office Relocations in Queen Creek, AZ
+          </h2>
+          <p className="text-gray-600 text-base mt-3 max-w-none">
+            Reliable, organized moving solutions for local businesses, medical suites, and retail stores across Ellsworth Loop and Queen Creek Town Center.
+          </p>
+        </div>
+
+        {/* 3 Highlights Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+          {commercialHighlights.map((item, idx) => (
             <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 50 }}
+              key={idx}
+              initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: index * 0.15 }}
-              className="flex items-start gap-4 bg-white rounded-md shadow-md p-6"
+              transition={{ duration: 0.5, delay: idx * 0.1, ease: "easeOut" }}
+              className="p-6 rounded-xl bg-white border border-neutral-200 hover:border-[#f99c00] transition-colors flex flex-col justify-between"
             >
-              <div>{card.icon}</div>
               <div>
-                <h1 className="text-xl font-semibold text-[var(--heading-text-color)] mb-1">
-                  {card.title}
-                </h1>
-                <p className="text-gray-600 text-sm">{card.description}</p>
+                <div className="w-12 h-12 rounded-lg bg-orange-50 border border-orange-100 flex items-center justify-center mb-4">
+                  {item.icon}
+                </div>
+                <h3 className="font-bold text-lg text-[var(--heading-text-color)] mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {item.desc}
+                </p>
               </div>
             </motion.div>
           ))}
         </div>
+
+        {/* Corporate Consultation Callout with Visual */}
+        <div className="p-8 rounded-2xl bg-white border border-neutral-200 flex flex-col lg:flex-row items-center justify-between gap-8">
+          <div className="relative w-full lg:w-1/3 h-52 sm:h-64 rounded-xl overflow-hidden border border-neutral-200 flex-shrink-0">
+            <Image
+              src="/images/queen-creek-commercial-moving.jpg"
+              alt="Making Moves Matter commercial moving crew relocating an office in Queen Creek Arizona"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 33vw"
+            />
+          </div>
+          <div className="lg:w-2/3 flex flex-col justify-between">
+            <div>
+              <h3 className="text-xl sm:text-2xl font-bold text-[var(--heading-text-color)] mb-2">
+                Relocating Your Queen Creek Business or Storefront?
+              </h3>
+              <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-6">
+                Our commercial moving directors conduct complimentary site walk-throughs to provide guaranteed binding estimates, Certificate of Insurance (COI) issuance, and coordinated timeline execution.
+              </p>
+            </div>
+            <div className="flex flex-wrap items-center gap-3">
+              <a
+                href="tel:4809348218"
+                className="px-6 py-3 rounded-lg bg-[#011234] hover:bg-slate-800 text-white font-bold text-sm transition-colors inline-flex items-center justify-center gap-2"
+              >
+                <FaPhoneAlt className="text-xs text-[#f99c00]" />
+                Call (480) 934-8218
+              </a>
+              <button
+                type="button"
+                onClick={openQuoteModal}
+                className="px-6 py-3 rounded-lg bg-[#f99c00] hover:bg-[#e08b00] text-white font-bold text-sm transition-colors cursor-pointer"
+              >
+                Request Commercial Proposal
+              </button>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </div>
+    </section>
   );
 };
 

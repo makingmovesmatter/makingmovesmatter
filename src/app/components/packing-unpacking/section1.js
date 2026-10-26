@@ -39,10 +39,10 @@ const Section1 = () => {
     <div className="w-full py-10 bg-white">
       <div className="container mx-auto">
         <h2 className="text-4xl font-bold text-[var(--heading-text-color)] capitalize py-2">
-          Packing and Unpacking
+          Professional Packing and Unpacking Services
         </h2>
         <p className="text-[var(--heading-text-color)] text-md pb-8">
-          Smart Move Moving & Storage offers full packing and unpacking services
+          Making Moves Matter offers full packing and unpacking services
           to make your move easy and stress-free. Our team of trained
           professionals is here to handle all your packing and unpacking needs
           with care and efficiency.
@@ -58,10 +58,10 @@ const Section1 = () => {
         </div>
 
         <h3 className="text-2xl font-bold text-[var(--heading-text-color)] capitalize py-2">
-          Packing and Unpacking
+          Expert Fragile Item Protection
         </h3>
         <p className="text-[var(--heading-text-color)] text-md pb-2">
-          Smart Move offers expert packing services to ensure all your
+          Making Moves Matter offers expert packing services to ensure all your
           belongings are securely packed. We use high-quality materials to
           protect your items. We take special care with fragile and valuable
           items, wrapping them carefully to prevent any damage during the move.
@@ -73,7 +73,7 @@ const Section1 = () => {
           Custom Packing Solutions
         </h3>
         <p className="text-[var(--heading-text-color)] text-md pb-2">
-          At Smart Move, we know that every move is different. That’s why we
+          At Making Moves Matter, we know that every move is different. That’s why we
           offer custom packing solutions to fit your needs. Whether you need
           help packing your whole home or just a few rooms, our team can handle
           it. You can choose to have us pack as much or as little as you need.
@@ -83,7 +83,7 @@ const Section1 = () => {
           Efficient Unpacking
         </h3>
         <p className="text-[var(--heading-text-color)] text-md pb-2">
-          When you arrive at your new place, Smart Move’s unpacking services
+          When you arrive at your new place, Making Moves Matter’s unpacking services
           help you settle in quickly. Our team will carefully unpack your items
           and place them in the rooms you choose, helping you get organized in
           your new space.
@@ -93,7 +93,7 @@ const Section1 = () => {
           Save Time and Reduce Stress
         </h3>
         <p className="text-[var(--heading-text-color)] text-md pb-2">
-          With Smart Move’s packing and unpacking services, you save time and
+          With Making Moves Matter’s packing and unpacking services, you save time and
           reduce the stress of moving. Our professional team takes care of the
           hard work, so you can focus on other important things.
         </p>
@@ -104,11 +104,11 @@ const Section1 = () => {
         <p className="text-[var(--heading-text-color)] text-md pb-2">
           Our packing and unpacking services make your entire move easy. From
           packing your belongings at your old place to unpacking them at your
-          new one, Smart Move Moving & Storage makes sure everything goes
+          new one, Making Moves Matter makes sure everything goes
           smoothly.
         </p>
         <p className="text-[var(--heading-text-color)] text-md pb-2">
-          Trust Smart Move Moving & Storage to handle all your packing and
+          Trust Making Moves Matter to handle all your packing and
           unpacking needs with care and professionalism. Contact us today to
           learn more about our services and to get a personalized quote. Let us
           make your move as easy and stress-free as possible!

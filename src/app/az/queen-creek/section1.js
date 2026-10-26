@@ -1,65 +1,152 @@
 "use client";
 
-import Image from "next/image";
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import { FaShieldAlt, FaClock, FaDollarSign, FaGlobeAmericas, FaPhoneAlt, FaCalendarCheck } from "react-icons/fa";
+import { openQuoteModal } from "../../components/QuoteButton";
+
+const specialties = [
+  {
+    icon: <FaShieldAlt className="text-[#f99c00] text-2xl flex-shrink-0" />,
+    title: "Licensed & Insured Movers",
+    desc: "15+ years of trusted experience with background-checked, fully insured, and highly trained professional crews."
+  },
+  {
+    icon: <FaClock className="text-[#f99c00] text-2xl flex-shrink-0" />,
+    title: "Punctual & Reliable Delivery",
+    desc: "Guaranteed arrival windows, efficient Southeast Valley dispatch, and reliable relocation timing for every move."
+  },
+  {
+    icon: <FaDollarSign className="text-[#f99c00] text-2xl flex-shrink-0" />,
+    title: "Transparent Upfront Pricing",
+    desc: "Guaranteed flat-rate estimates with zero hidden fuel charges, unexpected stairs fees, or moving day surcharges."
+  },
+  {
+    icon: <FaGlobeAmericas className="text-[#f99c00] text-2xl flex-shrink-0" />,
+    title: "Local & Cross-Country Moving",
+    desc: "Seamless relocations across Queen Creek, throughout Arizona, or nationwide with dedicated long-haul trucks."
+  }
+];
 
 const Section1 = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { once: true, amount: 0.15 });
 
   return (
-    <section className="w-full bg-white py-14 mt-16 mb-16" ref={ref}>
-      <div className="container mx-auto px-5 flex flex-col lg:flex-row items-stretch gap-10">
-        
-        {/* Text Section */}
+    <section className="w-full bg-white py-14" ref={ref} id="about-queen-creek">
+      <div className="container mx-auto px-5 flex flex-col lg:flex-row items-stretch gap-12">
+
+        {/* Left Column: Narrative & Specialties */}
         <motion.div
           className="w-full lg:w-1/2 flex flex-col justify-center"
-          initial={{ opacity: 0, x: 50 }}
+          initial={{ opacity: 0, x: -30 }}
           animate={isInView ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
         >
-          <h2 className="text-3xl font-bold text-[var(--heading-text-color)] mb-4">
-            Welcome to Making Moves Matter: Your Reliable Moving Experts in Queen Creek, AZ
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-50 border border-orange-200 text-[#f99c00] font-semibold text-xs tracking-wider uppercase mb-3 w-fit">
+            Queen Creek, AZ Relocation Specialists
+          </div>
+
+          <h2 className="text-3xl sm:text-4xl font-bold text-[var(--heading-text-color)] leading-tight mb-2">
+            Welcome to Making Moves Matter: Your Trusted Queen Creek Moving Company
           </h2>
 
-          <p>
-            With over 15 years of hands-on experience, <strong>Making Moves Matter</strong> is proud to be 
-            the most trusted <strong>Queen Creek moving company</strong> fully licensed, insured, 
-            and locally operated. <br /><br />
-            
-            Whether you’re relocating within <strong>Queen Creek</strong> or moving long-distance, 
-            our dedicated team ensures every step of your journey is stress-free and efficient. 
-            From professional packing and careful loading to secure storage and timely delivery, 
-            we go above and beyond to protect what matters most to you. <br /><br />
+          <h3 className="text-lg sm:text-xl font-bold text-[#f99c00] mb-4">
+            Local Queen Creek Movers with 15+ Years Experience, Licensed & Insured, with a Trained Crew
+          </h3>
 
-            Our trained movers handle <strong>residential</strong>, <strong>commercial</strong>, and 
-            <strong> specialty moves</strong> with precision and care all while providing clear pricing 
-            and open communication every step of the way. <br /><br />
+          <p className="text-gray-700 text-base leading-relaxed mb-4">
+            Are you looking for dependable, stress-free movers in Queen Creek, AZ to handle your relocation? At Making Moves Matter, we pride ourselves on delivering premier moving services across Queen Creek and surrounding East Valley communities. Our experienced team handles everything from single-family homes and custom ranch estates to commercial offices and retail stores.
+          </p>
 
-            Discover why Queen Creek families and businesses continue to choose us for smooth, 
-            affordable, and dependable moving solutions that truly make your move matter.
-          </p><br /><br />
-        </motion.div>
+          <p className="text-gray-700 text-base leading-relaxed mb-4">
+            Whether you are moving across town to Montelena or relocating across the country, our mission is to make your transition smooth, safe, and efficient. With white-glove packing, secure storage, and timely delivery, we are the Queen Creek moving company you can rely on for complete peace of mind.
+          </p>
 
-        {/* Image Section */}
-        <motion.div
-          className="w-full lg:w-1/2"
-          initial={{ opacity: 0, x: -50 }}
-          animate={isInView ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 1.2 }}
-        >
-          <div className="relative w-full h-full min-h-[400px] rounded-lg overflow-hidden shadow-md">
-            <Image
-              src={"/images/queen-creek2.png"}
-              alt="Professional Queen Creek movers handling a residential move"
-              fill
-              className="object-cover group-hover:scale-105 transition-transform duration-500"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw"
-              priority
-            />
+          <div className="pt-2">
+            <h4 className="text-lg font-bold text-[var(--heading-text-color)] mb-4 flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-[#f99c00]"></span>
+              Our Moving Company Specialties:
+            </h4>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+              {specialties.map((item, idx) => (
+                <div
+                  key={idx}
+                  className="p-4 rounded-lg bg-neutral-50 border border-neutral-200 hover:border-[#f99c00] transition-colors duration-300 flex items-start gap-3"
+                >
+                  {item.icon}
+                  <div>
+                    <h5 className="font-semibold text-sm text-[var(--heading-text-color)]">{item.title}</h5>
+                    <p className="text-gray-600 text-xs mt-1 leading-snug">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-6 flex flex-wrap items-center gap-4">
+              <a
+                href="tel:4809348218"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-md bg-[#f99c00] hover:bg-[#e08b00] text-white font-semibold text-sm transition-colors duration-200"
+              >
+                <FaPhoneAlt className="text-xs" />
+                Call (480) 934-8218
+              </a>
+              <button
+                type="button"
+                onClick={openQuoteModal}
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-md bg-white border border-[#f99c00] text-[#f99c00] hover:bg-orange-50 font-semibold text-sm transition-colors duration-200 cursor-pointer"
+              >
+                <FaCalendarCheck className="text-xs" />
+                Request Free Quote
+              </button>
+            </div>
           </div>
         </motion.div>
+
+        {/* Right Column: Visual Feature Card */}
+        <motion.div
+          className="w-full lg:w-1/2 flex flex-col justify-center"
+          initial={{ opacity: 0, x: 30 }}
+          animate={isInView ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 0.7, ease: "easeOut", delay: 0.15 }}
+        >
+          <div className="p-8 rounded-2xl bg-neutral-50 border border-neutral-200 flex flex-col justify-between h-full">
+            <div>
+              <div className="inline-block px-3 py-1 rounded-full bg-orange-100 text-[#f99c00] text-xs font-bold uppercase tracking-wider mb-4">
+                Why Queen Creek Families Choose Us
+              </div>
+              <h3 className="text-2xl font-bold text-[var(--heading-text-color)] mb-4">
+                Full-Service Moving for Master-Planned Communities & Equestrian Acreage
+              </h3>
+              <p className="text-gray-700 text-sm sm:text-base leading-relaxed mb-6">
+                From custom estates in Hastings Farms to family homes in Cortina and Queen Creek Station, our moving specialists understand Queen Creek's unique terrain, gate clearances, and spacious floorplans.
+              </p>
+
+              <div className="space-y-3.5 mb-6">
+                <div className="p-3.5 rounded-lg bg-white border border-neutral-200 flex items-center justify-between">
+                  <span className="font-semibold text-sm text-[var(--heading-text-color)]">Local & Long-Distance Experience</span>
+                  <span className="font-bold text-sm text-[#f99c00]">15+ Years</span>
+                </div>
+                <div className="p-3.5 rounded-lg bg-white border border-neutral-200 flex items-center justify-between">
+                  <span className="font-semibold text-sm text-[var(--heading-text-color)]">Customer Satisfaction Rating</span>
+                  <span className="font-bold text-sm text-[#f99c00]">4.9 / 5.0 ★</span>
+                </div>
+                <div className="p-3.5 rounded-lg bg-white border border-neutral-200 flex items-center justify-between">
+                  <span className="font-semibold text-sm text-[var(--heading-text-color)]">Licensing & Coverage</span>
+                  <span className="font-bold text-sm text-[#f99c00]">100% Bonded & Insured</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-4 rounded-xl bg-orange-50/70 border border-orange-200 text-center">
+              <p className="text-xs text-gray-700 font-medium">
+                Serving all Queen Creek ZIP codes: <strong className="text-[#011234]">85142, 85140, 85143</strong> and surrounding areas.
+              </p>
+            </div>
+          </div>
+        </motion.div>
+
       </div>
     </section>
   );

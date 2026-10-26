@@ -2,69 +2,102 @@
 
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { FaShieldAlt, FaStar, FaBoxes, FaDollarSign, FaComments } from "react-icons/fa";
+import { 
+  FaShieldHalved, 
+  FaReceipt, 
+  FaUsers, 
+  FaCouch, 
+  FaTruckFast, 
+  FaHeadset 
+} from "react-icons/fa6";
 
-const cards = [
+const pillars = [
   {
-    icon: <FaShieldAlt className="iconColor text-4xl" />,
-    title: "Fully Insured",
-    description: "With our insured moving company, we aim to provide our customers with legitimate relocation services."
+    icon: <FaShieldHalved className="text-2xl text-[var(--accent-color)]" />,
+    title: "100% Licensed & Fully Insured",
+    description:
+      "Fully certified for local and interstate relocation with full-value cargo and liability protection for complete peace of mind."
   },
   {
-    icon: <FaStar className="iconColor text-4xl" />,
-    title: "Reputable",
-    description: "We enjoy our reputation as a reliable provider of the best moving services at affordable prices."
+    icon: <FaReceipt className="text-2xl text-[var(--accent-color)]" />,
+    title: "Guaranteed Transparent Pricing",
+    description:
+      "Clear, upfront quotes with zero surprise fees. We never charge hidden fees for stairs, heavy items, or fuel surcharges."
   },
   {
-    icon: <FaBoxes className="iconColor text-4xl" />,
-    title: "Packing Supplies",
-    description: "We provide ultimate quality packing supplies and assistance in packing the belongings of our customers."
+    icon: <FaUsers className="text-2xl text-[var(--accent-color)]" />,
+    title: "Vetted, Full-Time Specialists",
+    description:
+      "Our movers are background-checked, drug-tested, and trained in-house. We never rely on inexperienced day laborers."
   },
   {
-    icon: <FaDollarSign className="iconColor text-4xl" />,
-    title: "Free Moving Quotes",
-    description: "We offer free-of-charge moving quotes that will meet the needs of our customers."
+    icon: <FaCouch className="text-2xl text-[var(--accent-color)]" />,
+    title: "White-Glove Property Care",
+    description:
+      "We safeguard your home with floor runners, door jamb protectors, shrink-wrap, and thick quilted moving pads on every item."
   },
   {
-    icon: <FaComments className="iconColor text-4xl" />,
-    title: "Grievance Redressal",
-    description: "If you have grievances against our services or company, you can freely contact us."
+    icon: <FaTruckFast className="text-2xl text-[var(--accent-color)]" />,
+    title: "Dedicated Direct Transportation",
+    description:
+      "Your belongings are loaded onto a dedicated truck and moved straight to your destination—never co-mingled or transferred."
+  },
+  {
+    icon: <FaHeadset className="text-2xl text-[var(--accent-color)]" />,
+    title: "7-Day Personal Move Coordinators",
+    description:
+      "A dedicated move manager keeps you informed every step of the way, from first packing box to final room setup."
   }
 ];
 
-
 const Section2 = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <div className="paddingTopBottom w-full py-10 bg-white" ref={ref}>
-      <div className="container mx-auto px-5">
-        <h2 className="text-4xl font-bold text-[var(--heading-text-color)] capitalize py-2 text-center">
-           Why Choose Us
-        </h2>
+    <section className="w-full py-16 lg:py-24 bg-slate-50 border-t border-b border-slate-200" ref={ref}>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+        
+        {/* Section Header */}
+        <div className="text-center max-w-3xl mx-auto mb-14">
+          <div className="inline-flex items-center gap-2 bg-amber-100/70 text-[var(--accent-color)] border border-amber-200 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-3">
+            Why Choose Us
+          </div>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#011234] leading-tight mb-4">
+            The Standards That Set Us Apart
+          </h2>
+          <p className="text-slate-600 text-base sm:text-lg">
+            Every move we take on is backed by our strict commitment to safety, transparency, punctuality, and personalized care.
+          </p>
+        </div>
 
-        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {cards.map((card, index) => (
+        {/* 6-Pillar Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          {pillars.map((pillar, index) => (
             <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 50 }}
+              key={pillar.title}
+              initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: index * 0.15 }}
-              className="flex items-start gap-4 bg-white rounded-md shadow-md p-6"
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="bg-white rounded-2xl p-7 border border-slate-200 flex flex-col justify-between hover:border-[var(--accent-color)] transition-colors group"
             >
-              <div>{card.icon}</div>
               <div>
-                <h1 className="text-xl font-semibold text-[var(--heading-text-color)] mb-1">
-                  {card.title}
-                </h1>
-                <p className="text-gray-600 text-sm">{card.description}</p>
+                <div className="w-14 h-14 rounded-xl bg-amber-50 border border-amber-200/60 flex items-center justify-center mb-5 group-hover:bg-[var(--accent-color)]/10 transition-colors">
+                  {pillar.icon}
+                </div>
+                <h3 className="text-xl font-semibold text-[#011234] mb-2.5">
+                  {pillar.title}
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
+                  {pillar.description}
+                </p>
               </div>
             </motion.div>
           ))}
         </div>
+
       </div>
-    </div>
+    </section>
   );
 };
 

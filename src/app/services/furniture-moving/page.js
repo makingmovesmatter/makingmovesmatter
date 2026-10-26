@@ -9,42 +9,14 @@ import Section5 from '@/app/components/home/section5';
 import Section3 from '@/app/components/home/section3';
 import Faq from '@/app/components/faq';
 
-const page = () => {
-  const headerImg =
-    "/images/farniturMovindBanner.png";
-  const headerText1 = "Furniture";
-  const headerText2 = "Moving" ;
-  const headerDesc = "We are a one stop solution and customized service provider for all moving need for our all customers" ;
-  return (
-    <div>
-      <Header headerImg={headerImg} headerText1={headerText1} headerText2={headerText2} headerDesc ={headerDesc} />
-      <Section1 />
-      <Section2 />
-      <HowItWorksSection />
-      <Section4 />
-      <ServiceSection />
-      <Section5 />
-      <Section3 />
-      <Faq />
-    </div>
-  )
-}
-
-export default page
-
-
-
 export const metadata = {
-  title: "Reliable Furniture Moving Services in Mesa AZ | Furniture Moving",
+  title: "Reliable Furniture Moving Services in Mesa, AZ | Making Moves Matter",
   description:
-    "Looking for trusted furniture moving services in Mesa AZ? Our experts specialize in moving office equipment, home furniture, and fragile items safely and efficiently.",
-
+    "Protect your cherished furniture with Making Moves Matter. Professional furniture moving, blanket wrapping, disassembly and assembly in Mesa, AZ.",
   metadataBase: new URL("https://mesamovingexperts.com"),
-
   alternates: {
     canonical: "/services/furniture-moving",
   },
-
   robots: {
     index: true,
     follow: true,
@@ -56,62 +28,81 @@ export const metadata = {
       "max-video-preview": -1,
     },
   },
-
   openGraph: {
-    title: "Reliable Furniture Moving Services in Mesa AZ | Furniture Moving",
+    title: "Reliable Furniture Moving Services in Mesa, AZ | Making Moves Matter",
     description:
-      "Need professional furniture movers in Mesa AZ? We handle residential and commercial furniture moving with care, reliability, and efficiency.",
+      "Expert furniture movers in Mesa, AZ. Heavy couches, delicate antiques, and bedroom suites moved safely.",
     url: "https://mesamovingexperts.com/services/furniture-moving",
     siteName: "Making Moves Matter",
     images: [
       {
-        url: "/images/logo.png", // ✅ using your logo
-        width: 600,
-        height: 400,
-        alt: "Professional Furniture Moving Services in Mesa AZ - Mesa Moving Experts",
+        url: "/images/scottsdale-luxury-moving.jpg",
+        width: 1200,
+        height: 800,
+        alt: "Furniture Moving Services in Mesa AZ - Making Moves Matter",
       },
     ],
     locale: "en_US",
-    type: "article",
-    publishedTime: "2022-05-23T19:09:40+00:00",
-    modifiedTime: "2025-08-16T18:17:56+00:00",
+    type: "website",
   },
-
   twitter: {
     card: "summary_large_image",
-    title: "Reliable Furniture Moving Services in Mesa AZ | Furniture Moving",
+    title: "Reliable Furniture Moving Services in Mesa, AZ | Making Moves Matter",
     description:
-      "Hire expert furniture movers in Mesa AZ. Mesa Moving Experts provides professional office, home, and fragile furniture moving services.",
-    images: ["/images/logo.png"], // ✅ consistent with OG
+      "Safe and affordable furniture moving in Mesa, AZ. Free upfront estimates.",
+    images: ["/images/scottsdale-luxury-moving.jpg"],
     creator: "@MesaMoving",
   },
-
-  icons: {
-    icon: [
-      { url: "/images/logo.png", sizes: "32x32", type: "image/png" },
-      { url: "/images/logo.png", sizes: "192x192", type: "image/png" },
-    ],
-    apple: [{ url: "/images/logo.png", sizes: "180x180", type: "image/png" }],
-    other: [
-      {
-        rel: "icon",
-        url: "/images/logo.png",
-        sizes: "512x512",
-        type: "image/png",
-      },
-    ],
-  },
-
-  keywords: [
-    "furniture moving services Mesa AZ",
-    "professional furniture movers Mesa",
-    "office furniture moving Mesa",
-    "residential furniture moving Mesa",
-    "furniture relocation services Mesa AZ",
-    "furniture transport services Mesa",
-    "safe furniture moving company Mesa AZ",
-  ],
-
-  authors: [{ name: "Mesa Moving Experts", url: "https://mesamovingexperts.com" }],
-  category: "Furniture Moving Services",
 };
+
+const furnitureSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MovingCompany",
+      "@id": "https://mesamovingexperts.com/#organization",
+      "name": "Making Moves Matter",
+      "url": "https://mesamovingexperts.com",
+      "telephone": "+1-480-934-8218",
+      "areaServed": ["Mesa, AZ", "Chandler, AZ", "Scottsdale, AZ", "Gilbert, AZ", "Phoenix, AZ"]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://mesamovingexperts.com/services/furniture-moving/#service",
+      "name": "Furniture Moving Services in Mesa, AZ",
+      "provider": { "@id": "https://mesamovingexperts.com/#organization" },
+      "serviceType": "Furniture Relocation & Protection",
+      "description": "Professional furniture moving in Mesa, AZ featuring heavy-duty padding, careful disassembly, transport, and room-of-choice placement."
+    }
+  ]
+};
+
+const FurnitureMovingPage = () => {
+  const headerImg = "/images/scottsdale-luxury-moving.jpg";
+  const headerText1 = "Furniture Moving";
+  const headerText2 = "Services in AZ";
+  const headerDesc = "Reliable, white-glove furniture moving in Mesa, AZ for treasured antiques, oversized sofas, and home suites.";
+
+  return (
+    <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(furnitureSchema) }}
+      />
+      <Header headerImg={headerImg} headerText1={headerText1} headerText2={headerText2} headerDesc={headerDesc} />
+      <Section1 />
+      <Section2 />
+      <HowItWorksSection />
+      <Section4
+        title="Why Choose Making Moves Matter for Your Furniture Move?"
+        subtitle="Full padded protection, trained lifting technicians, and upfront quotes with zero surprises."
+      />
+      <ServiceSection />
+      <Section5 />
+      <Section3 />
+      <Faq />
+    </div>
+  );
+};
+
+export default FurnitureMovingPage;

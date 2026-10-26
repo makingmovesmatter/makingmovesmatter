@@ -6,10 +6,10 @@ const Section3 = () => {
     <div className="w-full py-10 bg-[var(--white-background)]">
       <div className="container mx-auto">
         <h2 className="text-4xl font-bold text-[var(--heading-text-color)] capitalize pt-6 py-2">
-          Why Homeowners Trust Smart Move for Residential Relocations
+          Why Homeowners Trust Making Moves Matter for Residential Relocations
         </h2>
         <p className="text-[var(--heading-text-color)] text-md pb-2">
-          We’ve been helping people move for over 30 years. From city apartments
+          We’ve been helping Arizona families move for over 15 years. From city apartments
           to suburban homes, we’ve seen it all—and moved it all. Our focus is on
           safety, professionalism, and making sure every move is handled with
           care.

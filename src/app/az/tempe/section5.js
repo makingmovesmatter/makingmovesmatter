@@ -1,68 +1,164 @@
 "use client";
 
-import Image from "next/image";
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import { FaMusic, FaGem, FaWarehouse, FaBoxOpen, FaShieldAlt, FaPhoneAlt, FaCheckCircle, FaDollyFlatbed } from "react-icons/fa";
+import { openQuoteModal } from "../../components/QuoteButton";
 
 const Section5 = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { once: true, amount: 0.15 });
+
+  const specialtyCategories = [
+    {
+      title: "Upright & Baby Grand Pianos",
+      desc: "Specialized piano boards, heavy-duty padded shoes, and precision straps ensure safe transport of delicate musical instruments without finish scratches or internal detuning."
+    },
+    {
+      title: "Antiques, Sculptures & Fine Art",
+      desc: "Custom wood crating, museum-grade glass protection, and telescopic art boxes for high-value heirlooms, gallery pieces, and architectural decor."
+    },
+    {
+      title: "Heavy Gun Safes & Fitness Gear",
+      desc: "Motorized stair-climbing dollies and reinforced ramps allow our crews to safely transport 500-1,200 lb security safes and gym equipment without damaging flooring."
+    }
+  ];
+
+  const storageFeatures = [
+    "Climate-controlled units guarded against extreme desert summer heat and dust",
+    "24/7 high-definition digital video surveillance and computerized gated entry",
+    "Flexible month-to-month leases for short-term and long-term storage needs",
+    "Direct pickup and delivery service connecting our warehouse to your Tempe doorstep"
+  ];
 
   return (
-    <section className="w-full bg-white py-14 mt-16 mb-16" ref={ref}>
-      <div className="container mx-auto px-5 flex flex-col lg:flex-row items-stretch gap-10">
-        
-        
-       <motion.div
-          className="w-full lg:w-1/2 flex flex-col justify-center"
-          initial={{ opacity: 0, x: 50 }}
-          animate={isInView ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 0.8 }}
-        >
-          <h2 className="text-3xl font-bold text-[var(--heading-text-color)] mb-4">
-           Fun Things to Do in Tempe, AZ
-          </h2>
+    <section className="w-full bg-white py-16" ref={ref} id="specialty-storage">
+      <div className="container mx-auto px-5">
 
-
-           <p>
-             Explore the Outdoors <br />
-Enjoy Tempe Town Lake with kayaking and lakeside strolls, hike Papago Park’s red rock trails, or visit Kiwanis Park for family-friendly bike paths and playgrounds. Don’t miss Hayden Butte Preserve for city views and the Desert Botanical Garden for beautiful desert flora. <br /> <br /> 
-
-
-Arts, Culture & History<br />
-Discover contemporary art at the ASU Art Museum, learn Tempe’s story at the Tempe History Museum, and experience world-class performances at Gammage Auditorium, a Frank Lloyd Wright masterpiece.<br /> <br /> 
-
-
-Family-Friendly Fun<br />
-Engage with marine life at the SEA LIFE Arizona Aquarium, build and explore at Legoland Discovery Center, or enjoy splash pads and riverside fun at Tempe Beach Park.<br /> <br /> 
-
-
-Unique Experiences<br />
-Stroll Downtown Tempe for shops and restaurants, visit the Tempe Marketplace, or relax at the peaceful Desert Arboretum Park.
-           </p><br /> <br /> 
-
-
-       </motion.div>
-
-
-       <motion.div
-          className="w-full lg:w-1/2"
-          initial={{ opacity: 0, x: -50 }}
-          animate={isInView ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 1.2 }}
-        >
-          <div className="relative w-full h-full min-h-[400px] rounded-lg overflow-hidden shadow-md">
-              <Image
-                src={'/images/temp4.png'}
-                alt={'Banner Image'}
-                fill
-                className="object-cover group-hover:scale-105 transition-transform duration-500"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw"
-                priority
-              />
+        {/* Header */}
+        <div className="text-center mb-12">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-50 border border-orange-200 text-[#f99c00] font-semibold text-xs tracking-wider uppercase mb-3">
+            Specialty Moving & Secure Storage
           </div>
-       </motion.div>
+          <h2 className="text-3xl sm:text-4xl font-bold text-[var(--heading-text-color)] capitalize">
+            Specialty Item Moving, Packing & Secure Storage Options
+          </h2>
+          <p className="text-gray-600 text-base mt-3 max-w-none">
+            Expert protection for fragile and valuable treasures, full-service packing solutions, and flexible climate-controlled storage in Tempe, AZ.
+          </p>
+        </div>
 
+        {/* 2-Column Showcase */}
+        <div className="flex flex-col lg:flex-row items-stretch gap-12">
+
+          {/* Left Column: Specialty Moving Highlights */}
+          <motion.div
+            className="w-full lg:w-1/2 flex flex-col justify-between"
+            initial={{ opacity: 0, x: -30 }}
+            animate={isInView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.7, ease: "easeOut" }}
+          >
+            <div>
+              <h3 className="text-2xl font-bold text-[var(--heading-text-color)] mb-3 flex items-center gap-2.5">
+                <FaDollyFlatbed className="text-[#f99c00]" />
+                Specialty Item Moving for Fragile, Large & Valuable Items
+              </h3>
+
+              <p className="text-gray-700 text-sm sm:text-base leading-relaxed mb-5">
+                Some items require specialized equipment and certified moving techniques. In Tempe, we routinely handle high-value furnishings, musical gear, and heavy items with meticulous care:
+              </p>
+
+              <div className="space-y-3.5 mb-6">
+                {specialtyCategories.map((cat, idx) => (
+                  <div
+                    key={idx}
+                    className="p-4 rounded-xl border border-neutral-200 bg-neutral-50 hover:border-[#f99c00] transition-colors"
+                  >
+                    <h4 className="font-bold text-sm text-[var(--heading-text-color)] mb-1">
+                      {cat.title}
+                    </h4>
+                    <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                      {cat.desc}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="flex flex-wrap items-center gap-3 pt-2">
+              <a
+                href="tel:4809348218"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-md bg-[#011234] hover:bg-slate-800 text-white font-semibold text-xs transition-colors"
+              >
+                <FaPhoneAlt className="text-[10px] text-[#f99c00]" />
+                Call (480) 934-8218
+              </a>
+              <button
+                type="button"
+                onClick={openQuoteModal}
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-md bg-[#f99c00] hover:bg-[#e08b00] text-white font-semibold text-xs transition-colors cursor-pointer"
+              >
+                Quote Specialty Item
+              </button>
+            </div>
+          </motion.div>
+
+          {/* Right Column: Packing & Secure Storage Card */}
+          <motion.div
+            className="w-full lg:w-1/2 flex flex-col justify-between"
+            initial={{ opacity: 0, x: 30 }}
+            animate={isInView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.7, ease: "easeOut", delay: 0.15 }}
+          >
+            <div>
+              <div className="p-6 rounded-2xl bg-neutral-50 border border-neutral-200 mb-6">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-10 h-10 rounded-lg bg-orange-100 flex items-center justify-center text-[#f99c00] text-lg">
+                    <FaBoxOpen />
+                  </div>
+                  <h4 className="text-xl font-bold text-[var(--heading-text-color)]">
+                    Full-Service Packing & Unpacking
+                  </h4>
+                </div>
+                <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                  Our professional packing team uses heavy-duty double-walled boxes, bubble wrap, stretch film, and custom dish packs to safeguard all glassware, heirlooms, and electronics before loading.
+                </p>
+                <div className="grid grid-cols-2 gap-2 text-xs font-semibold text-gray-700">
+                  <span className="flex items-center gap-1.5"><FaCheckCircle className="text-[#f99c00]" /> Custom Box Packs</span>
+                  <span className="flex items-center gap-1.5"><FaCheckCircle className="text-[#f99c00]" /> Wardrobe Boxes</span>
+                  <span className="flex items-center gap-1.5"><FaCheckCircle className="text-[#f99c00]" /> Bubble Wrap & Paper</span>
+                  <span className="flex items-center gap-1.5"><FaCheckCircle className="text-[#f99c00]" /> Systematic Labeling</span>
+                </div>
+              </div>
+
+              <div className="p-6 rounded-2xl bg-orange-50/70 border border-orange-200">
+                <h4 className="font-bold text-base text-[#011234] mb-3 flex items-center gap-2">
+                  <FaWarehouse className="text-[#f99c00]" />
+                  Secure Climate-Controlled Storage Solutions
+                </h4>
+                <ul className="space-y-2.5 text-xs sm:text-sm text-gray-700">
+                  {storageFeatures.map((feat, idx) => (
+                    <li key={idx} className="flex items-start gap-2">
+                      <FaCheckCircle className="text-[#f99c00] text-xs mt-0.5 flex-shrink-0" />
+                      <span>{feat}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <div className="pt-6">
+              <button
+                type="button"
+                onClick={openQuoteModal}
+                className="w-full text-center py-3.5 px-6 rounded-lg bg-[#f99c00] hover:bg-[#e08b00] text-white font-bold text-sm transition-colors cursor-pointer"
+              >
+                Inquire About Tempe Storage Options
+              </button>
+            </div>
+          </motion.div>
+
+        </div>
 
       </div>
     </section>

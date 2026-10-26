@@ -4,112 +4,126 @@ import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import {
   FaBoxOpen,
-  FaCouch,
-  FaShieldAlt,
-  FaTruckLoading,
   FaHome,
   FaBuilding,
-  FaIdBadge,
-  FaCalendarAlt,
-  FaTruck,
-  FaHeadset,
+  FaChair,
+  FaWarehouse,
+  FaTruckMoving,
+  FaArrowRight
 } from "react-icons/fa";
+import { openQuoteModal } from "@/app/components/QuoteButton";
 
-const cards = [
+const services = [
   {
-    icon: <FaBoxOpen className="iconColor text-4xl" />,
-    title: "Professional Packing and Unpacking",
+    icon: <FaBoxOpen />,
+    title: "Full-Service Packing and Moving",
     description:
-      "Our experienced movers carefully pack and unpack your belongings using high-quality packing materials to keep everything protected throughout the move.",
+      "Our packing and moving services in Mesa ensure your items are securely packed for transport. We use high-quality packing materials to protect your belongings throughout the journey.",
+    tag: "High-Grade Materials"
   },
   {
-    icon: <FaCouch className="iconColor text-4xl" />,
-    title: "Furniture Disassembly and Reassembly",
+    icon: <FaHome />,
+    title: "Residential Long-Distance Movers in Mesa",
     description:
-      "We safely disassemble large furniture before transport and reassemble it once everything arrives at your new home.",
+      "Moving your home to another city or state? Our residential long-distance movers in Mesa handle every aspect of your move with care and efficiency.",
+    tag: "Homes & Estates"
   },
   {
-    icon: <FaShieldAlt className="iconColor text-4xl" />,
-    title: "Protective Blanket Wrapping",
+    icon: <FaBuilding />,
+    title: "Apartment and Condo Moving",
     description:
-      "Every piece of furniture is wrapped with protective moving blankets to help prevent scratches and damage during transportation.",
+      "Our experienced apartment movers in Mesa specialize in long-distance moves for multi-unit buildings, navigating stairs and elevators with ease.",
+    tag: "Elevators & High-Rises"
   },
   {
-    icon: <FaTruckLoading className="iconColor text-4xl" />,
-    title: "Secure Loading and Unloading",
+    icon: <FaBuilding />,
+    title: "Office and Commercial Long-Distance Moving",
     description:
-      "Our trained movers carefully load and unload your belongings to ensure a safe and efficient moving experience.",
+      "Relocating a business? Our Mesa office movers offer organized, efficient moving solutions to ensure a seamless transition with minimal disruption.",
+    tag: "Zero Downtime"
   },
   {
-    icon: <FaHome className="iconColor text-4xl" />,
-    title: "Apartment, Condo & Residential Moves",
+    icon: <FaChair />,
+    title: "Furniture Movers in Mesa, AZ",
     description:
-      "Whether you're moving from an apartment, condo, or family home, we provide dependable residential long-distance moving services.",
+      "Our furniture movers in Mesa carefully disassemble, wrap, and transport large or heavy furniture to your new location.",
+    tag: "Disassembly & Padding"
   },
   {
-    icon: <FaBuilding className="iconColor text-4xl" />,
-    title: "Commercial & Office Relocations",
+    icon: <FaWarehouse />,
+    title: "Storage Solutions for Long-Distance Moves",
     description:
-      "We relocate offices and businesses efficiently while minimizing downtime and keeping your move organized.",
-  },
-  {
-    icon: <FaIdBadge className="iconColor text-4xl" />,
-    title: "Licensed & Insured Professionals",
-    description:
-      "Our licensed and insured movers provide reliable service and complete peace of mind throughout your relocation.",
-  },
-  {
-    icon: <FaCalendarAlt className="iconColor text-4xl" />,
-    title: "Flexible Scheduling",
-    description:
-      "We work around your preferred moving dates to make your relocation as convenient as possible.",
-  },
-  {
-    icon: <FaTruck className="iconColor text-4xl" />,
-    title: "Safe Transportation",
-    description:
-      "Your belongings are transported safely using professional equipment and proven long-distance moving practices.",
-  },
-  {
-    icon: <FaHeadset className="iconColor text-4xl" />,
-    title: "Dedicated Customer Support",
-    description:
-      "Our friendly team keeps you informed and provides assistance throughout every stage of your move.",
-  },
+      "If your new home isn’t ready yet, we offer secure storage solutions in Mesa to keep your belongings safe until you’re ready for delivery.",
+    tag: "Secure & Climate-Controlled"
+  }
 ];
 
 const Section2 = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <div className="paddingTopBottom w-full py-10 bg-white" ref={ref}>
-      <div className="container mx-auto px-5">
-        <h2 className="text-4xl font-bold text-[var(--heading-text-color)] capitalize py-2 text-center">
-          Our Long Distance Moving Services Include
-        </h2>
+    <section className="w-full py-16 lg:py-24 bg-slate-50/70 border-y border-slate-200/80" ref={ref}>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
 
-        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {cards.map((card, index) => (
+        {/* Section Heading */}
+        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+          <div className="inline-flex items-center gap-2 bg-amber-50 text-[var(--accent-color)] border border-amber-200/60 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4">
+            <FaTruckMoving /> Comprehensive Interstate Relocation
+          </div>
+          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-bold text-[#011234] leading-tight mb-4">
+            Our Long-Distance Moving Services Include:
+          </h2>
+          <p className="text-slate-600 text-base sm:text-lg">
+            From complete household packing and white-glove furniture handling to secure storage in transit, our Mesa moving crews provide dependable cross-country moving solutions.
+          </p>
+        </div>
+
+        {/* 6 Services Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          {services.map((service, index) => (
             <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 50 }}
+              key={service.title}
+              initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: index * 0.15 }}
-              className="flex items-start gap-4 bg-white rounded-md shadow-md p-6"
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="bg-white rounded-2xl p-6 sm:p-7 border border-slate-200/90 shadow-sm hover:shadow-md hover:border-[var(--accent-color)] transition-all duration-300 flex flex-col justify-between group"
             >
-              <div>{card.icon}</div>
               <div>
-                <h1 className="text-xl font-semibold text-[var(--heading-text-color)] mb-1">
-                  {card.title}
-                </h1>
-                <p className="text-gray-600 text-sm">{card.description}</p>
+                <div className="flex items-center justify-between mb-5">
+                  <div className="w-[52px] h-[52px] rounded-xl bg-amber-500/10 text-[var(--accent-color)] flex items-center justify-center text-2xl group-hover:bg-[var(--accent-color)] group-hover:text-white transition-colors duration-300">
+                    {service.icon}
+                  </div>
+                  <span className="text-xs font-bold px-3 py-1 rounded-full bg-slate-100 text-slate-700 border border-slate-200/60">
+                    {service.tag}
+                  </span>
+                </div>
+
+                <h3 className="text-xl font-bold text-[#011234] mb-3 group-hover:text-[var(--accent-color)] transition-colors">
+                  {service.title}
+                </h3>
+
+                <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
+                  {service.description}
+                </p>
+              </div>
+
+              <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                <button
+                  onClick={openQuoteModal}
+                  type="button"
+                  className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-[var(--accent-color)] hover:text-amber-700 cursor-pointer transition-colors"
+                >
+                  <span>Request Free Estimate</span>
+                  <FaArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                </button>
               </div>
             </motion.div>
           ))}
         </div>
+
       </div>
-    </div>
+    </section>
   );
 };
 

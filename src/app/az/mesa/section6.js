@@ -3,7 +3,7 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { FaAward, FaCalendarCheck, FaShieldAlt, FaStar, FaPhoneAlt, FaCheck } from "react-icons/fa";
-import { openQuoteModal } from "@/app/components/QuoteButton";
+import { openQuoteModal } from "../../components/QuoteButton";
 
 const stats = [
   { value: "15+", label: "Years Experience", desc: "Local expertise across Mesa and the East Valley" },
@@ -29,8 +29,8 @@ const Section6 = () => {
             15 Years of Moving Excellence
           </div>
 
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
-            Get Comprehensive Moving Service in Mesa <br/> AZ Local, Long-Distance, Residential & More
+          <h2 className="text-3xl sm:text-4xl font-bold text-white leading-tight">
+            Get Comprehensive Moving Service in Mesa <br /> AZ Local, Long-Distance, Residential & More
           </h2>
 
           <p className="text-neutral-400 text-base mt-4 max-w-none">
@@ -70,7 +70,7 @@ const Section6 = () => {
                 key={idx}
                 className="p-5 rounded-xl bg-neutral-800/80 border border-neutral-700/80 hover:border-[#f99c00] transition-colors duration-300"
               >
-                <div className="text-3xl sm:text-4xl font-black text-[#f99c00] mb-1">
+                <div className="text-3xl sm:text-4xl font-bold text-[#f99c00] mb-1">
                   {stat.value}
                 </div>
                 <div className="text-white font-bold text-base mb-1">

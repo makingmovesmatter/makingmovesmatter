@@ -1,68 +1,134 @@
 "use client";
 
-import Image from "next/image";
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import { FaHome, FaBuilding, FaDollyFlatbed, FaWarehouse, FaGlobeAmericas, FaStar, FaGoogle } from "react-icons/fa";
+import { openQuoteModal } from "../../components/QuoteButton";
+
+const reasons = [
+  {
+    icon: <FaHome className="text-[#f99c00] text-2xl" />,
+    number: "01",
+    title: "1. Residential Moving Excellence",
+    text: "We specialize in personalized single-family home and golf villa moves across San Tan Valley. From fragile dish packing and wardrobe protection to complete bed reassembly, we treat your home with white-glove respect."
+  },
+  {
+    icon: <FaBuilding className="text-[#f99c00] text-2xl" />,
+    number: "02",
+    title: "2. Commercial and Office Relocations",
+    text: "San Tan Valley's growing medical offices, retail storefronts, and local businesses rely on our organized commercial moving services. We offer after-hours and weekend dispatch for minimal operational disruption."
+  },
+  {
+    icon: <FaDollyFlatbed className="text-[#f99c00] text-2xl" />,
+    number: "03",
+    title: "3. Specialty Transport for Heavy Items",
+    text: "Not all belongings are standard size. We provide motorized dollies, custom wood crates, and reinforced ramps to safely transport gun safes, pianos, antique armoires, and outdoor hot tubs."
+  },
+  {
+    icon: <FaWarehouse className="text-[#f99c00] text-2xl" />,
+    number: "04",
+    title: "4. Secure Climate-Controlled Storage",
+    text: "Whether your new San Tan Valley home construction is pending or you need interim holding during a closing, our climate-controlled facilities feature 24/7 video monitoring and digital perimeter security."
+  },
+  {
+    icon: <FaGlobeAmericas className="text-[#f99c00] text-2xl" />,
+    number: "05",
+    title: "5. 15+ Years Experience & Full Insurance",
+    text: "We are fully licensed, insured, and committed to delivering exceptional customer service with every move. Competitive pricing, transparent flat rates, and reliable communication from start to finish."
+  }
+];
 
 const Section7 = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { once: true, amount: 0.15 });
 
   return (
-    <section className="w-full bg-white py-14 mt-16 mb-16" ref={ref}>
-      <div className="container mx-auto px-5 flex flex-col lg:flex-row items-stretch gap-10">
-        
-        
-       <motion.div
-          className="w-full lg:w-1/2 flex flex-col justify-center"
-          initial={{ opacity: 0, x: 50 }}
-          animate={isInView ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 0.8 }}
-        >
-          <h2 className="text-3xl font-bold text-[var(--heading-text-color)] mb-4">
-           Get Comprehensive Moving Service in Mesa, AZ – Local, Long-Distance, Residential & More
-          </h2>
+    <section className="w-full bg-white py-16" ref={ref} id="why-choose-san-tan-valley">
+      <div className="container mx-auto px-5">
 
-
-           <p>
-             Whether you’re moving from a cozy apartment or a spacious home, we have the tools and expertise to manage moves of all sizes. From fragile items like glassware and electronics to large appliances and furniture, we ensure everything is packed securely for the journey. Our team handles your residential moving services with care, making sure that your items are carefully unloaded and placed in their new home. <br/>
-
-             No matter the scale of your move, we ensure that every detail is taken care of, offering a seamless experience.
-           </p><br /> <br /> 
-
-
-          <h2 className="text-3xl font-bold text-[var(--heading-text-color)] mb-4">
-           Commercial & Office Moves
-          </h2>
-
-
-         <p> 
-            Moving a business requires a different level of expertise, and at Making Moves Matter, we’re well-equipped to handle office moves for businesses in Mesa. Whether you’re moving office furniture, electronics, or specialized equipment, we transport everything safely and efficiently. We understand that business downtime is costly, so we offer after-hours moving to ensure minimal disruption to your workday. <br /> <br />
-
-              Our commercial moving services are designed to meet the unique needs of small and medium-sized businesses in Mesa, ensuring a fast and smooth transition to your new workspace.
-           </p><br /> <br /> 
-
-       </motion.div>
-
-
-       <motion.div
-          className="w-full lg:w-1/2"
-          initial={{ opacity: 0, x: -50 }}
-          animate={isInView ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 1.2 }}
-        >
-          <div className="relative w-full h-full min-h-[400px] rounded-lg overflow-hidden shadow-md">
-              <Image
-                src={'/images/image copy 6.png'}
-                alt={'Banner Image'}
-                fill
-                className="object-cover group-hover:scale-105 transition-transform duration-500"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw"
-                priority
-              />
+        {/* Header */}
+        <div className="text-center mb-12">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-50 border border-orange-200 text-[#f99c00] font-semibold text-xs tracking-wider uppercase mb-3">
+            The Making Moves Matter Advantage
           </div>
-       </motion.div>
+          <h2 className="text-3xl sm:text-4xl font-bold text-[var(--heading-text-color)] capitalize">
+            Why Choose Our San Tan Valley Moving Company?
+          </h2>
+          <p className="text-gray-600 text-base mt-3 max-w-none">
+            When choosing a moving company in San Tan Valley, AZ, partnering with a dependable team that understands master-planned neighborhoods and foothill corridors ensures an easy, stress-free move.
+          </p>
+        </div>
 
+        {/* 5 Reasons Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          {reasons.map((item, idx) => (
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, y: 30 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, delay: idx * 0.1, ease: "easeOut" }}
+              className="p-6 rounded-xl bg-neutral-50 border border-neutral-200 hover:border-[#f99c00] transition-all duration-300 flex flex-col justify-between group hover:bg-white"
+            >
+              <div>
+                <div className="flex items-center justify-between mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-orange-100 flex items-center justify-center group-hover:scale-105 transition-transform">
+                    {item.icon}
+                  </div>
+                  <span className="font-mono text-xs font-bold px-2.5 py-1 rounded-full bg-white border border-neutral-200 text-gray-700">
+                    {item.number}
+                  </span>
+                </div>
+                <h3 className="text-lg font-bold text-[var(--heading-text-color)] mb-2 group-hover:text-[#f99c00] transition-colors">
+                  {item.title}
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {item.text}
+                </p>
+              </div>
+            </motion.div>
+          ))}
+
+          {/* Review Card */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.5, delay: 0.5, ease: "easeOut" }}
+            className="p-6 rounded-xl bg-[#011234] text-white border border-slate-800 flex flex-col justify-between"
+          >
+            <div>
+              <div className="flex items-center gap-2 mb-3">
+                <FaGoogle className="text-white text-lg" />
+                <div className="flex text-[#f99c00] text-sm">
+                  {[...Array(5)].map((_, i) => (
+                    <FaStar key={i} />
+                  ))}
+                </div>
+                <span className="text-xs font-bold text-slate-300 ml-auto">Verified Review</span>
+              </div>
+              <h4 className="font-bold text-base text-white mb-2">
+                "Flawless Move to Johnson Ranch!"
+              </h4>
+              <p className="text-slate-300 text-xs sm:text-sm leading-relaxed italic">
+                "Making Moves Matter moved our 4-bedroom home into San Tan Valley seamlessly. The crew wrapped all our furniture, handled our heavy patio set and gun safe with zero issues, and finished ahead of schedule. Best movers in the Valley!"
+              </p>
+            </div>
+            <div className="pt-4 border-t border-slate-800 flex items-center justify-between mt-4">
+              <span className="text-xs font-semibold text-[#f99c00]">— Marcus & Amanda R., San Tan Valley AZ</span>
+              <span className="text-[10px] text-slate-400">Residential Relocation</span>
+            </div>
+          </motion.div>
+        </div>
+
+        {/* CTA Button */}
+        <div className="text-center pt-4">
+          <button
+            type="button"
+            onClick={openQuoteModal}
+            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-lg bg-[#f99c00] hover:bg-[#e08b00] text-white font-bold text-sm transition-colors cursor-pointer shadow-lg shadow-orange-500/20"
+          >
+            Request Your Free San Tan Valley Moving Quote
+          </button>
+        </div>
 
       </div>
     </section>

@@ -4,7 +4,7 @@ import Image from "next/image";
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { FaShieldAlt, FaClock, FaDollarSign, FaGlobeAmericas, FaPhoneAlt } from "react-icons/fa";
-import { openQuoteModal } from "@/app/components/QuoteButton";
+import { openQuoteModal } from "../../components/QuoteButton";
 
 const specialties = [
   {
@@ -46,7 +46,7 @@ const Section1 = () => {
             Mesa, AZ Relocation Specialists
           </div>
 
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[var(--heading-text-color)] leading-tight mb-3">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[var(--heading-text-color)] leading-tight mb-3">
             Making Moves Matter: Your Trusted Movers in Mesa, AZ for Local & Long-Distance Moves
           </h2>
 

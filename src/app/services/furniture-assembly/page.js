@@ -9,42 +9,14 @@ import Section5 from '@/app/components/home/section5';
 import Section3 from '@/app/components/home/section3';
 import Faq from '@/app/components/faq';
 
-const page = () => {
-  const headerImg =
-    "/images/furnitureassemblybanner.png";
-  const headerText1 = "Furniture";
-  const headerText2 = "Assembly" ;
-  const headerDesc = "Our professional furniture assembly service provides fast, reliable, and hassle-free setup for beds, tables, wardrobes, and more, ensuring every piece is sturdy, safe, and ready to use." ;
-  return (
-    <div>
-      <Header headerImg={headerImg} headerText1={headerText1} headerText2={headerText2} headerDesc ={headerDesc} />
-      <Section1 />
-      <Section2 />
-      <HowItWorksSection />
-      <Section4 />
-      <ServiceSection />
-      <Section5 />
-      <Section3 />
-      <Faq />
-    </div>
-  )
-}
-
-export default page
-
-
-
 export const metadata = {
-  title: "Reliable Furniture Assembly Services in Mesa AZ | Moving Service",
+  title: "Reliable Furniture Assembly Services in Mesa, AZ | Making Moves Matter",
   description:
-    "Looking for professional furniture assembly services in Mesa AZ? We provide expert furniture disassembly, reassembly, and installation to make your move stress-free.",
-
+    "Save time and avoid hassle with Making Moves Matter. Professional furniture disassembly and assembly services in Mesa, AZ for beds, desks, and home units.",
   metadataBase: new URL("https://mesamovingexperts.com"),
-
   alternates: {
     canonical: "/services/furniture-assembly",
   },
-
   robots: {
     index: true,
     follow: true,
@@ -56,62 +28,81 @@ export const metadata = {
       "max-video-preview": -1,
     },
   },
-
   openGraph: {
-    title: "Reliable Furniture Assembly Services in Mesa AZ | Moving Service",
+    title: "Reliable Furniture Assembly Services in Mesa, AZ | Making Moves Matter",
     description:
-      "Need reliable furniture assembly in Mesa AZ? Our experts handle disassembly, reassembly, and setup for a seamless moving experience.",
+      "Expert furniture assembly and disassembly in Mesa, AZ. Fast, reliable setup for home and office furniture.",
     url: "https://mesamovingexperts.com/services/furniture-assembly",
     siteName: "Making Moves Matter",
     images: [
       {
-        url: "/images/logo.png", // ✅ using your logo
-        width: 600,
-        height: 400,
-        alt: "Furniture Assembly Services in Mesa AZ by Mesa Moving Experts",
+        url: "/images/furniture-assembly-brand.jpg",
+        width: 1200,
+        height: 800,
+        alt: "Furniture Assembly Services in Mesa AZ - Making Moves Matter",
       },
     ],
     locale: "en_US",
-    type: "article",
-    publishedTime: "2022-05-23T19:11:55+00:00",
-    modifiedTime: "2025-08-16T18:16:29+00:00",
+    type: "website",
   },
-
   twitter: {
     card: "summary_large_image",
-    title: "Reliable Furniture Assembly Services in Mesa AZ | Moving Service",
+    title: "Reliable Furniture Assembly Services in Mesa, AZ | Making Moves Matter",
     description:
-      "Hire Mesa Moving Experts for professional furniture assembly services in Mesa AZ. Disassembly, reassembly, and installation done right.",
-    images: ["/images/logo.png"], // ✅ consistent with OG
+      "Professional disassembly and reassembly in Mesa, AZ. Free upfront quotes.",
+    images: ["/images/furniture-assembly-brand.jpg"],
     creator: "@MesaMoving",
   },
-
-  icons: {
-    icon: [
-      { url: "/images/logo.png", sizes: "32x32", type: "image/png" },
-      { url: "/images/logo.png", sizes: "192x192", type: "image/png" },
-    ],
-    apple: [{ url: "/images/logo.png", sizes: "180x180", type: "image/png" }],
-    other: [
-      {
-        rel: "icon",
-        url: "/images/logo.png",
-        sizes: "512x512",
-        type: "image/png",
-      },
-    ],
-  },
-
-  keywords: [
-    "furniture assembly services Mesa AZ",
-    "furniture assembly Mesa",
-    "furniture disassembly and reassembly",
-    "furniture installation Mesa",
-    "IKEA furniture assembly Mesa AZ",
-    "professional furniture assembly Mesa",
-    "furniture setup services Mesa AZ",
-  ],
-
-  authors: [{ name: "Mesa Moving Experts", url: "https://mesamovingexperts.com" }],
-  category: "Furniture Assembly Services",
 };
+
+const assemblySchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MovingCompany",
+      "@id": "https://mesamovingexperts.com/#organization",
+      "name": "Making Moves Matter",
+      "url": "https://mesamovingexperts.com",
+      "telephone": "+1-480-934-8218",
+      "areaServed": ["Mesa, AZ", "Chandler, AZ", "Scottsdale, AZ", "Gilbert, AZ", "Phoenix, AZ"]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://mesamovingexperts.com/services/furniture-assembly/#service",
+      "name": "Furniture Assembly Services in Mesa, AZ",
+      "provider": { "@id": "https://mesamovingexperts.com/#organization" },
+      "serviceType": "Furniture Disassembly & Assembly",
+      "description": "Professional furniture disassembly and reassembly in Mesa, AZ for modular beds, executive desks, shelving, and home entertainment units."
+    }
+  ]
+};
+
+const FurnitureAssemblyPage = () => {
+  const headerImg = "/images/furniture-assembly-brand.jpg";
+  const headerText1 = "Furniture Assembly";
+  const headerText2 = "Services in AZ";
+  const headerDesc = "Precision teardown and rebuild of bed frames, modular desks, workout equipment, and storage units in Mesa, AZ.";
+
+  return (
+    <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(assemblySchema) }}
+      />
+      <Header headerImg={headerImg} headerText1={headerText1} headerText2={headerText2} headerDesc={headerDesc} />
+      <Section1 />
+      <Section2 />
+      <HowItWorksSection />
+      <Section4
+        title="Why Choose Making Moves Matter for Furniture Assembly?"
+        subtitle="Full tool kits, hardware containment bags, and seasoned assembly technicians."
+      />
+      <ServiceSection />
+      <Section5 />
+      <Section3 />
+      <Faq />
+    </div>
+  );
+};
+
+export default FurnitureAssemblyPage;

@@ -1,63 +1,162 @@
 "use client";
 
-import Image from "next/image";
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import { FaWarehouse, FaBoxOpen, FaPhoneAlt, FaCheckCircle, FaDollyFlatbed } from "react-icons/fa";
+import { openQuoteModal } from "../../components/QuoteButton";
 
 const Section5 = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { once: true, amount: 0.15 });
+
+  const specialtyCategories = [
+    {
+      title: "Heavy Gun Safes & Security Vaults",
+      desc: "Specialized motorized stair-climbing dollies, reinforced ramps, and floor-protection plates allow our crews to transport 500-1,500 lb safes without floor damage."
+    },
+    {
+      title: "Upright & Baby Grand Pianos",
+      desc: "Custom heavy-duty piano skids, padded canvas blankets, and non-slip straps ensure fine musical instruments are moved without finish scratches or internal tension loss."
+    },
+    {
+      title: "Hot Tubs & Outdoor Spas",
+      desc: "Specialized spa trailers and expert rigging teams to navigate bulky hot tubs through residential gates and across flagstone or pavers safely."
+    }
+  ];
+
+  const storageFeatures = [
+    "Clean, climate-controlled units shielded from extreme desert heat and dust",
+    "24/7 digital video surveillance, individual alarm points, and computerized gate access",
+    "Flexible month-to-month leases for short-term closings and long-term storage needs",
+    "Direct door-to-warehouse pickup and delivery service across San Tan Valley and the Valley"
+  ];
 
   return (
-    <section className="w-full bg-white py-14 mt-16 mb-16" ref={ref}>
-      <div className="container mx-auto px-5 flex flex-col lg:flex-row items-stretch gap-10">
+    <section className="w-full bg-white py-16" ref={ref} id="specialty-storage">
+      <div className="container mx-auto px-5">
 
-        {/* Text Section */}
-        <motion.div
-          className="w-full lg:w-1/2 flex flex-col justify-center"
-          initial={{ opacity: 0, x: 50 }}
-          animate={isInView ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 0.8 }}
-        >
-          <h2 className="text-3xl font-bold text-[var(--heading-text-color)] mb-4">
-            Why Choose Our San Tan Valley Movers?
-          </h2>
-
-          <p className="mb-6">
-            At <strong>Making Moves Matter</strong>, we provide trusted, professional moving services throughout San Tan Valley. 
-            Our team is experienced in handling residential and commercial moves, ensuring every item is packed, transported, and delivered safely and efficiently. 
-            With transparent pricing, trained staff, and modern moving equipment, we make your relocation smooth and stress-free.
-          </p>
-
-          <h2 className="text-3xl font-bold text-[var(--heading-text-color)] mb-4">
-            Get a Free Quote Today
-          </h2>
-
-          <p>
-            Planning a move? Contact us for a free, no-obligation quote. 
-            Our San Tan Valley movers will guide you through every step of your relocation, taking care of the heavy lifting so you can focus on settling into your new home or office. 
-            Reliable, efficient, and customer-focused your move matters to us.
-          </p>
-        </motion.div>
-
-        {/* Image Section */}
-        <motion.div
-          className="w-full lg:w-1/2"
-          initial={{ opacity: 0, x: -50 }}
-          animate={isInView ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 1.2 }}
-        >
-          <div className="relative w-full h-full min-h-[400px] rounded-lg overflow-hidden shadow-md">
-            <Image
-              src="/images/santan3.png"
-              alt="San Tan Valley Movers"
-              fill
-              className="object-cover group-hover:scale-105 transition-transform duration-500"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw"
-              priority
-            />
+        {/* Header */}
+        <div className="text-center mb-12">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-50 border border-orange-200 text-[#f99c00] font-semibold text-xs tracking-wider uppercase mb-3">
+            Specialty Moving & Secure Storage
           </div>
-        </motion.div>
+          <h2 className="text-3xl sm:text-4xl font-bold text-[var(--heading-text-color)] capitalize">
+            Specialty Item Moving, Packing & Climate-Controlled Storage
+          </h2>
+          <p className="text-gray-600 text-base mt-3 max-w-none">
+            Careful transport of large, heavy, and valuable items, full-service packing, and clean climate-controlled warehousing in San Tan Valley, AZ.
+          </p>
+        </div>
+
+        {/* 2-Column Showcase */}
+        <div className="flex flex-col lg:flex-row items-stretch gap-12">
+
+          {/* Left Column: Specialty Moving Highlights */}
+          <motion.div
+            className="w-full lg:w-1/2 flex flex-col justify-between"
+            initial={{ opacity: 0, x: -30 }}
+            animate={isInView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.7, ease: "easeOut" }}
+          >
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-lg bg-orange-100 flex items-center justify-center text-[#f99c00] text-xl">
+                  <FaDollyFlatbed />
+                </div>
+                <h3 className="text-xl sm:text-2xl font-bold text-[var(--heading-text-color)]">
+                  Heavy & Fragile Item Care
+                </h3>
+              </div>
+
+              <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-6">
+                San Tan Valley homes often feature heavy gun safes, grand pianos, outdoor kitchens, and spas. Moving these items requires specialized mechanical rigging, floor protection runners, and veteran muscle.
+              </p>
+
+              <div className="space-y-4 mb-8">
+                {specialtyCategories.map((item, idx) => (
+                  <div
+                    key={idx}
+                    className="p-4 rounded-xl border border-neutral-200 bg-neutral-50 hover:border-[#f99c00] transition-colors"
+                  >
+                    <h4 className="font-bold text-sm text-[var(--heading-text-color)] mb-1">
+                      {item.title}
+                    </h4>
+                    <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                      {item.desc}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="p-4 rounded-xl bg-orange-50 border border-orange-200 flex items-center justify-between">
+              <span className="text-xs sm:text-sm font-bold text-[var(--heading-text-color)]">
+                Moving a heavy safe or piano in San Tan Valley?
+              </span>
+              <button
+                type="button"
+                onClick={openQuoteModal}
+                className="px-4 py-2 rounded-lg bg-[#f99c00] hover:bg-[#e08b00] text-white text-xs font-bold transition-colors cursor-pointer"
+              >
+                Get Specialty Quote
+              </button>
+            </div>
+          </motion.div>
+
+          {/* Right Column: Packing & Secure Climate-Controlled Storage */}
+          <motion.div
+            className="w-full lg:w-1/2 flex flex-col justify-between"
+            initial={{ opacity: 0, x: 30 }}
+            animate={isInView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.7, ease: "easeOut", delay: 0.15 }}
+          >
+            <div className="p-8 rounded-2xl bg-[#011234] text-white border border-slate-800 h-full flex flex-col justify-between">
+              <div>
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-10 h-10 rounded-lg bg-[#f99c00] flex items-center justify-center text-[#011234] text-xl">
+                    <FaWarehouse />
+                  </div>
+                  <h3 className="text-xl sm:text-2xl font-bold text-white">
+                    Secure Climate-Controlled Storage
+                  </h3>
+                </div>
+
+                <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
+                  Whether you are staging your home in Johnson Ranch or awaiting new construction in San Tan Heights, our climate-controlled facilities keep your furniture, artwork, and electronics safe from extreme Arizona heat and desert dust.
+                </p>
+
+                <div className="space-y-3.5 mb-8">
+                  {storageFeatures.map((feat, idx) => (
+                    <div key={idx} className="flex items-start gap-3">
+                      <FaCheckCircle className="text-[#f99c00] text-sm flex-shrink-0 mt-1" />
+                      <span className="text-slate-200 text-xs sm:text-sm leading-relaxed">
+                        {feat}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="pt-6 border-t border-slate-800 flex flex-col sm:flex-row gap-3">
+                <a
+                  href="tel:4809348218"
+                  className="w-full text-center py-3.5 px-6 rounded-lg bg-[#f99c00] hover:bg-[#e08b00] text-white font-bold text-sm transition-colors inline-flex items-center justify-center gap-2"
+                >
+                  <FaPhoneAlt className="text-xs" />
+                  Call (480) 934-8218
+                </a>
+                <button
+                  type="button"
+                  onClick={openQuoteModal}
+                  className="w-full text-center py-3.5 px-6 rounded-lg bg-white/10 hover:bg-white/20 text-white font-bold text-sm border border-white/20 transition-colors cursor-pointer"
+                >
+                  Request Storage Quote
+                </button>
+              </div>
+            </div>
+          </motion.div>
+
+        </div>
 
       </div>
     </section>

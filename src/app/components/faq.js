@@ -51,7 +51,7 @@ const Faq = () => {
         {/* Left Section */}
         <div className="md:w-1/2">
           <motion.h2
-            className="text-5xl font-bold text-[var(--heading-text-color)] capitalize leading-14"
+            className="text-4xl md:text-5xl font-semibold text-[var(--heading-text-color)] capitalize leading-tight"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -61,7 +61,7 @@ const Faq = () => {
           </motion.h2>
 
           <motion.p
-            className="text-lg text-gray-700 mt-4 leading-10"
+            className="text-lg text-gray-700 mt-4 leading-relaxed"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
@@ -72,7 +72,7 @@ const Faq = () => {
 
           <motion.a
             href="/contact-us"
-            className="text-xl font-medium inline-block mt-6 bg-[var(--accent-color)] text-white px-8 py-3 rounded-md shadow hover:bg-[#E17100] transition"
+            className="text-lg font-semibold inline-block mt-6 bg-[var(--accent-color)] text-white px-8 py-3 rounded-md hover:opacity-90 transition"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -88,7 +88,7 @@ const Faq = () => {
             {faqs.map((faq, index) => (
               <motion.div
                 key={index}
-                className="bg-white rounded-md p-5 shadow-sm"
+                className="bg-white rounded-md p-5 border border-gray-200"
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}

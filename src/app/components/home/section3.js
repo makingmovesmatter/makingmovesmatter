@@ -1,87 +1,159 @@
 "use client";
 
 import React, { useRef } from "react";
+import Link from "next/link";
+import Image from "next/image";
 import { motion, useInView } from "framer-motion";
-import { IoLocation } from "react-icons/io5";
+import { FaMapMarkerAlt, FaArrowRight } from "react-icons/fa";
 
-const cards = [
+const areas = [
   {
-    icon: <IoLocation className="iconColor text-4xl" />,
-    title: "Mesa, AZ",
-    description: "We ensure timely pickup and delivery with real-time updates."
+    name: "Mesa, AZ",
+    href: "/az/mesa",
+    image: "/images/mesa-moving-branded.jpg",
+    description: "Our hometown base. Trusted residential, apartment, and corporate office moving across Mesa.",
+    badge: "Headquarters"
   },
   {
-    icon: <IoLocation className="iconColor text-4xl" />,
-    title: "Chandler, AZ",
-    description: "Our team uses top-grade materials to pack your valuables securely."
+    name: "Chandler, AZ",
+    href: "/az/chandler",
+    image: "/images/chandler-moving-branded.jpg",
+    description: "Professional residential and tech corridor office relocations throughout Chandler neighborhoods.",
+    badge: "East Valley"
   },
   {
-    icon: <IoLocation className="iconColor text-4xl" />,
-    title: "Scottsdale, AZ",
-    description: "Whether across town or the country, we’ve got you covered."
+    name: "Scottsdale, AZ",
+    href: "/az/scottsdale",
+    image: "/images/scottsdale-moving-branded.jpg",
+    description: "White-glove luxury estate moving, delicate antiques, and high-end residential transitions.",
+    badge: "Luxury Care"
   },
   {
-    icon: <IoLocation className="iconColor text-4xl" />,
-    title: "Tempe, AZ",
-    description: "Get clear, upfront pricing without any hidden fees."
+    name: "Tempe, AZ",
+    href: "/az/tempe",
+    image: "/images/tempe-moving-branded.jpg",
+    description: "Fast, dependable student, apartment, and corporate moves throughout the vibrant Tempe community.",
+    badge: "Fast Dispatch"
   },
   {
-    icon: <IoLocation className="iconColor text-4xl" />,
-    title: "Gilbert, AZ",
-    description: "We work around your schedule for maximum convenience."
+    name: "Gilbert, AZ",
+    href: "/az/gilbert",
+    image: "/images/gilbert-moving-branded.jpg",
+    description: "Family-friendly full-service home relocations, packing, and furniture setup across Gilbert.",
+    badge: "Family Moves"
   },
   {
-    icon: <IoLocation className="iconColor text-4xl" />,
-    title: "Phoenix, AZ",
-    description: "Your belongings are protected every step of the way."
+    name: "Phoenix, AZ",
+    href: "/az/phoenix",
+    image: "/images/phoenix-moving-branded.jpg",
+    description: "Valley-wide residential and commercial moving solutions covering all Phoenix metro districts.",
+    badge: "Valley-Wide"
   },
   {
-    icon: <IoLocation className="iconColor text-4xl" />,
-    title: "Queen Creek, AZ",
-    description: "Experience reliable moving services with a local touch you can trust."
+    name: "Queen Creek, AZ",
+    href: "/az/queen-creek",
+    image: "/images/queen-creek-moving-branded.jpg",
+    description: "Dependable local moving services for new homes and expanding master-planned communities.",
+    badge: "Growing Hub"
   },
   {
-    icon: <IoLocation className="iconColor text-4xl" />,
-    title: "San Tan Valley, AZ",
-    description: "Serving families and businesses across San Tan Valley with care and efficiency."
+    name: "San Tan Valley, AZ",
+    href: "/az/san-tan-valley",
+    image: "/images/santan-moving-branded.jpg",
+    description: "Affordable, high-quality moving for families and businesses throughout San Tan Valley.",
+    badge: "Dependable"
   }
 ];
 
 const Section3 = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { once: true, margin: "-60px" });
 
   return (
-    <div className="paddingTopBottom w-full py-10 bg-white" ref={ref}>
-      <div className="container mx-auto px-5">
-        <h2 className="text-5xl font-bold text-[var(--heading-text-color)] capitalize py-2 text-center">
-         Areas We Serve
-        </h2>
-        <p className="text-center">
-           We provide professional moving services across multiple regions and are always expanding into new areas. Whether you’re relocating across town or moving to a new state, our team is ready to help. Explore our current service areas below to see if we’re available near you.
-        </p>
+    <section className="w-full py-16 lg:py-24 bg-white" ref={ref}>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+        
+        {/* Section Heading */}
+        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+          <div className="inline-flex items-center gap-2 bg-amber-50 text-[var(--accent-color)] border border-amber-200/60 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4">
+            <FaMapMarkerAlt /> Serving the Greater Phoenix Area
+          </div>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#011234] leading-tight mb-4">
+            Areas We Serve Across Arizona
+          </h2>
+          <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
+            From our headquarters in Mesa, Making Moves Matter proudly serves homeowners, renters, and commercial businesses across the entire Valley and statewide. Select your city to explore dedicated local moving services:
+          </p>
+        </div>
 
-        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {cards.map((card, index) => (
+        {/* 8 Areas Cards Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {areas.map((area, index) => (
             <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 50 }}
+              key={area.name}
+              initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: index * 0.15 }}
-              className="flex items-start gap-4 bg-white rounded-md shadow-md p-6"
+              transition={{ duration: 0.5, delay: index * 0.08 }}
+              className="group bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-[var(--accent-color)] transition-all duration-300 flex flex-col justify-between"
             >
-              <div>{card.icon}</div>
               <div>
-                <h1 className="text-xl font-semibold text-[var(--heading-text-color)] mb-1">
-                  {card.title}
-                </h1>
-                <p className="text-gray-600 text-sm">{card.description}</p>
+                {/* Visual Thumbnail */}
+                <div className="relative h-44 w-full overflow-hidden bg-slate-100">
+                  <Image
+                    src={area.image}
+                    alt={`Movers in ${area.name} - Making Moves Matter`}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent" />
+                  
+                  <span className="absolute top-3 right-3 bg-white/95 backdrop-blur-sm text-slate-800 text-[11px] font-semibold px-2.5 py-1 rounded-full border border-slate-200">
+                    {area.badge}
+                  </span>
+
+                  <div className="absolute bottom-3 left-4 right-4">
+                    <h3 className="text-xl font-semibold text-white">
+                      {area.name}
+                    </h3>
+                  </div>
+                </div>
+
+                {/* Description */}
+                <div className="p-5">
+                  <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                    {area.description}
+                  </p>
+                </div>
+              </div>
+
+              {/* Action Link */}
+              <div className="px-5 pb-5 pt-2 border-t border-slate-100">
+                <Link
+                  href={area.href}
+                  className="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-[var(--accent-color)] group-hover:text-amber-700 transition-colors"
+                >
+                  <span>Explore {area.name} Movers</span>
+                  <FaArrowRight className="w-3 h-3 group-hover:translate-x-1.5 transition-transform" />
+                </Link>
               </div>
             </motion.div>
           ))}
         </div>
+
+        {/* View All Regional Hub Button */}
+        <div className="mt-12 text-center">
+          <Link
+            href="/az"
+            className="inline-flex items-center gap-2 bg-[var(--accent-color)] hover:opacity-90 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300"
+          >
+            <span>View All Arizona Service Locations</span>
+            <FaArrowRight />
+          </Link>
+        </div>
+
       </div>
-    </div>
+    </section>
   );
 };
 

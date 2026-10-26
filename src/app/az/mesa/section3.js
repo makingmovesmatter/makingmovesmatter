@@ -45,7 +45,7 @@ const Section3 = () => {
             Mesa & Beyond Relocation
           </div>
 
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[var(--heading-text-color)] leading-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[var(--heading-text-color)] leading-tight mb-4">
             Full-Spectrum Moving: Local Precision & Cross-Country Logistics
           </h2>
 

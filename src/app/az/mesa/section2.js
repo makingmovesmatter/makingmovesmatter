@@ -3,7 +3,7 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { FaHome, FaBuilding, FaBoxOpen, FaWarehouse, FaDollyFlatbed, FaArrowRight } from "react-icons/fa";
-import { openQuoteModal } from "@/app/components/QuoteButton";
+import { openQuoteModal } from "../../components/QuoteButton";
 
 const services = [
   {
@@ -49,7 +49,7 @@ const Section2 = () => {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-100/70 border border-orange-200 text-[#f99c00] font-semibold text-xs tracking-wider uppercase mb-3">
             Comprehensive Moving Solutions
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[var(--heading-text-color)] capitalize">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[var(--heading-text-color)] capitalize">
             Our Mesa Packing and Movers Services Include
           </h2>
           <p className="text-gray-600 text-base mt-3 max-w-none">

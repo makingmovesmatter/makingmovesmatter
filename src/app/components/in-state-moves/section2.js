@@ -56,8 +56,8 @@ const Section2 = () => {
           <div className="rounded-xl overflow-hidden shadow-md ">
             <div className="relative w-full h-96 md:h-[550px]">
               <Image
-                src={"/images/phone.jpg"}
-                alt="imagsfd"
+                src={"/images/longdistances.png"}
+                alt="Making Moves Matter In-State Arizona Moving Fleet"
                 layout="fill"
                 objectFit="cover"
               />

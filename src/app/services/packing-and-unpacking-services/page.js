@@ -9,42 +9,14 @@ import Section5 from '@/app/components/home/section5';
 import Section3 from '@/app/components/home/section3';
 import Faq from '@/app/components/faq';
 
-const page = () => {
-  const headerImg =
-    "/images/pakingunpaking1.png";
-  const headerText1 = "Packing";
-  const headerText2 = "And Unpacking" ;
-  const headerDesc = "Efficient packing and unpacking services for safe, organized moves." ;
-  return (
-    <div>
-      <Header headerImg={headerImg} headerText1={headerText1} headerText2={headerText2} headerDesc ={headerDesc} />
-      <Section1 />
-      <Section2 />
-      <HowItWorksSection />
-      <Section4 />
-      <ServiceSection />
-      <Section5 />
-      <Section3 />
-      <Faq />
-    </div>
-  )
-}
-
-export default page
-
-
-
-
 export const metadata = {
-  title: "Professional Packing and Unpacking Services in Mesa AZ",
-  description: "If you find it hard to pack your things or you don't have time to do it, hire our professional packing and unpacking services in Mesa AZ.",
-  
+  title: "Professional Packing and Unpacking Services in Mesa, AZ | Making Moves Matter",
+  description:
+    "Protect your valuables with Making Moves Matter. Top-rated full and partial packing and unpacking services in Mesa, AZ using commercial-grade supplies.",
   metadataBase: new URL("https://mesamovingexperts.com"),
-  
   alternates: {
     canonical: "/services/packing-and-unpacking-services",
   },
-  
   robots: {
     index: true,
     follow: true,
@@ -56,62 +28,81 @@ export const metadata = {
       "max-video-preview": -1,
     },
   },
-  
   openGraph: {
-    title: "Professional Packing and Unpacking Services in Mesa AZ",
-    description: "If you find it hard to pack your things or you don't have time to do it, hire our professional packing and unpacking services in Mesa AZ.",
+    title: "Professional Packing and Unpacking Services in Mesa, AZ | Making Moves Matter",
+    description:
+      "Stress-free packing and unpacking in Mesa, AZ. China, artwork, wardrobes, and furniture wrapped with utmost care.",
     url: "https://mesamovingexperts.com/services/packing-and-unpacking-services",
     siteName: "Making Moves Matter",
     images: [
       {
-        url: "/images/logo.png",
-        width: 300,
-        height: 198,
-        alt: "Mesa Moving Experts - Professional Packing Services",
+        url: "/images/mesa_packing_care.jpg",
+        width: 1200,
+        height: 800,
+        alt: "Packing and Unpacking Services in Mesa AZ - Making Moves Matter",
       },
     ],
     locale: "en_US",
-    type: "article",
-    publishedTime: "2022-05-23T19:17:54+00:00",
-    modifiedTime: "2025-08-16T15:48:19+00:00",
+    type: "website",
   },
-  
   twitter: {
     card: "summary_large_image",
-    title: "Professional Packing and Unpacking Services in Mesa AZ",
-    description: "If you find it hard to pack your things or you don't have time to do it, hire our professional packing and unpacking services in Mesa AZ.",
-    images: ["/images/logo.png"],
+    title: "Professional Packing and Unpacking Services in Mesa, AZ | Making Moves Matter",
+    description:
+      "Safe and affordable packing in Mesa, AZ. Free upfront estimates.",
+    images: ["/images/mesa_packing_care.jpg"],
     creator: "@MesaMoving",
   },
-  
-  icons: {
-    icon: [
-      { url: "/images/logo.png", sizes: "32x32", type: "image/png" },
-      { url: "/images/logo.png", sizes: "192x192", type: "image/png" },
-    ],
-    apple: [
-      { url: "/images/logo.png", sizes: "180x180", type: "image/png" },
-    ],
-    other: [
-      {
-        rel: "icon",
-        url: "/images/logo.png",
-        sizes: "270x270",
-        type: "image/png",
-      },
-    ],
-  },
-  
-  keywords: [
-    "packing services Mesa AZ",
-    "unpacking services",
-    "professional packing",
-    "moving packing services",
-    "residential packing",
-    "office packing services",
-    "Mesa packing company",
-  ],
-  
-  authors: [{ name: "Mesa Moving Experts", url: "https://mesamovingexperts.com" }],
-  category: "Packing and Unpacking Services",
 };
+
+const packingSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MovingCompany",
+      "@id": "https://mesamovingexperts.com/#organization",
+      "name": "Making Moves Matter",
+      "url": "https://mesamovingexperts.com",
+      "telephone": "+1-480-934-8218",
+      "areaServed": ["Mesa, AZ", "Chandler, AZ", "Scottsdale, AZ", "Gilbert, AZ", "Phoenix, AZ"]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://mesamovingexperts.com/services/packing-and-unpacking-services/#service",
+      "name": "Packing and Unpacking Services in Mesa, AZ",
+      "provider": { "@id": "https://mesamovingexperts.com/#organization" },
+      "serviceType": "Packing & Unpacking Services",
+      "description": "Full-service and partial packing with heavy-duty boxes, custom crating, bubble wrap, and systematic unpacking in Mesa, AZ."
+    }
+  ]
+};
+
+const PackingPage = () => {
+  const headerImg = "/images/mesa_packing_care.jpg";
+  const headerText1 = "Packing & Unpacking";
+  const headerText2 = "Services in AZ";
+  const headerDesc = "Protect valuable business and household assets with professional packing and unpacking services in Mesa, ensuring everything arrives safely.";
+
+  return (
+    <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(packingSchema) }}
+      />
+      <Header headerImg={headerImg} headerText1={headerText1} headerText2={headerText2} headerDesc={headerDesc} />
+      <Section1 />
+      <Section2 />
+      <HowItWorksSection />
+      <Section4
+        title="Why Choose Making Moves Matter for Packing & Unpacking?"
+        subtitle="Commercial-grade boxes, custom crating for breakables, and careful room-by-room unpacking."
+      />
+      <ServiceSection />
+      <Section5 />
+      <Section3 />
+      <Faq />
+    </div>
+  );
+};
+
+export default PackingPage;

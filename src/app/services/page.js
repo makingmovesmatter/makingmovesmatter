@@ -1,132 +1,117 @@
 import React from "react";
 import Header from "@/app/components/header";
-import Link from "next/link";
-import Image from "next/image";
+import ServicesListGrid from "./ServicesListGrid";
+import { ALL_SERVICES } from "./servicesData";
 import HowItWorksSection from "@/app/components/home/HowItWorksSection";
+import Section4 from "@/app/components/commercial/section4";
+import Section3 from "@/app/components/home/section3";
+import Section5 from "@/app/components/home/section5";
 import Faq from "@/app/components/faq";
-import { FaTruck, FaArrowRight, FaShieldHalved, FaBoxesPacking, FaWarehouse, FaCouch, FaBuilding, FaRoad } from "react-icons/fa6";
 
 export const metadata = {
   title: "Professional Moving Services in Arizona | Making Moves Matter",
   description:
-    "Comprehensive residential, commercial, local, long-distance, furniture moving, and packing services across Arizona. Top-rated 5-star movers in Mesa.",
+    "Explore our complete range of moving services in Mesa, Phoenix, and across Arizona: local, long-distance, commercial, residential, packing, storage, and piano moving.",
+  keywords: [
+    "moving services Mesa AZ",
+    "Arizona moving company",
+    "Making Moves Matter services",
+    "residential movers Mesa",
+    "commercial moving East Valley",
+    "long distance movers Arizona",
+    "packing and storage Phoenix",
+  ],
+  metadataBase: new URL("https://mesamovingexperts.com"),
   alternates: {
     canonical: "/services",
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
   openGraph: {
-    title: "Moving Services | Making Moves Matter",
+    title: "Professional Moving Services in Arizona | Making Moves Matter",
     description:
-      "Explore all professional moving services by Making Moves Matter. Fast, licensed, and insured movers in Arizona.",
+      "Explore all professional moving services by Making Moves Matter. Fast, licensed, and insured movers in Mesa, Phoenix, and the East Valley.",
     url: "https://mesamovingexperts.com/services",
     siteName: "Making Moves Matter",
+    images: [
+      {
+        url: "/images/az-fleet-hero.jpg",
+        width: 1200,
+        height: 675,
+        alt: "Making Moves Matter Moving Services Arizona",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Professional Moving Services in Arizona | Making Moves Matter",
+    description:
+      "Full-service residential, commercial, local, and cross-country moving solutions across Arizona.",
+    images: ["/images/az-fleet-hero.jpg"],
+    creator: "@MesaMoving",
   },
 };
 
-const SERVICES = [
-  {
-    title: "Local Moving",
-    slug: "/services/local-moving",
-    description: "Fast, affordable, and dependable moving services across Mesa, Phoenix, and nearby East Valley communities.",
-    image: "/images/localmoving1.png",
-    tag: "Most Popular",
-  },
-  {
-    title: "Long Distance Moving",
-    slug: "/services/long-distance-moving",
-    description: "Carefully planned interstate and cross-country moves with dedicated trucks, GPS tracking, and guaranteed delivery dates.",
-    image: "/images/longdistance.png",
-    tag: "Cross Country",
-  },
-  {
-    title: "Commercial Services",
-    slug: "/services/commercial-services",
-    description: "Office, retail, and corporate relocation planned to minimize operational downtime and protect vital business assets.",
-    image: "/images/commarcial1.png",
-    tag: "Business & Office",
-  },
-  {
-    title: "Furniture Moving",
-    slug: "/services/furniture-moving",
-    description: "Expert protection and transport for delicate antiques, heavy sofas, sectionals, and large bedroom suites.",
-    image: "/images/farniturMovindBanner.png",
-    tag: "Heavy Care",
-  },
-  {
-    title: "Furniture Assembly",
-    slug: "/services/furniture-assembly",
-    description: "Precision teardown and rebuild of bed frames, modular desks, workout equipment, and modular storage units.",
-    image: "/images/furniture-assembly1.png",
-    tag: "Assembly & Setup",
-  },
-  {
-    title: "Packing & Unpacking Services",
-    slug: "/services/packing-and-unpacking-services",
-    description: "Full or partial packing using commercial-grade boxes, bubble wrap, custom crating, and wardrobe boxes.",
-    image: "/images/pakingunpaking1.png",
-    tag: "Full Service",
-  },
-  {
-    title: "Large & Heavy Item Moving",
-    slug: "/services/large-and-heavy-item-moving",
-    description: "Specialized equipment and safety rigging for pianos, gun safes, appliances, and oversized machinery.",
-    image: "/images/largeavy2.png",
-    tag: "Specialty Items",
-  },
-  {
-    title: "Storage Solutions",
-    slug: "/services/storage",
-    description: "Clean, temperature-controlled, secure storage facilities for short-term transitions or extended warehousing.",
-    image: "/images/storage1.png",
-    tag: "Secure Storage",
-  },
-  {
-    title: "Hot Tub Relocation",
-    slug: "/services/hot-tub-relocation",
-    description: "Specialized spa trailers, dollies, and experienced movers to transport hot tubs and spas damage-free.",
-    image: "/images/hottub1.png",
-    tag: "Specialized",
-  },
-  {
-    title: "Residential Moving",
-    slug: "/services/residential",
-    description: "Careful household relocations for single-family homes, luxury estates, townhomes, and apartments.",
-    image: "/images/localmoving2.png",
-    tag: "Homes & Condos",
-  },
-  {
-    title: "In-State Moves",
-    slug: "/services/in-state-moves",
-    description: "Direct-delivery relocations between Phoenix, Tucson, Flagstaff, Sedona, and throughout Arizona.",
-    image: "/images/longdistances.png",
-    tag: "Statewide",
-  },
-  {
-    title: "Moving Labor",
-    slug: "/services/moving-labor",
-    description: "Hire our strong, experienced movers by the hour for loading, unloading PODS, trucks, or moving furniture on-site.",
-    image: "/images/farnitureoving1.png",
-    tag: "Hourly Labor",
-  },
-];
-
 export default function ServicesPage() {
-  const headerImg = "/images/homebanne.png";
+  const headerImg = "/images/az-fleet-hero.jpg";
   const headerText1 = "Our Moving";
   const headerText2 = "Services";
   const headerDesc =
-    "From local residential moves to corporate relocations and white-glove specialty handling, Making Moves Matter provides reliable, stress-free moving solutions across Arizona.";
+    "From local residential moves to corporate relocations and white-glove specialty handling, Making Moves Matter provides reliable, stress-free moving solutions across Arizona with licensed crews and upfront pricing.";
 
   const servicesSchema = {
     "@context": "https://schema.org",
-    "@type": "ItemList",
-    "name": "Moving Services by Making Moves Matter",
-    "itemListElement": SERVICES.map((service, index) => ({
-      "@type": "ListItem",
-      "position": index + 1,
-      "name": service.title,
-      "description": service.description,
-      "url": `https://mesamovingexperts.com${service.slug}`,
-    })),
+    "@graph": [
+      {
+        "@type": "MovingCompany",
+        "@id": "https://mesamovingexperts.com/#organization",
+        "name": "Making Moves Matter",
+        "url": "https://mesamovingexperts.com",
+        "logo": "https://mesamovingexperts.com/images/logo.png",
+        "telephone": "+1-480-934-8218",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Mesa",
+          "addressRegion": "AZ",
+          "postalCode": "85201",
+          "addressCountry": "US",
+        },
+        "areaServed": [
+          "Mesa, AZ",
+          "Gilbert, AZ",
+          "Chandler, AZ",
+          "Tempe, AZ",
+          "Scottsdale, AZ",
+          "Phoenix, AZ",
+          "Queen Creek, AZ",
+          "San Tan Valley, AZ",
+        ],
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://mesamovingexperts.com/services/#list",
+        "name": "Moving Services by Making Moves Matter",
+        "itemListElement": ALL_SERVICES.map((service, index) => ({
+          "@type": "ListItem",
+          "position": index + 1,
+          "name": service.title,
+          "description": service.description,
+          "url": `https://mesamovingexperts.com${service.slug}`,
+        })),
+      },
+    ],
   };
 
   return (
@@ -136,6 +121,7 @@ export default function ServicesPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesSchema) }}
       />
 
+      {/* 1. Branded Fleet Hero Header */}
       <Header
         headerImg={headerImg}
         headerText1={headerText1}
@@ -143,86 +129,25 @@ export default function ServicesPage() {
         headerDesc={headerDesc}
       />
 
-      {/* Services Grid Section */}
-      <section className="py-16 md:py-20 bg-slate-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center max-w-3xl mx-auto mb-14">
-            <div className="inline-flex items-center gap-2 bg-red-100 text-[var(--red-gray-color)] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-3">
-              <FaTruck /> Full-Service Arizona Movers
-            </div>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
-              Comprehensive Moving Solutions Tailored to You
-            </h2>
-            <p className="text-slate-600 text-base md:text-lg">
-              Every move is unique. Whether you need an entire house packed and moved across the state or just a single heavy item transported across town, our licensed professionals have you covered.
-            </p>
-          </div>
+      {/* 2. 12 Services Cards Grid (Brand Styling, --accent-color Buttons, font-semibold Titles, No Shadows) */}
+      <ServicesListGrid />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {SERVICES.map((service) => (
-              <Link
-                key={service.slug}
-                href={service.slug}
-                className="group bg-white rounded-2xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
-              >
-                <div>
-                  <div className="relative h-56 w-full overflow-hidden bg-slate-100">
-                    <Image
-                      src={service.image}
-                      alt={service.title}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                    <span className="absolute top-4 right-4 bg-white/95 text-slate-800 text-xs font-bold px-3 py-1 rounded-full shadow-sm">
-                      {service.tag}
-                    </span>
-                    <h3 className="absolute bottom-3 left-4 text-2xl font-bold text-white drop-shadow">
-                      {service.title}
-                    </h3>
-                  </div>
-                  <div className="p-6">
-                    <p className="text-slate-600 text-sm leading-relaxed">
-                      {service.description}
-                    </p>
-                  </div>
-                </div>
+      {/* 3. Why Choose Us (5 Brand Value Pillars) */}
+      <Section4
+        title="Why Choose Making Moves Matter for Your Arizona Move?"
+        subtitle="Vetted moving crews, clean modern trucks, and transparent rates with no surprise travel fees."
+      />
 
-                <div className="px-6 pb-6 pt-2 flex items-center justify-between border-t border-slate-100 text-sm font-semibold text-[var(--red-gray-color)] group-hover:text-red-700">
-                  <span>Learn More & Pricing</span>
-                  <FaArrowRight className="w-4 h-4 group-hover:translate-x-1.5 transition-transform" />
-                </div>
-              </Link>
-            ))}
-          </div>
-
-          {/* Bottom CTA Banner */}
-          <div className="mt-16 bg-gradient-to-r from-[#990000] to-[#660000] text-white rounded-2xl p-8 md:p-12 shadow-lg text-center flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="text-left max-w-xl">
-              <h3 className="text-2xl md:text-3xl font-bold mb-2">Need a Custom Moving Plan?</h3>
-              <p className="text-white/80 text-sm md:text-base">
-                Call our friendly moving coordinators today at (480) 934-8218 for a transparent, no-obligation moving quote with zero hidden fees.
-              </p>
-            </div>
-            <div className="flex gap-4">
-              <Link
-                href="/contact-us"
-                className="bg-white text-[var(--red-gray-color)] font-bold px-6 py-3 rounded-lg shadow hover:bg-slate-100 transition-colors"
-              >
-                Get Free Quote
-              </Link>
-              <a
-                href="tel:4809348218"
-                className="border-2 border-white text-white font-bold px-6 py-3 rounded-lg hover:bg-white/10 transition-colors"
-              >
-                (480) 934-8218
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      {/* 4. How It Works - Step by Step Workflow */}
       <HowItWorksSection />
+
+      {/* 5. Areas We Serve (8 Arizona Cities with Brand Photography) */}
+      <Section3 />
+
+      {/* 6. Quote & Contact CTA Banner */}
+      <Section5 />
+
+      {/* 7. Frequently Asked Questions */}
       <Faq />
     </div>
   );

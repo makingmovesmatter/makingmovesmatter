@@ -41,7 +41,7 @@ const Section10 = () => {
             Local Pro Knowledge
           </div>
 
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[var(--heading-text-color)] leading-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[var(--heading-text-color)] leading-tight mb-4">
             Essential Moving Tips for Mesa Residents – Local Insights for a Smooth Move
           </h2>
 

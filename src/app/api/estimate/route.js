@@ -40,7 +40,7 @@ export async function POST(request) {
           state_from: data.origin,
           state_to: data.destination,
           zip_from: data.zeepcode,
-          zip_to: "",
+          zip_to: data.destinationZip || "",
         },
       },
     };

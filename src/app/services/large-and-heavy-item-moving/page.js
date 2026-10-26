@@ -9,42 +9,14 @@ import Section5 from '@/app/components/home/section5';
 import Section3 from '@/app/components/home/section3';
 import Faq from '@/app/components/faq';
 
-const page = () => {
-  const headerImg =
-    "/images/largehavy1.png";
-  const headerText1 = "Large and Heavy";
-  const headerText2 = "Item Moving" ;
-  const headerDesc = "Safe, reliable moving service for large and heavy household items." ;
-  return (
-    <div>
-      <Header headerImg={headerImg} headerText1={headerText1} headerText2={headerText2} headerDesc ={headerDesc} />
-      <Section1 />
-      <Section2 />
-      <HowItWorksSection />
-      <Section4 />
-      <ServiceSection />
-      <Section5 />
-      <Section3 />
-      <Faq />
-    </div>
-  )
-}
-
-export default page
-
-
-
 export const metadata = {
-  title: "Large and Heavy Item Moving Services in Mesa AZ | Making Moves",
+  title: "Large & Heavy Item Moving Services in Mesa, AZ | Making Moves Matter",
   description:
-    "If you find it hard to pack your heavy items and load them onto the truck, hire our large and heavy item moving services in Mesa AZ.",
-
+    "Expert piano movers, gun safe movers, and heavy machinery transport in Mesa, AZ. Specialized rigging and professional equipment for heavy items.",
   metadataBase: new URL("https://mesamovingexperts.com"),
-
   alternates: {
     canonical: "/services/large-and-heavy-item-moving",
   },
-
   robots: {
     index: true,
     follow: true,
@@ -56,57 +28,81 @@ export const metadata = {
       "max-video-preview": -1,
     },
   },
-
   openGraph: {
-    title: "Large and Heavy Item Moving Services in Mesa AZ | Making Moves",
+    title: "Large & Heavy Item Moving Services in Mesa, AZ | Making Moves Matter",
     description:
-      "Hire expert movers in Mesa AZ for large and heavy items. Safe, efficient, and reliable moving solutions tailored to your needs.",
+      "Specialized heavy item moving in Mesa, AZ. Pianos, safes, gym equipment, and commercial appliances moved with zero damage.",
     url: "https://mesamovingexperts.com/services/large-and-heavy-item-moving",
     siteName: "Making Moves Matter",
     images: [
       {
-        url: "/images/logo.png", // ✅ using your logo instead of WP uploads
-        width: 600,
-        height: 400,
-        alt: "Large and Heavy Item Moving Services in Mesa AZ - Mesa Moving Experts",
+        url: "/images/scottsdale-specialty-piano.jpg",
+        width: 1200,
+        height: 800,
+        alt: "Large and Heavy Item Moving in Mesa AZ - Making Moves Matter",
       },
     ],
     locale: "en_US",
-    type: "article",
-    publishedTime: "2022-05-23T19:14:04+00:00",
-    modifiedTime: "2025-08-16T18:25:47+00:00",
+    type: "website",
   },
-
   twitter: {
     card: "summary_large_image",
-    title: "Large and Heavy Item Moving Services in Mesa AZ | Making Moves",
+    title: "Large & Heavy Item Moving Services in Mesa, AZ | Making Moves Matter",
     description:
-      "Need help moving heavy furniture or bulky equipment? Mesa Moving Experts provides professional large and heavy item moving services in Mesa AZ.",
-    images: ["/images/logo.png"], // ✅ same logo
+      "Safe, insured specialty and heavy item moving in Mesa, AZ. Free quotes.",
+    images: ["/images/scottsdale-specialty-piano.jpg"],
     creator: "@MesaMoving",
   },
-
-  icons: {
-    icon: [
-      { url: "/images/logo.png", sizes: "32x32", type: "image/png" },
-      { url: "/images/logo.png", sizes: "192x192", type: "image/png" },
-    ],
-    apple: [{ url: "/images/logo.png", sizes: "180x180", type: "image/png" }],
-    other: [
-      { rel: "icon", url: "/images/logo.png", sizes: "512x512", type: "image/png" },
-    ],
-  },
-
-  keywords: [
-    "heavy item moving Mesa AZ",
-    "large furniture movers Mesa",
-    "professional heavy movers Mesa",
-    "bulky item relocation Mesa AZ",
-    "large item moving services Mesa",
-    "Mesa AZ heavy furniture transport",
-    "appliance moving services Mesa AZ",
-  ],
-
-  authors: [{ name: "Mesa Moving Experts", url: "https://mesamovingexperts.com" }],
-  category: "Large and Heavy Item Moving Services",
 };
+
+const heavySchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MovingCompany",
+      "@id": "https://mesamovingexperts.com/#organization",
+      "name": "Making Moves Matter",
+      "url": "https://mesamovingexperts.com",
+      "telephone": "+1-480-934-8218",
+      "areaServed": ["Mesa, AZ", "Chandler, AZ", "Scottsdale, AZ", "Gilbert, AZ", "Phoenix, AZ"]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://mesamovingexperts.com/services/large-and-heavy-item-moving/#service",
+      "name": "Large and Heavy Item Moving in Mesa, AZ",
+      "provider": { "@id": "https://mesamovingexperts.com/#organization" },
+      "serviceType": "Heavy Item & Specialty Moving",
+      "description": "Specialized rigging and moving equipment for grand pianos, gun safes, industrial appliances, and oversized machinery in Mesa, AZ."
+    }
+  ]
+};
+
+const HeavyItemPage = () => {
+  const headerImg = "/images/scottsdale-specialty-piano.jpg";
+  const headerText1 = "Large & Heavy Item";
+  const headerText2 = "Moving Services in AZ";
+  const headerDesc = "Specialized equipment, heavy-duty rigging, and certified movers for pianos, gun safes, appliances, and oversized machinery.";
+
+  return (
+    <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(heavySchema) }}
+      />
+      <Header headerImg={headerImg} headerText1={headerText1} headerText2={headerText2} headerDesc={headerDesc} />
+      <Section1 />
+      <Section2 />
+      <HowItWorksSection />
+      <Section4
+        title="Why Choose Making Moves Matter for Heavy Item Moving?"
+        subtitle="Hydraulic liftgates, piano skids, safe jacks, and certified heavy rigging technicians."
+      />
+      <ServiceSection />
+      <Section5 />
+      <Section3 />
+      <Faq />
+    </div>
+  );
+};
+
+export default HeavyItemPage;

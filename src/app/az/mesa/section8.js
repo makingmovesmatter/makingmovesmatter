@@ -53,7 +53,7 @@ const Section8 = () => {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-100/70 border border-orange-200 text-[#f99c00] font-semibold text-xs tracking-wider uppercase mb-3">
             Heritage & Roots
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[var(--heading-text-color)] capitalize">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[var(--heading-text-color)] capitalize">
             A Brief History of Mesa, AZ
           </h2>
           <p className="text-gray-600 text-base mt-3 max-w-none">

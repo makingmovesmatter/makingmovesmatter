@@ -73,21 +73,24 @@ const QuoteButton = () => {
       {/* Modal */}
       {open && (
         <div
-          className="fixed inset-0 z-[70] bg-black/70 backdrop-blur-[2px] flex items-center justify-center p-3 quote-world"
+          className="fixed inset-0 z-[9999999] bg-[#011234]/80 backdrop-blur-sm flex items-center justify-center p-3 sm:p-5 quote-world overflow-y-auto"
           onClick={handleClose}
         >
           <div
-            className="w-full max-w-md bg-white rounded-2xl shadow-2xl relative"
+            className="w-full max-w-2xl bg-white rounded-2xl relative my-auto shadow-2xl border border-neutral-200 overflow-hidden max-h-[94vh] flex flex-col"
             onClick={(e) => e.stopPropagation()}
           >
+            {/* Safe Top-Right Close Button inside modal */}
             <button
               onClick={handleClose}
-              className="absolute -top-12 right-4 text-[var(--accent-color)] bg-white px-2 rounded-4xl text-3xl cursor-pointer"
-              aria-label="Close"
+              className="absolute top-3.5 right-3.5 z-30 w-9 h-9 rounded-full bg-white/20 hover:bg-white/35 text-white flex items-center justify-center text-xl font-bold cursor-pointer transition-colors backdrop-blur-sm border border-white/30"
+              aria-label="Close quote modal"
             >
               ×
             </button>
-            <Quote onSuccess={handleClose} />
+            <div className="overflow-y-auto w-full">
+              <Quote onSuccess={handleClose} isModal={true} />
+            </div>
           </div>
         </div>
       )}

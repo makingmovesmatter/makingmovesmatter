@@ -19,22 +19,22 @@ const fadeUp = {
 
 const content = [
   {
-    title: 'Professional Movers You Can Count On',
-    text: `At Smart Move Moving & Storage, we’ve been helping families and businesses move with confidence for over 30 years. Whether you’re relocating to a high-rise, a suburban home, or a new office space, our team knows how to handle the real-world challenges of moving. We show up on time, work efficiently, and treat your belongings with the same care we’d give our own.
+    title: 'Professional Movers You Can Count On in Mesa, AZ',
+    text: `At Making Moves Matter, we’ve been helping Arizona families and businesses relocate with confidence for over 15 years. Whether you’re moving to an East Valley master-planned community, a downtown condo, or a high-rise office space, our team understands the local logistics and summer heat challenges. We arrive promptly, work diligently, and treat every possession with the utmost care.
 
-    Planning a move? Let us handle the heavy lifting—so you can focus on what’s next. Contact us today to reserve your moving date.`,
+Planning an upcoming move? Let our experienced crews handle the heavy lifting and tight stairwells so you can focus on enjoying your new space. Call or request a fast, free estimate today.`,
   },
   {
-    title: 'Professional Movers You Can Count On',
-    text: `We’re fully insured and compliant with all transportation regulations, which means your move is protected from start to finish. When you choose Smart Move, you get peace of mind, not just muscle.`,
+    title: 'Fully Licensed, Bonded & Insured Protection',
+    text: `We maintain active state licensing and comprehensive valuation coverage, guaranteeing that your furniture, delicate heirlooms, and electronics are safeguarded every mile of the journey. When you hire Making Moves Matter, you gain true peace of mind—not just muscle.`,
   },
   {
-    title: 'Skilled Movers Trained in Safety and Respect',
-    text: `Our crews are trained in safe handling, efficient packing, and professional moving techniques. We come equipped with the right tools and take the time to wrap, pad, and protect your belongings—no shortcuts, no careless mistakes.`,
+    title: 'Skilled Crews Trained in Modern Moving Techniques',
+    text: `Every team member undergoes rigorous background screening and hands-on training in blanket-wrapping, stretch-wrapping, door-jamb protection, and secure truck loading. We arrive equipped with heavy-duty dollies, neoprene floor runners, and specialty straps to prevent scuffs, dents, or delays.`,
   },
   {
-    title: 'Honest, Upfront Pricing—No Surprises',
-    text: `We believe in doing things the right way. That means no hidden fees, no vague quotes—just clear, straightforward pricing you can trust before the first box is moved.`,
+    title: 'Transparent, All-Inclusive Pricing with Zero Hidden Fees',
+    text: `We stand for integrity and clear communication. Your upfront quote details labor, equipment, and travel without surprise surcharges, fuel gimmicks, or unexpected elevator fees. You will know exactly what to expect before moving day arrives.`,
   },
 ];
 

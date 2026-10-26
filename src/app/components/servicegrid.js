@@ -19,7 +19,7 @@ const ServiceGrid = () => {
           animate={isInView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-5xl font-bold text-[var(--heading-text-color)] mb-4">
+          <h2 className="text-3xl md:text-4xl font-semibold text-[var(--heading-text-color)] mb-4">
            How Making Moves Matter Works
           </h2>
           <p className="text-gray-700 text-base leading-relaxed">
@@ -39,7 +39,7 @@ const ServiceGrid = () => {
           animate={isInView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 1.2 }}
         >
-          <div className="relative w-full h-full min-h-[400px] rounded-lg overflow-hidden shadow-md">
+          <div className="relative w-full h-full min-h-[400px] rounded-lg overflow-hidden border border-slate-200">
               <video
               className="absolute inset-0 w-full h-full object-cover"
               autoPlay

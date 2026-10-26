@@ -7,6 +7,7 @@ const estimateSchema = new mongoose.Schema({
   email: { type: String, required: true },
   phone: { type: String, required: true },
   zeepcode: { type: String, required: true },
+  destinationZip: { type: String },
   moveDate: { type: Date, required: true },
   origin: { type: String, required: true },
   destination: { type: String, required: true },

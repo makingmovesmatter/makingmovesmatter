@@ -63,7 +63,7 @@ const Section9 = () => {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-50 border border-orange-200 text-[#f99c00] font-semibold text-xs tracking-wider uppercase mb-3">
             Explore Your New City
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[var(--heading-text-color)] capitalize">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[var(--heading-text-color)] capitalize">
             Fun Things to Do in Mesa, AZ
           </h2>
           <p className="text-gray-600 text-base mt-3 max-w-none">
@@ -81,11 +81,10 @@ const Section9 = () => {
               <button
                 key={btn.id}
                 onClick={() => setFilter(btn.id)}
-                className={`px-4 py-2 rounded-full text-xs font-bold transition-all duration-200 border cursor-pointer ${
-                  filter === btn.id
+                className={`px-4 py-2 rounded-full text-xs font-bold transition-all duration-200 border cursor-pointer ${filter === btn.id
                     ? "bg-[#011234] text-white border-[#011234]"
                     : "bg-white text-gray-700 border-neutral-200 hover:border-gray-400"
-                }`}
+                  }`}
               >
                 {btn.label}
               </button>

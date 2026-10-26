@@ -19,9 +19,18 @@ const formatDate = (dateStr) => {
 const friendlyNames = {
   _id: "ID",
   name: "Name",
+  firstname: "First Name",
+  lastname: "Last Name",
   email: "Email",
   phone: "Phone",
   estimateType: "Estimate Type",
+  zeepcode: "Origin ZIP",
+  destinationZip: "Destination ZIP",
+  origin: "Origin Address",
+  destination: "Destination Address",
+  service: "Service",
+  moveDate: "Moving Date",
+  message: "Notes & Add-ons",
   createdAt: "Created At",
   updatedAt: "Updated At",
 };

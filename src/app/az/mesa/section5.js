@@ -45,7 +45,7 @@ const Section5 = () => {
             Protection & Preservation
           </div>
 
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[var(--heading-text-color)] leading-tight mb-6">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[var(--heading-text-color)] leading-tight mb-6">
             Professional Packing & 24/7 Monitored Storage in Mesa
           </h2>
 

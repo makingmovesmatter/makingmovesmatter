@@ -106,7 +106,7 @@ const Section2 = () => {
 
           <p className="text-[var(--heading-text-color)] text-md py-2 pb-5">
             Looking for a trusted moving company in Arizona? You’re in the right
-            place. At Smart Move Moving & Storage, we proudly serve customers
+            place. At Making Moves Matter, we proudly serve customers
             all across the state. No matter where you’re moving to or from in
             Arizona, our experienced movers are ready to help.
           </p>

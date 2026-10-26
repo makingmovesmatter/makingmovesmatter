@@ -65,12 +65,12 @@ const Section5 = () => {
               className="mb-4"
             >
               {block.type === "heading" && (
-                <h2 className="text-4xl font-bold text-[var(--accent-color)] capitalize py-4">
+                <h2 className="text-4xl font-semibold text-[var(--accent-color)] capitalize py-4">
                   {block.content}
                 </h2>
               )}
               {block.type === "subheading" && (
-                <h4 className="text-2xl font-bold text-[var(--accent-color)] capitalize pt-4 pb-2">
+                <h4 className="text-2xl font-semibold text-[var(--accent-color)] capitalize pt-4 pb-2">
                   {block.content}
                 </h4>
               )}

@@ -43,7 +43,7 @@ const Section7 = () => {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-50 border border-orange-200 text-[#f99c00] font-semibold text-xs tracking-wider uppercase mb-3">
             The Making Moves Matter Advantage
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[var(--heading-text-color)] capitalize">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[var(--heading-text-color)] capitalize">
             Why Choose Our Mesa Moving Company?
           </h2>
           <p className="text-gray-600 text-base mt-3 max-w-none">
@@ -58,9 +58,8 @@ const Section7 = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: idx * 0.1, ease: "easeOut" }}
-              className={`p-6 rounded-xl border border-neutral-200 bg-neutral-50/60 hover:border-[#f99c00] transition-all duration-300 flex flex-col justify-between ${
-                idx === 4 ? "md:col-span-2 lg:col-span-2 bg-gradient-to-r from-orange-50/50 to-neutral-50" : ""
-              }`}
+              className={`p-6 rounded-xl border border-neutral-200 bg-neutral-50/60 hover:border-[#f99c00] transition-all duration-300 flex flex-col justify-between ${idx === 4 ? "md:col-span-2 lg:col-span-2 bg-gradient-to-r from-orange-50/50 to-neutral-50" : ""
+                }`}
             >
               <div>
                 <div className="w-12 h-12 rounded-lg bg-orange-50 border border-orange-200/60 flex items-center justify-center mb-4">

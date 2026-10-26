@@ -55,7 +55,7 @@ const Section11 = () => {
             Mesa Community Coverage
           </div>
 
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[var(--heading-text-color)] leading-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[var(--heading-text-color)] leading-tight mb-4">
             Neighborhoods We Serve in Mesa, AZ – Expert Moving Services Across the City
           </h2>
 

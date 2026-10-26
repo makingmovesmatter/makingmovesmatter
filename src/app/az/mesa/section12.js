@@ -27,7 +27,7 @@ const Section12 = () => {
             Got Questions? We Have Answers
           </div>
 
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[var(--heading-text-color)] capitalize">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[var(--heading-text-color)] capitalize">
             FAQ About Moving Services in Mesa, AZ
           </h2>
 
@@ -60,9 +60,8 @@ const Section12 = () => {
                     {faq.question}
                   </span>
                   <div
-                    className={`w-8 h-8 rounded-full bg-neutral-100 flex items-center justify-center flex-shrink-0 transition-transform duration-300 ${
-                      isOpen ? "rotate-180 bg-orange-50 text-[#f99c00]" : "text-gray-500"
-                    }`}
+                    className={`w-8 h-8 rounded-full bg-neutral-100 flex items-center justify-center flex-shrink-0 transition-transform duration-300 ${isOpen ? "rotate-180 bg-orange-50 text-[#f99c00]" : "text-gray-500"
+                      }`}
                   >
                     <FaChevronDown className="text-xs" />
                   </div>

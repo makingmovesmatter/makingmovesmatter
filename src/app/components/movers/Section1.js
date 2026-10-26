@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 
 const Section1 = () => {
-  const [location, setLocation] = useState("Dhaka");
+  const [location, setLocation] = useState("Mesa, AZ");
 
   const handleSearch = (e) => {
     setLocation(e.target.value);
