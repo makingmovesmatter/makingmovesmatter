@@ -51,8 +51,8 @@ const Header = ({ headerImg, headerText1, headerText2, headerDesc }) => {
               {/* Left Column: Rich Content, Details, Trust & Action CTAs */}
               <motion.div className="w-full lg:w-1/2" variants={fadeInUp}>
                 {/* Primary SEO Heading (Single H1) */}
-                <h1 className="text-5xl xl:text-6xl font-bold text-white leading-tight tracking-tight">
-                  <span className="block text-[var(--accent-color)]">{headerText1} <span className="block text-white mt-1">{headerText2}</span></span>
+                <h1 className="text-5xl xl:text-6xl font-semibold text-white leading-tight tracking-tight">
+                  <span className="block text-[var(--accent-color)]">{headerText1} <span className="text-white mt-1">{headerText2}</span></span>
 
                 </h1>
 
@@ -67,11 +67,11 @@ const Header = ({ headerImg, headerText1, headerText2, headerDesc }) => {
                     <FaShieldAlt className="text-[var(--accent-color)] text-base shrink-0" />
                     <span><strong>Guaranteed Flat Rates:</strong> Fixed prices, zero hidden fees</span>
                   </div>
-                  <div className="flex items-center gap-2.5 bg-white/5 border border-white/10 rounded-xl px-3.5 py-2.5 backdrop-blur-sm">
+                  <div className="hidden md:flex items-center gap-2.5 bg-white/5 border border-white/10 rounded-xl px-3.5 py-2.5 backdrop-blur-sm">
                     <FaClock className="text-[var(--accent-color)] text-base shrink-0" />
                     <span><strong>Same-Day & Flexible:</strong> Fast local & interstate booking</span>
                   </div>
-                  <div className="flex items-center gap-2.5 bg-white/5 border border-white/10 rounded-xl px-3.5 py-2.5 backdrop-blur-sm">
+                  <div className="hidden md:flex items-center gap-2.5 bg-white/5 border border-white/10 rounded-xl px-3.5 py-2.5 backdrop-blur-sm">
                     <FaTruckMoving className="text-[var(--accent-color)] text-base shrink-0" />
                     <span><strong>Commercial Fleet:</strong> 26ft air-ride trucks & 60+ pads</span>
                   </div>

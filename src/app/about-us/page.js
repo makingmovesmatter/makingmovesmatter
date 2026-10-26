@@ -2,7 +2,7 @@ import React from 'react';
 import Section1 from './section1';
 import Section2 from './section2';
 import Header from '../components/header';
-import HowItWorksSection from '../components/home/HowItWorksSection';
+import ProcessSection from './processSection';
 import ReviewsSection from '../components/home/section2';
 import AreasSection from '../components/home/section3';
 import QuoteBannerSection from '../components/home/section5';
@@ -158,7 +158,7 @@ const AboutUsPage = () => {
       <Section2 />
 
       {/* 4-Step Move Process */}
-      <HowItWorksSection />
+      <ProcessSection />
 
       {/* Real Customer Reviews */}
       <ReviewsSection />
