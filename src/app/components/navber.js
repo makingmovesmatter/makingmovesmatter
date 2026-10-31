@@ -503,6 +503,15 @@ const Navbar = () => {
                   Contact Us
                 </Link>
 
+                <Link
+                  href="/quote"
+                  onClick={closeMobileMenu}
+                  className="flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-semibold text-[var(--accent-color)] bg-orange-50/60 hover:bg-orange-100/70 transition-colors"
+                >
+                  <span>Get a Free Quote</span>
+                  <span className="text-[10px] bg-[var(--accent-color)] text-white px-2 py-0.5 rounded-full uppercase tracking-wider font-semibold">Instant</span>
+                </Link>
+
               </div>
             </div>
 

@@ -39,10 +39,10 @@ const Header = ({ headerImg, headerText1, headerText2, headerDesc }) => {
 
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(249,156,0,0.18),transparent_50%)] z-0" />
 
-        <div className="container z-10 w-full h-full py-12 px-4 sm:px-6 lg:px-8">
-          <div className="w-full my-6 sm:my-10">
+        <div className="container z-10 w-full h-full py-10 sm:py-12 px-4 sm:px-6 lg:px-8">
+          <div className="w-full my-4 sm:my-8">
             <motion.div
-              className="text-white flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-12"
+              className="text-white flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-12"
               variants={staggerContainer}
               initial="hidden"
               whileInView="visible"
@@ -51,9 +51,8 @@ const Header = ({ headerImg, headerText1, headerText2, headerDesc }) => {
               {/* Left Column: Rich Content, Details, Trust & Action CTAs */}
               <motion.div className="w-full lg:w-1/2" variants={fadeInUp}>
                 {/* Primary SEO Heading (Single H1) */}
-                <h1 className="text-5xl xl:text-6xl font-semibold text-white leading-tight tracking-tight">
+                <h1 className="text-5xl sm:text-5xl xl:text-6xl font-semibold text-white leading-tight tracking-tight">
                   <span className="block text-[var(--accent-color)]">{headerText1} <span className="text-white mt-1">{headerText2}</span></span>
-
                 </h1>
 
                 {/* Subtitle / Description */}
@@ -67,11 +66,11 @@ const Header = ({ headerImg, headerText1, headerText2, headerDesc }) => {
                     <FaShieldAlt className="text-[var(--accent-color)] text-base shrink-0" />
                     <span><strong>Guaranteed Flat Rates:</strong> Fixed prices, zero hidden fees</span>
                   </div>
-                  <div className="hidden md:flex items-center gap-2.5 bg-white/5 border border-white/10 rounded-xl px-3.5 py-2.5 backdrop-blur-sm">
+                  <div className="hidden sm:flex items-center gap-2.5 bg-white/5 border border-white/10 rounded-xl px-3.5 py-2.5 backdrop-blur-sm">
                     <FaClock className="text-[var(--accent-color)] text-base shrink-0" />
                     <span><strong>Same-Day & Flexible:</strong> Fast local & interstate booking</span>
                   </div>
-                  <div className="hidden md:flex items-center gap-2.5 bg-white/5 border border-white/10 rounded-xl px-3.5 py-2.5 backdrop-blur-sm">
+                  <div className="hidden sm:flex items-center gap-2.5 bg-white/5 border border-white/10 rounded-xl px-3.5 py-2.5 backdrop-blur-sm">
                     <FaTruckMoving className="text-[var(--accent-color)] text-base shrink-0" />
                     <span><strong>Commercial Fleet:</strong> 26ft air-ride trucks & 60+ pads</span>
                   </div>
@@ -82,11 +81,18 @@ const Header = ({ headerImg, headerText1, headerText2, headerDesc }) => {
                 </div>
 
                 {/* High-Converting Action Buttons */}
-                <div className="mt-8 flex flex-col sm:flex-row gap-3.5">
+                <div className="mt-7 flex flex-col sm:flex-row gap-3.5">
                   <button
                     type="button"
-                    onClick={openQuoteModal}
-                    className="flex items-center justify-center gap-3 bg-[var(--accent-color)] hover:opacity-90 text--bold-semibold text-base sm:text-lg py-4 px-7 rounded-xl transition-all cursor-pointer"
+                    onClick={() => {
+                      const el = document.getElementById('hero-quote-form');
+                      if (el) {
+                        el.scrollIntoView({ behavior: 'smooth' });
+                      } else {
+                        openQuoteModal();
+                      }
+                    }}
+                    className="flex items-center justify-center gap-3 bg-[var(--accent-color)] hover:opacity-90 text-white font-semibold text-base sm:text-lg py-3.5 sm:py-4 px-6 sm:px-7 rounded-xl transition-all cursor-pointer"
                   >
                     <PiQuotes className="text-2xl" />
                     <span>Get A Free Quote</span>
@@ -95,7 +101,7 @@ const Header = ({ headerImg, headerText1, headerText2, headerDesc }) => {
 
                   <a
                     href="tel:4809348218"
-                    className="flex items-center justify-center gap-3 bg-[var(--accent-color)] hover:opacity-90 text-white font-semibold text-base sm:text-lg py-4 px-7 rounded-xl transition-all"
+                    className="flex items-center justify-center gap-3 bg-[var(--accent-color)] hover:opacity-90 text-white font-semibold text-base sm:text-lg py-3.5 sm:py-4 px-6 sm:px-7 rounded-xl transition-all"
                   >
                     <span className="relative flex h-3 w-3">
                       <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75" />
@@ -107,7 +113,7 @@ const Header = ({ headerImg, headerText1, headerText2, headerDesc }) => {
                 </div>
 
                 {/* Social Proof & Local Trust Bar */}
-                <div className="mt-7 pt-5 border-t border-white/15 flex flex-wrap items-center gap-4 sm:gap-6 text-xs text-slate-300">
+                <div className="mt-6 pt-4 border-t border-white/15 flex flex-wrap items-center gap-4 sm:gap-6 text-xs text-slate-300">
                   <div className="flex items-center gap-1.5">
                     <div className="flex text-[#FBBC05]">
                       <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
@@ -126,33 +132,10 @@ const Header = ({ headerImg, headerText1, headerText2, headerDesc }) => {
                     <span>Licensed & Insured</span>
                   </div>
                 </div>
-
-                {/* Mobile & Tablet Interactive Teaser Card */}
-                <div className="lg:hidden mt-8 w-full p-5 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 text-left">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-xs font-semibold uppercase tracking-wider text-[var(--accent-color)]">
-                      ⚡ Instant Estimate in 60 Seconds
-                    </span>
-                    <span className="text-[11px] text-slate-300 bg-white/10 px-2.5 py-0.5 rounded-full">
-                      0 Obligation
-                    </span>
-                  </div>
-                  <p className="text-sm text-white font-medium mb-4">
-                    Ready for a flat-rate guaranteed moving quote tailored to your exact inventory and dates?
-                  </p>
-                  <button
-                    type="button"
-                    onClick={openQuoteModal}
-                    className="w-full py-3.5 px-4 rounded-xl bg-[var(--accent-color)] hover:opacity-95 text-white font-boldtext-sm flex items-center justify-center gap-2 transition-all cursor-pointer"
-                  >
-                    <span>Launch Interactive Quote Calculator</span>
-                    <FaArrowRight className="text-xs" />
-                  </button>
-                </div>
               </motion.div>
 
-              {/* Right Column: Multi-Step Interactive Quote Form (Inline for Desktop) */}
-              <motion.div variants={fadeInUp} className="hidden lg:block w-full lg:w-1/2">
+              {/* Right Column: Interactive Quote Form (Visible on BOTH Desktop and Mobile) */}
+              <motion.div id="hero-quote-form" variants={fadeInUp} className="w-full lg:w-1/2 mt-6 lg:mt-0">
                 <Quote />
               </motion.div>
             </motion.div>

@@ -4,6 +4,11 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // Quotes -> /quote
+      { source: '/free-quote', destination: '/quote', permanent: true },
+      { source: '/get-a-quote', destination: '/quote', permanent: true },
+      { source: '/moving-quote', destination: '/quote', permanent: true },
+
       // Locations -> /az/[city]
       { source: '/locations', destination: '/az', permanent: true },
       { source: '/locations/:city', destination: '/az/:city', permanent: true },

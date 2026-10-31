@@ -1,4 +1,3 @@
-// components/QuoteButton.jsx
 "use client";
 
 import React, { useEffect, useState } from "react";
@@ -14,7 +13,6 @@ export const openQuoteModal = () => {
 const QuoteButton = () => {
   const [open, setOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
-  const [animClass, setAnimClass] = useState("");
 
   const handleOpen = () => {
     setOpen(true);
@@ -35,19 +33,7 @@ const QuoteButton = () => {
 
     window.addEventListener("open-quote-modal", handleCustomOpen);
 
-    const interval = setInterval(() => {
-      if (window.innerWidth < 1024) {
-        // Mobile & Tablet → slide in/out
-        setAnimClass("slide-in");
-        setTimeout(() => setAnimClass("slide-out"), 15000);
-      } else {
-        setAnimClass("shake");
-        setTimeout(() => setAnimClass(""), 1000);
-      }
-    }, 10000);
-
     return () => {
-      clearInterval(interval);
       window.removeEventListener("open-quote-modal", handleCustomOpen);
     };
   }, []);
@@ -57,16 +43,13 @@ const QuoteButton = () => {
       {mounted && (
         <button
           onClick={handleOpen}
-          aria-label="Get a Quote"
-          className={`
-            quote-btn fixed top-1/2 cursor-pointer -translate-y-1/2 z-[60] 
-            bg-[var(--accent-color)] text-white rounded-l-sm shadow-2xl 
-            flex flex-col items-center justify-center text-sm font-medium 
-            ${animClass}
-          `}
+          aria-label="Get a Free Quote"
+          className="fixed top-1/2 right-0 -translate-y-1/2 z-[60] bg-[var(--accent-color)] hover:opacity-90 text-white rounded-l-xl border-l border-t border-b border-white/30 px-2.5 sm:px-3 py-3.5 sm:py-4 flex flex-col items-center justify-center gap-1.5 text-xs font-semibold cursor-pointer transition-transform hover:-translate-x-1"
         >
-          <PiQuotes />
-          Get Free Quote
+          <PiQuotes className="text-xl" />
+          <span className="[writing-mode:vertical-rl] rotate-180 tracking-wider uppercase text-[11px] font-semibold">
+            Free Quote
+          </span>
         </button>
       )}
 
@@ -77,10 +60,10 @@ const QuoteButton = () => {
           onClick={handleClose}
         >
           <div
-            className="w-full max-w-2xl bg-white rounded-2xl relative my-auto shadow-2xl border border-neutral-200 overflow-hidden max-h-[94vh] flex flex-col"
+            className="w-full max-w-2xl bg-white rounded-2xl relative my-auto border border-neutral-200 overflow-hidden max-h-[94vh] flex flex-col"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Safe Top-Right Close Button inside modal */}
+            {/* Top-Right Close Button inside modal */}
             <button
               onClick={handleClose}
               className="absolute top-3.5 right-3.5 z-30 w-9 h-9 rounded-full bg-white/20 hover:bg-white/35 text-white flex items-center justify-center text-xl font-bold cursor-pointer transition-colors backdrop-blur-sm border border-white/30"

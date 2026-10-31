@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-8 mb-10">
           {/* Our Services */}
           <div>
-            <h3 className="text-2xl font-bold mb-4 uppercase tracking-wide text-[var(--white-color)]">
+            <h3 className="text-2xl font-semibold mb-4 uppercase tracking-wide text-[var(--white-color)]">
               <a href="/services" className="hover:underline">Moving Services</a>
             </h3>
             <ul className="space-y-2 text-sm">
@@ -28,7 +28,7 @@ const Footer = () => {
 
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold mb-4 uppercase tracking-wide text-[var(--white-color)]">
+            <h3 className="text-2xl font-semibold mb-4 uppercase tracking-wide text-[var(--white-color)]">
               <a href="/az" className="hover:underline">Service Area</a>
             </h3>
             <ul className="space-y-2 text-sm">
@@ -43,14 +43,13 @@ const Footer = () => {
             </ul>
           </div>
 
-
-
-          {/* Company Info */}
+          {/* Quick Links */}
           <div>
-            <h3 className="text-2xl font-bold mb-4 uppercase tracking-wide text-[var(--white-color)]">
+            <h3 className="text-2xl font-semibold mb-4 uppercase tracking-wide text-[var(--white-color)]">
               Quick Links
             </h3>
             <ul className="space-y-2 text-sm">
+              <li className="hover:!underline"><a href="/quote" className="font-semibold text-[var(--accent-color)]">Get a Free Quote</a></li>
               <li className="hover:!underline"><a href="/blog">Blog</a></li>
               <li className="hover:!underline"><a href="/about-us">About Us</a></li>
               <li className="hover:!underline"><a href="/reviews">Reviews</a></li>
@@ -61,9 +60,9 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Logo or Extra Info (optional) */}
+          {/* Logo or Extra Info */}
           <div>
-            <h3 className="text-2xl font-bold mb-4 uppercase tracking-wide text-[var(--white-color)]">
+            <h3 className="text-2xl font-semibold mb-4 uppercase tracking-wide text-[var(--white-color)]">
               Making Moves Matter
             </h3>
             <p className="text-sm text-[var(--white-color)]">

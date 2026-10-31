@@ -9,6 +9,14 @@ export async function POST(request) {
     await connectDB();
     const data = await request.json();
 
+    if (!data.lastname?.trim() && data.firstname?.trim().includes(' ')) {
+      const parts = data.firstname.trim().split(/\s+/);
+      data.firstname = parts[0];
+      data.lastname = parts.slice(1).join(' ');
+    } else if (!data.lastname?.trim()) {
+      data.lastname = 'Customer';
+    }
+
     const validationErrors = validateEstimateData(data);
     if (Object.keys(validationErrors).length > 0) {
       return new Response(
