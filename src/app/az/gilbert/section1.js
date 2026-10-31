@@ -114,7 +114,7 @@ const Section1 = () => {
         >
           <div className="relative w-full h-[440px] sm:h-[500px] lg:h-full min-h-[420px] rounded-xl overflow-hidden border border-neutral-200">
             <Image
-              src="/images/gilbert-truck-branded.jpg"
+              src="/images/gilbert-truck-branded.png"
               alt="Making Moves Matter branded moving truck serving homeowners in Gilbert, Arizona"
               fill
               className="object-cover hover:scale-105 transition-transform duration-700 ease-out"

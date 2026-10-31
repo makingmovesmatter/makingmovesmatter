@@ -17,7 +17,7 @@ import Section13 from "./section13";
 import PhoenixSchema from "./PhoenixSchema";
 
 const PhoenixPage = () => {
-  const headerImg = "/images/phoenix-truck-branded.jpg";
+  const headerImg = "/images/phoenix-truck-branded.png";
   const headerText1 = "Making Moves Matter";
   const headerText2 = "Phoenix Moving AZ";
   const headerDesc =
@@ -110,7 +110,7 @@ export const metadata = {
     siteName: "Making Moves Matter",
     images: [
       {
-        url: "/images/phoenix-truck-branded.jpg",
+        url: "/images/phoenix-truck-branded.png",
         width: 1200,
         height: 675,
         alt: "Making Moves Matter - Trusted Phoenix Moving Company in Arizona",
@@ -130,7 +130,7 @@ export const metadata = {
     title: "Top Phoenix Moving Company AZ | Making Moves Matter",
     description:
       "Dependable Phoenix movers with 15 years experience, licensed & insured. Call (480) 934-8218 for a free quote!",
-    images: ["/images/phoenix-truck-branded.jpg"],
+    images: ["/images/phoenix-truck-branded.png"],
     creator: "@MesaMoving",
   },
   icons: {

@@ -59,7 +59,7 @@ export const ALL_SERVICES = [
     title: "Hot Tub Relocation",
     slug: "/services/hot-tub-relocation",
     description: "Specialized spa trailers, heavy-duty dollies, and experienced movers to transport hot tubs and swim spas damage-free.",
-    image: "/images/az-fleet-hero.jpg",
+    image: "/images/az-fleet-hero.png",
     tag: "Heavy Handling",
   },
   {

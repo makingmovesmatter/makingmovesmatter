@@ -62,7 +62,7 @@ export const metadata = {
 };
 
 const AboutUsPage = () => {
-  const headerImg = "/images/az-fleet-hero.jpg";
+  const headerImg = "/images/az-fleet-hero.png";
   const headerText1 = "About";
   const headerText2 = "Making Moves Matter";
   const headerDesc =
@@ -142,7 +142,7 @@ const AboutUsPage = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      
+
       {/* Hero Header */}
       <Header
         headerImg={headerImg}

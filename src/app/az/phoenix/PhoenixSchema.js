@@ -15,7 +15,7 @@ const PhoenixSchema = () => {
     "email": "makingmovesmatter07@gmail.com",
     "priceRange": "$$",
     "image": [
-      "https://mesamovingexperts.com/images/phoenix-truck-branded.jpg",
+      "https://mesamovingexperts.com/images/phoenix-truck-branded.png",
       "https://mesamovingexperts.com/images/phoenix-residential-moving.jpg",
       "https://mesamovingexperts.com/images/phoenix-commercial-moving.jpg"
     ],

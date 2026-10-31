@@ -15,7 +15,7 @@ const GilbertSchema = () => {
     "email": "makingmovesmatter07@gmail.com",
     "priceRange": "$$",
     "image": [
-      "https://mesamovingexperts.com/images/gilbert-truck-branded.jpg",
+      "https://mesamovingexperts.com/images/gilbert-truck-branded.png",
       "https://mesamovingexperts.com/images/gilbert-residential-moving.jpg",
       "https://mesamovingexperts.com/images/gilbert-commercial-moving.jpg"
     ],

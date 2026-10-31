@@ -29,7 +29,7 @@ export const metadata = {
     siteName: "Making Moves Matter",
     images: [
       {
-        url: "/images/az-fleet-hero.jpg",
+        url: "/images/az-fleet-hero.png",
         width: 1200,
         height: 630,
         alt: "Making Moves Matter Free Moving Quote",
@@ -41,7 +41,7 @@ export const metadata = {
 };
 
 export default function QuotePage() {
-  const headerImg = "/images/az-fleet-hero.jpg";
+  const headerImg = "/images/az-fleet-hero.png";
   const headerText1 = "Get Your Free";
   const headerText2 = "Moving Quote";
   const headerDesc =
@@ -60,7 +60,7 @@ export default function QuotePage() {
       <section className="w-full py-12 lg:py-20 bg-slate-50 border-b border-slate-200">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-            
+
             {/* Left: Value Proposition & Direct Phone Support */}
             <div className="lg:col-span-5 space-y-6">
               <div className="bg-white border border-slate-200 rounded-2xl p-6">

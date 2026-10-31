@@ -36,7 +36,7 @@ export const metadata = {
     siteName: "Making Moves Matter",
     images: [
       {
-        url: "/images/az-fleet-hero.jpg",
+        url: "/images/az-fleet-hero.png",
         width: 1200,
         height: 800,
         alt: "Hot Tub Relocation in Mesa AZ - Making Moves Matter",
@@ -50,7 +50,7 @@ export const metadata = {
     title: "Reliable Hot Tub Relocation Services in Mesa, AZ | Making Moves Matter",
     description:
       "Safe, insured spa moving in Mesa, AZ. Free upfront estimates.",
-    images: ["/images/az-fleet-hero.jpg"],
+    images: ["/images/az-fleet-hero.png"],
     creator: "@MesaMoving",
   },
 };
@@ -78,7 +78,7 @@ const hotTubSchema = {
 };
 
 const HotTubPage = () => {
-  const headerImg = "/images/az-fleet-hero.jpg";
+  const headerImg = "/images/az-fleet-hero.png";
   const headerText1 = "Hot Tub Relocation";
   const headerText2 = "Services in AZ";
   const headerDesc = "Specialized spa trailers, dollies, and experienced movers to transport hot tubs and outdoor spas damage-free.";

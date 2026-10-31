@@ -15,7 +15,7 @@ const TempeSchema = () => {
     "email": "makingmovesmatter07@gmail.com",
     "priceRange": "$$",
     "image": [
-      "https://mesamovingexperts.com/images/tempe-truck-branded.jpg",
+      "https://mesamovingexperts.com/images/tempe-truck-branded.png",
       "https://mesamovingexperts.com/images/tempe-residential-moving.jpg",
       "https://mesamovingexperts.com/images/tempe-commercial-moving.jpg"
     ],

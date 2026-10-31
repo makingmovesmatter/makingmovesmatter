@@ -17,7 +17,7 @@ import Section13 from "./section13";
 import GilbertSchema from "./GilbertSchema";
 
 const GilbertPage = () => {
-  const headerImg = "/images/gilbert-truck-branded.jpg";
+  const headerImg = "/images/gilbert-truck-branded.png";
   const headerText1 = "Making Moves Matter";
   const headerText2 = "Gilbert Moving AZ";
   const headerDesc =
@@ -110,7 +110,7 @@ export const metadata = {
     siteName: "Making Moves Matter",
     images: [
       {
-        url: "/images/gilbert-truck-branded.jpg",
+        url: "/images/gilbert-truck-branded.png",
         width: 1200,
         height: 675,
         alt: "Making Moves Matter - Trusted Gilbert Moving Company in Arizona",
@@ -130,7 +130,7 @@ export const metadata = {
     title: "Top Gilbert Moving Company AZ | Making Moves Matter",
     description:
       "Planning a move in Gilbert, AZ? Making Moves Matter provides licensed, insured, and professional moving services. Call (480) 934-8218 for a free quote!",
-    images: ["/images/gilbert-truck-branded.jpg"],
+    images: ["/images/gilbert-truck-branded.png"],
     creator: "@MesaMoving",
   },
   icons: {

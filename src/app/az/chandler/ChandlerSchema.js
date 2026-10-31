@@ -15,7 +15,7 @@ const ChandlerSchema = () => {
     "email": "makingmovesmatter07@gmail.com",
     "priceRange": "$$",
     "image": [
-      "https://mesamovingexperts.com/images/chandler-truck-branded.jpg",
+      "https://mesamovingexperts.com/images/chandler-truck-branded.png",
       "https://mesamovingexperts.com/images/chandler-movers-team.jpg",
       "https://mesamovingexperts.com/images/chandler-commercial-moving.jpg"
     ],

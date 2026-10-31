@@ -17,7 +17,7 @@ import Section13 from "./section13";
 import TempeSchema from "./TempeSchema";
 
 const TempePage = () => {
-  const headerImg = "/images/tempe-truck-branded.jpg";
+  const headerImg = "/images/tempe-truck-branded.png";
   const headerText1 = "Making Moves Matter";
   const headerText2 = "Tempe Moving AZ";
   const headerDesc =
@@ -110,7 +110,7 @@ export const metadata = {
     siteName: "Making Moves Matter",
     images: [
       {
-        url: "/images/tempe-truck-branded.jpg",
+        url: "/images/tempe-truck-branded.png",
         width: 1200,
         height: 675,
         alt: "Making Moves Matter - Trusted Tempe Moving Company in Arizona",
@@ -130,7 +130,7 @@ export const metadata = {
     title: "Top Tempe Moving Company AZ | Making Moves Matter",
     description:
       "Planning a move in Tempe, AZ? Making Moves Matter provides licensed, insured, and professional moving services. Call (480) 934-8218 for a free quote!",
-    images: ["/images/tempe-truck-branded.jpg"],
+    images: ["/images/tempe-truck-branded.png"],
     creator: "@MesaMoving",
   },
   icons: {

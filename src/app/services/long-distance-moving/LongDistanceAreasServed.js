@@ -11,35 +11,35 @@ const areas = [
     name: "Gilbert, AZ",
     label: "Long-distance movers in Gilbert, AZ",
     href: "/az/gilbert",
-    image: "/images/gilbert-moving-branded.jpg",
+    image: "/images/gilbert-moving-branded.png",
     description: "Full-service cross-country packing and interstate moving departures from Gilbert neighborhoods."
   },
   {
     name: "Chandler, AZ",
     label: "Chandler long-distance moving companies",
     href: "/az/chandler",
-    image: "/images/chandler-moving-branded.jpg",
+    image: "/images/chandler-moving-branded.png",
     description: "Reliable out-of-state relocations for single family homes, apartments, and tech executives in Chandler."
   },
   {
     name: "Tempe, AZ",
     label: "Tempe movers near me for state-to-state relocations",
     href: "/az/tempe",
-    image: "/images/tempe-moving-branded.jpg",
+    image: "/images/tempe-moving-branded.png",
     description: "Dependable state-to-state moving solutions for Tempe residents, ASU faculty, and relocating families."
   },
   {
     name: "Scottsdale, AZ",
     label: "Scottsdale long-distance movers for high-end, secure moves",
     href: "/az/scottsdale",
-    image: "/images/scottsdale-moving-branded.jpg",
+    image: "/images/scottsdale-moving-branded.png",
     description: "White-glove interstate transitions, custom antique crating, and luxury estate moves from Scottsdale."
   },
   {
     name: "Phoenix, AZ",
     label: "Phoenix long-distance moving services for residential and office relocations",
     href: "/az/phoenix",
-    image: "/images/phoenix-moving-branded.jpg",
+    image: "/images/phoenix-moving-branded.png",
     description: "Valley-wide interstate departures, corporate transfers, and direct cross-country line hauls."
   }
 ];

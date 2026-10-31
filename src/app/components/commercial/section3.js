@@ -35,7 +35,7 @@ const areas = [
     name: "Scottsdale, AZ",
     label: "Scottsdale commercial moving services",
     href: "/az/scottsdale",
-    image: "/images/scottsdale-moving-branded.jpg",
+    image: "/images/scottsdale-moving-branded.png",
     description: "Executive suite relocations, medical offices, and boutique storefront commercial moves.",
     externalWiki: null
   },

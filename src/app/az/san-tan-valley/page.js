@@ -17,7 +17,7 @@ import Section13 from "./section13";
 import SanTanValleySchema from "./SanTanValleySchema";
 
 const SanTanValleyPage = () => {
-  const headerImg = "/images/san-tan-valley-truck-branded.jpg";
+  const headerImg = "/images/san-tan-valley-truck-branded.png";
   const headerText1 = "Making Moves Matter";
   const headerText2 = "San Tan Valley AZ";
   const headerDesc =
@@ -110,7 +110,7 @@ export const metadata = {
     siteName: "Making Moves Matter",
     images: [
       {
-        url: "/images/san-tan-valley-truck-branded.jpg",
+        url: "/images/san-tan-valley-truck-branded.png",
         width: 1200,
         height: 675,
         alt: "Making Moves Matter - Trusted San Tan Valley Moving Company in Arizona",
@@ -130,7 +130,7 @@ export const metadata = {
     title: "Top San Tan Valley Moving Company AZ | Making Moves Matter",
     description:
       "Dependable San Tan Valley movers with 15+ years experience, licensed & insured. Call (480) 934-8218 for a free quote!",
-    images: ["/images/san-tan-valley-truck-branded.jpg"],
+    images: ["/images/san-tan-valley-truck-branded.png"],
     creator: "@MesaMoving",
   },
   icons: {

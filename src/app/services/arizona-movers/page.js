@@ -33,7 +33,7 @@ export const metadata = {
     siteName: "Making Moves Matter",
     images: [
       {
-        url: "/images/az-fleet-hero.jpg",
+        url: "/images/az-fleet-hero.png",
         width: 1200,
         height: 675,
         alt: "Making Moves Matter Arizona Moving Fleet",
@@ -45,7 +45,7 @@ export const metadata = {
 };
 
 const ArizonaMovers = () => {
-  const headerImg = "/images/az-fleet-hero.jpg";
+  const headerImg = "/images/az-fleet-hero.png";
   const headerText1 = "Licensed Arizona Movers";
   const headerText2 = "Making Moves Matter";
   const headerDesc =

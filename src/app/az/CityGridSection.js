@@ -31,7 +31,7 @@ export const CITIES_DATA = [
   {
     name: "Chandler, AZ",
     slug: "/az/chandler",
-    image: "/images/chandler-moving-branded.jpg",
+    image: "/images/chandler-moving-branded.png",
     badge: "Family & Tech Corridor",
     badgeColor: "bg-amber-600 text-white",
     region: "East Valley Core",
@@ -44,7 +44,7 @@ export const CITIES_DATA = [
   {
     name: "Scottsdale, AZ",
     slug: "/az/scottsdale",
-    image: "/images/scottsdale-moving-branded.jpg",
+    image: "/images/scottsdale-moving-branded.png",
     badge: "White-Glove & Luxury",
     badgeColor: "bg-slate-900 text-white",
     region: "Scottsdale & Central",
@@ -57,7 +57,7 @@ export const CITIES_DATA = [
   {
     name: "Tempe, AZ",
     slug: "/az/tempe",
-    image: "/images/tempe-moving-branded.jpg",
+    image: "/images/tempe-moving-branded.png",
     badge: "Urban Condos & Families",
     badgeColor: "bg-red-700 text-white",
     region: "East Valley Core",
@@ -70,7 +70,7 @@ export const CITIES_DATA = [
   {
     name: "Gilbert, AZ",
     slug: "/az/gilbert",
-    image: "/images/gilbert-moving-branded.jpg",
+    image: "/images/gilbert-moving-branded.png",
     badge: "Family Neighborhood Specialist",
     badgeColor: "bg-emerald-700 text-white",
     region: "East Valley Core",
@@ -83,7 +83,7 @@ export const CITIES_DATA = [
   {
     name: "Phoenix, AZ",
     slug: "/az/phoenix",
-    image: "/images/phoenix-moving-branded.jpg",
+    image: "/images/phoenix-moving-branded.png",
     badge: "Metropolitan Coverage",
     badgeColor: "bg-indigo-700 text-white",
     region: "Scottsdale & Central",
@@ -96,7 +96,7 @@ export const CITIES_DATA = [
   {
     name: "Queen Creek, AZ",
     slug: "/az/queen-creek",
-    image: "/images/queen-creek-moving-branded.jpg",
+    image: "/images/queen-creek-moving-branded.png",
     badge: "Ranch & Acreage Moves",
     badgeColor: "bg-amber-700 text-white",
     region: "Southeast Valley",
@@ -109,7 +109,7 @@ export const CITIES_DATA = [
   {
     name: "San Tan Valley, AZ",
     slug: "/az/san-tan-valley",
-    image: "/images/san-tan-valley-moving-branded.jpg",
+    image: "/images/san-tan-valley-moving-branded.png",
     badge: "Affordable Full-Service",
     badgeColor: "bg-teal-700 text-white",
     region: "Southeast Valley",
@@ -159,8 +159,8 @@ export default function CityGridSection() {
               key={tab.id}
               onClick={() => setActiveFilter(tab.id)}
               className={`px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all cursor-pointer ${activeFilter === tab.id
-                  ? "bg-[var(--accent-color)] text-white shadow-sm scale-105"
-                  : "bg-slate-100 hover:bg-slate-200 text-slate-700"
+                ? "bg-[var(--accent-color)] text-white shadow-sm scale-105"
+                : "bg-slate-100 hover:bg-slate-200 text-slate-700"
                 }`}
             >
               {tab.label}

@@ -39,7 +39,7 @@ const Section1 = () => {
           >
             <div className="relative w-full h-[460px] sm:h-[520px] rounded-2xl overflow-hidden border border-slate-200">
               <Image
-                src="/images/mesa-movers-team.jpg"
+                src="/images/about1.png"
                 alt="Making Moves Matter Professional Moving Team in Mesa Arizona"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"

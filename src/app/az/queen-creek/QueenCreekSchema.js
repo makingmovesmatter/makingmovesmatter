@@ -15,7 +15,7 @@ const QueenCreekSchema = () => {
     "email": "makingmovesmatter07@gmail.com",
     "priceRange": "$$",
     "image": [
-      "https://mesamovingexperts.com/images/queen-creek-truck-branded.jpg",
+      "https://mesamovingexperts.com/images/queen-creek-truck-branded.png",
       "https://mesamovingexperts.com/images/queen-creek-residential-moving.jpg",
       "https://mesamovingexperts.com/images/queen-creek-commercial-moving.jpg"
     ],

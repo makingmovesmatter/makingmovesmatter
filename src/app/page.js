@@ -48,7 +48,7 @@ export const metadata = {
     siteName: "Making Moves Matter",
     images: [
       {
-        url: "/images/az-fleet-hero.jpg",
+        url: "/images/az-fleet-hero.png",
         width: 1200,
         height: 675,
         alt: "Making Moves Matter Branded Fleet and Moving Team in Mesa Arizona",
@@ -62,7 +62,7 @@ export const metadata = {
     title: "Making Moves Matter | Top-Rated Mesa Movers & Relocation Services in AZ",
     description:
       "Stress-free moving services across Mesa and Arizona. Residential, commercial, local, and cross-country relocations.",
-    images: ["/images/az-fleet-hero.jpg"],
+    images: ["/images/az-fleet-hero.png"],
     creator: "@MesaMoving",
   },
   icons: {
@@ -83,7 +83,7 @@ const homeSchema = {
       "name": "Making Moves Matter",
       "url": "https://mesamovingexperts.com",
       "logo": "https://mesamovingexperts.com/images/logo.png",
-      "image": "https://mesamovingexperts.com/images/az-fleet-hero.jpg",
+      "image": "https://mesamovingexperts.com/images/az-fleet-hero.png",
       "description":
         "Premier residential and commercial moving company based in Mesa, AZ, offering local, long-distance, packing, and furniture assembly services throughout Arizona.",
       "telephone": "+1-480-934-8218",
@@ -192,7 +192,7 @@ const homeSchema = {
 };
 
 export default function Home() {
-  const headerImg = "/images/az-fleet-hero.jpg";
+  const headerImg = "/images/az-fleet-hero.png";
   const headerText1 = "Top-Rated Mesa Movers";
   const headerText2 = "Making Moves Matter";
   const headerDesc =

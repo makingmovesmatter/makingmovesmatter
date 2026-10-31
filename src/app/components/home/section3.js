@@ -17,49 +17,49 @@ const areas = [
   {
     name: "Chandler, AZ",
     href: "/az/chandler",
-    image: "/images/chandler-moving-branded.jpg",
+    image: "/images/chandler-moving-branded.png",
     description: "Professional residential and tech corridor office relocations throughout Chandler neighborhoods.",
     badge: "East Valley"
   },
   {
     name: "Scottsdale, AZ",
     href: "/az/scottsdale",
-    image: "/images/scottsdale-moving-branded.jpg",
+    image: "/images/scottsdale-moving-branded.png",
     description: "White-glove luxury estate moving, delicate antiques, and high-end residential transitions.",
     badge: "Luxury Care"
   },
   {
     name: "Tempe, AZ",
     href: "/az/tempe",
-    image: "/images/tempe-moving-branded.jpg",
+    image: "/images/tempe-moving-branded.png",
     description: "Fast, dependable student, apartment, and corporate moves throughout the vibrant Tempe community.",
     badge: "Fast Dispatch"
   },
   {
     name: "Gilbert, AZ",
     href: "/az/gilbert",
-    image: "/images/gilbert-moving-branded.jpg",
+    image: "/images/gilbert-moving-branded.png",
     description: "Family-friendly full-service home relocations, packing, and furniture setup across Gilbert.",
     badge: "Family Moves"
   },
   {
     name: "Phoenix, AZ",
     href: "/az/phoenix",
-    image: "/images/phoenix-moving-branded.jpg",
+    image: "/images/phoenix-moving-branded.png",
     description: "Valley-wide residential and commercial moving solutions covering all Phoenix metro districts.",
     badge: "Valley-Wide"
   },
   {
     name: "Queen Creek, AZ",
     href: "/az/queen-creek",
-    image: "/images/queen-creek-moving-branded.jpg",
+    image: "/images/queen-creek-moving-branded.png",
     description: "Dependable local moving services for new homes and expanding master-planned communities.",
     badge: "Growing Hub"
   },
   {
     name: "San Tan Valley, AZ",
     href: "/az/san-tan-valley",
-    image: "/images/santan-moving-branded.jpg",
+    image: "/images/san-tan-valley-moving-branded.png",
     description: "Affordable, high-quality moving for families and businesses throughout San Tan Valley.",
     badge: "Dependable"
   }
@@ -72,7 +72,7 @@ const Section3 = () => {
   return (
     <section className="w-full py-16 lg:py-24 bg-white" ref={ref}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        
+
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
           <div className="inline-flex items-center gap-2 bg-amber-50 text-[var(--accent-color)] border border-amber-200/60 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4">
@@ -107,7 +107,7 @@ const Section3 = () => {
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent" />
-                  
+
                   <span className="absolute top-3 right-3 bg-white/95 backdrop-blur-sm text-slate-800 text-[11px] font-semibold px-2.5 py-1 rounded-full border border-slate-200">
                     {area.badge}
                   </span>

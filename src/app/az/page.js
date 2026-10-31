@@ -40,7 +40,7 @@ export const metadata = {
     siteName: "Making Moves Matter",
     images: [
       {
-        url: "/images/az-fleet-hero.jpg",
+        url: "/images/az-fleet-hero.png",
         width: 1200,
         height: 675,
         alt: "Making Moves Matter Arizona Moving Trucks Fleet",
@@ -74,7 +74,7 @@ const ARIZONA_ZIPCODES = [
 ];
 
 export default function ArizonaServiceAreaPage() {
-  const headerImg = "/images/az-fleet-hero.jpg";
+  const headerImg = "/images/az-fleet-hero.png";
   const headerText1 = "Arizona";
   const headerText2 = "Moving Services";
   const headerDesc =
@@ -314,7 +314,7 @@ export default function ArizonaServiceAreaPage() {
 
             <div className="relative h-96 w-full rounded-2xl overflow-hidden border border-slate-200">
               <Image
-                src="/images/az-fleet-hero.jpg"
+                src="/images/az-fleet-hero.png"
                 alt="Making Moves Matter Fleet Ready Across Arizona"
                 fill
                 className="object-cover"

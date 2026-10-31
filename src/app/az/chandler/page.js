@@ -17,7 +17,7 @@ import Section13 from "./section13";
 import ChandlerSchema from "./ChandlerSchema";
 
 const ChandlerPage = () => {
-  const headerImg = "/images/chandler-truck-branded.jpg";
+  const headerImg = "/images/chandler-truck-branded.png";
   const headerText1 = "Making Moves Matter";
   const headerText2 = "Chandler, AZ";
   const headerDesc =
@@ -110,7 +110,7 @@ export const metadata = {
     siteName: "Making Moves Matter",
     images: [
       {
-        url: "/images/chandler-truck-branded.jpg",
+        url: "/images/chandler-truck-branded.png",
         width: 1200,
         height: 675,
         alt: "Making Moves Matter - Trusted Moving Company in Chandler AZ",
@@ -130,7 +130,7 @@ export const metadata = {
     title: "Best Chandler Moving Company AZ | Making Moves Matter | Local & Long-Distance",
     description:
       "Planning a move in Chandler, AZ? Making Moves Matter provides licensed, insured, and affordable moving services. Call (480) 934-8218 for a free estimate!",
-    images: ["/images/chandler-truck-branded.jpg"],
+    images: ["/images/chandler-truck-branded.png"],
     creator: "@MesaMoving",
   },
   icons: {

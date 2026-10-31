@@ -11,7 +11,7 @@ const ArizonaHubSchema = () => {
         "alternateName": "Mesa Moving Experts",
         "url": "https://mesamovingexperts.com/az",
         "logo": "https://mesamovingexperts.com/images/image.png",
-        "image": "https://mesamovingexperts.com/images/az-fleet-hero.jpg",
+        "image": "https://mesamovingexperts.com/images/az-fleet-hero.png",
         "telephone": "+1-480-934-8218",
         "email": "support@mesamovingexperts.com",
         "priceRange": "$$",

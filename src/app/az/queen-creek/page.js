@@ -17,7 +17,7 @@ import Section13 from "./section13";
 import QueenCreekSchema from "./QueenCreekSchema";
 
 const QueenCreekPage = () => {
-  const headerImg = "/images/queen-creek-truck-branded.jpg";
+  const headerImg = "/images/queen-creek-truck-branded.png";
   const headerText1 = "Making Moves Matter";
   const headerText2 = "Queen Creek AZ";
   const headerDesc =
@@ -110,7 +110,7 @@ export const metadata = {
     siteName: "Making Moves Matter",
     images: [
       {
-        url: "/images/queen-creek-truck-branded.jpg",
+        url: "/images/queen-creek-truck-branded.png",
         width: 1200,
         height: 675,
         alt: "Making Moves Matter - Trusted Queen Creek Moving Company in Arizona",
@@ -130,7 +130,7 @@ export const metadata = {
     title: "Top Queen Creek Moving Company AZ | Making Moves Matter",
     description:
       "Dependable Queen Creek movers with 15+ years experience, licensed & insured. Call (480) 934-8218 for a free quote!",
-    images: ["/images/queen-creek-truck-branded.jpg"],
+    images: ["/images/queen-creek-truck-branded.png"],
     creator: "@MesaMoving",
   },
   icons: {

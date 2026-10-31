@@ -67,7 +67,7 @@ const services = [
   {
     title: "Hot Tub Relocation",
     description: "Safe, damage-free spa transport using specialized trailers, heavy-duty spa dollies, and trained moving technicians.",
-    image: "/images/az-fleet-hero.jpg",
+    image: "/images/az-fleet-hero.png",
     link: "/services/hot-tub-relocation",
     tag: "Heavy Handling"
   },
@@ -80,7 +80,7 @@ const ServiceSection = () => {
   return (
     <section className="w-full py-16 lg:py-24 bg-slate-50 border-y border-slate-200/80" ref={ref}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        
+
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
           <div className="inline-flex items-center gap-2 bg-amber-50 text-[var(--accent-color)] border border-amber-200/60 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4">
@@ -115,7 +115,7 @@ const ServiceSection = () => {
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
-                  
+
                   {/* Category Tag */}
                   <span className="absolute top-3 right-3 bg-white/95 backdrop-blur-sm text-slate-800 text-xs font-semibold px-3 py-1 rounded-full border border-slate-200">
                     {service.tag}

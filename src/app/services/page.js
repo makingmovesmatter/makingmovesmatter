@@ -44,7 +44,7 @@ export const metadata = {
     siteName: "Making Moves Matter",
     images: [
       {
-        url: "/images/az-fleet-hero.jpg",
+        url: "/images/az-fleet-hero.png",
         width: 1200,
         height: 675,
         alt: "Making Moves Matter Moving Services Arizona",
@@ -58,13 +58,13 @@ export const metadata = {
     title: "Professional Moving Services in Arizona | Making Moves Matter",
     description:
       "Full-service residential, commercial, local, and cross-country moving solutions across Arizona.",
-    images: ["/images/az-fleet-hero.jpg"],
+    images: ["/images/az-fleet-hero.png"],
     creator: "@MesaMoving",
   },
 };
 
 export default function ServicesPage() {
-  const headerImg = "/images/az-fleet-hero.jpg";
+  const headerImg = "/images/az-fleet-hero.png";
   const headerText1 = "Our Moving";
   const headerText2 = "Services";
   const headerDesc =

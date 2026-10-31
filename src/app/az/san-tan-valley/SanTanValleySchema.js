@@ -15,7 +15,7 @@ const SanTanValleySchema = () => {
     "email": "makingmovesmatter07@gmail.com",
     "priceRange": "$$",
     "image": [
-      "https://mesamovingexperts.com/images/san-tan-valley-truck-branded.jpg",
+      "https://mesamovingexperts.com/images/san-tan-valley-truck-branded.png",
       "https://mesamovingexperts.com/images/san-tan-valley-residential-moving.jpg",
       "https://mesamovingexperts.com/images/san-tan-valley-commercial-moving.jpg"
     ],
