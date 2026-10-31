@@ -3,7 +3,7 @@ export const ALL_SERVICES = [
     title: "Local Moving",
     slug: "/services/local-moving",
     description: "Fast, dependable, and affordable moving services across Mesa, Phoenix, and nearby East Valley communities.",
-    image: "/images/mesa-moving-branded.jpg",
+    image: "/images/mesa-moving-branded.png",
     tag: "Most Popular",
   },
   {
@@ -66,7 +66,7 @@ export const ALL_SERVICES = [
     title: "Residential Moving",
     slug: "/services/residential",
     description: "Careful household relocations for single-family homes, luxury estates, townhomes, and apartments across Arizona.",
-    image: "/images/mesa-moving-branded.jpg",
+    image: "/images/mesa-moving-branded.png",
     tag: "Homes & Condos",
   },
   {

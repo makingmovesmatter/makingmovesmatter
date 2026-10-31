@@ -11,7 +11,7 @@ const services = [
   {
     title: "Local Moving",
     description: "Fast, dependable, and affordable moving services across Mesa, Phoenix, and nearby East Valley communities.",
-    image: "/images/mesa-moving-branded.jpg",
+    image: "/images/mesa-moving-branded.png",
     link: "/services/local-moving",
     tag: "Most Popular"
   },

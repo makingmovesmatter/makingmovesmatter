@@ -10,7 +10,7 @@ const areas = [
   {
     name: "Mesa, AZ",
     href: "/az/mesa",
-    image: "/images/mesa-moving-branded.jpg",
+    image: "/images/mesa-moving-branded.png",
     description: "Our hometown base. Trusted residential, apartment, and corporate office moving across Mesa.",
     badge: "Headquarters"
   },

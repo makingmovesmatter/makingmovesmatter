@@ -18,7 +18,7 @@ export const CITIES_DATA = [
   {
     name: "Mesa, AZ",
     slug: "/az/mesa",
-    image: "/images/mesa-moving-branded.jpg",
+    image: "/images/mesa-moving-branded.png",
     badge: "Company Headquarters",
     badgeColor: "bg-blue-600 text-white",
     region: "East Valley Core",

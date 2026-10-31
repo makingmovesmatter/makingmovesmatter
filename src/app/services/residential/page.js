@@ -45,7 +45,7 @@ export const metadata = {
     siteName: "Making Moves Matter",
     images: [
       {
-        url: "/images/mesa-moving-branded.jpg",
+        url: "/images/mesa-moving-branded.png",
         width: 1200,
         height: 800,
         alt: "Making Moves Matter Residential Moving Services Mesa AZ",
@@ -59,7 +59,7 @@ export const metadata = {
     title: "Top Residential Movers in Mesa, AZ | Making Moves Matter",
     description:
       "Stress-free residential moving in Mesa and East Valley. Honest pricing, licensed crews, and total furniture protection.",
-    images: ["/images/mesa-moving-branded.jpg"],
+    images: ["/images/mesa-moving-branded.png"],
     creator: "@MesaMoving",
   },
 };
@@ -112,7 +112,7 @@ const residentialSchema = {
 };
 
 const Residential = () => {
-  const headerImg = "/images/mesa-moving-branded.jpg";
+  const headerImg = "/images/mesa-moving-branded.png";
   const headerText1 = "Top Residential Movers";
   const headerText2 = "in Mesa, AZ";
   const headerDesc =
