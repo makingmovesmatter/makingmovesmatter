@@ -17,7 +17,7 @@ const ScottsdaleSchema = () => {
     "image": [
       "https://mesamovingexperts.com/images/scottsdale-truck-branded.jpg",
       "https://mesamovingexperts.com/images/scottsdale-luxury-moving.jpg",
-      "https://mesamovingexperts.com/images/scottsdale-specialty-piano.jpg"
+      "https://mesamovingexperts.com/images/scottsdale-specialty-piano.png"
     ],
     "logo": "https://mesamovingexperts.com/images/logo.png",
     "address": {

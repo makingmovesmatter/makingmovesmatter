@@ -74,7 +74,7 @@ const Section1 = () => {
           >
             <div className="relative w-full h-[420px] sm:h-[480px] lg:h-[520px] rounded-2xl overflow-hidden border border-slate-200/90 shadow-lg">
               <Image
-                src="/images/scottsdale-specialty-piano.jpg"
+                src="/images/scottsdale-specialty-piano.png"
                 alt="Specialized Large and Heavy Item Moving in Mesa AZ - Making Moves Matter"
                 fill
                 className="object-cover"

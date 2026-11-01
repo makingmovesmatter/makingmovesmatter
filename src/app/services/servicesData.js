@@ -45,7 +45,7 @@ export const ALL_SERVICES = [
     title: "Large & Heavy Item Moving",
     slug: "/services/large-and-heavy-item-moving",
     description: "Specialized equipment, heavy-duty dollies, and safety rigging for pianos, gun safes, appliances, and oversized machinery.",
-    image: "/images/scottsdale-specialty-piano.jpg",
+    image: "/images/scottsdale-specialty-piano.png",
     tag: "Specialty Items",
   },
   {

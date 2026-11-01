@@ -61,7 +61,7 @@ const Section5 = () => {
           >
             <div className="relative w-full h-[420px] sm:h-[480px] lg:h-full min-h-[400px] rounded-xl overflow-hidden border border-neutral-200">
               <Image
-                src="/images/scottsdale-specialty-piano.jpg"
+                src="/images/scottsdale-specialty-piano.png"
                 alt="Making Moves Matter specialty movers carefully transporting a grand piano in an elegant Scottsdale home"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-700 ease-out"

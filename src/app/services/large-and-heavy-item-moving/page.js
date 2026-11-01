@@ -36,7 +36,7 @@ export const metadata = {
     siteName: "Making Moves Matter",
     images: [
       {
-        url: "/images/scottsdale-specialty-piano.jpg",
+        url: "/images/scottsdale-specialty-piano.png",
         width: 1200,
         height: 800,
         alt: "Large and Heavy Item Moving in Mesa AZ - Making Moves Matter",
@@ -50,7 +50,7 @@ export const metadata = {
     title: "Large & Heavy Item Moving Services in Mesa, AZ | Making Moves Matter",
     description:
       "Safe, insured specialty and heavy item moving in Mesa, AZ. Free quotes.",
-    images: ["/images/scottsdale-specialty-piano.jpg"],
+    images: ["/images/scottsdale-specialty-piano.png"],
     creator: "@MesaMoving",
   },
 };
@@ -78,7 +78,7 @@ const heavySchema = {
 };
 
 const HeavyItemPage = () => {
-  const headerImg = "/images/scottsdale-specialty-piano.jpg";
+  const headerImg = "/images/scottsdale-specialty-piano.png";
   const headerText1 = "Large & Heavy Item";
   const headerText2 = "Moving Services in AZ";
   const headerDesc = "Specialized equipment, heavy-duty rigging, and certified movers for pianos, gun safes, appliances, and oversized machinery.";

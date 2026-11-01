@@ -53,7 +53,7 @@ const services = [
   {
     title: "Large and Heavy Item Moving",
     description: "Specialized rigging and heavy-duty dollies for grand pianos, gun safes, oversized appliances, and machinery.",
-    image: "/images/scottsdale-specialty-piano.jpg",
+    image: "/images/scottsdale-specialty-piano.png",
     link: "/services/large-and-heavy-item-moving",
     tag: "Specialty Rigging"
   },
