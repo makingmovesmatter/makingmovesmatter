@@ -32,7 +32,7 @@ const services = [
   {
     title: "Furniture Moving",
     description: "Careful blanket wrapping, disassembly, and transportation for luxury sofas, antiques, dining sets, and bedroom suites.",
-    image: "/images/scottsdale-luxury-moving.jpg",
+    image: "/images/queen-creek-truck-branded.png",
     link: "/services/furniture-moving",
     tag: "Care & Protection"
   },

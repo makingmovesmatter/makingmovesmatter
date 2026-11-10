@@ -254,10 +254,7 @@ const Quote = ({ onSuccess, isModal = false }) => {
               Get Your Free Moving Quote
             </h3>
           </div>
-          <div className="hidden sm:flex items-center gap-1.5 text-xs text-white bg-white/20 px-3 py-1.5 rounded-full border border-white/30">
-            <FaShieldAlt className="text-white" />
-            <span>Guaranteed Flat Rates</span>
-          </div>
+
         </div>
       </div>
 

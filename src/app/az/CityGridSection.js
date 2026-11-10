@@ -148,7 +148,7 @@ export default function CityGridSection() {
             Where We Move You Across Arizona
           </h2>
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
-            From our central Mesa headquarters to all surrounding cities, our dedicated full-time moving crews deliver guaranteed flat rates, punctual arrivals, and zero hidden fees.
+            From our central Mesa headquarters to all surrounding cities, our dedicated full-time moving crews deliver, punctual arrivals, and zero hidden fees.
           </p>
         </div>
 

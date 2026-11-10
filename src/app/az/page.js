@@ -78,7 +78,7 @@ export default function ArizonaServiceAreaPage() {
   const headerText1 = "Arizona";
   const headerText2 = "Moving Services";
   const headerDesc =
-    "Premier residential, commercial, and specialty relocations across the Phoenix East Valley. Guaranteed flat rates, licensed and insured moving crews, and 15+ years of trusted Arizona service.";
+    "Premier residential, commercial, and specialty relocations across the Phoenix East Valley, licensed and insured moving crews, and 15+ years of trusted Arizona service.";
 
   return (
     <main className="w-full bg-white overflow-hidden font-sans">

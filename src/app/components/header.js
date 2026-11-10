@@ -62,10 +62,6 @@ const Header = ({ headerImg, headerText1, headerText2, headerDesc }) => {
 
                 {/* Value Proposition Grid (4 Key Details) */}
                 <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm text-slate-200">
-                  <div className="flex items-center gap-2.5 bg-white/5 border border-white/10 rounded-xl px-3.5 py-2.5 backdrop-blur-sm">
-                    <FaShieldAlt className="text-[var(--accent-color)] text-base shrink-0" />
-                    <span><strong>Guaranteed Flat Rates:</strong> Fixed prices, zero hidden fees</span>
-                  </div>
                   <div className="hidden sm:flex items-center gap-2.5 bg-white/5 border border-white/10 rounded-xl px-3.5 py-2.5 backdrop-blur-sm">
                     <FaClock className="text-[var(--accent-color)] text-base shrink-0" />
                     <span><strong>Same-Day & Flexible:</strong> Fast local & interstate booking</span>

@@ -166,7 +166,7 @@ const ArizonaHubSchema = () => {
             "name": "Do you charge extra travel fees between cities in the Phoenix East Valley?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "No. We offer upfront, transparent pricing with guaranteed flat rates and no hidden travel fees between Mesa, Gilbert, Chandler, Tempe, Scottsdale, Phoenix, Queen Creek, and San Tan Valley."
+              "text": "No. We offer upfront, transparent pricing with  and no hidden travel fees between Mesa, Gilbert, Chandler, Tempe, Scottsdale, Phoenix, Queen Creek, and San Tan Valley."
             }
           },
           {
