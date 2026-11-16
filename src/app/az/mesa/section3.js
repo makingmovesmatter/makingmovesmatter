@@ -20,7 +20,7 @@ const Section3 = () => {
         >
           <div className="relative w-full h-[440px] sm:h-[500px] lg:h-full min-h-[420px] rounded-xl overflow-hidden border border-neutral-200">
             <Image
-              src="/images/mesa_moving_team.jpg"
+              src="/images/mesa_moving_team.png"
               alt="Local and long-distance movers carefully packing and loading moving boxes in Mesa AZ"
               fill
               className="object-cover hover:scale-105 transition-transform duration-700 ease-out"

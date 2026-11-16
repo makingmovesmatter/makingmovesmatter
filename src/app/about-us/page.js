@@ -42,7 +42,7 @@ export const metadata = {
     siteName: "Making Moves Matter",
     images: [
       {
-        url: "/images/mesa-movers-team.jpg",
+        url: "/images/mesa-movers-team.png",
         width: 1200,
         height: 630,
         alt: "Making Moves Matter Moving Team in Mesa Arizona",
@@ -57,7 +57,7 @@ export const metadata = {
     title: "About Making Moves Matter | Trusted Movers in Mesa, AZ",
     description:
       "Get to know Making Moves Matter — Arizona’s premier movers for residential and commercial relocations. Over 15 years of excellence and care.",
-    images: ["/images/mesa-movers-team.jpg"],
+    images: ["/images/mesa-movers-team.png"],
   },
 };
 
@@ -103,7 +103,7 @@ const AboutUsPage = () => {
         "legalName": "Making Moves Matter LLC",
         "url": "https://mesamovingexperts.com",
         "logo": "https://mesamovingexperts.com/images/logo.png",
-        "image": "https://mesamovingexperts.com/images/mesa-movers-team.jpg",
+        "image": "https://mesamovingexperts.com/images/mesa-movers-team.png",
         "telephone": "+1-480-934-8218",
         "email": "info@mesamovingexperts.com",
         "address": {

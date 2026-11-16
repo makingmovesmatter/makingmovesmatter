@@ -19,7 +19,7 @@ import Link from "next/link";
 import { FaHome, FaChevronRight } from "react-icons/fa";
 
 const MesaPage = () => {
-  const headerImg = "/images/mesa-truck-branded.jpg";
+  const headerImg = "/images/mesa-truck-branded.png";
   const headerText1 = "Making Moves Matter";
   const headerText2 = "Movers in Mesa, AZ";
   const headerDesc =
@@ -111,7 +111,7 @@ export const metadata = {
     siteName: "Making Moves Matter",
     images: [
       {
-        url: "/images/mesa-truck-branded.jpg",
+        url: "/images/mesa-truck-branded.png",
         width: 1200,
         height: 675,
         alt: "Making Moves Matter - Trusted Moving Company in Mesa AZ",
@@ -131,7 +131,7 @@ export const metadata = {
     title: "Movers in Mesa AZ | Making Moves Matter | Local & Long-Distance",
     description:
       "Planning a move in Mesa, AZ? Making Moves Matter provides licensed, insured, and affordable moving services. Call (480) 934-8218 for a free estimate!",
-    images: ["/images/mesa-truck-branded.jpg"],
+    images: ["/images/mesa-truck-branded.png"],
     creator: "@MesaMoving",
   },
   icons: {

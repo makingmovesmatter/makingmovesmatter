@@ -15,8 +15,8 @@ const MesaSchema = () => {
     "email": "makingmovesmatter07@gmail.com",
     "priceRange": "$$",
     "image": [
-      "https://mesamovingexperts.com/images/mesa-truck-branded.jpg",
-      "https://mesamovingexperts.com/images/mesa-movers-team.jpg",
+      "https://mesamovingexperts.com/images/mesa-truck-branded.png",
+      "https://mesamovingexperts.com/images/mesa-movers-team.png",
       "https://mesamovingexperts.com/images/mesa-commercial-moving.jpg"
     ],
     "logo": "https://mesamovingexperts.com/images/logo.png",

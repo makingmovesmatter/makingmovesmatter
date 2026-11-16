@@ -18,7 +18,7 @@ export const CITIES_DATA = [
   {
     name: "Mesa, AZ",
     slug: "/az/mesa",
-    image: "/images/mesa-moving-branded.png",
+    image: "/images/city/mesa.png",
     badge: "Company Headquarters",
     badgeColor: "bg-blue-600 text-white",
     region: "East Valley Core",
@@ -31,7 +31,7 @@ export const CITIES_DATA = [
   {
     name: "Chandler, AZ",
     slug: "/az/chandler",
-    image: "/images/chandler-moving-branded.png",
+    image: "/images/city/chandler.png",
     badge: "Family & Tech Corridor",
     badgeColor: "bg-amber-600 text-white",
     region: "East Valley Core",
@@ -44,7 +44,7 @@ export const CITIES_DATA = [
   {
     name: "Scottsdale, AZ",
     slug: "/az/scottsdale",
-    image: "/images/scottsdale-moving-branded.png",
+    image: "/images/city/scottsdale.png",
     badge: "White-Glove & Luxury",
     badgeColor: "bg-slate-900 text-white",
     region: "Scottsdale & Central",
@@ -57,7 +57,7 @@ export const CITIES_DATA = [
   {
     name: "Tempe, AZ",
     slug: "/az/tempe",
-    image: "/images/tempe-moving-branded.png",
+    image: "/images/city/tempe.png",
     badge: "Urban Condos & Families",
     badgeColor: "bg-red-700 text-white",
     region: "East Valley Core",
@@ -70,7 +70,7 @@ export const CITIES_DATA = [
   {
     name: "Gilbert, AZ",
     slug: "/az/gilbert",
-    image: "/images/gilbert-moving-branded.png",
+    image: "/images/city/gilbert.png",
     badge: "Family Neighborhood Specialist",
     badgeColor: "bg-emerald-700 text-white",
     region: "East Valley Core",
@@ -83,7 +83,7 @@ export const CITIES_DATA = [
   {
     name: "Phoenix, AZ",
     slug: "/az/phoenix",
-    image: "/images/phoenix-moving-branded.png",
+    image: "/images/city/phoenix.png",
     badge: "Metropolitan Coverage",
     badgeColor: "bg-indigo-700 text-white",
     region: "Scottsdale & Central",
@@ -96,7 +96,7 @@ export const CITIES_DATA = [
   {
     name: "Queen Creek, AZ",
     slug: "/az/queen-creek",
-    image: "/images/queen-creek-moving-branded.png",
+    image: "/images/city/queencreek.png",
     badge: "Ranch & Acreage Moves",
     badgeColor: "bg-amber-700 text-white",
     region: "Southeast Valley",
@@ -109,7 +109,7 @@ export const CITIES_DATA = [
   {
     name: "San Tan Valley, AZ",
     slug: "/az/san-tan-valley",
-    image: "/images/san-tan-valley-moving-branded.png",
+    image: "/images/city/santanvalley.png",
     badge: "Affordable Full-Service",
     badgeColor: "bg-teal-700 text-white",
     region: "Southeast Valley",

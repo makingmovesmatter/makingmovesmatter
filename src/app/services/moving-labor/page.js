@@ -44,7 +44,7 @@ export const metadata = {
     siteName: "Making Moves Matter",
     images: [
       {
-        url: "/images/mesa-movers-team.jpg",
+        url: "/images/mesa-movers-team.png",
         width: 1200,
         height: 800,
         alt: "Making Moves Matter Professional Moving Labor Crew in Mesa AZ",
@@ -58,7 +58,7 @@ export const metadata = {
     title: "Moving Labor Services in Mesa, AZ | Making Moves Matter",
     description:
       "Reliable moving muscle in Mesa, AZ. We load and unload rental trucks, containers, and PODS with expert care.",
-    images: ["/images/mesa-movers-team.jpg"],
+    images: ["/images/mesa-movers-team.png"],
     creator: "@MesaMoving",
   },
 };
@@ -111,7 +111,7 @@ const laborSchema = {
 };
 
 const MovingLaborPage = () => {
-  const headerImg = "/images/mesa-movers-team.jpg";
+  const headerImg = "/images/mesa-movers-team.png";
   const headerText1 = "Professional Moving Labor";
   const headerText2 = "in Mesa & East Valley, AZ";
   const headerDesc =

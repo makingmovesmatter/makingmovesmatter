@@ -10,56 +10,56 @@ const areas = [
   {
     name: "Mesa, AZ",
     href: "/az/mesa",
-    image: "/images/mesa-moving-branded.png",
+    image: "/images/city/mesa.png",
     description: "Our hometown base. Trusted residential, apartment, and corporate office moving across Mesa.",
     badge: "Headquarters"
   },
   {
     name: "Chandler, AZ",
     href: "/az/chandler",
-    image: "/images/chandler-moving-branded.png",
+    image: "/images/city/chandler.png",
     description: "Professional residential and tech corridor office relocations throughout Chandler neighborhoods.",
     badge: "East Valley"
   },
   {
     name: "Scottsdale, AZ",
     href: "/az/scottsdale",
-    image: "/images/scottsdale-moving-branded.png",
+    image: "/images/city/scottsdale.png",
     description: "White-glove luxury estate moving, delicate antiques, and high-end residential transitions.",
     badge: "Luxury Care"
   },
   {
     name: "Tempe, AZ",
     href: "/az/tempe",
-    image: "/images/tempe-moving-branded.png",
+    image: "/images/city/tempe.png",
     description: "Fast, dependable student, apartment, and corporate moves throughout the vibrant Tempe community.",
     badge: "Fast Dispatch"
   },
   {
     name: "Gilbert, AZ",
     href: "/az/gilbert",
-    image: "/images/gilbert-moving-branded.png",
+    image: "/images/city/gilbert.png",
     description: "Family-friendly full-service home relocations, packing, and furniture setup across Gilbert.",
     badge: "Family Moves"
   },
   {
     name: "Phoenix, AZ",
     href: "/az/phoenix",
-    image: "/images/phoenix-moving-branded.png",
+    image: "/images/city/phoenix.png",
     description: "Valley-wide residential and commercial moving solutions covering all Phoenix metro districts.",
     badge: "Valley-Wide"
   },
   {
     name: "Queen Creek, AZ",
     href: "/az/queen-creek",
-    image: "/images/queen-creek-moving-branded.png",
+    image: "/images/city/queencreek.png",
     description: "Dependable local moving services for new homes and expanding master-planned communities.",
     badge: "Growing Hub"
   },
   {
     name: "San Tan Valley, AZ",
     href: "/az/san-tan-valley",
-    image: "/images/san-tan-valley-moving-branded.png",
+    image: "/images/city/santanvalley.png",
     description: "Affordable, high-quality moving for families and businesses throughout San Tan Valley.",
     badge: "Dependable"
   }

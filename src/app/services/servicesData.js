@@ -80,7 +80,7 @@ export const ALL_SERVICES = [
     title: "Moving Labor",
     slug: "/services/moving-labor",
     description: "Hire our strong, experienced movers by the hour for loading, unloading PODS, rental trucks, or rearranging on-site.",
-    image: "/images/mesa-movers-team.jpg",
+    image: "/images/mesa-movers-team.png",
     tag: "Hourly Muscle",
   },
 ];
