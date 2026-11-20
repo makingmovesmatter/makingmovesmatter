@@ -52,7 +52,7 @@ export const ALL_SERVICES = [
     title: "Storage Solutions",
     slug: "/services/storage",
     description: "Clean, temperature-controlled, secure storage facilities for short-term transitions or extended warehousing needs.",
-    image: "/images/chandler-commercial-moving.jpg",
+    image: "/images/chandler-commercial-moving.png",
     tag: "Climate-Controlled",
   },
   {

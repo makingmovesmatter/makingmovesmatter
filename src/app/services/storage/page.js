@@ -36,7 +36,7 @@ export const metadata = {
     siteName: "Making Moves Matter",
     images: [
       {
-        url: "/images/chandler-commercial-moving.jpg",
+        url: "/images/chandler-commercial-moving.png",
         width: 1200,
         height: 800,
         alt: "Storage Services in Mesa AZ - Making Moves Matter",
@@ -50,7 +50,7 @@ export const metadata = {
     title: "Secure Storage Services in Mesa, AZ | Making Moves Matter",
     description:
       "Safe, climate-controlled storage in Mesa, AZ. Free upfront quotes.",
-    images: ["/images/chandler-commercial-moving.jpg"],
+    images: ["/images/chandler-commercial-moving.png"],
     creator: "@MesaMoving",
   },
 };
@@ -78,7 +78,7 @@ const storageSchema = {
 };
 
 const StoragePage = () => {
-  const headerImg = "/images/chandler-commercial-moving.jpg";
+  const headerImg = "/images/chandler-commercial-moving.png";
   const headerText1 = "Secure Storage";
   const headerText2 = "Services in AZ";
   const headerDesc = "Clean, temperature-controlled, secure storage facilities in Mesa, AZ for short-term transitions or extended warehousing.";

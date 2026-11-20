@@ -60,7 +60,7 @@ const services = [
   {
     title: "Storage Solutions",
     description: "Secure, climate-controlled storage facilities for short-term transitions or long-term warehousing with easy access.",
-    image: "/images/chandler-commercial-moving.jpg",
+    image: "/images/storage-solution.png",
     link: "/services/storage",
     tag: "Climate-Controlled"
   },

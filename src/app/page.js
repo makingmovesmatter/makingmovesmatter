@@ -192,7 +192,7 @@ const homeSchema = {
 };
 
 export default function Home() {
-  const headerImg = "/images/az-fleet-hero.png";
+  const headerImg = "/images/homebanne.png";
   const headerText1 = "Top-Rated Mesa Movers";
   const headerText2 = "Making Moves Matter";
   const headerDesc =

@@ -74,7 +74,7 @@ const Section1 = () => {
           >
             <div className="relative w-full h-[420px] sm:h-[480px] lg:h-[520px] rounded-2xl overflow-hidden border border-slate-200/90 shadow-lg">
               <Image
-                src="/images/chandler-commercial-moving.jpg"
+                src="/images/chandler-commercial-moving.png"
                 alt="Secure Climate Controlled Storage Services in Mesa AZ - Making Moves Matter"
                 fill
                 className="object-cover"

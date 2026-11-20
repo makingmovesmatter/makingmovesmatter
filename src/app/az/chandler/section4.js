@@ -104,7 +104,7 @@ const Section4 = () => {
         >
           <div className="relative w-full h-[440px] sm:h-[500px] lg:h-full min-h-[420px] rounded-xl overflow-hidden border border-neutral-200">
             <Image
-              src="/images/chandler-commercial-moving.jpg"
+              src="/images/chandler-commercial-moving.png"
               alt="Making Moves Matter commercial office and tech relocation in Chandler Arizona"
               fill
               className="object-cover hover:scale-105 transition-transform duration-700 ease-out"

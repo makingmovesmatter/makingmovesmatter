@@ -17,7 +17,7 @@ const ChandlerSchema = () => {
     "image": [
       "https://mesamovingexperts.com/images/chandler-truck-branded.png",
       "https://mesamovingexperts.com/images/chandler-movers-team.jpg",
-      "https://mesamovingexperts.com/images/chandler-commercial-moving.jpg"
+      "https://mesamovingexperts.com/images/chandler-commercial-moving.png"
     ],
     "logo": "https://mesamovingexperts.com/images/logo.png",
     "address": {

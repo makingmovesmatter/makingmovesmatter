@@ -19,7 +19,7 @@ const areas = [
     name: "Chandler, AZ",
     label: "Office moving companies in Chandler, AZ",
     href: "/az/chandler",
-    image: "/images/chandler-commercial-moving.jpg",
+    image: "/images/chandler-commercial-moving.png",
     description: "Specialized tech-corridor office moving, workstations, IT hardware, and corporate facilities.",
     externalWiki: null
   },
